@@ -1,0 +1,67 @@
+.info {
+    display: grid;
+    grid-template-columns: 624px 684px;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "title badge"
+                         "subtitle badge";
+    column-gap: 176px;
+    row-gap: 48px;
+    margin: 100px 160px 55px 160px;
+}
+
+.info__title {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 72px;
+    color: #2B2B2B;
+    margin: 0;
+    white-space: pre-line;
+    grid-area: title;
+}
+
+.info__text {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #2B2B2B;
+    width: 550px;
+    margin: 0;
+    grid-area: subtitle;
+}
+
+.info__badge {
+    grid-area: badge;
+    padding: 0;
+    margin: 78px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__badge-item {
+    list-style: none;
+    margin-bottom: 40px;;
+}
+
+.info__badge-span {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    color: #2B2B2B;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.info__badge-item-img {
+    margin-right: 48px;
+}
+
+.info__badge-span_expanded {
+    display: none;
+}

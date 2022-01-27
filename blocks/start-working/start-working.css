@@ -1,0 +1,39 @@
+.start-working {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 150px 180px 150px;
+}
+
+.start-working__title {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 72px;
+    color: #2B2B2B;
+}
+
+.start-working__text {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #2B2B2B;
+    width: 550px;
+}
+
+.start-working__button {
+    width: 194px;
+    height: 52px;
+    background: #FDB914;
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000000;
+    border: none;
+    outline: none;
+    margin: 35px 0 0 375px;
+}

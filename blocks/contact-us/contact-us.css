@@ -1,0 +1,58 @@
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 160px 80px 160px;
+
+}
+
+.contact-us__title {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 120%;
+    color: #2B2B2B;
+    width: 624px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contact-us__subtitle {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    color: #2B2B2B;
+    width: 550px;
+    margin: 50px 0 0 0;
+}
+
+.contact-us__button-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: calc(194px*2 + 48px);
+}
+
+.contact-us__button {
+    width: 194px;
+    height: 52px;
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000000;
+    outline: none;
+    box-shadow: none;
+    background-color: #E5E5E5;
+    border: 1px solid #2B2B2B;
+    margin: 0;
+}
+
+.contact-us__button_yellow {
+    background: #FDB914;
+    border: none;
+}
