@@ -1,3 +1,13 @@
+@keyframes bgColor {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background: linear-gradient(0deg, rgba(253,185,20,1) 0%, rgba(253,185,20,1) 49%, rgba(253,185,20,0.011642156862745057) 50%, rgba(253,185,20,0.011642156862745057) 100%);
+        background-position: bottom;
+    }
+}
+
 .footer {
     margin: 80px 160px;
     display: flex;
@@ -34,12 +44,12 @@
     text-decoration: none;
 }
 
-.footer__nav-link:hover {
-    text-decoration: underline;
-}
-
 .footer__author {
     width: 295px;
     align-self: flex-end;
     margin-top: 80px;
+}
+
+.footer__nav-item:hover {
+    animation: bgColor 5s alternate-reverse 0.2s ;
 }
