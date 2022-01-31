@@ -1,7 +1,25 @@
+@media screen and (min-width: 768px) {
+    .start-working {
+        margin: 20px;
+    }
+}
+@media screen and (min-width: 1080px) {
+    .start-working {
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .start-working {
+        margin: 50px 150px 180px 150px;
+    }
+}
+
 .start-working {
     display: flex;
     flex-direction: column;
-    margin: 50px 150px 180px 150px;
     position: relative;
 }
 
