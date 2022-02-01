@@ -1,6 +1,56 @@
+@media screen and (min-width: 320px) {
+    .contact-us {
+        margin: 80px 20px;
+    }
+
+    .contact-us__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 100%;
+        width: 260px;
+    }
+
+    .contact-us__subtitle {
+        font-size: 20px;
+        line-height: 100%;
+        width: 260px;
+    }
+
+    .contact-us__button-section {
+        flex-direction: column;
+        width: 280px;
+    }
+
+    .contact-us__button {
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .contact-us {
         margin: 80px 20px;
+    }
+
+    .contact-us__title {
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 120%;
+        width: 624px;
+    }
+
+    .contact-us__subtitle {
+        font-size: 24px;
+        line-height: 140%;
+        width: 550px;
+    }
+
+    .contact-us__button-section {
+        flex-direction: row;
+        width: calc(194px*2 + 48px);
+    }
+
+    .contact-us__button {
+        margin: 0;
     }
 }
 
@@ -17,24 +67,16 @@
 .contact-us__title {
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 120%;
     color: #2B2B2B;
-    width: 624px;
     margin: 0;
     padding: 0;
-
 }
 
 .contact-us__subtitle {
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 140%;
     color: #2B2B2B;
-    width: 550px;
     margin: 50px 0 0 0;
 }
 
@@ -42,7 +84,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    width: calc(194px*2 + 48px);
 }
 
 .contact-us__button {
@@ -58,7 +99,6 @@
     box-shadow: none;
     background-color: #E5E5E5;
     border: 1px solid #2B2B2B;
-    margin: 0;
 }
 
 .contact-us__button_yellow {

@@ -1,3 +1,18 @@
+@media screen and (min-width: 320px) {
+    .footer {
+        margin: 20px;
+    }
+
+    .footer__nav {
+        margin-top: 40px;
+    }
+
+    .footer__nav-item {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 100%;
+    }
+}
 @media screen and (min-width: 768px) {
     .footer {
         margin: 80px 20px;
@@ -9,6 +24,16 @@
         grid-template-rows: repeat(3, 40px);
         column-gap: 25px;
         row-gap: 32px;
+    }
+
+    .footer__nav-item {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 120%;
+    }
+
+    .footer__nav {
+        margin-top: 80px;
     }
 }
 @media screen and (min-width: 1080px) {
@@ -60,7 +85,6 @@
 
 .footer__nav {
     display: grid;
-    margin-top: 80px;
     padding: 0;
 }
 
@@ -68,9 +92,6 @@
     list-style: none;
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 120%;
     color: #2B2B2B;
 }
 

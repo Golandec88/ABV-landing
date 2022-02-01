@@ -8,4 +8,8 @@
 @import url("../blocks/info/info.css");
 @import url("../blocks/strength/strength.css");
 @import url("../blocks/contact-us/contact-us.css");
+@import url("../blocks/company/company.css");
+@import url("../blocks/join-us/join-us.css");
+@import url("../blocks/login/login.css");
+@import url("../blocks/login-footer/login-footer.css");
 @import url("../blocks/footer/footer.css");

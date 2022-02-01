@@ -1,3 +1,116 @@
+@media screen and (min-width: 320px){
+    .header {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header__logo {
+        position: relative;
+        width: 100px;;
+        height: 60px;
+    }
+
+    .header__burger-open-icon, .header__burger-close-icon{
+        width: 30px;
+        height: 30px;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    
+    .header__burger-icon {
+        display: none
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__burger-menu {
+        background-color: #00000096;
+        max-width: 280px;
+        max-height: 100%;
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s linear;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        z-index: 2;
+    }
+    .header__burger-menu_opened {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .header__burger-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 22px;
+        margin: 0;
+        box-sizing: border-box;
+        width: 300px;
+        height: 100%;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: scroll;
+    }
+
+    .header__burger-close-icon {
+        margin: 0 18px 0 40px;
+        align-self: flex-end;
+        cursor: pointer;
+    }
+
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        margin: 60px 0 20px 0;
+    }
+
+    .header__nav-item_yellow_bordered {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .header__lang {
+        display: flex;
+        justify-self: flex-end;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header__nav .header__nav-item {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 120%;
+        margin-bottom: 20px;
+
+    }
+
+    .header__lang .header__nav-item_button, .header__lang .header__nav-item {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        margin: 0;
+    }
+    .header__nav .header__nav-item {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+    }
+}
 
 @media screen and (min-width: 768px){
     .header {
@@ -16,36 +129,15 @@
         cursor: pointer;
     }
 
-    .header__burger-icon {
-        display: none
-    }
-
-    .header__menu {
-        display: none;
-    }
-
     .header__burger-menu {
         background-color: #00000096;
         max-width: 1920px;
-        max-height: 100%;
-        position: fixed;
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.2s linear;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        z-index: 2;
-      }
+    }
     
-      .header__burger-menu_opened {
+    .header__burger-menu_opened {
         visibility: visible;
         opacity: 1;
-      }
+    }
     
     .header__burger-box {
         display: flex;
@@ -56,7 +148,7 @@
         margin: 0;
         box-sizing: border-box;
         width: 500px;
-        height: 100%;
+        height: 100vh;
         box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
         position: absolute;
         top: 0;
@@ -72,14 +164,14 @@
     .header__nav {
         display: flex;
         flex-direction: column;
-        margin: 60px 0 20% 0;
+        margin: 60px 0 0 0;
     }
 
     .header__nav-item_yellow_bordered {
         font-weight: 500;
-        font-size: 34px;
-        line-height: 120%;
-        margin: 60% 0 20px 0;
+        font-size: 24px;
+        line-height: 100%;
+        margin: 0 0 20px 0;
     }
 
     .header__lang {
@@ -91,10 +183,9 @@
 
     .header__nav .header__nav-item {
         font-weight: 500;
-        font-size: 34px;
-        line-height: 120%;
-        margin-bottom: 40px;
-
+        font-size: 24px;
+        line-height: 100%;
+        margin-bottom: 20px;
     }
 
     .header__lang .header__nav-item_button, .header__lang .header__nav-item {
@@ -283,6 +374,7 @@
 .header__nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0;
     position: relative;
 }
@@ -304,7 +396,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     list-style: none;

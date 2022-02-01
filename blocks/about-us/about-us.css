@@ -1,3 +1,33 @@
+@media screen and (min-width: 320px){
+    .about-us {
+        padding: 17px 20px;
+    }
+    
+    .about-us__title {
+        margin: 35px 0 0 0;
+        width: 300px;
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    .about-us__text {
+        font-size: 20px;
+        line-height: 25px;
+        width: 300px;
+    }
+
+    .about-us__button-section {
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    .about-us__button {
+        margin-bottom: 10px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .about-us {
         padding: 27px 40px;
@@ -5,6 +35,20 @@
 
     .about-us__title {
         width: 500px;
+        font-size: 60px;
+        line-height: 120%;
+    }
+
+    .about-us__text {
+        font-size: 24px;
+        line-height: 29px;
+        width: 794px;
+    }
+
+    .about-us__button-section {
+        flex-direction: row;
+        margin-top: 80px;
+        width: calc(194px*2 + 48px);
     }
 }
 
@@ -40,7 +84,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-
     position: relative;
     background-image: url("https://images.unsplash.com/photo-1642553517785-f1daee6ba12d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80");
 }
@@ -59,8 +102,6 @@
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 60px;
-    line-height: 120%;
     color: #2B2B2B;
     text-align: center;
     align-self: center;
@@ -71,14 +112,11 @@
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
     color: #000000;
     max-width: 620px;
     margin: 0;
     white-space: pre-line;
     text-align: center;
-    width: 794px;
     align-self: center;
     position: relative;
 }
@@ -86,8 +124,6 @@
 .about-us__button-section {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
-    width: calc(194px*2 + 48px);
     position: relative;
     align-content: center;
     align-self: center;
