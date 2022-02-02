@@ -35,7 +35,7 @@
     }
 
     .start-working__button {
-        margin: 35px 0 0 375px;
+        margin: 0;
     }
 }
 
@@ -49,12 +49,23 @@
 
 @media screen and (min-width: 1440px){
     .start-working {
-        margin: 50px 150px 180px 150px;
+        margin: 80px 160px 45px 160px;
+    }
+
+    .start-working__text {
+        margin: 48px  0 0 0;
     }
 }
 
 .start-working {
-    display: flex;
+    display: grid;
+    grid-template-columns: 598px 2fr;
+    column-gap: 220px;
+    grid-template-rows: 75px 150px 100px;
+    grid-template-areas: "title img"
+                        "subtitle img"
+                        "button img"
+                        "_ img";
     flex-direction: column;
     position: relative;
 }
@@ -63,6 +74,8 @@
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     color: #2B2B2B;
+    margin: 0;
+    grid-area: title;
 }
 
 .start-working__text {
@@ -70,6 +83,7 @@
     font-style: normal;
     font-weight: normal;
     color: #2B2B2B;
+    grid-area: subtitle;
 }
 
 .start-working__button {
@@ -90,6 +104,7 @@
     align-items: center;
     z-index: 0;
     overflow: hidden;
+    grid-area: button;
 }
 
 
@@ -123,4 +138,8 @@
 .start-working__button_position {
     position: relative;
     z-index: 1;
+}
+
+.start-working__img {
+    grid-area: img;
 }

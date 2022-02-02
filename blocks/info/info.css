@@ -91,18 +91,14 @@
         font-size: 60px;
         line-height: 72px;
     }
-
-    .info__badge {
-        margin-top: 78px;
-    }
 }
 
 @media screen and (min-width: 1440px) {
     .info {
         grid-template-columns: 624px 484px;
-        column-gap: 176px;
+        column-gap: 185px;
         row-gap: 48px;
-        margin: 27px 60px 80px 60px;
+        margin: 80px 60px;
     }
 
     .info__badge-span_expanded {
@@ -113,9 +109,8 @@
 @media screen and (min-width: 1920px) {
     .info {
         grid-template-columns: 624px 684px;
-        column-gap: 176px;
         row-gap: 48px;
-        margin: 27px 160px 80px 160px;
+        margin: 80px 160px 50px 160px;
     }
 
     .info__badge-span_expanded {

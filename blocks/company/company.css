@@ -1,3 +1,30 @@
+@media screen and (min-width: 320px) {
+    .company {
+        padding: 20px;
+    }
+
+    .company__title {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 100%;
+    }
+
+    .company__subtitle {
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+    .company__img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .company__text {
+        font-size: 24px;
+        line-height: 100%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .company {
         padding: 27px 40px;
@@ -5,6 +32,19 @@
 
     .company__title {
         width: 500px;
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 120%;
+    }
+
+    .company__subtitle {
+        font-size: 24px;
+        line-height: 140%;
+    }
+
+    .company__text {
+        font-size: 24px;
+        line-height: 140%;
     }
 }
 
@@ -16,6 +56,10 @@
     .company__title {
         margin: 35px 0 0 0;
         width: 794px;
+    }
+
+    .company__text {
+        width: 1000px;
     }
 }
 
@@ -33,6 +77,10 @@
     .company__title {
         margin: 0;
     }
+
+    .company__text {
+        width: 1060px;
+    }
 }
 
 
@@ -46,9 +94,6 @@
 .company__title {
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 120%;
     color: #2B2B2B;
     text-align: center;
 }
@@ -57,8 +102,6 @@
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 140%;
     color: #2B2B2B;
     margin: 48px 0 0 0;
 }
@@ -67,15 +110,19 @@
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 140%;
     color: #000000;
-    width: 1060px;
     margin: 0;
     white-space: pre-line;
 }
 
+.company__img-section {
+    overflow: hidden;
+}
+
 .company__img {
     height: 840px;
+    background-position: center;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }

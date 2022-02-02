@@ -1,17 +1,5 @@
-const langRU = ".header__nav-item_bordered__ru";
-const langEN = ".header__nav-item_bordered__eng";
-const langUZ = ".header__nav-item_bordered__uzb";
-const aboutYellow = ".about-us__button_yellow";
-const aboutLight = ".about-us__button_light";
-const startWorking = ".start-working__button";
-const auth = ".header__nav-item_yellow_bordered";
-
-const infoBadge = document.querySelectorAll(".info__badge-item");
-
-const burgerOpenMenu = document.querySelector(".header__burger-open-icon");
-const burgerCloseMenu = document.querySelector(".header__burger-close-icon");
-
-
+import {langRU, langEN, langUZ, aboutYellow, aboutLight, startWorking, auth, infoBadge, burgerOpenMenu, burgerCloseMenu} from "./constants.js"
+import { toggleMenu } from "./functions.js";
 function mouseHandler(btnClass) {
     let btn = document.querySelector(btnClass);
     btn.onmousemove = function (e) {
@@ -44,13 +32,6 @@ function expandSpan() {
 }
 
 expandSpan()
-
-function toggleMenu() {
-    const burgerBox = document.querySelector(".header__burger-menu")
-    const burgerIcon = document.querySelector(".header__burger-open-icon")
-    burgerBox.classList.toggle("header__burger-menu_opened")
-    burgerIcon.classList.toggle("header__burger-icon")
-}
 
 burgerOpenMenu.addEventListener("click", () => {
     toggleMenu()
