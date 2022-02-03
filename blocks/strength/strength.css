@@ -1,22 +1,29 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 360px) {
     .strength {
-        margin: 50px 20px;
+        margin: 40px 16px 27px 16px;
     }
 
     .strength__title {
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 52px;
+        font-size: 32px;
+        line-height: 120%;
+        margin: 0 0 24px 0;
     }
 
     .strength__nav {
         display: flex;
         flex-direction: column;
-        width: 280px;
+        width: 328px;
     }
 
     .strength__nav-item {
-        width: 278px;
+        width: 328px;
+        height: 416px;
+        grid-template-rows: 153px 40px 160px 64px;
+        grid-template-columns: 328px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        border: none;
         border-bottom: 1px solid #2B2B2B;
     }
 
@@ -28,26 +35,65 @@
         width: 300px;
     }
 
+    .strength__nav-item-title {
+        font-size: 32px;
+        line-height: 120%;
+    }
+
     .strength__nav-item-text {
-        margin-top: 15px;
+        margin: 15px 0 0 0;
         font-size: 16px;
         line-height: 100%;
         width: 278px;
+
     }
 
     .strength__nav-item-button {
         margin-bottom: 10px;
+        width: 146px;
+        height: 38px;
+    }
+
+    .strength__list {
+        display: flex;
+        flex-direction: column;
     }
 
     .strength__list-title {
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 100%;
+        font-size: 32px;
+        line-height: 120%;
+        margin: 24px 0 0 0;
+    }
+
+    .strength__list-text {
+        margin: 12px 0;
+        font-size: 16px;
+        line-height: 120%;
     }
     
     .strength__list-images {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        width: 328px;
+        height: 320px;
+    }
+
+    .strength__list-images-item {
+        width: 143px;
+        height: 143px;
+    }
+
+    .strength__list-images-item:first-child {
+        margin: 0 0 24px 0;
+    }
+
+    .strength__list-images-item:nth-child(3n){
+        margin: 0 0 24px 42px;
+    }
+
+    .strength__list-images-item:nth-child(4n) {
+        margin: 0 0 0 42px;
     }
 }
 
@@ -56,16 +102,12 @@
         font-weight: 500;
         font-size: 60px;
         line-height: 120%;
+        margin: 0 0 50px 0;
     }
     
     .strength__nav {
         flex-direction: row;
         width: 100%;
-    }
-
-    .strength__nav-item-image {
-        width: 90%;
-        height: 90%;
     }
 
     .strength__nav-item {
@@ -136,11 +178,6 @@
         justify-items: center;
     }
 
-    .strength__nav-item-image {
-        width: 80%;
-        height: 80%;
-    }
-
     .strength__nav-item-text {
         margin: 24px 46px 15px 46px;
     }
@@ -151,30 +188,38 @@
     }
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1366px){
     .strength {
-        margin: 100px 160px 80px 160px;
+        margin: 60px 120px;
     }
     
+    .strength__title {
+        font-size: 40px;
+        line-height: 120%;
+    }
+
     .strength__nav-item {
-        height: 594px;
-        grid-template-rows: 270px 50px 200px auto;
-        grid-template-columns: 390px;
+        height: 418px;
+        grid-template-rows: 165px 46px 104px 97px;
+        grid-template-columns: 375px;
     }
 
     .strength__nav-item-text {
-        margin: 24px 96px 24px 96px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 120%;
+        width: 274px;
     }
 
     .strength__list {
         display: grid;
         grid-template-areas: "title img"
                          "subtitle img";
-        grid-template-columns: 356px auto;
-        grid-template-rows: 72px 60px;
-        column-gap: 148px;
+        grid-template-columns: 343px 750px;
+        grid-template-rows: repeat(2, 60px);
+        column-gap: 32px;
         row-gap: 24px;
-        margin-top: 48px;
+        margin-top: 36px;
     }
 
     .strength__list-text {
@@ -183,8 +228,25 @@
 
     .strength__nav-item-title {
         font-weight: 500;
-        font-size: 48px;
+        font-size: 36px;
         line-height: 120%;
+    }
+
+    .strength__nav-item-button {
+        width: 170px;
+        height: 44px;
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .strength__list-title {
+        font-size: 40px;
+        line-height: 120%;
+    }
+
+    .strength__list-images-item {
+        width: 148px;
+        height: 148px;
     }
 }
 
@@ -217,6 +279,23 @@
         row-gap: 24px;
         margin-top: 48px;
     }
+
+    .strength__nav-item-button {
+        width: 194px;
+        height: 52px;
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .strength__list-text {
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .strength__list-images-item {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 .strength {
@@ -228,7 +307,6 @@
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     color: #2B2B2B;
-    margin: 0 0 50px 0;
 }
 
 .strength__nav {
@@ -236,6 +314,7 @@
     border: 1px solid #2B2B2B;
     margin: 0;
     padding: 0;
+    border-radius: 8px;
 }
 
 .strength__nav-item {
@@ -244,6 +323,8 @@
 
 .strength__nav-item-img-block {
     width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .strength__nav-item-image {
@@ -271,14 +352,10 @@
 }
 
 .strength__nav-item-button {
-    width: 194px;
-    height: 52px;
     background: #FDB914;
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 140%;
     color: #000000;
     outline: none;
     border: none;
@@ -297,23 +374,17 @@
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 120%;
     color: #000000;
     grid-area: subtitle;
 }
 
 .strength__list-images {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
     grid-area: img;
     margin: 0;
     padding: 0;
 }
 .strength__list-images-item {
-    width: 150px;
-    height: 150px;
     border: 1px solid #2B2B2B;
     list-style: none;
+    border-radius: 8px;
 }

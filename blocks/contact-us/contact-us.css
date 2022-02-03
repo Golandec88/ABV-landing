@@ -1,28 +1,35 @@
 @media screen and (min-width: 320px) {
     .contact-us {
-        margin: 80px 20px;
+        margin: 40px 16px 20px 16px;
     }
 
     .contact-us__title {
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 100%;
-        width: 260px;
+        font-size: 32px;
+        line-height: 120%;
+        width: 261px;
+        margin: 0;
     }
 
     .contact-us__subtitle {
-        font-size: 20px;
-        line-height: 100%;
+        font-size: 16px;
+        line-height: 120%;
         width: 260px;
+        margin: 12px 0 0 0;
     }
 
     .contact-us__button-section {
-        flex-direction: column;
-        width: 280px;
+        width: 328px;
+        margin-top: 44px;
     }
 
     .contact-us__button {
         margin-bottom: 20px;
+        width: 146px;
+        height: 38px;
+    }
+
+    .contact-us__button_light {
+        margin-left: 36px;
     }
 }
 
@@ -59,6 +66,60 @@
         margin: 80px 160px 80px 160px;
     }
 }
+
+@media screen and (min-width: 1336px){
+    .contact-us {
+        margin: 60px 120px;
+    }
+
+    .contact-us__title {
+        font-size: 40px;
+        line-height: 120%;
+        width: 416px;
+        margin: 0 0 60px 0;
+    }
+
+    .contact-us__subtitle {
+        margin: 0;
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .contact-us__button-section {
+        margin-top: 36px;
+    }
+
+    .contact-us__button {
+        width: 170px;
+        height: 44px;
+    }
+
+    .contact-us__button_light {
+        margin-left: 48px;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .contact-us__title {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-us__button-section {
+        margin-top: 50px;
+        justify-content: space-between;
+    }
+
+    .contact-us__button {
+        width: 194px;
+        height: 52px;
+    }
+
+    .contact-us__button_light {
+        margin: 0;
+    }
+}
+
 .contact-us {
     display: flex;
     flex-direction: column;
@@ -68,8 +129,6 @@
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     color: #2B2B2B;
-    margin: 0;
-    padding: 0;
 }
 
 .contact-us__subtitle {
@@ -77,18 +136,13 @@
     font-style: normal;
     font-weight: normal;
     color: #2B2B2B;
-    margin: 50px 0 0 0;
 }
 
 .contact-us__button-section {
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
 }
 
 .contact-us__button {
-    width: 194px;
-    height: 52px;
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
