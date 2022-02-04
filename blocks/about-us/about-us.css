@@ -1,6 +1,7 @@
 @media screen and (min-width: 360px){
     .about-us__bg {
         padding: 40px 16px 30px 16px;
+        background: linear-gradient(180deg, rgba(255,255,255,0.9136029411764706) 5%, rgba(255,255,255,0.9500175070028011) 35%, rgba(255,255,255,0.7063200280112045) 51%, rgba(255,255,255,0.4066001400560224) 76%, rgba(255,255,255,0) 86%);
     }
     
     .about-us__title {
@@ -37,6 +38,7 @@
 @media screen and (min-width: 768px) {
     .about-us__bg {
         padding: 27px 40px;
+        background: linear-gradient(90deg, rgba(255,255,255,1) 2%, rgba(255,255,255,0.8) 40%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0) 86%);
     }
 
     .about-us__title {
@@ -75,12 +77,13 @@
     }
 
     .about-us__bg {
-        padding: 179px 120px 60px 120px;
+        padding: 170px 120px 60px 120px;
     }
 
     .about-us__title {
         font-size: 48px;
         line-height: 120%;
+        text-align: left;
         margin: 0;
     }
 
@@ -88,7 +91,9 @@
         font-size: 20px;
         line-height: 24px;
         width: 629px;
-        height : 120px;
+        height: 120px;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .about-us__button {
@@ -132,6 +137,7 @@
 
     .about-us__button-section {
         justify-content: space-between;
+        margin-top: 104px;
     }
 }
 
@@ -148,7 +154,6 @@
 }
 
 .about-us__bg {
-    background: linear-gradient(90deg, rgba(255,255,255,1) 2%, rgba(255,255,255,0.8) 40%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0) 86%);
     width: 100vw;
     height: 100%;
 }

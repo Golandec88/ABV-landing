@@ -1,6 +1,8 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 360px) {
     .contact-us {
-        margin: 40px 16px 20px 16px;
+        display: flex;
+        flex-direction: column;
+        margin: 40px 16px 14px 16px;
     }
 
     .contact-us__title {
@@ -31,10 +33,28 @@
     .contact-us__button_light {
         margin-left: 36px;
     }
+
+    .contact-us__img-section {
+        overflow: hidden;
+        width: 328px;
+    }
+
+    .contact-us__img {
+        background-position: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .contact-us {
+        display: grid;
+        grid-template-areas: "title img"
+        "subtitle img"
+        "buttons img";
+        grid-template-rows: 196px 70px 93px;
+        grid-template-columns: 546px 600px;
         margin: 80px 20px;
     }
 
@@ -43,21 +63,36 @@
         font-size: 60px;
         line-height: 120%;
         width: 624px;
+        grid-area: title;
     }
 
     .contact-us__subtitle {
         font-size: 24px;
         line-height: 140%;
         width: 550px;
+        grid-area: subtitle;
     }
 
     .contact-us__button-section {
         flex-direction: row;
         width: calc(194px*2 + 48px);
+        grid-area: buttons;
     }
 
     .contact-us__button {
         margin: 0;
+    }
+
+    .contact-us__img-section {
+        grid-area: img;
+        overflow: hidden;
+    }
+
+    .contact-us__img {
+        background-position: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -100,14 +135,31 @@
 }
 
 @media screen and (min-width: 1920px){
+    .contact-us {
+        margin: 80px 160px 40px 160px;
+        grid-template-rows: 208px 114px 181px;;
+        grid-template-columns: 701px 911px;
+    }
+
     .contact-us__title {
         margin: 0;
         padding: 0;
+        font-size: 60px;
+        line-height: 120%;
+        grid-area: title;
+    }
+
+    .contact-us__subtitle {
+        margin-top: 48px;
+        font-size: 24px;
+        line-height: 140%;
+        grid-area: subtitle;
     }
 
     .contact-us__button-section {
         margin-top: 50px;
         justify-content: space-between;
+        grid-area: buttons;
     }
 
     .contact-us__button {
@@ -118,11 +170,11 @@
     .contact-us__button_light {
         margin: 0;
     }
-}
 
-.contact-us {
-    display: flex;
-    flex-direction: column;
+    .contact-us__img-section {
+        width: 100%;
+    
+    }
 }
 
 .contact-us__title {

@@ -65,7 +65,22 @@
 
 @media screen and (min-width: 1366px) {
     .company {
-        padding: 27px 60px 80px 60px;
+        padding: 60px 60px 40px 60px;
+    }
+
+    .company__title {
+        margin: 0;
+    }
+
+    .company__img-section {
+        height: 700px;
+    }
+
+    .company__text {
+        width: 1060px;
+        font-size: 20px;
+        line-height: 120%;
+        margin: 0 0 28px 0;
     }
 }
 
@@ -80,6 +95,17 @@
 
     .company__text {
         width: 1060px;
+        font-size: 24px;
+        line-height: 140%;
+    }
+
+    .company__img {
+        height: 900px;
+    }
+
+    .company__img-section {
+        height: 840px;
+        overflow: hidden;
     }
 }
 
@@ -111,7 +137,6 @@
     font-style: normal;
     font-weight: normal;
     color: #000000;
-    margin: 0;
     white-space: pre-line;
 }
 
@@ -120,9 +145,7 @@
 }
 
 .company__img {
-    height: 840px;
     background-position: center;
     object-fit: cover;
     width: 100%;
-    height: 100%;
 }

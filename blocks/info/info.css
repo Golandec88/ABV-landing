@@ -145,7 +145,8 @@
     .info {
         grid-template-columns: 624px 684px;
         row-gap: 48px;
-        margin: 80px 160px 50px 160px;
+        column-gap: 185px;
+        margin: 95px 160px 50px 160px;
     }
 
     .info__badge-span {
@@ -158,6 +159,13 @@
 
     .info__title {
         margin: 0 0 48px 0;
+        font-size: 60px;
+        line-height: 72px;
+    }
+
+    .info__text {
+        font-size: 24px;
+        line-height: 29px;
     }
 
     .info__badge-item-img {

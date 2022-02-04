@@ -1,0 +1,39 @@
+@media screen and (min-width:1920px) {
+    .services-page {
+        padding: 80px 160px;
+        align-items: center;
+    }
+
+    .services-page__title {
+        font-size: 60px;
+        line-height: 120%;
+        margin: 0;
+    }
+
+    .services-page__subtitle {
+        font-size: 24px;
+        line-height: 140%;
+        margin: 50px 0 0 0;
+        text-align: center;
+    }
+}
+
+.services-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-page__title {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #2b2b2b;
+}
+
+.services-page__subtitle {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #2b2b2b;
+    white-space: pre;
+}

@@ -1,0 +1,106 @@
+@media screen and (min-width: 1920px) {
+    .consulting {
+        margin: 80px 160px;
+        grid-template-columns: 624px 800px;
+        grid-template-rows:  167px 246px 284px 173px;
+        column-gap: 176px;
+    }
+
+    .consulting__title {
+        font-size: 60px;
+        line-height: 120%;
+        grid-area: title;
+        margin: 0;
+        width: 624px;
+    }
+
+    .consulting__subtitle {
+        font-size: 24px;
+        line-height: 140%;
+        grid-area: subtitle;
+        margin: 23px 0 0 0;
+    }
+
+    .consulting__text {
+        font-size: 24px;
+        line-height: 140%;
+        margin: 25px 0 0 0;
+        grid-area: text-area;
+    }
+
+    .consulting__text-area-1 {
+        grid-area: bold1;
+    }
+
+    .consulting__text-area-2 {
+        grid-area: bold2;
+    }
+
+    .consulting__text_bold {
+        font-size: 32px;
+        line-height: 140%;
+        margin: 0;
+    }
+
+    .consulting__list-item {
+        font-size: 24px;
+        line-height: 140%;
+    }
+
+    .consulting__img-section {
+        width: 624px;
+        grid-area: img;
+    }
+}
+
+.consulting {
+    display: grid;
+    grid-template-areas: "title title"
+    "subtitle text-area"
+    "img bold1"
+    "img bold2";
+}
+
+.consulting__title {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #2B2B2B;
+}
+
+.consulting__subtitle {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #2B2B2B;
+}
+
+.consulting__text {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #2B2B2B;
+}
+
+.consulting__list-item {
+    font-style: normal;
+    font-weight: normal;
+    color: #2B2B2B;
+}
+
+.consulting__text_bold {
+    font-style: normal;
+    font-weight: 500;
+    color: #2B2B2B;
+}
+
+.consulting__img-section {
+    overflow: hidden;
+}
+
+.consulting__img {
+    object-position: top;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}

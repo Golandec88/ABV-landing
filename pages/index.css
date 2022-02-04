@@ -14,3 +14,8 @@
 @import url("../blocks/login/login.css");
 @import url("../blocks/login-footer/login-footer.css");
 @import url("../blocks/footer/footer.css");
+
+@import url("../blocks/services-page/services-page.css");
+@import url("../blocks/consulting/consulting.css");
+@import url("../blocks/training/training.css");
+@import url("../blocks/customization/customization.css");

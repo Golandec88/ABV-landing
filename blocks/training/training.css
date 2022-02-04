@@ -1,0 +1,109 @@
+@media screen and (min-width: 1920px) {
+    .training {
+        margin: 80px 160px;
+        grid-template-columns: 624px 800px;
+        grid-template-rows:  123px 319px 285px 173px;
+        column-gap: 176px;
+    }
+
+    .training__title {
+        font-size: 60px;
+        line-height: 120%;
+        grid-area: title;
+        margin: 0;
+        width: 624px;
+    }
+
+    .training__subtitle {
+        font-size: 24px;
+        line-height: 140%;
+        grid-area: subtitle;
+        margin: 0;
+    }
+
+    .training__text {
+        font-size: 24px;
+        line-height: 140%;
+        margin: 0;
+        grid-area: text-area;
+    }
+
+    .training__text_bold {
+        font-size: 32px;
+        line-height: 140%;
+    }
+
+    .training__list-item {
+        font-size: 24px;
+        line-height: 140%;
+    }
+
+    .training__img-section {
+        width: 100%;
+        grid-area: img;
+    }
+
+    .training__text-area-1 {
+        grid-area: bold1;
+    }
+
+    .training__text-area-2 {
+        grid-area: bold2;
+    }
+
+    .training__text_bold {
+        margin: 0;
+    }
+}
+
+.training {
+    display: grid;
+    grid-template-areas: "title title"
+    "subtitle text-area"
+    "img bold1"
+    "img bold2";
+}
+
+.training__title {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #2B2B2B;
+}
+
+.training__subtitle {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #2B2B2B;
+}
+
+.training__text {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #2B2B2B;
+}
+
+.training__list-item {
+    font-style: normal;
+    font-weight: normal;
+    color: #2B2B2B;
+}
+
+.training__text_bold {
+    font-style: normal;
+    font-weight: 500;
+    color: #2B2B2B;
+}
+
+.training__img-section {
+    overflow: hidden;
+}
+
+.training__img {
+    object-position: top;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}

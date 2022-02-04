@@ -7,56 +7,173 @@
     <title>Услуги</title>
 </head>
 <body class="page">
-    <main class="main">
-        <section class="about-us">
-            <header class="header">
-                <img class="header__logo" src="./images/logoabv.svg" alt="ABV Logo">
-                <div class="header__menu">
-                    <ul class="header__nav">
-                        <li class="header__nav-item"><a href="./index.html" class="nav-button">Главная</a></li>
-                        <li class="header__nav-item"><a href="./about-us.html" class="nav-button">О нас</a></li>
-                        <li class="header__nav-item"><a href="./services.html" class="nav-button">Услуги</a></li>
-                        <li class="header__nav-item"><button class="nav-button" type="button">Тарифы</button></li>
-                        <li class="header__nav-item"><button class="nav-button" type="button">Контакты</button></li>
-                        <li class="header__nav-item header__nav-item_button"><button class="nav-button">Войти</button></li>
-                    </ul>
-                    <ul class="header__auth">
-                        <li class="header__nav-item_button header__nav-item_yellow_bordered"><button class="nav-button"><span class="header__nav-item_bordered_position">Зарегистрироваться</span></button></li>
-                    </ul>
-                    <ul class="header__lang">
-                        <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__ru"><span class="header__nav-item_bordered_position"><button class="nav-button">RU</button></span></li>
-                        <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__uzb"><span class="header__nav-item_bordered_position"><button class="nav-button">UZB</button></span></li>
-                        <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__eng"><span class="header__nav-item_bordered_position"><button class="nav-button">ENG</button></span></li>
-                    </ul>
+    <header class="header">
+        <img class="header__logo" src="./images/logoabv.svg" alt="ABV Logo">
+        <div class="header__menu">
+            <ul class="header__nav">
+                <li class="header__nav-item"><a href="./index.html" class="nav-button">Главная</a></li>
+                <li class="header__nav-item"><a href="./about-us.html" class="nav-button">О нас</a></li>
+                <li class="header__nav-item"><a href="./services.html" class="nav-button">Услуги</a></li>
+                <li class="header__nav-item"><button class="nav-button" type="button">Тарифы</button></li>
+                <li class="header__nav-item"><button class="nav-button" type="button">Контакты</button></li>
+                <li class="header__nav-item header__nav-item_button"><button class="nav-button">Войти</button></li>
+            </ul>
+            <ul class="header__auth">
+                <li class="header__nav-item_button header__nav-item_yellow_bordered"><button class="nav-button"><span class="header__nav-item_bordered_position">Зарегистрироваться</span></button></li>
+            </ul>
+            <ul class="header__lang">
+                <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__ru"><span class="header__nav-item_bordered_position"><button class="nav-button">RU</button></span></li>
+                <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__uzb"><span class="header__nav-item_bordered_position"><button class="nav-button">UZB</button></span></li>
+                <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__eng"><span class="header__nav-item_bordered_position"><button class="nav-button">ENG</button></span></li>
+            </ul>
 
-                    <select name="lang" id="lang" class="header__select">
-                        <option value="ru">RU</option>
-                        <option value="eng">ENG</option>
-                        <option value="uz">UZB</option>
-                    </select>
-                </div>
-                <img class="header__burger-open-icon" src="images/menu.svg">
-                <div class="header__burger-menu">
-                    <div class="header__burger-box">
-                        <img class="header__burger-close-icon" src="images/close.svg">
-                        <ul class="header__nav">
-                            <li class="header__nav-item"><button class="nav-button">Главная</button></li>
-                            <li class="header__nav-item"><button class="nav-button" type="button">О нас</button></li>
-                            <li class="header__nav-item"><button class="nav-button" type="button">Услуги</button></li>
-                            <li class="header__nav-item"><button class="nav-button" type="button">Тарифы</button></li>
-                            <li class="header__nav-item"><button class="nav-button" type="button">Контакты</button></li>
-                            <li class="header__nav-item header__nav-item_button"><button class="nav-button">Войти</button></li>
-                        </ul>
-                        <li class="header__nav-item_button header__nav-item_yellow_bordered"><button class="nav-button"><span class="header__nav-item_bordered_position">Зарегистрироваться</span></button></li>
-                        <ul class="header__lang">
-                            <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__ru"><span class="header__nav-item_bordered_position"><button class="nav-button">RU</button></span></li>
-                            <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__eng"><span class="header__nav-item_bordered_position"><button class="nav-button">UZ</button></span></li>
-                            <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__uzb"><span class="header__nav-item_bordered_position"><button class="nav-button">EN</button></span></li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
+            <select name="lang" id="lang" class="header__select">
+                <option value="ru">RU</option>
+                <option value="eng">ENG</option>
+                <option value="uz">UZB</option>
+            </select>
+        </div>
+        <img class="header__burger-open-icon" src="images/menu.svg">
+        <div class="header__burger-menu">
+            <div class="header__burger-box">
+                <img class="header__burger-close-icon" src="images/close.svg">
+                <ul class="header__nav">
+                    <li class="header__nav-item"><button class="nav-button">Главная</button></li>
+                    <li class="header__nav-item"><button class="nav-button" type="button">О нас</button></li>
+                    <li class="header__nav-item"><button class="nav-button" type="button">Услуги</button></li>
+                    <li class="header__nav-item"><button class="nav-button" type="button">Тарифы</button></li>
+                    <li class="header__nav-item"><button class="nav-button" type="button">Контакты</button></li>
+                    <li class="header__nav-item header__nav-item_button"><button class="nav-button">Войти</button></li>
+                </ul>
+                <li class="header__nav-item_button header__nav-item_yellow_bordered"><button class="nav-button"><span class="header__nav-item_bordered_position">Зарегистрироваться</span></button></li>
+                <ul class="header__lang">
+                    <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__ru"><span class="header__nav-item_bordered_position"><button class="nav-button">RU</button></span></li>
+                    <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__eng"><span class="header__nav-item_bordered_position"><button class="nav-button">UZ</button></span></li>
+                    <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__uzb"><span class="header__nav-item_bordered_position"><button class="nav-button">EN</button></span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="services-page">
+            <h1 class="services-page__title">Сервисы</h1>
+            <h2 class="services-page__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 
+                1500s, when an unknown printer</h2>
+        </section>
+        <section class="consulting">
+            <h2 class="consulting__title">Consulting is simply 
+                text of the  typesetting</h2>
+            <p class="consulting__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            </p>
+            <p class="consulting__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+            <div class="consulting__text-area-1">
+                <p class="consulting__text_bold">Lorem Ipsum is simply dummy</p>
+                <ul class="consulting__list">
+                    <li class="consulting__list-item">It has survived not</li>
+                    <li class="consulting__list-item">Lorem Ipsum is simply dummy text of the printing</li>
+                    <li class="consulting__list-item">It has survived not only five centuries</li>
+                    <li class="consulting__list-item">Electronic typesetting</li>
+                    <li class="consulting__list-item">When an unknown printer took a galley</li>
+                </ul>
+            </div>
+            <div class="consulting__text-area-2">
+                <p class="consulting__text_bold">It to make a type specimen book</p>
+                <ul class="consulting__list">
+                    <li class="consulting__list-item">It has survived not</li>
+                    <li class="consulting__list-item">Lorem Ipsum is simply dummy text of the printing</li>
+                    <li class="consulting__list-item">It has survived not only five centuries</li>
+                </ul>
+            </div>
+            <div class="consulting__img-section"><img class="consulting__img" alt="Консультация" src="./images/consulting1.svg"></div>
+        </section>
+        <section class="training">
+            <h2 class="training__title">training is simply</h2>
+            <p class="training__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p class="training__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <div class="training__text-area-1">
+                <p class="training__text_bold">Lorem Ipsum is simply dummy</p>
+                <ul class="training__list">
+                    <li class="training__list-item">It has survived not</li>
+                    <li class="training__list-item">Lorem Ipsum is simply dummy text of the printing</li>
+                    <li class="training__list-item">It has survived not only five centuries</li>
+                    <li class="training__list-item">Electronic typesetting</li>
+                    <li class="training__list-item">When an unknown printer took a galley</li>
+                </ul>
+            </div>
+            <div class="training__text-area-2">
+                <p class="training__text_bold">It to make a type specimen book</p>
+                <ul class="training__list">
+                    <li class="training__list-item">It has survived not</li>
+                    <li class="training__list-item">Lorem Ipsum is simply dummy text of the printing</li>
+                    <li class="training__list-item">It has survived not only five centuries</li>
+                </ul>
+            </div>
+            <div class="training__img-section"><img class="training__img" alt="Стажер" src="images/consulting2.svg"></div>
+        </section>
+        <section class="customization">
+            <h2 class="customization__title">customization is simply</h2>
+            <p class="customization__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            </p>
+            <p class="customization__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+            </p>
+            <div class="customization__text-area-1">
+                <p class="customization__text_bold">Lorem Ipsum is simply dummy</p>
+                <ul class="customization__list">
+                    <li class="customization__list-item">It has survived not</li>
+                    <li class="customization__list-item">Lorem Ipsum is simply dummy text of the printing</li>
+                    <li class="customization__list-item">It has survived not only five centuries</li>
+                    <li class="customization__list-item">Electronic typesetting</li>
+                    <li class="customization__list-item">When an unknown printer took a galley</li>
+                </ul>
+            </div>
+            <div class="customization__text-area-2">
+            <p class="customization__text_bold">It to make a type specimen book</p>
+            <ul class="customization__list">
+                <li class="customization__list-item">It has survived not</li>
+                <li class="customization__list-item">Lorem Ipsum is simply dummy text of the printing</li>
+                <li class="customization__list-item">It has survived not only five centuries</li>
+            </ul>
+            </div>
+            <div class="customization__img-section"><img class="customization__img" alt="Работа за компьютером" src="images/consulting3.svg"></div>
+        </section>
+        <section class="contact-us">
+            <h3 class="contact-us__title">Связаться с нами</h3>
+            <p class="contact-us__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the typesetting industry. Lorem Ipsum has been the </p>
+            <div class="contact-us__img-section"><img class="contact-us__img" src="./images/5 illustration.svg" alt="Колл-центр"></div>
+            <div class="contact-us__button-section">
+                <button type="button" class="contact-us__button contact-us__button_yellow nav-button">Lorem Ipsum</button>
+                <button type="button" class="contact-us__button contact-us__button_light nav-button">Lorem Ipsum</button>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__section">
+            <img class="footer__logo" src="./images/footer-icon.svg" alt="ABV Logo">
+            <ul class="footer__nav">
+                <li class="footer__nav-item"><a  class="footer__nav-link" href="#" target="_blank">Главная</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">О нас</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Тарифы</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Услуги</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Сервисы</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Связаться с нами</a></li>
+            </ul>
+            <div class="footer__info">
+                <h3 class="footer__info-title">Контакты</h3>
+                <p class="footer__info-subtitle">Grand Trade бизнес центр</p>
+                <p class="footer__info-adress">Узбекистан г.Ташкент, ул. Афросиаб</p>
+                <p class="footer__info-adress">Ориентир: метро Айбек</p>
+                <p class="footer__info-email">abvabv@gmail.com</p>
+                <p class="footer__info-email">abvb2bspace@gmail.com</p>
+                <p class="footer__info-contacts">+998 90 333 33 33</p>
+                <p class="footer__info-contacts">+998 90 323 32 23</p>
+                <p class="footer__info-contacts">+998 71 233 35 53</p>
+
+            </div>
+        </div>
+        <div class="footer__map" style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a href="https://yandex.uz/maps/10335/tashkent/house/YkAYdAFpSkAFQFprfX9xcHRjZw==/?ll=69.270718%2C41.300116&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Афросиаб, 4Б на карте Ташкента, ближайшее метро Айбек — Яндекс.Карты</a><iframe class="footer__iframe" src="https://yandex.uz/map-widget/v1/-/CCU5aSReTC" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    </footer>
 </body>
 </html>
