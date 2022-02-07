@@ -199,8 +199,8 @@
 @media screen and (min-width: 1080px){
     .header {
         position: relative;
-        padding: 27px 160px;
-        justify-content: flex-start;
+        padding: 2.5% 10%;
+        justify-content: space-evenly;
     }
 
     .header__logo {
@@ -267,7 +267,8 @@
 
 @media screen and (min-width: 1366px) {
     .header {
-        padding: 22px 120px;
+        padding: 2% 8%;
+        justify-content: space-between;
     }
 
     .header__logo {
@@ -332,10 +333,15 @@
 
 @media screen and (min-width: 1920px) {
     .header {
-        padding: 28px 160px;
+        padding: 1.5% 8%;
     }
+
     .header__nav {
         margin: 0 0 0 80px;
+    }
+
+    .header__menu {
+        justify-content: space-between;
     }
 
     .header__lang {
@@ -391,6 +397,7 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .header__nav {

@@ -1,12 +1,13 @@
 @media screen and (min-width: 360px) {
     .start-working {
         margin: 40px 16px;
-        grid-template-columns: 330px;
-        grid-template-rows: 56px 220px 100px 45px;
+        grid-template-columns: 98%;
+        grid-template-rows: 21% 49% 23% 3%;
         grid-template-areas: "title"
                             "img"
                             "subtitle"
                             "button";
+
     }
 
     .start-working__title {
@@ -37,6 +38,10 @@
 }
 @media screen and (min-width: 768px) {
     .start-working {
+        margin: 3% 6% 4% 6%;
+        grid-template-columns: 30% 40%;
+        column-gap: 123px;
+        grid-template-rows: 10em 8em 10em;
         margin: 20px;
         justify-content: center;
         align-items: center;
@@ -48,14 +53,14 @@
 
     .start-working__title {
         font-weight: 500;
-        font-size: 60px;
-        line-height: 72px;
+        font-size: 24px;
+        line-height: 42px;
     }
 
     .start-working__text {
         font-size: 24px;
         line-height: 29px;
-        width: 550px;
+        width: 100%;
     }
 
     .start-working__button {
@@ -65,15 +70,30 @@
 
 @media screen and (min-width: 1080px) {
     .start-working {
-        margin: 0 80px;
+        margin: 6% 8%;
+        grid-template-columns: 416px 373px;
+        column-gap: 123px;
+        grid-template-rows: 75px 80px 100px;
         justify-content: center;
         align-items: flex-start;
+    }
+
+    .start-working__title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .start-working__text {
+        margin: 0;
+        width: 430px;
+        font-size: 20px;
+        line-height: 24px;
     }
 }
 
 @media screen and (min-width: 1366px){
     .start-working {
-        margin: 60px 120px 80px 120px;
+        margin: 3% 6% 4% 6%;
         grid-template-columns: 416px 573px;
         column-gap: 123px;
         grid-template-rows: 75px 80px 100px;
@@ -122,6 +142,12 @@
         font-size: 60px;
         line-height: 72px;
     }
+
+    .start-working__text {
+        font-size: 24px;
+        line-height: 29px;  
+        margin-top: 48px;
+    }
 }
 
 
@@ -130,6 +156,7 @@
     display: grid;
     flex-direction: column;
     position: relative;
+    justify-content: start;
 }
 
 .start-working__title {
@@ -196,6 +223,13 @@
 .start-working__button_position {
     position: relative;
     z-index: 1;
+    text-decoration: none;
+    color: #2B2B2B;
+}
+
+.start-working__button_position:hover {
+    cursor: pointer;
+    color: #F2F2F2;
 }
 
 .start-working__img {

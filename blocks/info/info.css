@@ -45,7 +45,7 @@
         grid-template-rows: repeat(2, auto);
         grid-template-areas: "title badge"
                              "title badge";
-        grid-template-columns: 424px 284px;
+        grid-template-columns: 50% 45%;
         column-gap: 26px;
         row-gap: 48px;
         margin: 100px 20px;
@@ -101,7 +101,7 @@
 
 @media screen and (min-width: 1366px) {
     .info {
-        grid-template-columns: 454px 484px;
+        grid-template-columns: 40% 40%;
         column-gap: 117px;
         row-gap: 48px;
         margin: 75px 120px 60px 120px;
@@ -143,7 +143,7 @@
 
 @media screen and (min-width: 1920px) {
     .info {
-        grid-template-columns: 624px 684px;
+        grid-template-columns: 45% 45%;
         row-gap: 48px;
         column-gap: 185px;
         margin: 95px 160px 50px 160px;
@@ -155,6 +155,11 @@
 
     .info__badge-span_expanded {
         margin: 15px 0 0 135px;
+    }
+
+    .info__badge-span-text {
+        font-size: 32px;
+        line-height: 140%;
     }
 
     .info__title {

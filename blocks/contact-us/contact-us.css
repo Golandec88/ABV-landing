@@ -2,6 +2,7 @@
     .contact-us {
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin: 40px 16px 14px 16px;
     }
 
@@ -53,28 +54,29 @@
         grid-template-areas: "title img"
         "subtitle img"
         "buttons img";
-        grid-template-rows: 196px 70px 93px;
-        grid-template-columns: 546px 600px;
+        grid-template-rows: 30% 40% 30%;
+        grid-template-columns: 50% 50%;
         margin: 80px 20px;
     }
 
     .contact-us__title {
         font-weight: 500;
-        font-size: 60px;
+        font-size: 30px;
         line-height: 120%;
-        width: 624px;
+        width: 100%;
         grid-area: title;
     }
 
     .contact-us__subtitle {
-        font-size: 24px;
-        line-height: 140%;
-        width: 550px;
+        font-size: 22px;
+        line-height: 90%;
+        width: 100%;
         grid-area: subtitle;
     }
 
     .contact-us__button-section {
         flex-direction: row;
+        justify-content: space-between;
         width: calc(194px*2 + 48px);
         grid-area: buttons;
     }

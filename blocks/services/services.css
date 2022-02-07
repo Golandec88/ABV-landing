@@ -32,16 +32,17 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-    .services__item-img {
-        background-image: url("../../images/next.svg");
-    }
-    
-}
-
 @media screen and (min-width: 1080px) {
     .services {
         margin: 27px 80px 80px 80px;
+    }
+
+    .services__item-img {
+        background-image: url("../../images/next.svg");
+        object-fit: contain;
+        object-position: center;
+        width: 64px;
+        height: 64px;
     }
 
    
