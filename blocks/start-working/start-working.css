@@ -233,13 +233,13 @@
 .start-working__button:hover {
     transition: 0.5s;
     color: #F2F2F2;
-
 }
 
 .start-working__button:hover::before {
     z-index: -1;
     width: 300px;
     height: 200px;
+    color: #F2F2F2;
 }
 
 .start-working__button_position {

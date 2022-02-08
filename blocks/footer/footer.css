@@ -369,11 +369,22 @@
     animation: bgColor 5s alternate-reverse 0.2s ;
 }
 
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .footer__info-title {
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     color: #F2F2F2;
+}
+
+.footer__info-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .footer__info-subtitle {
@@ -383,11 +394,21 @@
     color: #F2F2F2;
 }
 
+.footer__info-subtitle:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .footer__info-adress {
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     color: #F2F2F2;
+}
+
+.footer__info-adress:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .footer__info-email {
@@ -397,9 +418,19 @@
     color: #F2F2F2;
 }
 
+.footer__info-email:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .footer__info-contacts {
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     color: #F2F2F2;
+}
+
+.footer__info-contacts:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
