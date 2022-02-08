@@ -1,9 +1,61 @@
+
+@media screen and (min-width: 320px) {
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 16px 14px 16px;
+    }
+
+    .contact-us__title {
+        font-size: 28px;
+        line-height: 120%;
+        margin: 0;
+        text-align: left;
+    }
+
+    .contact-us__subtitle {
+        font-size: 14px;
+        line-height: 120%;
+        width: 287px;
+        margin: 12px 0 0 0;
+    }
+
+    .contact-us__button-section {
+        width: 300px;
+        margin-top: 24px;
+    }
+
+    .contact-us__button {
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 20px;
+        width: 134px;
+        height: 36px;
+    }
+
+    .contact-us__button_light {
+        margin-left: 20px;
+    }
+
+    .contact-us__img-section {
+        overflow: hidden;
+        width: 300px;
+    }
+
+    .contact-us__img {
+        background-position: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 @media screen and (min-width: 360px) {
     .contact-us {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 40px 16px 14px 16px;
+        padding: 40px 16px 14px 16px;
     }
 
     .contact-us__title {
@@ -56,7 +108,7 @@
         "buttons img";
         grid-template-rows: 30% 40% 30%;
         grid-template-columns: 50% 50%;
-        margin: 80px 20px;
+        padding: 80px 20px;
     }
 
     .contact-us__title {
@@ -82,6 +134,8 @@
     }
 
     .contact-us__button {
+        font-size: 20px;
+        line-height: 140%;
         margin: 0;
     }
 
@@ -100,13 +154,13 @@
 
 @media screen and (min-width: 1080px){
     .contact-us {
-        margin: 80px 160px 80px 160px;
+        padding: 80px 160px 80px 160px;
     }
 }
 
 @media screen and (min-width: 1336px){
     .contact-us {
-        margin: 60px 120px;
+        padding: 60px 120px;
     }
 
     .contact-us__title {
@@ -138,9 +192,9 @@
 
 @media screen and (min-width: 1920px){
     .contact-us {
-        margin: 80px 160px 40px 160px;
+        padding: 4% 6%;
         grid-template-rows: 208px 114px 181px;;
-        grid-template-columns: 701px 911px;
+        grid-template-columns: 45% 45%;
     }
 
     .contact-us__title {
@@ -200,8 +254,6 @@
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 140%;
     color: #000000;
     outline: none;
     box-shadow: none;

@@ -11,11 +11,11 @@
         <img class="header__logo" src="./images/logoabv.svg" alt="ABV Logo">
         <div class="header__menu">
             <ul class="header__nav">
-                <li class="header__nav-item"><a href="./index.html" class="nav-button">Главная</a></li>
-                <li class="header__nav-item"><a href="./about-us.html" class="nav-button">О нас</a></li>
-                <li class="header__nav-item"><a href="./services.html" class="nav-button">Услуги</a></li>
+                <li class="header__nav-item"><a href="./index.html" class="nav-button" target="_self"> Главная</a></li>
+                <li class="header__nav-item"><a href="./about-us.html" class="nav-button" target="_self">О нас</a></li>
+                <li class="header__nav-item"><a href="./services.html" class="nav-button" target="_self">Услуги</a></li>
                 <li class="header__nav-item"><a class="nav-button">Тарифы</a></li>
-                <li class="header__nav-item"><a class="nav-button">Контакты</a></li>
+                <li class="header__nav-item"><a class="nav-button" target="_self" href="#contacts">Контакты</a></li>
                 <li class="header__nav-item header__nav-item_button"><a class="nav-button" href="./login.html">Войти</a></li>
             </ul>
             <ul class="header__auth">
@@ -38,11 +38,11 @@
             <div class="header__burger-box">
                 <img class="header__burger-close-icon" src="images/close.svg" alt="close-icon">
                 <ul class="header__nav">
-                    <li class="header__nav-item"><button class="nav-button">Главная</button></li>
-                    <li class="header__nav-item"><button class="nav-button" type="button">О нас</button></li>
-                    <li class="header__nav-item"><button class="nav-button" type="button">Услуги</button></li>
+                    <li class="header__nav-item"><a class="nav-button" target="_self" href="./index.html">Главная</a></li>
+                    <li class="header__nav-item"><a class="nav-button" type="button" target="_self" href="./about-us.html">О нас</a></li>
+                    <li class="header__nav-item"><a class="nav-button" type="button" target="_self" href="./services.html">Услуги</a></li>
                     <li class="header__nav-item"><button class="nav-button" type="button">Тарифы</button></li>
-                    <li class="header__nav-item"><button class="nav-button" type="button">Контакты</button></li>
+                    <li class="header__nav-item"><a class="nav-button" href="#contacts" target="_self">Контакты</a></li>
                     <li class="header__nav-item header__nav-item_button"><button class="nav-button">Войти</button></li>
                 </ul>
                 <li class="header__nav-item_button header__nav-item_yellow_bordered"><button class="nav-button"><span class="header__nav-item_bordered_position">Зарегистрироваться</span></button></li>
@@ -111,6 +111,7 @@
                 </li>
             </ul>
         </section>
+
         <section class="services">
             <h3 class="services__title">Сервисы</h3>
             <p class="services__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
@@ -182,7 +183,7 @@
                 <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_self">Сервисы</a></li>
                 <li class="footer__nav-item"><a class="footer__nav-link" href="./contact-us.html" target="_self">Связаться с нами</a></li>
             </ul>
-            <div class="footer__info">
+            <div class="footer__info" id="contacts">
                 <h3 class="footer__info-title">Контакты</h3>
                 <p class="footer__info-subtitle">Grand Trade бизнес центр</p>
                 <p class="footer__info-adress">Узбекистан г.Ташкент, ул. Афросиаб</p>

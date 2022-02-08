@@ -1,6 +1,68 @@
-@media screen and (min-width:1920px) {
+@media screen and (min-width: 320px){
     .services-page {
-        padding: 80px 160px;
+        padding: 40px 16px;
+        align-items: center;
+    }
+
+    .services-page__title {
+        font-size: 32px;
+        line-height: 120%;
+        margin: 0;
+    }
+
+    .services-page__subtitle {
+        font-size: 14px;
+        line-height: 140%;
+        margin: 16px 0 0 0;
+        text-align: center;
+        width: 288px;
+    }
+}
+@media screen and (min-width: 360px) {
+    .services-page {
+        padding: 40px 20px;
+        align-items: center;
+    }
+
+    .services-page__title {
+        font-size: 32px;
+        line-height: 120%;
+        margin: 0;
+    }
+
+    .services-page__subtitle {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 16px 0 0 0;
+        text-align: center;
+        width: 328px;
+        height: 110px;
+    }
+}
+@media screen and (min-width: 768px){
+    .services-page {
+        padding: 40px 120px;
+        align-items: center;
+    }
+
+    .services-page__title {
+        font-size: 40px;
+        line-height: 100%;
+        margin: 0;
+    }
+
+    .services-page__subtitle {
+        font-size: 20px;
+        line-height: 120%;
+        margin: 50px 0 0 0;
+        text-align: center;
+        white-space: pre;
+        width: 700px;
+    }
+}
+@media screen and (min-width: 1080px){
+    .services-page {
+        padding: 60px 140px;
         align-items: center;
     }
 
@@ -8,6 +70,37 @@
         font-size: 60px;
         line-height: 120%;
         margin: 0;
+    }
+
+    .services-page__subtitle {
+        font-size: 20px;
+        line-height: 140%;
+        margin: 50px 0 0 0;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1366px){
+    .services-page {
+        padding: 60px 160px;
+        align-items: center;
+    }
+
+    .services-page__title {
+        font-size: 60px;
+        line-height: 120%;
+        margin: 0;
+    }
+
+    .services-page__subtitle {
+        font-size: 20px;
+        line-height: 140%;
+        margin: 50px 0 0 0;
+        text-align: center;
+    }
+}
+@media screen and (min-width:1920px) {
+    .services-page {
+        padding: 80px 160px;
     }
 
     .services-page__subtitle {
@@ -21,6 +114,7 @@
 .services-page {
     display: flex;
     flex-direction: column;
+    border-bottom: 1px dashed #2b2b2b;
 }
 
 .services-page__title {
@@ -35,5 +129,4 @@
     font-style: normal;
     font-weight: normal;
     color: #2b2b2b;
-    white-space: pre;
 }

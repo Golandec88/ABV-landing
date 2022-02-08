@@ -1,29 +1,34 @@
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 320px){
     .consulting {
-        margin: 80px 160px;
-        grid-template-columns: 624px 800px;
-        grid-template-rows:  167px 246px 284px 173px;
-        column-gap: 176px;
+        padding: 32px 16px;
+        grid-template-columns: 100%;
+        grid-template-rows: 82px 47px 270px 199px 166px;
+        column-gap: 62px;
+        grid-template-areas: "title"
+                            "subtitle" 
+                            "img" 
+                            "text-area"
+                            "bold1"
+                            "bold2";
     }
 
     .consulting__title {
-        font-size: 60px;
+        font-size: 28px;
         line-height: 120%;
         grid-area: title;
         margin: 0;
-        width: 624px;
     }
 
     .consulting__subtitle {
-        font-size: 24px;
-        line-height: 140%;
+        font-size: 14px;
+        line-height: 17px;
         grid-area: subtitle;
-        margin: 23px 0 0 0;
+        margin: 0;
     }
 
     .consulting__text {
-        font-size: 24px;
-        line-height: 140%;
+        font-size: 14px;
+        line-height: 17px;
         margin: 25px 0 0 0;
         grid-area: text-area;
     }
@@ -34,6 +39,218 @@
 
     .consulting__text-area-2 {
         grid-area: bold2;
+    }
+
+    .consulting__text_bold {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 0;
+    }
+
+    .consulting__list-item {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .consulting__img-section {
+        grid-area: img;
+    }
+}
+@media screen and (min-width: 360px){
+    .consulting {
+        padding: 40px 16px;
+        grid-template-columns: 100%;
+        grid-template-rows: 168px 135px 316px 351px 294px;
+        column-gap: 62px;
+    }
+
+    .consulting__title {
+        font-size: 40px;
+        line-height: 120%;
+        margin: 0;
+    }
+
+    .consulting__subtitle {
+        font-size: 20px;
+        line-height: 140%;
+        margin: 24px 0 0 0;
+    }
+
+    .consulting__text {
+        font-size: 20px;
+        line-height: 140%;
+        margin: 25px 0 0 0;
+    }
+
+    .consulting__text_bold {
+        font-size: 24px;
+        line-height: 140%;
+        margin: 0;
+    }
+
+    .consulting__list-item {
+        font-size: 20px;
+        line-height: 140%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .consulting {
+        grid-template-areas: "title title"
+        "subtitle text-area"
+        "img bold1"
+        "img bold2";
+        padding: 40px 80px;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 167px 315px 284px 173px;
+        column-gap: 62px;
+    }
+
+    .consulting__title {
+        font-size: 40px;
+        line-height: 120%;
+        margin: 0;
+        width: 416px;
+    }
+
+    .consulting__subtitle {
+        font-size: 20px;
+        line-height: 140%;
+        margin: 24px 0 0 0;
+    }
+
+    .consulting__text {
+        font-size: 20px;
+        line-height: 140%;
+        margin: 25px 0 0 0;
+    }
+
+    .consulting__text_bold {
+        font-size: 24px;
+        line-height: 140%;
+        margin: 0;
+    }
+
+    .consulting__list-item {
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .consulting__img-section {
+        width: 624px;
+    }
+    
+}
+@media screen and (min-width: 1080px) {
+    .consulting {
+        padding: 60px 100px;
+        grid-template-columns: 40% 60%;
+        grid-template-rows:  167px 246px 284px 173px;
+        column-gap: 62px;
+    }
+
+    .consulting__title {
+        font-size: 40px;
+        line-height: 120%;
+        margin: 0;
+        width: 416px;
+    }
+
+    .consulting__subtitle {
+        font-size: 20px;
+        line-height: 140%;
+        margin: 24px 0 0 0;
+    }
+
+    .consulting__text {
+        font-size: 20px;
+        line-height: 140%;
+        margin: 25px 0 0 0;
+    }
+
+    .consulting__text_bold {
+        font-size: 24px;
+        line-height: 140%;
+        margin: 0;
+    }
+
+    .consulting__list-item {
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .consulting__img-section {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .consulting {
+        padding: 60px 120px;
+        grid-template-columns: 40% 60%;
+        grid-template-rows:  167px 246px 284px 173px;
+        column-gap: 62px;
+    }
+
+    .consulting__title {
+        font-size: 40px;
+        line-height: 120%;
+        margin: 0;
+        width: 416px;
+    }
+
+    .consulting__subtitle {
+        font-size: 20px;
+        line-height: 140%;
+        margin: 24px 0 0 0;
+    }
+
+    .consulting__text {
+        font-size: 20px;
+        line-height: 140%;
+        margin: 25px 0 0 0;
+    }
+
+    .consulting__text_bold {
+        font-size: 24px;
+        line-height: 140%;
+        margin: 0;
+    }
+
+    .consulting__list-item {
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .consulting__img-section {
+        width: 624px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .consulting {
+        padding: 80px 160px;
+        grid-template-columns: 45% 45%;
+        grid-template-rows:  167px 246px 284px 173px;
+        column-gap: 60px;
+    }
+
+    .consulting__title {
+        font-size: 60px;
+        line-height: 120%;
+        margin: 0;
+        width: 624px;
+    }
+
+    .consulting__subtitle {
+        font-size: 24px;
+        line-height: 140%;
+        margin: 23px 0 0 0;
+    }
+
+    .consulting__text {
+        font-size: 24px;
+        line-height: 140%;
+        margin: 25px 0 0 0;
     }
 
     .consulting__text_bold {
@@ -49,16 +266,12 @@
 
     .consulting__img-section {
         width: 624px;
-        grid-area: img;
     }
 }
 
 .consulting {
     display: grid;
-    grid-template-areas: "title title"
-    "subtitle text-area"
-    "img bold1"
-    "img bold2";
+    border-bottom: 1px dashed #2B2B2B;
 }
 
 .consulting__title {
@@ -99,8 +312,8 @@
 }
 
 .consulting__img {
-    object-position: top;
-    object-fit: contain;
+    object-position: left;
+    object-fit: fill;
     width: 100%;
     height: 100%;
 }

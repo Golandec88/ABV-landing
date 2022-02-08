@@ -1,3 +1,58 @@
+@media screen and (min-width: 320px) {
+    .contact {
+        padding: 5% 2%;
+    }
+
+    .contact__subtitle {
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+    }
+
+    .contact__img-section {
+        display: none;
+    }
+
+    .contact__form {
+        align-items: center;
+        margin: 5px;
+    }
+
+    .contact__title {
+        margin-bottom: 0; 
+    }
+
+    .contact__input {
+        width: 288px;
+        height: 36px;
+        margin-bottom: 16px;
+    }
+
+    .contact__label {
+        font-size: 12px;
+        line-height: 140%;
+        margin-bottom: 8px;
+    }
+
+    .contact__select {
+        width: 288px;
+        height: 36px;
+        margin-bottom: 16px;
+    }
+
+    .contact__text {
+        width: 288px;
+        height: 140px;
+        margin-bottom: 16px;
+    }
+
+    .contact__button {
+        width: 134px;
+        height: 36px;
+        font-size: 14px;
+        line-height: 140%;
+    }
+}
 @media screen and (min-width: 360px){
     .contact {
         padding: 5% 2%;

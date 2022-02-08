@@ -1,8 +1,48 @@
+@media screen and (min-width: 320px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        padding: 38px 16px 14px 16px;
+    }
+
+    .info__title {
+        font-size: 28px;
+        line-height: 34px;
+        margin: 0;
+    }
+
+    .info__text {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 12px;        
+    }
+
+    .info__badge {
+        margin-top: 24px;
+        padding: 0;
+    }
+
+    .info__badge-item-img {
+        width: 32px;
+        height: 32px;
+        background-position: center;
+        border-radius: 50%;
+    }
+
+    .info__badge-span-text {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .info__badge-span {
+        margin: 0 0 12px 0;
+    }
+}
 @media screen and (min-width: 360px){
     .info {
         display: flex;
         flex-direction: column;
-        margin: 38px 16px 14px 16px;
+        padding: 38px 16px 14px 16px;
     }
 
     .info__title {
@@ -48,7 +88,7 @@
         grid-template-columns: 50% 45%;
         column-gap: 26px;
         row-gap: 48px;
-        margin: 100px 20px;
+        padding: 100px 20px;
     }
 
     .info__title {
@@ -85,7 +125,7 @@
         grid-template-columns: 424px 284px;
         column-gap: 76px;
         row-gap: 48px;
-        margin: 100px 80px 80px 80px;
+        padding: 100px 80px 80px 80px;
     }
 
     .info__badge-span_expanded {
@@ -104,7 +144,7 @@
         grid-template-columns: 40% 40%;
         column-gap: 117px;
         row-gap: 48px;
-        margin: 75px 120px 60px 120px;
+        padding: 75px 120px 60px 120px;
     }
 
     .info__title {
@@ -146,7 +186,7 @@
         grid-template-columns: 45% 45%;
         row-gap: 48px;
         column-gap: 185px;
-        margin: 95px 160px 50px 160px;
+        padding: 4% 9%;
     }
 
     .info__badge-span {
@@ -191,6 +231,10 @@
         background: linear-gradient(0deg, rgba(253,185,20,0) 0%, rgba(253,185,20,0) 28%, rgba(253,185,20,1) 28%, rgba(253,185,20,1) 49%, rgba(253,185,20,0.011642156862745057) 50%, rgba(253,185,20,0.011642156862745057) 100%);
         background-position: bottom;
     }
+}
+
+.info {
+    border-bottom: 1px dashed #2B2B2B;
 }
 
 .info__section {
