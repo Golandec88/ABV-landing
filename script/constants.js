@@ -6,6 +6,9 @@ export const aboutLight = ".about-us__button_light";
 export const startWorking = ".start-working__button";
 export const auth = ".header__nav-item_yellow_bordered";
 export const join = ".join-us__button"
+export const strengthOne = ".strenght__button_one"
+export const strengthTwo = ".strenght__button_two"
+export const strengthThree = ".strenght__button_three"
 
 export const infoBadge = document.querySelectorAll(".info__badge-item");
 

@@ -54,4 +54,5 @@
 
 .nav-button:hover {
     cursor: pointer;
+    color: inherit;
 }

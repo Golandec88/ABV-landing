@@ -34,6 +34,10 @@
         line-height: 140%;
     }
 
+    .info__badge-span_expanded {
+        margin: 30px;
+    }
+
     .info__badge-span {
         margin: 0 0 12px 0;
     }
@@ -76,6 +80,11 @@
 
     .info__badge-span {
         margin: 0 0 12px 0;
+    }
+
+    
+    .info__badge-span_expanded {
+        margin: 50px;
     }
 }
 
@@ -122,14 +131,14 @@
 
 @media screen and (min-width: 1080px) {
     .info {
-        grid-template-columns: 424px 284px;
+        grid-template-columns: 40% 50%;
         column-gap: 76px;
         row-gap: 48px;
         padding: 100px 80px 80px 80px;
     }
 
     .info__badge-span_expanded {
-        margin: 15px 0 0 35px;
+        margin: 50px;
     }
 
     .info__title {

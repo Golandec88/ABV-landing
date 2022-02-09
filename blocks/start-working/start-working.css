@@ -2,7 +2,7 @@
     .start-working {
         padding: 32px 17px;
         grid-template-columns: 98%;
-        grid-template-rows: 21% 49% 23% 3%;
+        grid-template-rows: 20% 49% 19% 21%;
         grid-template-areas: "title"
                             "img"
                             "subtitle"
@@ -34,8 +34,12 @@
         height: 38px;
         font-size: 16px;
         line-height: 140%;
-        margin-top: 24px;
     }
+
+    .start-working__button_position {
+        margin: 24px 0;
+    }
+
 }
 @media screen and (min-width: 360px) {
     .start-working {
@@ -224,21 +228,26 @@
     transform: translate(0%, 0%);
     width: 0;
     height: 0;
-    border-radius: 8px;
+    border-radius: 50%;
     background: #2B2B2B;
     transition: width 0.5s, height 0.5s;
     color: #F2F2F2;
 }
 
 
-.start-working__button:hover {
+.start-working__button:hover{
     transition: 0.5s;
+    color: #F2F2F2 !important;
+}
+
+.start-working__button:hover > .start-working__button_position {
     color: #F2F2F2;
 }
 
+
 .start-working__button:hover::before {
     z-index: -1;
-    width: 300px;
+    width: 250px;
     height: 200px;
     color: #F2F2F2;
 }

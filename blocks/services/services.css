@@ -196,6 +196,10 @@
     cursor: pointer;
 }
 
+.services__item:hover {
+    text-decoration: underline;
+}
+
 .services__item-text {
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;

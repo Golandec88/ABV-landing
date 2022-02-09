@@ -422,16 +422,6 @@
     }
 }
 
-@keyframes bgColor {
-    from {
-        background-color: transparent;
-    }
-    to {
-        background: linear-gradient(0deg, rgba(253,185,20,0) 0%, rgba(253,185,20,0) 28%, rgba(253,185,20,1) 28%, rgba(253,185,20,1) 49%, rgba(253,185,20,0.011642156862745057) 50%, rgba(253,185,20,0.011642156862745057) 100%);
-        background-position: bottom;
-    }
-}
-
 .footer {
     display: flex;
     justify-content: space-between;
@@ -463,7 +453,8 @@
 }
 
 .footer__nav-item:hover {
-    animation: bgColor 5s alternate-reverse 0.2s ;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .footer__info {

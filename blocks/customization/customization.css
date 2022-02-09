@@ -92,6 +92,10 @@
         font-size: 20px;
         line-height: 140%;
     }
+
+    .customization__img-section {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -137,7 +141,7 @@
     }
 
     .customization__img-section {
-        width: 624px;
+        width: 100%;
     }
     
 }
@@ -180,7 +184,7 @@
     }
 
     .customization__img-section {
-        width: 624px;
+        width: 100%;
     }
 }
 

@@ -1,4 +1,4 @@
-import {langRU, langEN, langUZ, aboutYellow, aboutLight, startWorking, auth, infoBadge, join, burgerOpenMenu, burgerCloseMenu} from "./constants.js"
+import {langRU, langEN, langUZ, aboutYellow, aboutLight, startWorking, auth, infoBadge, join, burgerOpenMenu, burgerCloseMenu, strengthOne, strengthThree, strengthTwo} from "./constants.js"
 import { toggleMenu } from "./functions.js";
 function mouseHandler(btnClass) {
     let btn = document.querySelector(btnClass);
@@ -17,6 +17,9 @@ mouseHandler(aboutLight);
 mouseHandler(aboutYellow);
 mouseHandler(startWorking);
 mouseHandler(auth);
+mouseHandler(strengthOne);
+mouseHandler(strengthTwo);
+mouseHandler(strengthThree);
 
 function handleToggleAccordion(e){
     const button = e.querySelector(".info__badge-span_hidden")

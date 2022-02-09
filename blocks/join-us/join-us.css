@@ -71,11 +71,11 @@
 
 @media screen and (min-width: 1366px) {
     .join-us {
-        padding: 0 9% 4% 9%;
+        padding: 4% 9% ;
         margin: 0;
         grid-template-columns: 468px 563px;
         column-gap: 164px;
-        grid-template-rows:  137px 183px 134px;
+        grid-template-rows: 137px 250px 134px;
     }
 
     .join-us__title {
