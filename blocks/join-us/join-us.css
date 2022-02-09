@@ -149,6 +149,10 @@
 }
 
 .join-us__button {
+    position: relative;
+    display: inline-flex;
+    z-index: 0;
+    overflow: hidden;
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     grid-area: button;
     height: 52px;
@@ -161,5 +165,62 @@
     font-size: 20px;
     line-height: 140%;
     color: #2B2B2B;
+    cursor: pointer;
+}
 
+.join-us__button::before {
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(0%, 0%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #FDB914;
+    transition: width 0.5s, height 0.5s;
+}
+
+.join-us__button::before {
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(0%, 0%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+    background: #2B2B2B;
+    color: #F2F2F2;
+}
+
+
+.join-us__button:hover {
+    transition: 0.5s;
+    color: #2B2B2B;
+}
+
+.join-us__button:hover {
+    transition: 0.5s;
+    color: #F2F2F2;
+}
+
+.join-us__button:hover::before {
+    z-index: -1;
+    width: 320px;
+    height: 200px; 
+}
+
+.join-us__button_position {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }

@@ -13,14 +13,14 @@
     .start-working__title {
         font-size: 32px;
         line-height: 38px;
-        width: 300px;
+        width: 280px;
         margin: 0;
     }
 
     .start-working__text {
         font-size: 16px;
         line-height: 19px;
-        width: 300px;
+        width: 280px;
         margin: 15px 0 24px 0;
     }
 
@@ -202,7 +202,7 @@
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
-    color: #000000;
+    color: #2B2B2B;
     border: none;
     outline: none;
     position: relative;
@@ -227,6 +227,7 @@
     border-radius: 8px;
     background: #2B2B2B;
     transition: width 0.5s, height 0.5s;
+    color: #F2F2F2;
 }
 
 

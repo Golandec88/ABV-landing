@@ -12,9 +12,10 @@
         flex-direction: column;
         margin: 0 auto;
         padding: 40px 16px 30px 16px;
-        width: 93vw;
+        width: 320px;
         background: linear-gradient(180deg, rgba(255,255,255,0.9136029411764706) 5%, rgba(255,255,255,0.9500175070028011) 35%, rgba(255,255,255,0.7063200280112045) 51%, rgba(255,255,255,0.4066001400560224) 76%, rgba(255,255,255,0) 86%);
         z-index: 2;
+        box-sizing: border-box;
     }
 
     .about-us__title {
@@ -28,15 +29,21 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 12px;
-        width: 300px;
+        width: 290px;
     }
 
     .about-us__button {
         margin-bottom: 10px;
-        width: 146px;
+        width: 106px;
         height: 38px;
         border: 1px solid #2B2B2B;
         background-color: #F2F2F2;
+        font-size: 16px;
+        line-height: 100%;
+    }
+
+    .about-us__text {
+        width: 300px;
     }
 }
 @media screen and (min-width: 360px){
@@ -100,6 +107,8 @@
     .about-us__button {
         background-color: transparent;
         border: 1px solid #2B2B2B;
+        font-size: 20px;
+        line-height: 140%;
     }
 }
 
@@ -256,8 +265,6 @@
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 140%;
     color: #000000;
     outline: none;
     box-shadow: none;
@@ -317,7 +324,7 @@
 .about-us__button:hover::before {
     z-index: -1;
     width: 500px;
-    height: 250px;
+    height: 500px;
 }
 
 .about-us__button_position {

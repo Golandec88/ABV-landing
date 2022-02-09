@@ -1,4 +1,4 @@
-import {langRU, langEN, langUZ, aboutYellow, aboutLight, startWorking, auth, infoBadge, burgerOpenMenu, burgerCloseMenu} from "./constants.js"
+import {langRU, langEN, langUZ, aboutYellow, aboutLight, startWorking, auth, infoBadge, join, burgerOpenMenu, burgerCloseMenu} from "./constants.js"
 import { toggleMenu } from "./functions.js";
 function mouseHandler(btnClass) {
     let btn = document.querySelector(btnClass);

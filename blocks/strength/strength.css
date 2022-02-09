@@ -1,13 +1,16 @@
 @media screen and (min-width: 320px) {
     .strength {
         padding: 32px 16px 27px 16px;
-        align-items: center;
+        width: 300px;
+        justify-content: center;
+        box-sizing: border-box;
     }
 
     .strength__title {
         font-size: 28px;
         line-height: 120%;
         margin: 0 0 24px 0;
+        width: 290px;
     }
 
     .strength__list-text {
@@ -17,27 +20,33 @@
     .strength__nav {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 276px;
+        box-sizing: border-box;
     }
 
     .strength__nav-item {
-        width: 300px;
+        width: 260px;
         height: 416px;
         grid-template-rows: 153px 40px 160px 64px;
-        grid-template-columns: 300px;
+        grid-template-columns: 290px;
         justify-content: center;
         align-content: center;
         justify-items: center;
         border: none;
         border-bottom: 1px solid #2B2B2B;
+        box-sizing: border-box;
     }
 
     .strength__nav-item:last-child {
         border: none;
     }
 
+    .strength__nav-item-img-block {
+        width: 290px;
+    }
+
     .strength__nav-item-image {
-        width: 298px;
+        width: 290px;
     }
 
     .strength__nav-item-title {
@@ -49,7 +58,7 @@
         margin: 15px 0 0 0;
         font-size: 12px;
         line-height: 120%;
-        width: 273px;
+        width: 229px;
     }
 
     .strength__nav-item-button {
@@ -62,6 +71,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .strength__list-title {
@@ -74,31 +84,33 @@
         margin: 12px 0;
         font-size: 14px;
         line-height: 120%;
+        width: 260px;
     }
     
     .strength__list-images {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 300px;
+        width: 260px;
         height: 320px;
     }
 
     .strength__list-images-item {
-        width: 125px;
-        height: 125px;
+        width: 120px;
+        height: 120px;
+        box-sizing: border-box;
     }
 
     .strength__list-images-item:first-child {
-        margin: 0 0 24px 0;
+        margin: 0 0 20px 0;
     }
 
     .strength__list-images-item:nth-child(3n){
-        margin: 0 0 24px 42px;
+        margin: 0 0 20px 22px;
     }
 
     .strength__list-images-item:nth-child(4n) {
-        margin: 0 0 0 42px;
+        margin: 0 0 0 22px;
     }
 }
 @media screen and (min-width: 360px) {
