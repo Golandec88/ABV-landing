@@ -1,0 +1,83 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.services {
+    border-bottom: 1px dashed var(--dark-gray-color);
+    padding: 40px 0;
+}
+.services .title-text {
+    margin-bottom: 40px;
+}
+.services__items {
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.services__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 100px;
+    position: relative;
+    margin-bottom: 20px;
+    min-height: 64px;
+}
+.services__item a {
+    display: block;
+    text-decoration: none;
+    color: var(--dark-gray-color);
+}
+.services__item:hover {
+    text-decoration: underline;
+}
+.services__item-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../../dist/assets/next.svg");
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+}
+.services__item-text {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 0;
+}
+
+@media(max-width: 1200px) {
+    .services__items {
+        height: auto;
+    }
+}
+@media(max-width: 768px) {
+    .services__item {
+        padding-left: 55px;
+        min-height: 40px;
+    }
+    .services__item-text {
+        font-size: 18px;
+    }
+    .services__item-img {
+        width: 40px;
+        height: 40px;
+    }
+}

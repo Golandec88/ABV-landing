@@ -3,203 +3,586 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="styles/bootstrap-grid.css">
+    <link rel="stylesheet" href="styles/pages/index.css">
     <title>ABV</title>
 </head>
 <body class="page">
-    <header class="header">
-        <a href="./index.html" target="_self"><img class="header__logo" src="./images/logoabv.svg" alt="ABV Logo"></a>
-        <div class="header__menu">
-            <ul class="header__nav">
-                <li class="header__nav-item"><a href="./index.html" class="nav-button" target="_self"> Главная</a></li>
-                <li class="header__nav-item"><a href="./about-us.html" class="nav-button" target="_self">О нас</a></li>
-                <li class="header__nav-item"><a href="./services.html" class="nav-button" target="_self">Услуги</a></li>
-                <li class="header__nav-item"><a class="nav-button">Тарифы</a></li>
-                <li class="header__nav-item"><a class="nav-button" target="_self" href="#contacts">Контакты</a></li>
-                <li class="header__nav-item header__nav-item_button"><a class="nav-button" href="https://e365.uz/#/login">Войти</a></li>
-            </ul>
-            <ul class="header__auth">
-                <li class="header__nav-item_button header__nav-item_yellow_bordered"><a class="nav-button" href="https://e365.uz/#/login" target="_self"><span class="header__nav-item_bordered_position">Зарегистрироваться</span></a></li>
-            </ul>
-            <ul class="header__lang">
-                <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__ru"><span class="header__nav-item_bordered_position"><button class="nav-button">RU</button></span></li>
-                <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__uzb"><span class="header__nav-item_bordered_position"><button class="nav-button">UZB</button></span></li>
-                <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__eng"><span class="header__nav-item_bordered_position"><button class="nav-button">ENG</button></span></li>
-            </ul>
-
-            <select name="lang" id="lang" class="header__select">
-                <option value="ru">RU</option>
-                <option value="eng">ENG</option>
-                <option value="uz">UZB</option>
-            </select>
-        </div>
-        <img class="header__burger-open-icon" src="images/menu.svg" alt="menu-icon">
-        <div class="header__burger-menu">
-            <div class="header__burger-box">
-                <img class="header__burger-close-icon" src="images/close.svg" alt="close-icon">
-                <ul class="header__nav">
-                    <li class="header__nav-item"><a class="nav-button" target="_self" href="./index.html">Главная</a></li>
-                    <li class="header__nav-item"><a class="nav-button" type="button" target="_self" href="./about-us.html">О нас</a></li>
-                    <li class="header__nav-item"><a class="nav-button" type="button" target="_self" href="./services.html">Услуги</a></li>
-                    <li class="header__nav-item"><button class="nav-button" type="button">Тарифы</button></li>
-                    <li class="header__nav-item"><a class="nav-button" href="#contacts" target="_self">Контакты</a></li>
-                    <li class="header__nav-item header__nav-item_button"><a href="https://e365.uz/#/login" target="_blank" class="nav-button">Войти</a></li>
-                </ul>
-                <li class="header__nav-item_button header__nav-item_yellow_bordered"><a class="nav-button" href="https://e365.uz/#/login" target="_self"><span class="header__nav-item_bordered_position">Зарегистрироваться</span></a></li>
-                <ul class="header__lang">
-                    <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__ru"><span class="header__nav-item_bordered_position"><button class="nav-button">RU</button></span></li>
-                    <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__eng"><span class="header__nav-item_bordered_position"><button class="nav-button">UZ</button></span></li>
-                    <li class="header__nav-item header__nav-item_bordered header__nav-item_bordered__uzb"><span class="header__nav-item_bordered_position"><button class="nav-button">EN</button></span></li>
-                </ul>
+<header class="header">
+    <div class="container d-flex">
+        <div class="row">
+            <div class="col-sm-1 col-xs-1 col-lg-1 header__logo">
+                <a href="./index.html" target="_self">
+                    <img class="header__logo-image" src="dist/assets/logoabv.svg" alt="ABV Logo">
+                </a>
             </div>
-        </div>
-    </header>
-    <main class="main">
-        <section class="about-us">
-            <video autoplay muted loop="loop" id="myVideo">
-                <source src="./images/cutVideoMain_compressed.mp4" type="video/mp4">
-              </video>
-            <div class="about-us__bg">
-                <h1 class="about-us__title">Виртуальная платформа для вашего бизнеса</h1>
-                <p class="about-us__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-                <div class="about-us__button-section">
-                    <button type="button" class="about-us__button about-us__button_yellow"><span class="about-us__button_position">Lorem Ipsum</span></button>
-                    <button type="button" class="about-us__button about-us__button_light"><span class="about-us__button_position">Lorem Ipsum</span></button>
+            <nav class="col-xs-5 col-lg-6 header__menu">
+                <ul class="header__nav">
+                    <li class="button header__nav-item">
+                        <a href="./index.html" class="nav-button" target="_self">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="button header__nav-item">
+                        <a href="./about-us.html" class="nav-button" target="_self">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="button header__nav-item">
+                        <a href="./services.html" class="nav-button" target="_self">
+                            Услуги
+                        </a>
+                    </li>
+                    <li class="button header__nav-item">
+                        <a class="nav-button">
+                            Тарифы
+                        </a>
+                    </li>
+                    <li class="button header__nav-item">
+                        <a class="nav-button" target="_self" href="#contacts">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__auth-mobile">
+                    <a class="button" color="primary" href="https://e365.uz/#/login">
+                            <span class="position">
+                                Войти
+                            </span>
+                    </a>
+                    <a class="button" color="transparent" href="https://e365.uz/#/login" target="_self">
+                            <span class="position">
+                                Зарегистрироваться
+                            </span>
+                    </a>
+                </div>
+            </nav>
+            <div class="col-sm-11 col-xs-6 col-lg-5 d-flex">
+                <ul class="header__auth">
+                    <li class="button">
+                        <a class="nav-button" href="https://e365.uz/#/login">
+                                <span class="position">
+                                    Войти
+                                </span>
+                        </a>
+                    </li>
+                    <li class="button" color="primary">
+                        <a class="nav-button" href="https://e365.uz/#/login" target="_self">
+                                <span class="position">
+                                    Зарегистрироваться
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__lang d-none d-xs-flex">
+                    <li class="button active" color="gray">
+                        <button class="nav-button">
+                                <span class="position">
+                                    RU
+                                </span>
+                        </button>
+                    </li>
+                    <li class="button" color="transparent">
+                        <button class="nav-button">
+                                <span class="position">
+                                    UZB
+                                </span>
+                        </button>
+                    </li>
+                    <li class="button" color="transparent">
+                        <button class="nav-button">
+                                <span class="position">
+                                    ENG
+                                </span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="dropdown d-flex d-xs-none">
+                    <div class="dropdown__selected-item">
+                        RU
+                    </div>
+                    <div class="dropdown__list">
+                        <div class="dropdown__list-item active">
+                            <a href="#">
+                                RU
+                            </a>
+                        </div>
+                        <div class="dropdown__list-item">
+                            <a href="#">
+                                ENG
+                            </a>
+                        </div>
+                        <div class="dropdown__list-item">
+                            <a href="#">
+                                UZB
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__burger d-flex d-lg-none">
+                    <input class="header__burger-cheeckbox" type="checkbox"/>
+                    <div>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="start-working">
-            <img class="start-working__img" src="./images/uzb.svg" alt="Узбекистан">
-            <h2 class="start-working__title">Как начать работать?</h2>
-            <p class="start-working__text">Подробная инструкция как начать работать в Республике Узбекистан с помощью платформа ABV</p>
-            <a class="start-working__button nav-button" href="./work-with-us.html" target="_self"><span class="start-working__button_position">Lorem, ipsum!</span></a>
-        </section>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section class="about-us">
 
-        <section class="info">
-            <div class="info__section">
-                <h2 class="info__title">Почему мы?</h2>
-                <p class="info__text">Подробная инструкция как начать работать в Республике Узбекистан с помощью платформа ABV</p>
-            </div>
-            <ul class="info__badge">
-                <li class="info__badge-item" data-index="1">
-                    <p class="info__badge-span"><span class="info__badge-item-img"></span><span class="info__badge-span-text">Удобно</span></p>
-                    <span class="info__badge-span_hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur. Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?</span>
-                </li>
-                <li class="info__badge-item" data-index="2">
-                    <p class="info__badge-span"><span class="info__badge-item-img"></span><span class="info__badge-span-text">Удобно</span></p>
-                    <span class="info__badge-span_hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur. Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?</span>
-                </li>
-                <li class="info__badge-item" data-index="3">
-                    <p class="info__badge-span"><span class="info__badge-item-img"></span><span class="info__badge-span-text">Удобно</span></p>
-                    <span class="info__badge-span_hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur. Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?</span>
-                </li>
-                <li class="info__badge-item" data-index="4">
-                    <p class="info__badge-span"><span class="info__badge-item-img"></span><span class="info__badge-span-text">Удобно</span></p>
-                    <span class="info__badge-span_hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur. Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?</span>
-                </li>
-                <li class="info__badge-item" data-index="5">
-                    <p class="info__badge-span"><span class="info__badge-item-img"></span><span class="info__badge-span-text">Удобно</span></p>
-                    <span class="info__badge-span_hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur. Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?</span>
-                </li>
-                <li class="info__badge-item" data-index="6">
-                    <p class="info__badge-span"><span class="info__badge-item-img"></span><span class="info__badge-span-text">Удобно</span></p>
-                    <span class="info__badge-span_hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur. Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?</span>
-                </li>
-                <li class="info__badge-item" data-index="6">
-                    <p class="info__badge-span"><span class="info__badge-item-img"></span><span class="info__badge-span-text">Удобно</span></p>
-                    <span class="info__badge-span_hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur. Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?</span>
-                </li>
-            </ul>
-        </section>
-
-        <section class="services">
-            <h3 class="services__title">Сервисы</h3>
-            <p class="services__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
-            <ul class="services__items">
-                <li class="services__item"><p class="services__item-img"></p><span class="services__item-text">Конструктор документов</span></span></li>
-                <li class="services__item"><p class="services__item-img"></p><span class="services__item-text">Электронный документооборот</span></li>
-                <li class="services__item"><p class="services__item-img"></p><span class="services__item-text">Юридическое сопровождение </span></li>
-                <li class="services__item"><p class="services__item-img"></p><span class="services__item-text">Регистрация организации</span></li>
-                <li class="services__item"><p class="services__item-img"></p><span class="services__item-text">Отдел кадров</span></li>
-                <li class="services__item"><p class="services__item-img"></p><span class="services__item-text">Работа с банком</span></li>
-                <li class="services__item"><p class="services__item-img"></p><span class="services__item-text">Бухгалтерский учёт</span></li>
-                <li class="services__item"><p class="services__item-img"></p><span class="services__item-text">Законодательство</span></li>
-                <li class="services__item"><p class="services__item-img"></p><span class="services__item-text">Отчётности в ГНИ</span></li>
-                <li class="services__item"><p class="services__item-img"></p><span class="services__item-text">Склад</span></li>
-            </ul>
-        </section>
-        <section class="strength">
-            <h2 class="strength__title">Услуги</h2>
-            <ul class="strength__nav">
-                <li class="strength__nav-item">
-                    <div class="strength__nav-item-img-block"><img class="strength__nav-item-image" alt="image" src="./images/2 illustration.svg"></div>
-                    <h3 class="strength__nav-item-title">Lorem ipsum</h3>
-                    <p class="strength__nav-item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <button class="strength__nav-item-button nav-button strength__button_one" type="button">Lorem!</button>
-                </li>
-                <li class="strength__nav-item">
-                    <div class="strength__nav-item-img-block"><img class="strength__nav-item-image" alt="image" src="./images/3 illustration.svg"></div>
-                    <h3 class="strength__nav-item-title">Lorem ipsum</h3>
-                    <p class="strength__nav-item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <button class="strength__nav-item-button nav-button strength__button_two" type="button">Lorem!</button>
-                </li>
-                <li class="strength__nav-item">
-                    <div class="strength__nav-item-img-block"><img class="strength__nav-item-image" alt="image" src="./images/4 illustration.svg"></div>
-                    <h3 class="strength__nav-item-title">Lorem ipsum</h3>
-                    <p class="strength__nav-item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <button class="strength__nav-item-button nav-button strength__button_three" type="button">Lorem!</button>
-                </li>
-            </ul>
-            <article class="strength__list">
-                <h3 class="strength__list-title">Lorem ipsum</h3>
-                <p class="strength__list-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </p>
-                <ul class="strength__list-images">
-                    <li class="strength__list-images-item"></li>
-                    <li class="strength__list-images-item"></li>
-                    <li class="strength__list-images-item"></li>
-                    <li class="strength__list-images-item"></li>
-                </ul>
-
-            </article>
-        </section>
-        <section class="contact-us">
-            <h3 class="contact-us__title">Связаться с нами</h3>
-            <p class="contact-us__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the typesetting industry. Lorem Ipsum has been the </p>
-            <div class="contact-us__img-section"><img class="contact-us__img" src="./images/5 illustration.svg" alt="Колл-центр"></div>
-            <div class="contact-us__button-section">
-                <button type="button" class="contact-us__button contact-us__button_yellow nav-button"><span class="contact-us__button_position">Lorem Ipsum</span></button>
-                <button type="button" class="contact-us__button contact-us__button_light nav-button"><span class="contact-us__button_position">Lorem Ipsum</span></button>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__section">
-            <a href="./index.html" target="_self"><img class="footer__logo" src="./images/footer-icon.svg" alt="ABV Logo"></a>
-            <ul class="footer__nav">
-                <li class="footer__nav-item"><a  class="footer__nav-link" href="#" target="_self">Главная</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="./about-us.html" target="_self">О нас</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_self">Тарифы</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_self">Услуги</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_self">Сервисы</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="./contact-us.html" target="_self">Связаться с нами</a></li>
-            </ul>
-            <div class="footer__info" id="contacts">
-                <h3 class="footer__info-title">Контакты</h3>
-                <a class="footer__info-subtitle">Grand Trade бизнес центр</a>
-                <a class="footer__info-adress" href="#map">Узбекистан г.Ташкент, ул. Афросиаб 4Б</a>
-                <a class="footer__info-adress">Ориентир: метро Айбек</a>
-                <a class="footer__info-email" href="mailto:abvabv@gmail.com">abvabv@gmail.com</a>
-                <a class="footer__info-email" href="mailto:abvb2bsaace@gmail.com">abvb2bsaace@gmail.com</a>
-                <a class="footer__info-contacts" href="tel:+998 90 333 33 33">+998 90 333 33 33</a>
-                <a class="footer__info-contacts" href="tel:+998 90 323 32 23">+998 90 323 32 23</a>
-                <a class="footer__info-contacts"href="tel:+998 71 233 35 53">+998 71 233 35 53</a>
-
+        <video autoplay loop muted id="myVideo">
+            <source type="video/mp4" src="dist/assets/cutVideoMain_compressed.mp4">
+        </video>
+        <div class="about-us__bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="about-us__title">Виртуальная платформа для вашего бизнеса</h1>
+                        <p class="about-us__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                            has survived not only five centuries</p>
+                        <button type="button" class="button" color="primary">
+                                <span class="position">
+                                    Lorem Ipsum
+                                </span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="map" class="footer__map" style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a href="https://yandex.uz/maps/10335/tashkent/house/YkAYdAFpSkAFQFprfX9xcHRjZw==/?ll=69.270718%2C41.300116&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Афросиаб, 4Б на карте Ташкента, ближайшее метро Айбек — Яндекс.Карты</a><iframe class="footer__iframe" src="https://yandex.uz/map-widget/v1/-/CCU5aSReTC" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-    </footer>
-    <script type="module" src="./script/constants.js"></script>
-    <script src="./script/functions.js" type="module"></script>
-    <script src="./script/index.js" type="module"></script>
+    </section>
+    <section class="start-working">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xs-6">
+                    <h2 class="title">Как начать работать?</h2>
+                    <p class="title-text">Подробная инструкция как начать работать в Республике Узбекистан с помощью
+                        платформа ABV</p>
+                    <a class="button" color="primary" href="./contact-us.html" target="_self">
+                            <span class="position">
+                                Lorem, ipsum!
+                            </span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xs-6">
+                    <img class="start-working__img" src="dist/assets/uzb.svg" alt="Узбекистан">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 col-xs-6">
+                    <h2 class="title">Почему мы?</h2>
+                    <p class="title-text">Подробная инструкция как начать работать в Республике Узбекистан <br> с
+                        помощью платформа ABV</p>
+                </div>
+                <div class="col-md-12 col-lg-6 col-xs-6">
+                    <ul class="info__badge">
+                        <li class="info__badge-item">
+                            <div class="info__badge-img"></div>
+                            <p class="info__badge-label">
+                                Удобно
+                            </p>
+                            <p class="info__badge-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores
+                                consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur.
+                                Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?
+                            </p>
+                        </li>
+                        <li class="info__badge-item">
+                            <div class="info__badge-img"></div>
+                            <p class="info__badge-label">
+                                Удобно
+                            </p>
+                            <p class="info__badge-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores
+                                consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur.
+                                Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?
+                            </p>
+                        </li>
+                        <li class="info__badge-item">
+                            <div class="info__badge-img"></div>
+                            <p class="info__badge-label">
+                                Удобно
+                            </p>
+                            <p class="info__badge-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores
+                                consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur.
+                                Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?
+                            </p>
+                        </li>
+                        <li class="info__badge-item">
+                            <div class="info__badge-img"></div>
+                            <p class="info__badge-label">
+                                Удобно
+                            </p>
+                            <p class="info__badge-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores
+                                consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur.
+                                Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?
+                            </p>
+                        </li>
+                        <li class="info__badge-item">
+                            <div class="info__badge-img"></div>
+                            <p class="info__badge-label">
+                                Удобно
+                            </p>
+                            <p class="info__badge-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores
+                                consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur.
+                                Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?
+                            </p>
+                        </li>
+                        <li class="info__badge-item">
+                            <div class="info__badge-img"></div>
+                            <p class="info__badge-label">
+                                Удобно
+                            </p>
+                            <p class="info__badge-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores
+                                consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur.
+                                Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?
+                            </p>
+                        </li>
+                        <li class="info__badge-item">
+                            <div class="info__badge-img"></div>
+                            <p class="info__badge-label">
+                                Удобно
+                            </p>
+                            <p class="info__badge-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores
+                                consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur.
+                                Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?
+                            </p>
+                        </li>
+                        <li class="info__badge-item">
+                            <div class="info__badge-img"></div>
+                            <p class="info__badge-label">
+                                Удобно
+                            </p>
+                            <p class="info__badge-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad minima, dolores
+                                consectetur architecto iusto dolore ullam obcaecati quisquam placeat consequatur.
+                                Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="title">Сервисы</h3>
+                    <p class="title-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard<br> dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make</p>
+                </div>
+                <div class="col-sm-12">
+                    <ul class="services__items">
+                        <li class="services__item">
+                            <a href="#">
+                                <span class="services__item-img"></span>
+                                <span class="services__item-text">
+                                        Конструктор документов
+                                    </span>
+                            </a>
+                        </li>
+                        <li class="services__item">
+                            <a href="#">
+                                <span class="services__item-img"></span>
+                                <p class="services__item-text">
+                                    Электронный документооборот
+                                </p>
+                            </a>
+                        </li>
+                        <li class="services__item">
+                            <a href="#">
+                                <span class="services__item-img"></span>
+                                <span class="services__item-text">
+                                        Юридическое сопровождение
+                                    </span>
+                            </a>
+                        </li>
+                        <li class="services__item">
+                            <a href="#">
+                                <span class="services__item-img"></span>
+                                <span class="services__item-text">
+                                        Регистрация организации
+                                    </span>
+                            </a>
+                        </li>
+                        <li class="services__item">
+                            <a href="#">
+                                <span class="services__item-img"></span>
+                                <span class="services__item-text">
+                                        Отдел кадров
+                                    </span>
+                            </a>
+                        </li>
+                        <li class="services__item">
+                            <a href="#">
+                                <span class="services__item-img"></span>
+                                <span class="services__item-text">
+                                        Работа с банком
+                                    </span>
+                            </a>
+                        </li>
+                        <li class="services__item">
+                            <a href="#">
+                                <span class="services__item-img"></span>
+                                <span class="services__item-text">
+                                        Бухгалтерский учёт
+                                    </span>
+                            </a>
+                        </li>
+                        <li class="services__item">
+                            <a href="#">
+                                <span class="services__item-img"></span>
+                                <span class="services__item-text">
+                                        Законодательство
+                                    </span>
+                            </a>
+                        </li>
+                        <li class="services__item">
+                            <a href="#">
+                                <span class="services__item-img"></span>
+                                <span class="services__item-text">
+                                        Отчётности в ГНИ
+                                    </span>
+                            </a>
+                        </li>
+                        <li class="services__item">
+                            <a href="#">
+                                <span class="services__item-img"></span>
+                                <span class="services__item-text">
+                                        Склад
+                                    </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="strength">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="title">Услуги</h2>
+                    <ul class="strength__cards">
+                        <li class="strength__card">
+                            <img class="strength__card-image" alt="image" src="dist/assets/1%20illustration.svg">
+                            <h4 class="strength__card-title">
+                                Lorem ipsum
+                            </h4>
+                            <p class="strength__card-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                            <button class="button" color="primary" type="button">
+                                    <span class="position">
+                                        Lorem!
+                                    </span>
+                            </button>
+                        </li>
+                        <li class="strength__card">
+                            <img class="strength__card-image" alt="image" src="dist/assets/2%20illustration.svg">
+                            <h4 class="strength__card-title">
+                                Lorem ipsum
+                            </h4>
+                            <p class="strength__card-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                            <button class="button" color="primary" type="button">
+                                    <span class="position">
+                                        Lorem!
+                                    </span>
+                            </button>
+                        </li>
+                        <li class="strength__card">
+                            <img class="strength__card-image" alt="image" src="dist/assets/3%20illustration.svg">
+                            <h4 class="strength__card-title">
+                                Lorem ipsum
+                            </h4>
+                            <p class="strength__card-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                            <button class="button" color="primary" type="button">
+                                    <span class="position">
+                                        Lorem!
+                                    </span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row strength__list">
+                <div class="col-lg-6">
+                    <h3 class="title">Lorem ipsum</h3>
+                    <p class="title-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        <br> Lorem Ipsum has been the industry's standard dummy text </p>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="strength__list-images">
+                        <li class="strength__list-images-item"></li>
+                        <li class="strength__list-images-item"></li>
+                        <li class="strength__list-images-item"></li>
+                        <li class="strength__list-images-item"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="contact-us__info">
+                        <h3 class="title">Связаться с нами</h3>
+                        <p class="title-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            <br> Lorem Ipsum has been the typesetting industry. Lorem Ipsum has been the </p>
+                        <button type="button" class="button" color="primary">
+                            <span class="position">
+                                Lorem Ipsum
+                            </span>
+                        </button>
+                        <button type="button" class="button" color="transparent">
+                            <span class="position">
+                                Lorem Ipsum
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="d-none d-md-flex col-md-12 col-lg-6">
+                    <img class="contact-us__img" src="dist/assets/5%20illustration.svg" alt="Колл-центр">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-xs-6">
+                <div class="footer__section">
+                    <a class="footer__logo" href="./index.html" target="_self">
+                        <img src="dist/assets/footer-icon.svg" alt="ABV Logo">
+                    </a>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#" target="_self">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="./about-us.html" target="_self">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#" target="_self">
+                                Тарифы
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#" target="_self">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#" target="_self">
+                                Сервисы
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="./contact-us.html" target="_self">
+                                Связаться с нами
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__info" id="contacts">
+                        <address class="footer__info-address">
+                            <h3>
+                                Grand Trade бизнес центр
+                            </h3>
+                            <p>
+                                Узбекистан г.Ташкент, ул. Афросиаб 4Б
+                            </p>
+                            <p>
+                                Ориентир: метро Айбек
+                            </p>
+                        </address>
+                        <div class="footer__info-contacts">
+                            <ul>
+                                <li>
+                                    <a href="tel:+998 90 333 33 33">
+                                        +998 90 333 33 33
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+998 90 323 32 23">
+                                        +998 90 323 32 23
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+998 71 233 35 53">
+                                        +998 71 233 35 53
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="mailto:abvabv@gmail.com">
+                                        abvabv@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:abvb2bsaace@gmail.com">
+                                        abvb2bsaace@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xs-6">
+                <div id="map" class="footer__map" style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
+                       style="color:#eee;font-size:12px;position:absolute;top:0;"
+                    >
+                        Ташкент
+                    </a>
+                    <a href="https://yandex.uz/maps/10335/tashkent/house/YkAYdAFpSkAFQFprfX9xcHRjZw==/?ll=69.270718%2C41.300116&utm_medium=mapframe&utm_source=maps&z=17"
+                       style="color:#eee;font-size:12px;position:absolute;top:14px;"
+                    >
+                        Улица Афросиаб, 4Б на карте Ташкента, ближайшее метро Айбек — Яндекс.Карты
+                    </a>
+                    <iframe class="footer__iframe" src="https://yandex.uz/map-widget/v1/-/CCU5aSReTC"
+                            frameborder="1" allowfullscreen="true" style="position:relative;"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

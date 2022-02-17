@@ -1,0 +1,99 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.info {
+    border-bottom: 1px dashed var(--dark-gray-color);
+    padding: 40px 0;
+}
+.info__badge {
+    margin: 0;
+    padding: 0;
+}
+.info__badge-item {
+    display: block;
+    cursor: pointer;
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--dark-gray-color);
+    padding-left: 100px;
+    position: relative;
+    margin-bottom: 20px;
+    font-weight: 500;
+    min-height: 64px;
+}
+
+.info__badge-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+.info__badge-img {
+    background-image: url("../../dist/assets/plus.svg");
+}
+.info__badge-item.active .info__badge-img {
+    background-image: url("../../dist/assets/minus.svg");
+}
+.info__badge-label {
+    font-size: 30px;
+    margin: 0;
+    z-index: 1;
+    padding-top: 15px;
+    display: inline-block;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.info__badge-label:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 10px;
+    left: -2px;
+    bottom: 5px;
+    background-color: var(--primary-color);
+    z-index: -1;
+    -webkit-transition: cubic-bezier(0.42, 0, 0, 1.17) .5s;
+    -o-transition: cubic-bezier(0.42, 0, 0, 1.17) .5s;
+    transition: cubic-bezier(0.42, 0, 0, 1.17) .5s;
+}
+.info__badge-item:hover .info__badge-label:after,
+.info__badge-item.active .info__badge-label:after {
+    width: calc(100% + 4px);
+}
+.info__badge-text {
+    display: none;
+    cursor: text;
+}
+.info__badge-item.active .info__badge-text {
+    display: block;
+}
+
+@media(max-width: 1200px) {
+    .info .title-text {
+        margin-bottom: 40px;
+    }
+}
+@media(max-width: 768px) {
+    .info__badge-item {
+        padding-left: 55px;
+        min-height: 40px;
+    }
+    .info__badge-label {
+        font-size: 18px;
+        padding-top: 8px;
+    }
+    .info__badge-img {
+        width: 40px;
+        height: 40px;
+    }
+}

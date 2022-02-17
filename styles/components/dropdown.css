@@ -1,0 +1,83 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.dropdown {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    text-align: center;
+    position: relative;
+}
+.dropdown__selected-item {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-left: 15px;
+
+    cursor: pointer;
+}
+.dropdown__selected-item::after {
+    content: "\203A";
+    margin-left: 15px;
+    font-size: 30px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.dropdown__selected-item.active::after {
+    margin-left: 5px;
+    margin-right: 10px;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.dropdown__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    z-index: 3;
+    background: var(--white-color);
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 20px #6d6d6d38;
+    box-shadow: 0 0 20px #6d6d6d38;
+}
+.dropdown__list.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.dropdown__list-item > * {
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+.dropdown__list .dropdown__list-item:first-child {
+    border-radius: 8px 8px 0 0;
+}
+.dropdown__list .dropdown__list-item:last-child {
+    border-radius: 0 0 8px 8px;
+}
+.dropdown__list-item.active {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+.dropdown__list-item.active a {
+    color: inherit;
+}

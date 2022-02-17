@@ -1,0 +1,97 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.button {
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    position: relative;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    font-size: 18px;
+}
+.button .position {
+    position: relative;
+    z-index: 1;
+    display: block;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding: 10px 40px;
+}
+.button::before {
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: var(--circle-top-position);
+    left: var(--circle-left-position);
+    width: var(--circle-width);
+    height: var(--circle-width);
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+.button:hover::before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0;
+    -o-transition: 0;
+    transition: 0;
+}
+.button:not([color]) {
+    color: var(--light-gray-color);
+    border-radius: 0;
+}
+.button:not([color]):hover {
+    color: var(--black-color);
+    font-weight: 500;
+}
+.button[color=gray]:hover,
+.button[color=transparent]:hover {
+    color: var(--white-color);
+}
+
+.button[color=primary] {
+    background-color: var(--primary-color);
+}
+.button[color=primary]:hover {
+    color: var(--black-color);
+}
+.button[color=primary]::before {
+    background: var(--white-color);
+}
+
+.button[color=gray] {
+    background-color: var(--dark-gray-color);
+    color: var(--white-color);
+}
+.button[color=gray]::before {
+    background: var(--dark-gray-color);
+}
+.button[color=transparent] {
+    background-color: transparent;
+    color: var(--black-color);
+}
+.button[color=transparent]::before {
+    background: var(--dark-gray-color);
+}

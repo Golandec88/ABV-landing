@@ -1,0 +1,33 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.start-working {
+    border-bottom: 1px dashed var(--dark-gray-color);
+    padding: 40px 0;
+}
+.start-working .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.start-working .start-working__img {
+    width: 100%;
+}
+@media(max-width: 920px) {
+    .start-working .row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .start-working .start-working__img {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,28 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.services-page {
+    border-bottom: 1px dashed var(--dark-gray-color);
+    text-align: center;
+    padding: 100px 0;
+}
+.services-page .title-text {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+@media(max-width: 768px) {
+    .services-page {
+        padding: 40px 0;
+    }
+    .services-page .title-text {
+        text-align: justify;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,32 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.join-us {
+    padding: 20px 0;
+    border-bottom: 1px dashed var(--dark-gray-color);
+}
+.join-us__img {
+    width: 100%;
+}
+.join-us .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+@media(max-width: 768px) {
+    .join-us {
+        text-align: center;
+    }
+    .join-us .title-text {
+        text-align: justify;
+    }
+}

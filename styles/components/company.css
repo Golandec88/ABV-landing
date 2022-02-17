@@ -1,0 +1,48 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px dashed var(--dark-gray-color);
+    font-family: "Norms Pro", Arial, Helvetica, sans-serif;
+    color: var(--dark-gray-color);
+    padding: 40px 0;
+}
+.company .title, .company .title-text {
+    font-family: inherit;
+}
+.company .title-text {
+    font-size: 29px;
+}
+.company__text {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 26px;
+}
+.company__img {
+    background-position: center;
+    width: 100%;
+    max-height: 500px;
+}
+@media(max-width: 1200px) {
+    .company__text {
+        max-width: 100%;
+    }
+}
+@media(max-width: 768px) {
+    .company__text {
+        font-size: 20px;
+    }
+}
