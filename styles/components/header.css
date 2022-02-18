@@ -59,6 +59,9 @@
     margin-left: auto;
     min-height: 45px;
 }
+.header__auth .button[color=transparent] {
+    margin-right: 10px;
+}
 .header__logo {
     min-height: 45px;
     display: -webkit-box;
