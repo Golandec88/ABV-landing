@@ -36,10 +36,10 @@
     height: 64px;
 }
 .info__badge-img {
-    background-image: url("../../dist/assets/plus.svg");
+    background-image: url("../../assets/plus.svg");
 }
 .info__badge-item.active .info__badge-img {
-    background-image: url("../../dist/assets/minus.svg");
+    background-image: url("../../assets/minus.svg");
 }
 .info__badge-label {
     font-size: 30px;
