@@ -1,12 +1,15 @@
 @import url("../variables.css");
+@import url("../animations/aos.css");
+
 
 @import url("../fonts.css");
 @import url("../components/page.css");
 @import url("../components/header.css");
 @import url("../components/main.css");
+@import url("../components/company.css");
+@import url("../components/join-us.css");
 @import url("../components/contact-us.css");
 @import url("../components/footer.css");
-
 @import url("../grid-mod.css");
 @import url("../components/texts.css");
 @import url("../components/burger.css");

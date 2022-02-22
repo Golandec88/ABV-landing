@@ -5,6 +5,10 @@
 * Browsers: last 4 version
 */
 
+*{
+    scroll-behavior: smooth;
+}
+
 .page {
     min-width: 320px;
     margin: 0;
@@ -17,4 +21,10 @@
     -moz-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 768px) {
+    .hideOverflowOnMobile {
+        overflow: hidden;
+    }
 }

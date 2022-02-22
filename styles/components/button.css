@@ -20,6 +20,18 @@
     color: inherit;
     display: inline-block;
     font-size: 18px;
+    font-weight: bold;
+}
+
+.button-with-border{
+    border: 1px solid #2B2B2B;
+    margin-left: 48px;
+}
+
+@media(max-width: 768px) {
+    .button-with-border{
+        margin-left: 0px;
+    }
 }
 .button .position {
     position: relative;

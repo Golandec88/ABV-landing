@@ -19,7 +19,8 @@
     flex-wrap: wrap;
 }
 .contact__img {
-    width: 100%;
+    width: 40%;
+    margin: auto;
 }
 .contact__form {
     display: -webkit-box;
@@ -65,5 +66,9 @@
     }
     .contact__form .button {
         width: 100%;
+    }
+    .contact__img {
+        width: 60%;
+        margin: 40px auto;
     }
 }

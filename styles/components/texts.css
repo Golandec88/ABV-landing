@@ -8,7 +8,7 @@
 .title {
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     color: var(--dark-gray-color);
-    line-height: 55px;
+    line-height: 72px;
     margin: 0 0 30px;
     font-size: 60px;
 }
@@ -16,7 +16,8 @@
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     color: var(--dark-gray-color);
     margin: 0 0 30px;
-    font-size: 26px;
+    padding-right: 30px;
+    font-size: 24px;
 }
 @media(max-width: 1200px) {
     .title {
@@ -31,5 +32,6 @@
     }
     .title-text {
         font-size: 20px;
+        padding-right: 0px;
     }
 }

@@ -17,19 +17,21 @@
     border-bottom: 1px dashed var(--dark-gray-color);
     font-family: "Norms Pro", Arial, Helvetica, sans-serif;
     color: var(--dark-gray-color);
-    padding: 40px 0;
+    padding: 80px 0;
 }
 .company .title, .company .title-text {
     font-family: inherit;
 }
 .company .title-text {
-    font-size: 29px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
 }
 .company__text {
-    max-width: 1100px;
+    max-width: 1060px;
     margin: 0 auto;
     text-align: justify;
-    font-size: 26px;
+    font-size: 24px;
 }
 .company__img {
     background-position: center;
@@ -42,6 +44,9 @@
     }
 }
 @media(max-width: 768px) {
+    .company{
+        padding: 40px 0;
+    }
     .company__text {
         font-size: 20px;
     }

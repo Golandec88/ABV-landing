@@ -7,7 +7,7 @@
 
 .start-working {
     border-bottom: 1px dashed var(--dark-gray-color);
-    padding: 40px 0;
+    padding: 80px 0;
 }
 .start-working .row {
     display: -webkit-box;
@@ -21,6 +21,9 @@
     width: 100%;
 }
 @media(max-width: 920px) {
+    .start-working {
+        padding: 40px 0;
+    }
     .start-working .row {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;

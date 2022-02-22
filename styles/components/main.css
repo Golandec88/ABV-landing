@@ -19,3 +19,7 @@
     background-color: var(--global-background-color);
     width: 100%;
 }
+
+.main > section{
+    overflow-x: hidden;
+}

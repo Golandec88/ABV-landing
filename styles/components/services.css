@@ -7,14 +7,14 @@
 
 .services {
     border-bottom: 1px dashed var(--dark-gray-color);
-    padding: 40px 0;
+    padding: 80px 0;
 }
 .services .title-text {
     margin-bottom: 40px;
 }
 .services__items {
     margin: 0;
-    padding: 0;
+    padding: 80px 0 0 0;
     height: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -69,6 +69,9 @@
     }
 }
 @media(max-width: 768px) {
+    .services {
+        padding: 40px 0;
+    }
     .services__item {
         padding-left: 55px;
         min-height: 40px;

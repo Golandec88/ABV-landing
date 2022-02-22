@@ -86,6 +86,9 @@
 .header__lang .button {
     padding: 0;
 }
+.header__lang button {
+    width: 84px;
+}
 .header__lang .button:first-child {
     border-radius: 8px 0 0 8px;
     border: 1px solid var(--dark-gray-color);
@@ -153,6 +156,7 @@
     align-self: center;
     white-space: nowrap;
     font-size: 20px;
+    font-weight: 500;
 }
 
 .nav-button:hover {
@@ -227,6 +231,7 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        margin: auto auto 100px auto;
     }
     .header__menu {
         -webkit-box-orient: vertical;

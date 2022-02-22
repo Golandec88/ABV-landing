@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/bootstrap-grid.css">
     <link rel="stylesheet" href="styles/pages/services.css">
+
     <title>Услуги</title>
 </head>
 <body class="page">
@@ -59,7 +60,7 @@
             </nav>
             <div class="col-sm-11 col-xs-6 col-lg-5 d-flex">
                 <ul class="header__auth">
-                    <li class="button">
+                    <li class="button" color="transparent">
                         <a class="nav-button" href="https://e365.uz/#/login">
                                 <span class="position">
                                     Войти
@@ -147,17 +148,23 @@
         </div>
     </section>
     <section class="services-text-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-6 col-xs-6">
+        <div class="container" data-aos="fade-right"
+             data-aos-offset="300"
+             data-aos-duration="800">
+            <div class="row" >
+                <div class="col">
                     <h3 class="title">
                         Consulting is simply <br>
                         text of the typesetting
                     </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-6 col-xs-6">
                     <p class="title-text">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
-                    <img class="services-text-block__img" alt="Консультация" src="assets/consulting1.svg">
+                    <img class="services-text-block__img1" alt="Консультация" src="assets/consulting1.svg">
                 </div>
                 <div class="col-md-12 col-lg-6 col-xs-6">
                     <p class="mt-auto">
@@ -187,17 +194,23 @@
         </div>
     </section>
     <section class="services-text-block">
-        <div class="container">
+        <div class="container" data-aos="fade-right"
+             data-aos-offset="300"
+             data-aos-duration="800">
             <div class="row">
-                <div class="col-md-12 col-lg-6 col-xs-6">
+                <div class="col">
                     <h3 class="title">
                         Training is simply <br>
                         text of the typesetting
                     </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-6 col-xs-6">
                     <p class="title-text">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
-                    <img class="services-text-block__img" alt="Консультация" src="assets/consulting2.svg">
+                    <img class="services-text-block__img2" alt="Консультация" src="assets/consulting2.svg">
                 </div>
                 <div class="col-md-12 col-lg-6 col-xs-6">
                     <p class="mt-auto">
@@ -209,7 +222,7 @@
                     <p class="text-bold">
                         Lorem Ipsum is simply dummy
                     </p>
-                    <ul>
+                    <ul class="services-text-list">
                         <li>It has survived not</li>
                         <li>Lorem Ipsum is simply dummy text of the printing</li>
                         <li>It has survived not only five centuries</li>
@@ -217,7 +230,7 @@
                         <li>When an unknown printer took a galley</li>
                     </ul>
                     <p class="text-bold">It to make a type specimen book</p>
-                    <ul>
+                    <ul class="services-text-list">
                         <li>It has survived not</li>
                         <li>Lorem Ipsum is simply dummy text of the printing</li>
                         <li>It has survived not only five centuries</li>
@@ -227,17 +240,23 @@
         </div>
     </section>
     <section class="services-text-block">
-        <div class="container">
+        <div class="container" data-aos="fade-right"
+             data-aos-offset="300"
+             data-aos-duration="800">
             <div class="row">
-                <div class="col-md-12 col-lg-6 col-xs-6">
+                <div class="col">
                     <h3 class="title">
                         Customization is simply <br>
                         text of the typesetting
                     </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-6 col-xs-6">
                     <p class="title-text">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
-                    <img class="services-text-block__img" alt="Консультация" src="assets/consulting3.svg">
+                    <img class="services-text-block__img3" alt="Консультация" src="assets/consulting3.svg">
                 </div>
                 <div class="col-md-12 col-lg-6 col-xs-6">
                     <p class="mt-auto">
@@ -268,7 +287,9 @@
     </section>
     <section class="contact-us">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="fade-right"
+                     data-aos-offset="300"
+                     data-aos-duration="800">
                 <div class="col-sm-12 col-lg-6">
                     <div class="contact-us__info">
                         <h3 class="title">Связаться с нами</h3>
@@ -279,7 +300,7 @@
                                 Lorem Ipsum
                             </span>
                         </button>
-                        <button type="button" class="button" color="transparent">
+                        <button type="button" class="button button-with-border" color="transparent">
                             <span class="position">
                                 Lorem Ipsum
                             </span>
@@ -400,6 +421,10 @@
         </div>
     </div>
 </footer>
+<script src="styles/animations/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script src="script.js"></script>
 </body>
 </html>

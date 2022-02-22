@@ -6,11 +6,11 @@
 */
 
 .join-us {
-    padding: 20px 0;
+    padding: 80px 0;
     border-bottom: 1px dashed var(--dark-gray-color);
 }
 .join-us__img {
-    width: 100%;
+    width: 50%;
 }
 .join-us .row {
     display: -webkit-box;
@@ -24,6 +24,7 @@
 }
 @media(max-width: 768px) {
     .join-us {
+        padding: 40px 0;
         text-align: center;
     }
     .join-us .title-text {

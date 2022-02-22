@@ -133,7 +133,6 @@
 </header>
 <main class="main">
     <section class="about-us">
-
         <video autoplay loop muted id="myVideo">
             <source type="video/mp4" src="assets/cutVideoMain_compressed.mp4">
         </video>
@@ -146,11 +145,11 @@
                             industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
                             an unknown printer took a galley of type and scrambled it to make a type specimen book. It
                             has survived not only five centuries</p>
-                        <button type="button" class="button" color="primary">
-                                <span class="position">
-                                    Lorem Ipsum
-                                </span>
-                        </button>
+                        <a class="button" color="primary" href="#" target="_self">
+                            <span class="position">
+                                Lorem, ipsum!
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -159,7 +158,9 @@
     <section class="start-working">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xs-6">
+                <div data-aos="fade-right"
+                     data-aos-offset="300"
+                     data-aos-duration="800" class="col-sm-12 col-md-6 col-lg-6 col-xs-6">
                     <h2 class="title">Как начать работать?</h2>
                     <p class="title-text">Подробная инструкция как начать работать в Республике Узбекистан с помощью
                         платформа ABV</p>
@@ -169,7 +170,9 @@
                             </span>
                     </a>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xs-6">
+                <div data-aos="fade-left"
+                     data-aos-offset="300"
+                     data-aos-duration="800" class="col-sm-12 col-md-6 col-lg-6 col-xs-6">
                     <img class="start-working__img" src="assets/uzb.svg" alt="Узбекистан">
                 </div>
             </div>
@@ -177,7 +180,10 @@
     </section>
     <section class="info">
         <div class="container">
-            <div class="row">
+            <div class="row"
+                 data-aos="fade-up"
+                 data-aos-offset="300"
+                 data-aos-duration="800">
                 <div class="col-md-12 col-lg-6 col-xs-6">
                     <h2 class="title">Почему мы?</h2>
                     <p class="title-text">Подробная инструкция как начать работать в Республике Узбекистан с
@@ -273,7 +279,6 @@
                                 Distinctio quibusdam, vero inventore recusandae atque facere possimus commodi?
                             </p>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -281,7 +286,10 @@
     </section>
     <section class="services">
         <div class="container">
-            <div class="row">
+            <div class="row"
+                 data-aos="fade-up"
+                 data-aos-offset="200"
+                 data-aos-duration="800">
                 <div class="col-sm-12">
                     <h3 class="title">Сервисы</h3>
                     <p class="title-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -376,7 +384,10 @@
         </div>
     </section>
     <section class="strength">
-        <div class="container">
+        <div class="container"
+             data-aos="fade-up"
+             data-aos-offset="300"
+             data-aos-duration="800">
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="title">Услуги</h2>
@@ -433,12 +444,12 @@
                 </div>
             </div>
             <div class="row strength__list">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <h3 class="title">Lorem ipsum</h3>
                     <p class="title-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text </p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <ul class="strength__list-images">
                         <li class="strength__list-images-item"></li>
                         <li class="strength__list-images-item"></li>
@@ -451,7 +462,10 @@
     </section>
     <section class="contact-us">
         <div class="container">
-            <div class="row">
+            <div class="row"
+                 data-aos="fade-up"
+                 data-aos-offset="300"
+                 data-aos-duration="800">
                 <div class="col-sm-12 col-lg-6">
                     <div class="contact-us__info">
                         <h3 class="title">Связаться с нами</h3>
@@ -462,7 +476,7 @@
                                 Lorem Ipsum
                             </span>
                         </button>
-                        <button type="button" class="button" color="transparent">
+                        <button type="button" class="button button-with-border" color="transparent">
                             <span class="position">
                                 Lorem Ipsum
                             </span>
@@ -583,6 +597,10 @@
         </div>
     </div>
 </footer>
+<script src="styles/animations/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script src="script.js"></script>
 </body>
 </html>
