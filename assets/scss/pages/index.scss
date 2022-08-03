@@ -1,0 +1,227 @@
+@import "../variables";
+@import "../components/header";
+
+.main-page-slider {
+  background: $black;
+  overflow: hidden;
+  &_item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 750px;
+    .slide {
+      display: flex;
+      padding: 77px 0;
+      &__img {
+        height: 100%;
+        object-fit: contain;
+        object-position: right top;
+        margin-left: 162px;
+        box-shadow: 11px 12px 30px 0px rgba(43, 43, 43, 0.26);
+      }
+      &__content {
+        display: flex;
+        flex-direction: column;
+        &_title {
+          font-weight: 800;
+          font-size: 72px;
+          line-height: 120%;
+          text-transform: uppercase;
+          margin-bottom: auto;
+          letter-spacing: -1px;
+        }
+        &_subtitle {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 120%;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.bank-cources {
+  background: $black;
+  height: 60px;
+}
+
+.start-working {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto;
+  border-radius: 6px;
+  background: $light-grey;
+  overflow: hidden;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    padding: 56px 53px 66px 64px;
+    &__title {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 43px;
+    }
+    &__subtitle {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 47px;
+    }
+    &__icons {
+      display: flex;
+      align-items: center;
+      &-item {
+        margin-right: 88px;
+        img {
+          width: 40px;
+          height: 40px;
+          margin-bottom: 12px;
+        }
+        span {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          display: block;
+        }
+      }
+    }
+    &_more-btn {
+      margin-top: auto;
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      span {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        display: inline-block;
+        margin-right: 13px;
+      }
+      img {
+        width: 29px;
+        height: 21px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__right {
+    background: $light-emerald;
+    border-radius: 6px;
+    padding: 31px 66px 0;
+    width: 58%;
+    flex-shrink: 0;
+    img {
+      object-fit: cover;
+      object-position: right;
+      height: 100%;
+    }
+  }
+}
+
+.services {
+  margin-bottom: 60px;
+  background: $light-grey;
+  border-radius: 6px;
+  padding: 64px;
+  padding-top: 56px;
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 30px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 48px;
+    &__item {
+      width: calc((100% - 192px) / 5);
+      border-radius: 6px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 31px;
+        right: 0;
+        height: 130px;
+        width: 100%;
+        border-radius: 6px;
+      }
+      &.bg-1::after {
+        background: #d185dd;
+      }
+      &.bg-2::after {
+        background: #85ddb3;
+      }
+      &.bg-3::after {
+        background: #d6dd85;
+      }
+      &.bg-4::after {
+        background: #85c3dd;
+      }
+      &.bg-5::after {
+        background: #dcaac5;
+      }
+      &.bg-6::after {
+        background: #aeeadf;
+      }
+      &.bg-7::after {
+        background: #e2acac;
+      }
+      &.bg-8::after {
+        background: #8dd18c;
+      }
+      &.bg-9::after {
+        background: #71c7cc;
+      }
+      &.bg-10::after {
+        background: #d8c8ba;
+      }
+      &_img {
+        height: 161px;
+        object-fit: contain;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        z-index: 1;
+      }
+      &__content {
+        padding: 18px 24px 18px 32px;
+        display: flex;
+        flex-direction: column;
+        background: $grey;
+      }
+      &_title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 12px;
+      }
+      &_subtitle {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 15px;
+      }
+      &_btn {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        span {
+          margin-right: 13px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 140%;
+        }
+        img {
+          width: 26px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

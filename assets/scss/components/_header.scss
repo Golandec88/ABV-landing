@@ -1,0 +1,97 @@
+.header {
+  background: $black;
+  padding: 30px 0;
+
+  .container,
+  &__menu &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 132px;
+    height: 43px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 87px;
+  }
+
+  &__nav {
+    list-style: none;
+    padding-inline-start: 0;
+    &_item_btn {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      color: $light-grey;
+      margin-right: 42px;
+      padding: 10px 0;
+    }
+  }
+
+  &__auth {
+    display: flex;
+    align-items: center;
+    margin-right: 115px;
+    margin-left: auto;
+    &_enter,
+    &_sign {
+      font-size: 20px;
+      line-height: 120%;
+    }
+    &_enter {
+      font-weight: 500;
+      color: $light-grey;
+      padding: 10px 0;
+      margin-right: 40px;
+    }
+    &_sign {
+      font-weight: 700;
+      color: $black;
+      background: $yellow;
+      padding: 8px 24px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease-in-out;
+      &:hover {
+        background: rgba($yellow, 0.7);
+      }
+    }
+  }
+
+  &__lang {
+    border: 1px solid $light-grey;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    &_btn {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      color: $light-grey;
+      padding: 8px 20px;
+      outline: none;
+      background: transparent;
+      border: 0px;
+      flex-grow: 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      &.active {
+        color: $black;
+        background: $light-grey;
+      }
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background: $light-grey;
+        color: $black;
+      }
+      &-center {
+        border-right: 1px solid $light-grey;
+        border-left: 1px solid $light-grey;
+      }
+    }
+  }
+}
