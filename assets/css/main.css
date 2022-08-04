@@ -758,3 +758,20 @@ a {
   max-width: 1600px;
   margin: 0 auto;
 }
+
+.btn_primary {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  background: #f4a81d;
+  padding: 12px 36px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn_primary:hover {
+  background: rgba(244, 168, 29, 0.7);
+}

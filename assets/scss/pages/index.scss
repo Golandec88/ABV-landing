@@ -142,6 +142,8 @@
       width: calc((100% - 192px) / 5);
       border-radius: 6px;
       position: relative;
+      display: flex;
+      flex-direction: column;
       &::after {
         content: "";
         position: absolute;
@@ -190,10 +192,13 @@
         z-index: 1;
       }
       &__content {
-        padding: 18px 24px 18px 32px;
+        margin-top: -10px;
+        padding: 28px 24px 18px 32px;
         display: flex;
         flex-direction: column;
         background: $grey;
+        height: 100%;
+        border-radius: 6px;
       }
       &_title {
         font-weight: 500;
@@ -210,6 +215,7 @@
       &_btn {
         display: flex;
         align-items: center;
+        margin-top: auto;
         margin-left: auto;
         span {
           margin-right: 13px;
@@ -222,6 +228,267 @@
           object-fit: contain;
         }
       }
+    }
+  }
+}
+
+.subservice {
+  display: flex;
+  column-gap: 60px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  &__item {
+    background: $light-grey;
+    border-radius: 6px;
+    width: calc((100% - 180px) / 4);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &_content {
+      padding: 50px 64px 18px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      &_title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 120%;
+        margin-bottom: 16px;
+      }
+      &_list {
+        padding-left: 20px;
+        margin-bottom: 16px;
+        li {
+          font-size: 14px;
+          line-height: 120%;
+          &::marker {
+            color: $black;
+            font-size: 10px;
+          }
+        }
+      }
+      &_btn {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: 18px;
+        span {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 140%;
+          margin-right: 13px;
+        }
+        img {
+          height: 21px;
+          object-fit: contain;
+        }
+      }
+    }
+    &_img {
+      height: 170px;
+      flex-shrink: 0;
+      object-fit: contain;
+      object-position: bottom;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 182px;
+      border-radius: 6px;
+      position: absolute;
+      bottom: 0;
+    }
+    &.bg-1::before {
+      background: #aeeadf;
+    }
+    &.bg-2::before {
+      background: #d185dd;
+    }
+    &.bg-3::before {
+      background: #85c3dd;
+    }
+    &.bg-4 ::before {
+      background: #e2acac;
+    }
+  }
+}
+
+.partners {
+  padding: 64px;
+  padding-top: 56px;
+  background: $light-grey;
+  margin-bottom: 60px;
+  border-radius: 6px;
+  &_title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 32px;
+  }
+  &__slider {
+    .owl-stage {
+      display: flex;
+    }
+    &_item {
+      padding: 42px 24px;
+      display: block;
+      background: #fff;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      border-radius: 6px;
+      img {
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+}
+
+.news {
+  background: $light-grey;
+  padding: 64px;
+  padding-top: 56px;
+  margin-bottom: 64px;
+  border-radius: 6px;
+  text-align: center;
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  &__list {
+    display: flex;
+    column-gap: 32px;
+    margin-bottom: 64px;
+    text-align: left;
+    &__item {
+      width: calc((100% - 96px) / 4);
+      background: #fff;
+      border-radius: 6px;
+      position: relative;
+      &_img {
+        height: 250px;
+        object-fit: contain;
+        object-position: bottom;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+      &_content {
+        padding: 35px 38px 95px 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        &_title {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 120%;
+          margin-bottom: 8px;
+        }
+        &_info {
+          margin-top: 12px;
+          display: flex;
+          column-gap: 20px;
+          &_btn {
+            display: flex;
+            align-items: center;
+            img {
+              width: 18px;
+              object-fit: contain;
+              margin-left: 9px;
+            }
+          }
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        height: 250px;
+        width: 100%;
+        border-radius: 6px;
+        top: 0;
+      }
+      &.bg-3 &_img {
+        height: 230px;
+        top: 19px;
+      }
+      &.bg-1::before {
+        background: #e2acac;
+      }
+      &.bg-2::before {
+        background: #71c7cc;
+      }
+      &.bg-3::before {
+        background: #d6dd85;
+      }
+      &.bg-4::before {
+        background: #dcaac5;
+      }
+    }
+  }
+}
+
+.send-request {
+  background: $light-grey;
+  border-radius: 6px;
+  display: flex;
+  margin-bottom: 60px;
+  &__left {
+    background: #d185dd;
+    border-radius: 6px;
+    height: 550px;
+    width: 58%;
+    flex-shrink: 0;
+    &_img {
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      top: 21px;
+    }
+  }
+  &__right {
+    padding: 56px 135px 64px 64px;
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &_title {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 54px;
+    }
+    input {
+      padding: 12px 20px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 40px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      &::placeholder {
+        color: #8a8a8a;
+      }
+    }
+    &_submit {
+      margin-top: auto;
+      align-self: flex-start;
     }
   }
 }
