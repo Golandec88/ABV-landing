@@ -43,8 +43,12 @@
     &_enter {
       font-weight: 500;
       color: $light-grey;
-      padding: 10px 0;
-      margin-right: 40px;
+      padding: 8px 24px;
+      margin-right: 16px;
+      border-radius: 6px;
+      &:hover {
+        color: $black;
+      }
     }
     &_sign {
       font-weight: 700;
@@ -53,9 +57,6 @@
       padding: 8px 24px;
       border-radius: 6px;
       transition: background-color 0.3s ease-in-out;
-      &:hover {
-        background: rgba($yellow, 0.7);
-      }
     }
   }
 
@@ -75,17 +76,11 @@
       background: transparent;
       border: 0px;
       flex-grow: 0;
-      cursor: pointer;
-      transition: background-color 0.3s ease-in-out;
       &.active {
         color: $black;
         background: $light-grey;
       }
-      &:focus {
-        outline: none;
-      }
       &:hover {
-        background: $light-grey;
         color: $black;
       }
       &-center {

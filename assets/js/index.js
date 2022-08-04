@@ -15,4 +15,16 @@ $(document).ready(function () {
     margin: 60,
     dots: false,
   });
+
+  $(".circle-animation-btn").mousemove(function (e) {
+    this.style.setProperty("--circle-width", this.offsetWidth + "px");
+    this.style.setProperty(
+      "--circle-top-position",
+      e.offsetY - this.offsetWidth / 2 + "px"
+    );
+    this.style.setProperty(
+      "--circle-left-position",
+      e.offsetX - this.offsetWidth / 2 + "px"
+    );
+  });
 });
