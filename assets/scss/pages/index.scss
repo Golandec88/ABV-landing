@@ -11,9 +11,11 @@
     max-height: 750px;
     .slide {
       display: flex;
+      align-items: start;
       padding: 77px 0;
+      overflow: hidden;
       &__img {
-        height: 100%;
+        width: 100%;
         object-fit: contain;
         object-position: right top;
         margin-left: 162px;
@@ -47,11 +49,11 @@
 }
 
 .start-working {
+  margin: 60px auto;
+  background: $light-grey;
   display: flex;
   justify-content: space-between;
-  margin: 60px auto;
   border-radius: 6px;
-  background: $light-grey;
   overflow: hidden;
   &__left {
     display: flex;

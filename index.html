@@ -18,152 +18,158 @@
   <body class="page">
     <header class="header">
       <div class="container">
-        <a href="./index.html" target="_self" class="header__logo">
-          <img
-            class="header__logo-image"
-            src="assets/images/logo_abv.svg"
-            alt="ABV Logo"
-          />
-        </a>
-        <nav class="header__menu">
-          <ul class="header__nav">
-            <li class="header__nav_item">
-              <a
-                href="./index.html"
-                class="header__nav_item_btn line-animate-btn"
-                style="--bg-color: #f2f2f2"
-                target="_self"
-              >
-                Главная
-              </a>
-            </li>
-            <li class="header__nav_item">
-              <a
-                href="./about-us.html"
-                class="header__nav_item_btn line-animate-btn"
-                style="--bg-color: #f2f2f2"
-                target="_self"
-              >
-                О нас
-              </a>
-            </li>
-            <li class="header__nav_item">
-              <a
-                href="./services.html"
-                class="header__nav_item_btn line-animate-btn"
-                s
-                style="--bg-color: #f2f2f2"
-                target="_self"
-              >
-                Услуги
-              </a>
-            </li>
-            <li class="header__nav_item">
-              <a
-                class="header__nav_item_btn line-animate-btn"
-                style="--bg-color: #f2f2f2"
-                href="./price.html"
-              >
-                Тарифы
-              </a>
-            </li>
-            <li class="header__nav_item">
-              <a
-                class="header__nav_item_btn line-animate-btn"
-                style="--bg-color: #f2f2f2"
-                target="_self"
-                href="#contacts"
-              >
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__auth">
-          <a
-            class="header__auth_enter circle-animation-btn"
-            style="
-              --circle-width: 40px;
-              --circle-top-position: -38.5px;
-              --circle-left-position: -67.5px;
-              --bg-color: #fff;
-            "
-            href="https://e365.uz/#/login"
-            target="_self"
-          >
-            <span>Войти</span>
+        <div class="header__wrapper">
+          <a href="./index.html" target="_self" class="header__logo">
+            <img
+              class="header__logo-image"
+              src="assets/images/logo_abv.svg"
+              alt="ABV Logo"
+            />
           </a>
-          <a
-            class="header__auth_sign circle-animation-btn"
-            style="
-              --circle-width: 60px;
-              --circle-top-position: -38.5px;
-              --circle-left-position: -67.5px;
-              --bg-color: #fff;
-            "
-            href="https://e365.uz/#/login"
-            target="_self"
-          >
-            <span>Зарегистрироваться</span>
-          </a>
-        </div>
-        <div class="header__lang">
-          <button
-            class="header__lang_btn active circle-animation-btn"
-            style="
-              --circle-width: 35px;
-              --circle-top-position: -38.5px;
-              --circle-left-position: -67.5px;
-              --bg-color: #f2f2f2;
-            "
-          >
-            <span>RU</span>
-          </button>
-          <button
-            class="header__lang_btn header__lang_btn-center circle-animation-btn"
-            style="
-              --circle-width: 35px;
-              --circle-top-position: -38.5px;
-              --circle-left-position: -67.5px;
-              --bg-color: #f2f2f2;
-            "
-          >
-            <span>UZB</span>
-          </button>
-          <button
-            class="header__lang_btn circle-animation-btn"
-            style="
-              --circle-width: 35px;
-              --circle-top-position: -38.5px;
-              --circle-left-position: -67.5px;
-              --bg-color: #f2f2f2;
-            "
-          >
-            <span>ENG</span>
-          </button>
-        </div>
-        <!-- <div class="dropdown d-xs-none">
-            <div class="dropdown__selected-item">RU</div>
-            <div class="dropdown__list">
-              <div class="dropdown__list-item active">
-                <a href="#"> RU </a>
-              </div>
-              <div class="dropdown__list-item">
-                <a href="#"> ENG </a>
-              </div>
-              <div class="dropdown__list-item">
-                <a href="#"> UZB </a>
+          <nav class="header__menu">
+            <div class="header__menu__close-btn header__burger">
+              <div>
+                <span></span>
+                <span></span>
               </div>
             </div>
-          </div> -->
-
-        <!-- <div class="header__burger">
-          <input class="header__burger-cheeckbox" type="checkbox" />
-          <div>
-            <span></span>
-            <span></span>
+            <ul class="header__nav">
+              <li class="header__nav_item">
+                <a
+                  href="./index.html"
+                  class="header__nav_item_btn line-animate-btn"
+                  style="--bg-color: #f2f2f2"
+                  target="_self"
+                >
+                  Главная
+                </a>
+              </li>
+              <li class="header__nav_item">
+                <a
+                  href="./about-us.html"
+                  class="header__nav_item_btn line-animate-btn"
+                  style="--bg-color: #f2f2f2"
+                  target="_self"
+                >
+                  О нас
+                </a>
+              </li>
+              <li class="header__nav_item">
+                <a
+                  href="./services.html"
+                  class="header__nav_item_btn line-animate-btn"
+                  s
+                  style="--bg-color: #f2f2f2"
+                  target="_self"
+                >
+                  Услуги
+                </a>
+              </li>
+              <li class="header__nav_item">
+                <a
+                  class="header__nav_item_btn line-animate-btn"
+                  style="--bg-color: #f2f2f2"
+                  href="./price.html"
+                >
+                  Тарифы
+                </a>
+              </li>
+              <li class="header__nav_item">
+                <a
+                  class="header__nav_item_btn line-animate-btn"
+                  style="--bg-color: #f2f2f2"
+                  target="_self"
+                  href="#contacts"
+                >
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__auth">
+            <a
+              class="header__auth_enter circle-animation-btn"
+              style="
+                --circle-width: 40px;
+                --circle-top-position: -38.5px;
+                --circle-left-position: -67.5px;
+                --bg-color: #fff;
+              "
+              href="https://e365.uz/#/login"
+              target="_self"
+            >
+              <span>Войти</span>
+            </a>
+            <a
+              class="header__auth_sign circle-animation-btn"
+              style="
+                --circle-width: 60px;
+                --circle-top-position: -38.5px;
+                --circle-left-position: -67.5px;
+                --bg-color: #fff;
+              "
+              href="https://e365.uz/#/login"
+              target="_self"
+            >
+              <span>Зарегистрироваться</span>
+            </a>
           </div>
-        </div>-->
+          <div class="header__lang">
+            <button
+              class="header__lang_btn active circle-animation-btn"
+              style="
+                --circle-width: 35px;
+                --circle-top-position: -38.5px;
+                --circle-left-position: -67.5px;
+                --bg-color: #f2f2f2;
+              "
+            >
+              <span>RU</span>
+            </button>
+            <button
+              class="header__lang_btn header__lang_btn-center circle-animation-btn"
+              style="
+                --circle-width: 35px;
+                --circle-top-position: -38.5px;
+                --circle-left-position: -67.5px;
+                --bg-color: #f2f2f2;
+              "
+            >
+              <span>UZB</span>
+            </button>
+            <button
+              class="header__lang_btn circle-animation-btn"
+              style="
+                --circle-width: 35px;
+                --circle-top-position: -38.5px;
+                --circle-left-position: -67.5px;
+                --bg-color: #f2f2f2;
+              "
+            >
+              <span>ENG</span>
+            </button>
+          </div>
+          <div class="header__lang-mobile">
+            <button class="header__lang-mobile_selected">RU</button>
+            <div class="lang-mobile__menu">
+              <button class="header__lang-mobile_btn active">
+                <span>RU</span>
+              </button>
+              <button class="header__lang-mobile_btn">
+                <span>UZB</span>
+              </button>
+              <button class="header__lang-mobile_btn">
+                <span>ENG</span>
+              </button>
+            </div>
+          </div>
+          <div class="header__burger">
+            <div>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -175,20 +181,22 @@
             background-image: url('assets/images/main_page/slides/background-1.jpg');
           "
         >
-          <div class="container slide">
-            <div class="slide__content">
-              <h1 class="slide__content_title">
-                Виртуальная платформа для вашего бизнеса
-              </h1>
-              <span class="slide__content_subtitle"
-                >#Doing business in uzbekistan</span
-              >
+          <div class="container">
+            <div class="slide">
+              <div class="slide__content">
+                <h1 class="slide__content_title">
+                  Виртуальная платформа для вашего бизнеса
+                </h1>
+                <span class="slide__content_subtitle"
+                  >#Doing business in uzbekistan</span
+                >
+              </div>
+              <img
+                class="slide__img"
+                src="assets/images/main_page/slides/photo-1.png"
+                alt=""
+              />
             </div>
-            <img
-              class="slide__img"
-              src="assets/images/main_page/slides/photo-1.png"
-              alt=""
-            />
           </div>
         </div>
         <div
@@ -197,20 +205,22 @@
             background-image: url('assets/images/main_page/slides/background-1.jpg');
           "
         >
-          <div class="container slide">
-            <div class="slide__content">
-              <h1 class="slide__content_title">
-                Виртуальная платформа для вашего бизнеса
-              </h1>
-              <span class="slide__content_subtitle"
-                >#Doing business in uzbekistan</span
-              >
+          <div class="container">
+            <div class="slide">
+              <div class="slide__content">
+                <h1 class="slide__content_title">
+                  Виртуальная платформа для вашего бизнеса
+                </h1>
+                <span class="slide__content_subtitle"
+                  >#Doing business in uzbekistan</span
+                >
+              </div>
+              <img
+                class="slide__img"
+                src="assets/images/main_page/slides/photo-1.png"
+                alt=""
+              />
             </div>
-            <img
-              class="slide__img"
-              src="assets/images/main_page/slides/photo-1.png"
-              alt=""
-            />
           </div>
         </div>
         <div
@@ -219,301 +229,309 @@
             background-image: url('assets/images/main_page/slides/background-1.jpg');
           "
         >
-          <div class="container slide">
-            <div class="slide__content">
-              <h1 class="slide__content_title">
-                Виртуальная платформа для вашего бизнеса
-              </h1>
-              <span class="slide__content_subtitle"
-                >#Doing business in uzbekistan</span
-              >
+          <div class="container">
+            <div class="slide">
+              <div class="slide__content">
+                <h1 class="slide__content_title">
+                  Виртуальная платформа для вашего бизнеса
+                </h1>
+                <span class="slide__content_subtitle"
+                  >#Doing business in uzbekistan</span
+                >
+              </div>
+              <img
+                class="slide__img"
+                src="assets/images/main_page/slides/photo-1.png"
+                alt=""
+              />
             </div>
-            <img
-              class="slide__img"
-              src="assets/images/main_page/slides/photo-1.png"
-              alt=""
-            />
           </div>
         </div>
       </section>
 
       <section class="bank-cources"></section>
 
-      <section class="start-working container">
-        <div class="start-working__left">
-          <h3 class="start-working__left__title">
-            Как начать работать в
-            <br />
-            Республике Узбекистан
-          </h3>
-          <p class="start-working__left__subtitle">
-            Пошаговая инструкция для открытии собственного бизнеса на территории
-            Республики Узбекистан.
-          </p>
-          <div class="start-working__left__icons">
-            <div class="start-working__left__icons-item">
-              <img src="assets/icons/home.svg" alt="register" />
-              <span>Регистрация</span>
+      <div class="container">
+        <section class="start-working">
+          <div class="start-working__left">
+            <h3 class="start-working__left__title">
+              Как начать работать в
+              <br />
+              Республике Узбекистан
+            </h3>
+            <p class="start-working__left__subtitle">
+              Пошаговая инструкция для открытии собственного бизнеса на
+              территории Республики Узбекистан.
+            </p>
+            <div class="start-working__left__icons">
+              <div class="start-working__left__icons-item">
+                <img src="assets/icons/home.svg" alt="register" />
+                <span>Регистрация</span>
+              </div>
+              <div class="start-working__left__icons-item">
+                <img src="assets/icons/stopwatch.svg" alt="watch" />
+                <span>Консультация</span>
+              </div>
+              <div class="start-working__left__icons-item">
+                <img src="assets/icons/magic-ball.svg" alt="ball" />
+                <span>Леквидация</span>
+              </div>
             </div>
-            <div class="start-working__left__icons-item">
-              <img src="assets/icons/stopwatch.svg" alt="watch" />
-              <span>Консультация</span>
-            </div>
-            <div class="start-working__left__icons-item">
-              <img src="assets/icons/magic-ball.svg" alt="ball" />
-              <span>Леквидация</span>
-            </div>
+            <a
+              href="#"
+              class="start-working__left_more-btn circle-animation-btn"
+              style="
+                --circle-width: 133px;
+                --circle-top-position: -38.5px;
+                --circle-left-position: -67.5px;
+                --bg-color: #2b2b2b;
+              "
+            >
+              <span>Подробнее</span>
+              <img src="assets/icons/arrow.svg" alt="arrow" />
+            </a>
           </div>
-          <a
-            href="#"
-            class="start-working__left_more-btn circle-animation-btn"
-            style="
-              --circle-width: 133px;
-              --circle-top-position: -38.5px;
-              --circle-left-position: -67.5px;
-              --bg-color: #2b2b2b;
-            "
-          >
-            <span>Подробнее</span>
-            <img src="assets/icons/arrow.svg" alt="arrow" />
-          </a>
-        </div>
-        <div class="start-working__right">
-          <img src="assets/images/main_page/working.png" />
-        </div>
-      </section>
+          <div class="start-working__right">
+            <img src="assets/images/main_page/working.png" />
+          </div>
+        </section>
+      </div>
 
-      <section class="services container">
-        <h2 class="services__title">Сервисы</h2>
-        <div class="services__list">
-          <div class="services__list__item bg-1">
-            <img
-              class="services__list__item_img"
-              src="assets/images/main_page/services-1.png"
-              alt=""
-            />
-            <article class="services__list__item__content">
-              <h5 class="services__list__item_title">Конструктор документов</h5>
-              <p class="services__list__item_subtitle">
-                Наши специалисты-консультанты помогут вам со всеми вопросами
-                косательно ведения бизнеса в Узбекистане
-              </p>
-              <a
-                href="#"
-                class="services__list__item_btn line-animate-btn"
-                style="--bg-color: #2b2b2b"
-              >
-                <span>Подробнее</span>
-                <img src="assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </article>
+      <div class="container">
+        <section class="services">
+          <h2 class="services__title">Сервисы</h2>
+          <div class="services__list">
+            <div class="services__list__item bg-1">
+              <img
+                class="services__list__item_img"
+                src="assets/images/main_page/services-1.png"
+                alt=""
+              />
+              <article class="services__list__item__content">
+                <h5 class="services__list__item_title">
+                  Конструктор документов
+                </h5>
+                <p class="services__list__item_subtitle">
+                  Наши специалисты-консультанты помогут вам со всеми вопросами
+                  косательно ведения бизнеса в Узбекистане
+                </p>
+                <a
+                  href="#"
+                  class="services__list__item_btn line-animate-btn"
+                  style="--bg-color: #2b2b2b"
+                >
+                  <span>Подробнее</span>
+                  <img src="assets/icons/arrow.svg" alt="arrow" />
+                </a>
+              </article>
+            </div>
+            <div class="services__list__item bg-2">
+              <img
+                class="services__list__item_img"
+                src="assets/images/main_page/services-2.png"
+                alt=""
+              />
+              <article class="services__list__item__content">
+                <h5 class="services__list__item_title">
+                  Электронный документооборот
+                </h5>
+                <p class="services__list__item_subtitle">
+                  Наши специалисты-консультанты помогут вам со всеми вопросами
+                  косательно ведения бизнеса в Узбекистане
+                </p>
+                <a
+                  href="#"
+                  class="services__list__item_btn line-animate-btn"
+                  style="--bg-color: #2b2b2b"
+                >
+                  <span>Подробнее</span>
+                  <img src="assets/icons/arrow.svg" alt="arrow" />
+                </a>
+              </article>
+            </div>
+            <div class="services__list__item bg-3">
+              <img
+                class="services__list__item_img"
+                src="assets/images/main_page/services-3.png"
+                alt=""
+              />
+              <article class="services__list__item__content">
+                <h5 class="services__list__item_title">
+                  Юридическое сопровождение
+                </h5>
+                <p class="services__list__item_subtitle">
+                  Наши специалисты-консультанты помогут вам со всеми вопросами
+                  косательно ведения бизнеса в Узбекистане
+                </p>
+                <a
+                  href="#"
+                  class="services__list__item_btn line-animate-btn"
+                  style="--bg-color: #2b2b2b"
+                >
+                  <span>Подробнее</span>
+                  <img src="assets/icons/arrow.svg" alt="arrow" />
+                </a>
+              </article>
+            </div>
+            <div class="services__list__item bg-4">
+              <img
+                class="services__list__item_img"
+                src="assets/images/main_page/services-4.png"
+                alt=""
+              />
+              <article class="services__list__item__content">
+                <h5 class="services__list__item_title">
+                  Регистрация организации
+                </h5>
+                <p class="services__list__item_subtitle">
+                  Наши специалисты-консультанты помогут вам со всеми вопросами
+                  косательно ведения бизнеса в Узбекистане
+                </p>
+                <a
+                  href="#"
+                  class="services__list__item_btn line-animate-btn"
+                  style="--bg-color: #2b2b2b"
+                >
+                  <span>Подробнее</span>
+                  <img src="assets/icons/arrow.svg" alt="arrow" />
+                </a>
+              </article>
+            </div>
+            <div class="services__list__item bg-5">
+              <img
+                class="services__list__item_img"
+                src="assets/images/main_page/services-5.png"
+                alt=""
+              />
+              <article class="services__list__item__content">
+                <h5 class="services__list__item_title">Отчетность в ГНИ</h5>
+                <p class="services__list__item_subtitle">
+                  Наши специалисты-консультанты помогут вам со всеми вопросами
+                  косательно ведения бизнеса в Узбекистане
+                </p>
+                <a
+                  href="#"
+                  class="services__list__item_btn line-animate-btn"
+                  style="--bg-color: #2b2b2b"
+                >
+                  <span>Подробнее</span>
+                  <img src="assets/icons/arrow.svg" alt="arrow" />
+                </a>
+              </article>
+            </div>
+            <div class="services__list__item bg-6">
+              <img
+                class="services__list__item_img"
+                src="assets/images/main_page/services-6.png"
+                alt=""
+              />
+              <article class="services__list__item__content">
+                <h5 class="services__list__item_title">Отдел кадров</h5>
+                <p class="services__list__item_subtitle">
+                  Наши специалисты-консультанты помогут вам со всеми вопросами
+                  косательно ведения бизнеса в Узбекистане
+                </p>
+                <a
+                  href="#"
+                  class="services__list__item_btn line-animate-btn"
+                  style="--bg-color: #2b2b2b"
+                >
+                  <span>Подробнее</span>
+                  <img src="assets/icons/arrow.svg" alt="arrow" />
+                </a>
+              </article>
+            </div>
+            <div class="services__list__item bg-7">
+              <img
+                class="services__list__item_img"
+                src="assets/images/main_page/services-7.png"
+                alt=""
+              />
+              <article class="services__list__item__content">
+                <h5 class="services__list__item_title">Работа с банком</h5>
+                <p class="services__list__item_subtitle">
+                  Наши специалисты-консультанты помогут вам со всеми вопросами
+                  косательно ведения бизнеса в Узбекистане
+                </p>
+                <a
+                  href="#"
+                  class="services__list__item_btn line-animate-btn"
+                  style="--bg-color: #2b2b2b"
+                >
+                  <span>Подробнее</span>
+                  <img src="assets/icons/arrow.svg" alt="arrow" />
+                </a>
+              </article>
+            </div>
+            <div class="services__list__item bg-8">
+              <img
+                class="services__list__item_img"
+                src="assets/images/main_page/services-8.png"
+                alt=""
+              />
+              <article class="services__list__item__content">
+                <h5 class="services__list__item_title">Бухгалтерский учет</h5>
+                <p class="services__list__item_subtitle">
+                  Наши специалисты-консультанты помогут вам со всеми вопросами
+                  косательно ведения бизнеса в Узбекистане
+                </p>
+                <a
+                  href="#"
+                  class="services__list__item_btn line-animate-btn"
+                  style="--bg-color: #2b2b2b"
+                >
+                  <span>Подробнее</span>
+                  <img src="assets/icons/arrow.svg" alt="arrow" />
+                </a>
+              </article>
+            </div>
+            <div class="services__list__item bg-9">
+              <img
+                class="services__list__item_img"
+                src="assets/images/main_page/services-9.png"
+                alt=""
+              />
+              <article class="services__list__item__content">
+                <h5 class="services__list__item_title">Законодательство</h5>
+                <p class="services__list__item_subtitle">
+                  Наши специалисты-консультанты помогут вам со всеми вопросами
+                  косательно ведения бизнеса в Узбекистане
+                </p>
+                <a
+                  href="#"
+                  class="services__list__item_btn line-animate-btn"
+                  style="--bg-color: #2b2b2b"
+                >
+                  <span>Подробнее</span>
+                  <img src="assets/icons/arrow.svg" alt="arrow" />
+                </a>
+              </article>
+            </div>
+            <div class="services__list__item bg-10">
+              <img
+                class="services__list__item_img"
+                src="assets/images/main_page/services-10.png"
+                alt=""
+              />
+              <article class="services__list__item__content">
+                <h5 class="services__list__item_title">Склад</h5>
+                <p class="services__list__item_subtitle">
+                  Наши специалисты-консультанты помогут вам со всеми вопросами
+                  косательно ведения бизнеса в Узбекистане
+                </p>
+                <a
+                  href="#"
+                  class="services__list__item_btn line-animate-btn"
+                  style="--bg-color: #2b2b2b"
+                >
+                  <span>Подробнее</span>
+                  <img src="assets/icons/arrow.svg" alt="arrow" />
+                </a>
+              </article>
+            </div>
           </div>
-          <div class="services__list__item bg-2">
-            <img
-              class="services__list__item_img"
-              src="assets/images/main_page/services-2.png"
-              alt=""
-            />
-            <article class="services__list__item__content">
-              <h5 class="services__list__item_title">
-                Электронный документооборот
-              </h5>
-              <p class="services__list__item_subtitle">
-                Наши специалисты-консультанты помогут вам со всеми вопросами
-                косательно ведения бизнеса в Узбекистане
-              </p>
-              <a
-                href="#"
-                class="services__list__item_btn line-animate-btn"
-                style="--bg-color: #2b2b2b"
-              >
-                <span>Подробнее</span>
-                <img src="assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </article>
-          </div>
-          <div class="services__list__item bg-3">
-            <img
-              class="services__list__item_img"
-              src="assets/images/main_page/services-3.png"
-              alt=""
-            />
-            <article class="services__list__item__content">
-              <h5 class="services__list__item_title">
-                Юридическое сопровождение
-              </h5>
-              <p class="services__list__item_subtitle">
-                Наши специалисты-консультанты помогут вам со всеми вопросами
-                косательно ведения бизнеса в Узбекистане
-              </p>
-              <a
-                href="#"
-                class="services__list__item_btn line-animate-btn"
-                style="--bg-color: #2b2b2b"
-              >
-                <span>Подробнее</span>
-                <img src="assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </article>
-          </div>
-          <div class="services__list__item bg-4">
-            <img
-              class="services__list__item_img"
-              src="assets/images/main_page/services-4.png"
-              alt=""
-            />
-            <article class="services__list__item__content">
-              <h5 class="services__list__item_title">
-                Регистрация организации
-              </h5>
-              <p class="services__list__item_subtitle">
-                Наши специалисты-консультанты помогут вам со всеми вопросами
-                косательно ведения бизнеса в Узбекистане
-              </p>
-              <a
-                href="#"
-                class="services__list__item_btn line-animate-btn"
-                style="--bg-color: #2b2b2b"
-              >
-                <span>Подробнее</span>
-                <img src="assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </article>
-          </div>
-          <div class="services__list__item bg-5">
-            <img
-              class="services__list__item_img"
-              src="assets/images/main_page/services-5.png"
-              alt=""
-            />
-            <article class="services__list__item__content">
-              <h5 class="services__list__item_title">Отчетность в ГНИ</h5>
-              <p class="services__list__item_subtitle">
-                Наши специалисты-консультанты помогут вам со всеми вопросами
-                косательно ведения бизнеса в Узбекистане
-              </p>
-              <a
-                href="#"
-                class="services__list__item_btn line-animate-btn"
-                style="--bg-color: #2b2b2b"
-              >
-                <span>Подробнее</span>
-                <img src="assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </article>
-          </div>
-          <div class="services__list__item bg-6">
-            <img
-              class="services__list__item_img"
-              src="assets/images/main_page/services-6.png"
-              alt=""
-            />
-            <article class="services__list__item__content">
-              <h5 class="services__list__item_title">Отдел кадров</h5>
-              <p class="services__list__item_subtitle">
-                Наши специалисты-консультанты помогут вам со всеми вопросами
-                косательно ведения бизнеса в Узбекистане
-              </p>
-              <a
-                href="#"
-                class="services__list__item_btn line-animate-btn"
-                style="--bg-color: #2b2b2b"
-              >
-                <span>Подробнее</span>
-                <img src="assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </article>
-          </div>
-          <div class="services__list__item bg-7">
-            <img
-              class="services__list__item_img"
-              src="assets/images/main_page/services-7.png"
-              alt=""
-            />
-            <article class="services__list__item__content">
-              <h5 class="services__list__item_title">Работа с банком</h5>
-              <p class="services__list__item_subtitle">
-                Наши специалисты-консультанты помогут вам со всеми вопросами
-                косательно ведения бизнеса в Узбекистане
-              </p>
-              <a
-                href="#"
-                class="services__list__item_btn line-animate-btn"
-                style="--bg-color: #2b2b2b"
-              >
-                <span>Подробнее</span>
-                <img src="assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </article>
-          </div>
-          <div class="services__list__item bg-8">
-            <img
-              class="services__list__item_img"
-              src="assets/images/main_page/services-8.png"
-              alt=""
-            />
-            <article class="services__list__item__content">
-              <h5 class="services__list__item_title">Бухгалтерский учет</h5>
-              <p class="services__list__item_subtitle">
-                Наши специалисты-консультанты помогут вам со всеми вопросами
-                косательно ведения бизнеса в Узбекистане
-              </p>
-              <a
-                href="#"
-                class="services__list__item_btn line-animate-btn"
-                style="--bg-color: #2b2b2b"
-              >
-                <span>Подробнее</span>
-                <img src="assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </article>
-          </div>
-          <div class="services__list__item bg-9">
-            <img
-              class="services__list__item_img"
-              src="assets/images/main_page/services-9.png"
-              alt=""
-            />
-            <article class="services__list__item__content">
-              <h5 class="services__list__item_title">Законодательство</h5>
-              <p class="services__list__item_subtitle">
-                Наши специалисты-консультанты помогут вам со всеми вопросами
-                косательно ведения бизнеса в Узбекистане
-              </p>
-              <a
-                href="#"
-                class="services__list__item_btn line-animate-btn"
-                style="--bg-color: #2b2b2b"
-              >
-                <span>Подробнее</span>
-                <img src="assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </article>
-          </div>
-          <div class="services__list__item bg-10">
-            <img
-              class="services__list__item_img"
-              src="assets/images/main_page/services-10.png"
-              alt=""
-            />
-            <article class="services__list__item__content">
-              <h5 class="services__list__item_title">Склад</h5>
-              <p class="services__list__item_subtitle">
-                Наши специалисты-консультанты помогут вам со всеми вопросами
-                косательно ведения бизнеса в Узбекистане
-              </p>
-              <a
-                href="#"
-                class="services__list__item_btn line-animate-btn"
-                style="--bg-color: #2b2b2b"
-              >
-                <span>Подробнее</span>
-                <img src="assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </article>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section class="subservice container">
         <div class="subservice__item bg-1">
@@ -627,188 +645,157 @@
         </div>
       </section>
 
-      <section class="partners container">
-        <h2 class="partners_title">Партнёры</h2>
-        <div class="partners__slider owl-carousel">
-          <a href="#" class="partners__slider_item">
-            <img src="assets/images/main_page/partners/crowe.png" alt="" />
-          </a>
-          <a href="#" class="partners__slider_item">
-            <img src="assets/images/main_page/partners/anor.png" alt="" />
-          </a>
-          <a href="#" class="partners__slider_item">
-            <img src="assets/images/main_page/partners/agro.png" alt="" />
-          </a>
-          <a href="#" class="partners__slider_item">
-            <img src="assets/images/main_page/partners/crowe.png" alt="" />
-          </a>
-          <a href="#" class="partners__slider_item">
-            <img src="assets/images/main_page/partners/anor.png" alt="" />
-          </a>
-          <a href="#" class="partners__slider_item">
-            <img src="assets/images/main_page/partners/agro.png" alt="" />
-          </a>
-          <a href="#" class="partners__slider_item">
-            <img src="assets/images/main_page/partners/crowe.png" alt="" />
-          </a>
-          <a href="#" class="partners__slider_item">
-            <img src="assets/images/main_page/partners/anor.png" alt="" />
-          </a>
-          <a href="#" class="partners__slider_item">
-            <img src="assets/images/main_page/partners/agro.png" alt="" />
-          </a>
-        </div>
-      </section>
+      <div class="container">
+        <section class="partners">
+          <h2 class="partners_title">Партнёры</h2>
+          <div class="partners__slider owl-carousel">
+            <a href="#" class="partners__slider_item">
+              <img src="assets/images/main_page/partners/crowe.png" alt="" />
+            </a>
+            <a href="#" class="partners__slider_item">
+              <img src="assets/images/main_page/partners/anor.png" alt="" />
+            </a>
+            <a href="#" class="partners__slider_item">
+              <img src="assets/images/main_page/partners/agro.png" alt="" />
+            </a>
+            <a href="#" class="partners__slider_item">
+              <img src="assets/images/main_page/partners/crowe.png" alt="" />
+            </a>
+            <a href="#" class="partners__slider_item">
+              <img src="assets/images/main_page/partners/anor.png" alt="" />
+            </a>
+            <a href="#" class="partners__slider_item">
+              <img src="assets/images/main_page/partners/agro.png" alt="" />
+            </a>
+            <a href="#" class="partners__slider_item">
+              <img src="assets/images/main_page/partners/crowe.png" alt="" />
+            </a>
+            <a href="#" class="partners__slider_item">
+              <img src="assets/images/main_page/partners/anor.png" alt="" />
+            </a>
+            <a href="#" class="partners__slider_item">
+              <img src="assets/images/main_page/partners/agro.png" alt="" />
+            </a>
+          </div>
+        </section>
+      </div>
 
-      <section class="news container">
-        <h2 class="news__title">Новости</h2>
-        <div class="news__list">
-          <div class="news__list__item bg-1">
-            <img
-              class="news__list__item_img"
-              src="assets/images/main_page/news-1.png"
-              alt=""
-            />
-            <div class="news__list__item_content">
-              <h5 class="news__list__item_content_title">Lorem Ipsum</h5>
-              <p class="news__list__item_content_subtitle">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the
-              </p>
-              <div class="news__list__item_content_info">
-                <span>8 may</span>
-                <span>12 comments</span>
-                <a
-                  href="#"
-                  class="news__list__item_content_info_btn line-animate-btn"
-                  style="--bg-color: #2b2b2b"
-                >
-                  <span>Подробнее</span>
-                  <img src="assets/icons/arrow.svg" alt="arrow" />
-                </a>
+      <div class="container">
+        <section class="news">
+          <h2 class="news__title">Новости</h2>
+          <div class="news__list">
+            <div class="news__list__item bg-1">
+              <img
+                class="news__list__item_img"
+                src="assets/images/main_page/news-1.png"
+                alt=""
+              />
+              <div class="news__list__item_content">
+                <h5 class="news__list__item_content_title">Lorem Ipsum</h5>
+                <p class="news__list__item_content_subtitle">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the
+                </p>
+                <div class="news__list__item_content_info">
+                  <span>8 may</span>
+                  <span>12 comments</span>
+                  <a
+                    href="#"
+                    class="news__list__item_content_info_btn line-animate-btn"
+                    style="--bg-color: #2b2b2b"
+                  >
+                    <span>Подробнее</span>
+                    <img src="assets/icons/arrow.svg" alt="arrow" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="news__list__item bg-2">
+              <img
+                class="news__list__item_img"
+                src="assets/images/main_page/news-2.png"
+                alt=""
+              />
+              <div class="news__list__item_content">
+                <h5 class="news__list__item_content_title">Lorem Ipsum</h5>
+                <p class="news__list__item_content_subtitle">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the
+                </p>
+                <div class="news__list__item_content_info">
+                  <span>8 may</span>
+                  <span>12 comments</span>
+                  <a
+                    href="#"
+                    class="news__list__item_content_info_btn line-animate-btn"
+                    style="--bg-color: #2b2b2b"
+                  >
+                    <span>Подробнее</span>
+                    <img src="assets/icons/arrow.svg" alt="arrow" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="news__list__item bg-3">
+              <img
+                class="news__list__item_img"
+                src="assets/images/main_page/news-3.png"
+                alt=""
+              />
+              <div class="news__list__item_content">
+                <h5 class="news__list__item_content_title">Lorem Ipsum</h5>
+                <p class="news__list__item_content_subtitle">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the
+                </p>
+                <div class="news__list__item_content_info">
+                  <span>8 may</span>
+                  <span>12 comments</span>
+                  <a
+                    href="#"
+                    class="news__list__item_content_info_btn line-animate-btn"
+                    style="--bg-color: #2b2b2b"
+                  >
+                    <span>Подробнее</span>
+                    <img src="assets/icons/arrow.svg" alt="arrow" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="news__list__item bg-4">
+              <img
+                class="news__list__item_img"
+                src="assets/images/main_page/news-4.png"
+                alt=""
+              />
+              <div class="news__list__item_content">
+                <h5 class="news__list__item_content_title">Lorem Ipsum</h5>
+                <p class="news__list__item_content_subtitle">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the
+                </p>
+                <div class="news__list__item_content_info">
+                  <span>8 may</span>
+                  <span>12 comments</span>
+                  <a
+                    href="#"
+                    class="news__list__item_content_info_btn line-animate-btn"
+                    style="--bg-color: #2b2b2b"
+                  >
+                    <span>Подробнее</span>
+                    <img src="assets/icons/arrow.svg" alt="arrow" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="news__list__item bg-2">
-            <img
-              class="news__list__item_img"
-              src="assets/images/main_page/news-2.png"
-              alt=""
-            />
-            <div class="news__list__item_content">
-              <h5 class="news__list__item_content_title">Lorem Ipsum</h5>
-              <p class="news__list__item_content_subtitle">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the
-              </p>
-              <div class="news__list__item_content_info">
-                <span>8 may</span>
-                <span>12 comments</span>
-                <a
-                  href="#"
-                  class="news__list__item_content_info_btn line-animate-btn"
-                  style="--bg-color: #2b2b2b"
-                >
-                  <span>Подробнее</span>
-                  <img src="assets/icons/arrow.svg" alt="arrow" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="news__list__item bg-3">
-            <img
-              class="news__list__item_img"
-              src="assets/images/main_page/news-3.png"
-              alt=""
-            />
-            <div class="news__list__item_content">
-              <h5 class="news__list__item_content_title">Lorem Ipsum</h5>
-              <p class="news__list__item_content_subtitle">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the
-              </p>
-              <div class="news__list__item_content_info">
-                <span>8 may</span>
-                <span>12 comments</span>
-                <a
-                  href="#"
-                  class="news__list__item_content_info_btn line-animate-btn"
-                  style="--bg-color: #2b2b2b"
-                >
-                  <span>Подробнее</span>
-                  <img src="assets/icons/arrow.svg" alt="arrow" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="news__list__item bg-4">
-            <img
-              class="news__list__item_img"
-              src="assets/images/main_page/news-4.png"
-              alt=""
-            />
-            <div class="news__list__item_content">
-              <h5 class="news__list__item_content_title">Lorem Ipsum</h5>
-              <p class="news__list__item_content_subtitle">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the
-              </p>
-              <div class="news__list__item_content_info">
-                <span>8 may</span>
-                <span>12 comments</span>
-                <a
-                  href="#"
-                  class="news__list__item_content_info_btn line-animate-btn"
-                  style="--bg-color: #2b2b2b"
-                >
-                  <span>Подробнее</span>
-                  <img src="assets/icons/arrow.svg" alt="arrow" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a
-          href="#"
-          class="btn_primary circle-animation-btn"
-          style="
-            --circle-width: 133px;
-            --circle-top-position: -38.5px;
-            --circle-left-position: -67.5px;
-            --bg-color: #fff;
-          "
-        >
-          <span>Показать все</span>
-        </a>
-      </section>
-
-      <section class="send-request container">
-        <div class="send-request__left">
-          <img
-            class="send-request__left_img"
-            src="assets/images/main_page/request.png"
-            alt="call-center"
-          />
-        </div>
-        <form class="send-request__right">
-          <h2 class="send-request__right_title">Оставить заявку</h2>
-          <input
-            type="text"
-            class="send-request__right_name"
-            placeholder="Ф.И.О"
-          />
-          <input
-            type="tel"
-            class="send-request__right_tel"
-            placeholder="+998"
-          />
-          <button
-            type="submit"
-            class="btn_primary circle-animation-btn send-request__right_submit"
+          <a
+            href="#"
+            class="btn_primary circle-animation-btn"
             style="
               --circle-width: 133px;
               --circle-top-position: -38.5px;
@@ -816,10 +803,47 @@
               --bg-color: #fff;
             "
           >
-            <span>Отправить</span>
-          </button>
-        </form>
-      </section>
+            <span>Показать все</span>
+          </a>
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="send-request">
+          <div class="send-request__left">
+            <img
+              class="send-request__left_img"
+              src="assets/images/main_page/request.png"
+              alt="call-center"
+            />
+          </div>
+          <form class="send-request__right">
+            <h2 class="send-request__right_title">Оставить заявку</h2>
+            <input
+              type="text"
+              class="send-request__right_name"
+              placeholder="Ф.И.О"
+            />
+            <input
+              type="tel"
+              class="send-request__right_tel"
+              placeholder="+998"
+            />
+            <button
+              type="submit"
+              class="btn_primary circle-animation-btn send-request__right_submit"
+              style="
+                --circle-width: 133px;
+                --circle-top-position: -38.5px;
+                --circle-left-position: -67.5px;
+                --bg-color: #fff;
+              "
+            >
+              <span>Отправить</span>
+            </button>
+          </form>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
@@ -979,7 +1003,7 @@
             </div>
           </div>
         </div>
-        <p class="footer__author container">
+        <p class="footer__author">
           2022 “B2B Space” Лицензия #- -, 06.07.2022. При использовании
           материалов сайта ссылка на веб-сайт www.abv.uz обязательна.
         </p>

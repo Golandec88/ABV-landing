@@ -139,28 +139,11 @@
   font-size: 16px;
 }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
 .header__burger {
   position: relative;
   width: 45px;
   height: 45px;
   cursor: pointer;
-}
-
-.header__burger .header__burger-cheeckbox {
-  display: block;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  z-index: 2;
-  -webkit-touch-callout: none;
-  position: absolute;
-  opacity: 0;
 }
 
 .header__burger div {
@@ -194,24 +177,17 @@
 }
 
 .header__burger.active span:first-of-type,
-.header__burger .header__burger-cheeckbox:checked + div span:first-of-type {
+.header__burger.active span:first-of-type {
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 5px;
 }
 
 .header__burger.active span:last-of-type,
-.header__burger .header__burger-cheeckbox:checked + div span:last-of-type {
+.header__burger.active span:last-of-type {
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+          transform: rotate(-45deg);
   bottom: 5px;
-}
-
-.header__burger.active:hover span:first-of-type,
-.header__burger.active:hover span:last-of-type,
-.header__burger:hover .header__burger-cheeckbox:checked + div span:first-of-type,
-.header__burger:hover .header__burger-cheeckbox:checked + div span:last-of-type {
-  width: 22px;
 }
 
 .dropdown {
@@ -397,7 +373,20 @@ a {
   color: #2b2b2b;
 }
 
+button {
+  outline: none;
+  background: transparent;
+  border: 0;
+}
+
 .container {
-  max-width: 1600px;
+  max-width: 1700px;
+  padding: 0 50px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 765px) {
+  .container {
+    padding: 0 16px;
+  }
 }

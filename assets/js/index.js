@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".main-page-slider").owlCarousel({
     items: 1,
     loop: true,
-    autoplay: true,
+    // autoplay: true,
     autoplayHoverPause: true,
     dots: false,
   });
@@ -26,5 +26,25 @@ $(document).ready(function () {
       "--circle-left-position",
       e.offsetX - this.offsetWidth / 2 + "px"
     );
+  });
+
+  $(".header__lang-mobile_selected").on("click", function () {
+    $(".lang-mobile__menu").toggleClass("active");
+  });
+
+  $(".header__lang-mobile_btn").on("click", function () {
+    $(".header__lang-mobile_btn").removeClass("active");
+    $(this).addClass("active");
+    $(".lang-mobile__menu").toggleClass("active");
+    $(".header__lang-mobile_selected").html($(this).text());
+  });
+
+  $(".header__burger").on("click", function () {
+    $(".header__burger").toggleClass("active");
+    $(".header__menu").toggleClass("active");
+
+    $(".header__burger-cheeckbox").is(":checked")
+      ? $(".header__burger-cheeckbox").val()
+      : $(".header__burger-cheeckbox").val("on");
   });
 });
