@@ -1,6 +1,53 @@
 .header {
   background: $black;
   padding: 30px 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+
+  .line-animate-btn::after {
+    background: $light-grey;
+  }
+
+  &.white-theme {
+    background: $light-grey;
+    a,
+    button {
+      color: $black;
+    }
+    .header__logo.black-logo {
+      display: inline-block;
+    }
+    .header__logo.white-logo {
+      display: none;
+    }
+    .header__lang {
+      border: 1px solid $black;
+      &_btn-center {
+        border-right: 1px solid $black;
+        border-left: 1px solid $black;
+      }
+    }
+    .line-animate-btn::after {
+      background: $black;
+    }
+    .header__lang_btn.active {
+      background: $black;
+      color: $light-grey;
+      &:hover {
+        color: $black;
+      }
+    }
+    .header__burger span {
+      background-color: $black;
+    }
+    .header__menu .header__auth .header__auth_enter {
+      border: 1px solid $black;
+    }
+  }
 
   .header__wrapper,
   &__menu &__nav {
@@ -14,6 +61,10 @@
     object-fit: cover;
     object-position: center;
     margin-right: 87px;
+  }
+
+  &__logo.black-logo {
+    display: none;
   }
 
   &__nav {
@@ -135,6 +186,23 @@
   &__burger {
     display: none;
   }
+  &__menu &__lang-mobile,
+  &__menu &__auth {
+    display: none;
+  }
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  background: transparent;
+  transition: all 5s ease-in-out;
+  display: none;
+  &.active {
+    display: block;
+    background: rgba(#000, 0.5);
+  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -180,7 +248,7 @@
 
 @media screen and (max-width: 1150px) {
   .header__menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 100%;
@@ -189,10 +257,11 @@
     max-width: 450px;
     transition: all 0.5s ease-in-out;
     background: $black;
+    display: flex;
+    flex-direction: column;
     .header__nav {
       padding: 32px;
       padding-top: 100px;
-      height: 100%;
       display: flex;
       flex-direction: column;
       &_item {
@@ -212,6 +281,9 @@
       right: 32px;
     }
   }
+  .header.white-theme .header__menu {
+    background: $light-grey;
+  }
   .header__burger {
     display: block;
   }
@@ -220,6 +292,22 @@
 @media screen and (max-width: 700px) {
   .header__auth {
     display: none;
+  }
+  .header__menu .header__auth {
+    margin-top: auto;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px 32px;
+    .header__auth_enter {
+      border: 1px solid $light-grey;
+      margin-right: 0;
+      margin-bottom: 16px;
+      &:hover {
+        background: $grey;
+      }
+    }
   }
   .header__logo {
     margin-right: auto;
@@ -234,5 +322,9 @@
   }
   .header__lang-mobile {
     display: none;
+  }
+  .header__menu .header__lang-mobile {
+    display: block;
+    margin: 0 auto;
   }
 }
