@@ -1,9 +1,11 @@
 @import "variables";
 @import "fonts";
-@import "./components/footer";
 @import "./components/burger";
+@import "./components/header";
+@import "./components/footer";
 @import "./components/dropdown";
 @import "./components/buttons";
+@import "./components/send-request";
 
 *,
 *::after,

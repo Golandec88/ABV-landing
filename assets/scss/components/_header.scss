@@ -193,6 +193,10 @@
   &__menu &__auth {
     display: none;
   }
+
+  &.hide {
+    transform: translateY(-100%);
+  }
 }
 
 .overlay {
