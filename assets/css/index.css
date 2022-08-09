@@ -436,7 +436,7 @@
 .subservice__item.bg-3::before {
   background: #85c3dd;
 }
-.subservice__item.bg-4 ::before {
+.subservice__item.bg-4::before {
   background: #e2acac;
 }
 
