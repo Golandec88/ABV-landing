@@ -1,6 +1,5 @@
 .about {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,6 +8,8 @@
 }
 .about__left {
   padding: 64px;
+  padding-top: 56px;
+  padding-bottom: 34px;
   width: 65%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -34,14 +35,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .about__nav ul li {
   margin-right: 60px;
+  margin-bottom: 30px;
+}
+.about__nav ul li:last-child {
+  margin-right: 0;
 }
 .about__nav ul li a {
   font-weight: 500;
   font-size: 20px;
   line-height: 140%;
+  white-space: nowrap;
 }
 .about__right {
   background: #85ddb3;
@@ -74,6 +82,7 @@
 }
 .sign__left {
   padding: 64px;
+  padding-top: 56px;
   width: 35%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -105,6 +114,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-left: auto;
+  margin-top: auto;
 }
 .sign__left-btn span {
   font-weight: 500;
@@ -116,6 +126,9 @@
   -o-object-fit: contain;
      object-fit: contain;
   margin-left: 13px;
+}
+.sign__left .line-animate-btn:hover::after {
+  width: 75%;
 }
 .sign__right {
   background: #85c3dd;
@@ -133,4 +146,116 @@
      object-position: bottom;
   margin: 0 auto;
   display: block;
+}
+
+@media screen and (max-width: 1366px) {
+  .about {
+    margin: 48px 0;
+  }
+  .about__left {
+    padding: 48px;
+    padding-bottom: 18px;
+  }
+  .about__left .about__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .about__left .about__content {
+    font-size: 16px;
+    margin-bottom: 105px;
+  }
+  .about__nav ul li {
+    margin-right: 40px;
+  }
+  .about__nav ul li a {
+    font-size: 16px;
+  }
+  .sign {
+    margin-bottom: 48px;
+  }
+  .sign__left {
+    width: 50%;
+    padding: 48px;
+    padding-top: 40px;
+  }
+  .sign__left-title {
+    font-size: 32px;
+  }
+  .sign__left-text {
+    font-size: 16px;
+  }
+  .sign__right {
+    width: 50%;
+  }
+  .sign__right img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about__left {
+    width: 100%;
+  }
+  .about__right {
+    padding: 10px 35px 0 35px;
+  }
+  .about__right img {
+    max-height: 500px;
+    height: 100%;
+    width: auto;
+  }
+  .sign {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .sign__left {
+    width: 100%;
+  }
+  .sign__right {
+    width: 100%;
+    padding: 10px 35px 0 35px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about {
+    margin: 32px 0;
+  }
+  .about__left {
+    padding: 16px;
+    padding-top: 0;
+  }
+  .about__left .about__title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .about__left .about__content {
+    font-size: 14px;
+    margin-bottom: 94px;
+  }
+  .about__nav ul li {
+    margin-right: 32px;
+    margin-bottom: 16px;
+  }
+  .about__nav ul li a {
+    font-size: 16px;
+  }
+  .sign {
+    margin-bottom: 32px;
+  }
+  .sign__left {
+    padding: 16px;
+  }
+  .sign__left-title {
+    font-size: 24px;
+  }
+  .sign__left-text {
+    font-size: 14px;
+  }
 }

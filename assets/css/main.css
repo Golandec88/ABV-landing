@@ -882,6 +882,7 @@
   }
   .send-request__left {
     height: auto;
+    padding: 10px 35px 0 35px;
   }
   .send-request__right {
     padding: 16px;
