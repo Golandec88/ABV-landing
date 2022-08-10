@@ -7,8 +7,7 @@
   text-align: center;
 }
 .vacancies__slice {
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
 }
 .vacancies__slice-title {
   font-weight: 500;
