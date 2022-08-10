@@ -107,7 +107,7 @@
     &_sign {
       font-weight: 700;
       color: $black;
-      background: $yellow;
+      background: $primary;
       padding: 8px 24px;
       border-radius: 6px;
       transition: background-color 0.3s ease-in-out;
@@ -182,7 +182,7 @@
         }
       }
       &_btn.active {
-        background: $yellow;
+        background: $primary;
       }
     }
   }

@@ -1,0 +1,88 @@
+@import "../variables";
+
+.working {
+  background: $light-grey;
+  margin-top: 34px;
+  padding: 60px 95px 48px;
+  position: relative;
+  .wrapper {
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  &__btns {
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+    margin-bottom: 32px;
+    &-item {
+      padding: 12px 36px;
+      border: 1px solid $primary;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 140%;
+      &.active {
+        background: $primary;
+      }
+    }
+  }
+  &__bg-top {
+    background: red;
+    position: absolute;
+    inset: 0;
+    bottom: 50%;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-num {
+      border: 1px solid $primary;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 32px;
+      color: $primary;
+      line-height: 120%;
+      display: inline-block;
+      padding: 7px 45px;
+    }
+    &-content {
+      display: flex;
+      justify-content: center;
+      &__title {
+        width: 45%;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: auto;
+        text-align: right;
+        padding: 24px;
+      }
+      &__text {
+        width: 45%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: auto;
+        list-style: none;
+        padding: 24px;
+        li {
+          margin-bottom: 16px;
+        }
+      }
+      &__line {
+        width: 1px;
+        background: $primary;
+        margin: 5px 0;
+      }
+    }
+  }
+}

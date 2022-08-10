@@ -100,11 +100,15 @@
 }
 
 @media screen and (max-width: 650px) {
+  .subservices {
+    margin-top: 40px;
+  }
   .subservices__item-content {
     padding: 16px;
     padding-bottom: 0;
   }
   .subservices__item {
+    margin-bottom: 32px;
     .item__title {
       font-size: 24px;
     }

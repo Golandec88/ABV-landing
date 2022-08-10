@@ -1,0 +1,103 @@
+.working {
+  background: #f2f2f2;
+  margin-top: 34px;
+  padding: 60px 95px 48px;
+  position: relative;
+}
+.working .wrapper {
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+.working__title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.working__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+  margin-bottom: 32px;
+}
+.working__btns-item {
+  padding: 12px 36px;
+  border: 1px solid #f4a81d;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+}
+.working__btns-item.active {
+  background: #f4a81d;
+}
+.working__bg-top {
+  background: red;
+  position: absolute;
+  inset: 0;
+  bottom: 50%;
+}
+.working__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.working__item-num {
+  border: 1px solid #f4a81d;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 32px;
+  color: #f4a81d;
+  line-height: 120%;
+  display: inline-block;
+  padding: 7px 45px;
+}
+.working__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.working__item-content__title {
+  width: 45%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: auto;
+  text-align: right;
+  padding: 24px;
+}
+.working__item-content__text {
+  width: 45%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: auto;
+  list-style: none;
+  padding: 24px;
+}
+.working__item-content__text li {
+  margin-bottom: 16px;
+}
+.working__item-content__line {
+  width: 1px;
+  background: #f4a81d;
+  margin: 5px 0;
+}
