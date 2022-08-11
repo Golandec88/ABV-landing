@@ -51,4 +51,22 @@ $(document).ready(function () {
   } else {
     $(".header").addClass("white-theme");
   }
+  let YaMapsShown = false;
+  $(window).scroll(function () {
+    if (!YaMapsShown) {
+      if (
+        $(window).scrollTop() + $(window).height() >
+        $(document).height() - 700
+      ) {
+        showYaMaps();
+        YaMapsShown = true;
+      }
+    }
+  });
+  function showYaMaps() {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://yandex.uz/map-widget/v1/-/CCU5aSReTC";
+    document.getElementsByClassName("footer__map")[0].appendChild(script);
+  }
 });
