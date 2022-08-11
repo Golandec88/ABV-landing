@@ -3,6 +3,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("../../fonts/TTNormsPro-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   font-style: normal;
   font-weight: 500;
   src: url("../../fonts/TTNormsPro-Medium.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -17,4 +19,5 @@
   font-style: normal;
   font-weight: 700;
   src: url("../../fonts/TTNormsPro-Bold.ttf") format("truetype");
+  font-display: swap;
 }
