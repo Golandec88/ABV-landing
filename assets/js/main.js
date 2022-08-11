@@ -51,22 +51,31 @@ $(document).ready(function () {
   } else {
     $(".header").addClass("white-theme");
   }
+
   let YaMapsShown = false;
+
   $(window).scroll(function () {
+    $(".footer").of;
     if (!YaMapsShown) {
       if (
         $(window).scrollTop() + $(window).height() >
-        $(document).height() - 700
+        $(document).height() - $(".footer").height() - 300
       ) {
         showYaMaps();
         YaMapsShown = true;
       }
     }
   });
+
   function showYaMaps() {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "https://yandex.uz/map-widget/v1/-/CCU5aSReTC";
-    document.getElementsByClassName("footer__map")[0].appendChild(script);
+    var map = `<iframe
+    class="footer__iframe"
+    src="https://yandex.uz/map-widget/v1/-/CCU5aSReTC"
+    frameborder="1"
+    allowfullscreen="true"
+    title="yandex map"
+    style="position: relative"></iframe>`;
+
+    $(".footer__map").append(map);
   }
 });
