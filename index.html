@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -13,9 +14,9 @@
     />
     <link rel="stylesheet" href="./assets/css/min-css/main.min.css" />
     <link rel="stylesheet" href="./assets/css/min-css/index.min.css" />
-    <link  href="./assets/fonts/TTNormsPro-Regular.ttf" as="font" />
-    <link  href="./assets/fonts/TTNormsPro-Medium.ttf" as="font" />
-    <link  href="./assets/fonts/TTNormsPro-Bold.ttf" as="font" />
+    <link href="./assets/fonts/TTNormsPro-Regular.ttf" as="font" rel="preload" />
+    <link href="./assets/fonts/TTNormsPro-Medium.ttf" as="font" rel="preload" />
+    <link href="./assets/fonts/TTNormsPro-Bold.ttf" as="font" rel="preload" />
 
     <title>ABV</title>
   </head>
@@ -24,14 +25,14 @@
       <div class="container">
         <div class="header__wrapper">
           <a href="./index.html" target="_self" class="header__logo white-logo">
-            <img
+            <img loading="lazy"
               class="header__logo-image"
               src="assets/images/logo-abv.svg"
               alt="ABV Logo"
             />
           </a>
           <a href="./index.html" target="_self" class="header__logo black-logo">
-            <img
+            <img loading="lazy"
               class="header__logo-image"
               src="assets/images/logo-abv-black.svg"
               alt="ABV Logo"
@@ -241,7 +242,33 @@
                 >
               </div>
               <div class="slide__img__wrapper">
-                <img
+                <img loading="lazy"
+                  class="slide__img"
+                  src="assets/images/slides/photo-1.png"
+                  alt="slide"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="main-page-slider_item"
+          style="
+            background-image: url('assets/images/slides/background-2.jpg');
+          "
+        >
+          <div class="container">
+            <div class="slide">
+              <div class="slide__content">
+                <h1 class="slide__content_title">
+                  Виртуальная платформа для вашего бизнеса
+                </h1>
+                <span class="slide__content_subtitle"
+                  >#Doing business in uzbekistan</span
+                >
+              </div>
+              <div class="slide__img__wrapper">
+                <img loading="lazy"
                   class="slide__img"
                   src="assets/images/slides/photo-1.png"
                   alt="slide"
@@ -267,33 +294,7 @@
                 >
               </div>
               <div class="slide__img__wrapper">
-                <img
-                  class="slide__img"
-                  src="assets/images/slides/photo-1.png"
-                  alt="slide"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="main-page-slider_item"
-          style="
-            background-image: url('assets/images/slides/background-1.jpg');
-          "
-        >
-          <div class="container">
-            <div class="slide">
-              <div class="slide__content">
-                <h1 class="slide__content_title">
-                  Виртуальная платформа для вашего бизнеса
-                </h1>
-                <span class="slide__content_subtitle"
-                  >#Doing business in uzbekistan</span
-                >
-              </div>
-              <div class="slide__img__wrapper">
-                <img
+                <img loading="lazy"
                   class="slide__img"
                   src="assets/images/slides/photo-1.png"
                   alt="slide"
@@ -320,20 +321,20 @@
             </p>
             <div class="start-working__left__icons">
               <div class="start-working__left__icons-item">
-                <img loading="lazy" src="assets/icons/home.svg" alt="register" />
+                <img loading="lazy"  src="assets/icons/home.svg" alt="register" />
                 <span>Регистрация</span>
               </div>
               <div class="start-working__left__icons-item">
-                <img loading="lazy" src="assets/icons/stopwatch.svg" alt="watch" />
+                <img loading="lazy"  src="assets/icons/stopwatch.svg" alt="watch" />
                 <span>Консультация</span>
               </div>
               <div class="start-working__left__icons-item">
-                <img loading="lazy" src="assets/icons/magic-ball.svg" alt="ball" />
+                <img loading="lazy"  src="assets/icons/magic-ball.svg" alt="ball" />
                 <span>Леквидация</span>
               </div>
             </div>
             <a
-              href="#"
+              href="./working.html" target="_self"
               class="start-working__left_more-btn circle-animation-btn"
               style="
                 --circle-width: 133px;
@@ -343,7 +344,7 @@
               "
             >
               <span>Подробнее</span>
-              <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+              <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
             </a>
           </div>
           <div class="start-working__content-mobile">
@@ -356,21 +357,21 @@
             </p>
             <div class="start-working__content-mobile__instuctions">
               <div class="start-working__content-mobile__instuctions-item">
-                <img loading="lazy" src="assets/icons/home.svg" alt="register" />
+                <img loading="lazy"  src="assets/icons/home.svg" alt="register" />
                 <p></p>
                   Подробная инструкция как начать работать в Республике
                   Узбекистан
                 </p>
               </div>
               <div class="start-working__content-mobile__instuctions-item">
-                <img loading="lazy" src="assets/icons/stopwatch.svg" alt="watch" />
+                <img loading="lazy"  src="assets/icons/stopwatch.svg" alt="watch" />
                 <p>
                   Подробная инструкция как начать работать в Республике
                   Узбекистан
                 </p>
               </div>
               <div class="start-working__content-mobile__instuctions-item">
-                <img loading="lazy" src="assets/icons/magic-ball.svg" alt="ball" />
+                <img loading="lazy"  src="assets/icons/magic-ball.svg" alt="ball" />
                 <p>
                   Подробная инструкция как начать работать в Республике
                   Узбекистан
@@ -378,7 +379,7 @@
               </div>
             </div>
             <a
-              href="#"
+              href="./working.html" target="_self"
               class="start-working__content-mobile_more-btn circle-animation-btn start-working__left_more-btn"
               style="
                 --circle-width: 133px;
@@ -388,11 +389,11 @@
               "
             >
               <span>Подробнее</span>
-              <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+              <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
             </a>
           </div>
           <div class="start-working__right">
-            <img loading="lazy" src="assets/images/working.png" alt="peoples" />
+            <img loading="lazy"  src="assets/images/working.png" alt="peoples" />
           </div>
         </section>
       </div>
@@ -402,7 +403,7 @@
           <h2 class="services__title">Сервисы</h2>
           <div class="services__list">
             <div class="services__list__item bg-1">
-              <img
+              <img loading="lazy"
                 class="services__list__item_img"
                 src="assets/images/services-1.png"
                 alt="services-item"
@@ -416,17 +417,18 @@
                   косательно ведения бизнеса в Узбекистане
                 </p>
                 <a
-                  href="#"
+                  href="./services.html" target="_self"
                   class="services__list__item_btn line-animate-btn"
                  
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </article>
             </div>
             <div class="services__list__item bg-2">
-              <img
+              <img loading="lazy"
+              
                 class="services__list__item_img"
                 src="assets/images/services-2.png"
                 alt="services-item"
@@ -440,17 +442,17 @@
                   косательно ведения бизнеса в Узбекистане
                 </p>
                 <a
-                  href="#"
+                  href="./services.html#edo" target="_self"
                   class="services__list__item_btn line-animate-btn"
-                 
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </article>
             </div>
             <div class="services__list__item bg-3">
-              <img
+              <img loading="lazy"
+              
                 class="services__list__item_img"
                 src="assets/images/services-3.png"
                 alt="services-item"
@@ -464,17 +466,18 @@
                   косательно ведения бизнеса в Узбекистане
                 </p>
                 <a
-                  href="#"
+                  href="./services.html#urist" target="_self"
                   class="services__list__item_btn line-animate-btn"
                  
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </article>
             </div>
             <div class="services__list__item bg-4">
-              <img
+              <img loading="lazy"
+              
                 class="services__list__item_img"
                 src="assets/images/services-4.png"
                 alt="services item"
@@ -488,17 +491,17 @@
                   косательно ведения бизнеса в Узбекистане
                 </p>
                 <a
-                  href="#"
+                  href="./services.html#reg-org" target="_self"
                   class="services__list__item_btn line-animate-btn"
-                 
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </article>
             </div>
             <div class="services__list__item bg-5">
-              <img
+              <img loading="lazy"
+              
                 class="services__list__item_img"
                 src="assets/images/services-5.png"
                 alt="services item"
@@ -510,17 +513,17 @@
                   косательно ведения бизнеса в Узбекистане
                 </p>
                 <a
-                  href="#"
+                  href="./services.html#gni" target="_self"
                   class="services__list__item_btn line-animate-btn"
-                 
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </article>
             </div>
             <div class="services__list__item bg-6">
-              <img
+              <img loading="lazy"
+              
                 class="services__list__item_img"
                 src="assets/images/services-6.png"
                 alt="services item"
@@ -532,17 +535,17 @@
                   косательно ведения бизнеса в Узбекистане
                 </p>
                 <a
-                  href="#"
+                  href="./services.html#hr" target="_self"
                   class="services__list__item_btn line-animate-btn"
-                 
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </article>
             </div>
             <div class="services__list__item bg-7">
-              <img
+              <img loading="lazy"
+              
                 class="services__list__item_img"
                 src="assets/images/services-7.png"
                 alt="services item"
@@ -554,17 +557,18 @@
                   косательно ведения бизнеса в Узбекистане
                 </p>
                 <a
-                  href="#"
+                  href="./services.html#bank" target="_self"
                   class="services__list__item_btn line-animate-btn"
-                 
+
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </article>
             </div>
             <div class="services__list__item bg-8">
-              <img
+              <img loading="lazy"
+              
                 class="services__list__item_img"
                 src="assets/images/services-8.png"
                 alt=""
@@ -576,17 +580,18 @@
                   косательно ведения бизнеса в Узбекистане
                 </p>
                 <a
-                  href="#"
+                  href="./services.html#buh-uchet" target="_self"
                   class="services__list__item_btn line-animate-btn"
                  
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </article>
             </div>
             <div class="services__list__item bg-9">
-              <img
+              <img loading="lazy"
+              
                 class="services__list__item_img"
                 src="assets/images/services-9.png"
                 alt="services item"
@@ -598,17 +603,17 @@
                   косательно ведения бизнеса в Узбекистане
                 </p>
                 <a
-                  href="#"
+                  href="./services.html#law" target="_self"
                   class="services__list__item_btn line-animate-btn"
-                 
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </article>
             </div>
             <div class="services__list__item bg-10">
-              <img
+              <img loading="lazy"
+              
                 class="services__list__item_img"
                 src="assets/images/services-10.png"
                 alt="services item"
@@ -620,12 +625,11 @@
                   косательно ведения бизнеса в Узбекистане
                 </p>
                 <a
-                  href="#"
+                  href="./services.html#warehouse" target="_self"
                   class="services__list__item_btn line-animate-btn"
-                 
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </article>
             </div>
@@ -649,15 +653,15 @@
               <li>Управление контрактами</li>
             </ul>
             <a
-              href="#"
+              href="./subservices.html" target="_self"
               class="subservice__item_content_btn line-animate-btn"
-             
             >
               <span>Подробнее</span>
-              <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+              <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
             </a>
           </div>
-          <img
+          <img loading="lazy"
+          
             class="subservice__item_img"
             src="assets/images/subservice-1.png"
             alt="subservice item"
@@ -677,15 +681,16 @@
               <li>Оформление командировочных</li>
             </ul>
             <a
-              href="#"
+              href="./subservices.html#outstuffing" target="_self"
               class="subservice__item_content_btn line-animate-btn"
-             
+
             >
               <span>Подробнее</span>
-              <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+              <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
             </a>
           </div>
-          <img
+          <img loading="lazy"
+          
             class="subservice__item_img"
             src="assets/images/subservice-2.png"
             alt="subservice item"
@@ -704,15 +709,15 @@
               <li>Услуги должной осмотрительности</li>
             </ul>
             <a
-              href="#"
+              href="./subservices.html#consultation" target="_self"
               class="subservice__item_content_btn line-animate-btn"
-             
             >
               <span>Подробнее</span>
-              <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+              <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
             </a>
           </div>
-          <img
+          <img loading="lazy"
+          
             class="subservice__item_img"
             src="assets/images/subservice-3.png"
             alt="subservice item"
@@ -730,15 +735,15 @@
               <li>Разработка Web-сервисов</li>
             </ul>
             <a
-              href="#"
+              href="./subservices.html#po-dev" target="_self"
               class="subservice__item_content_btn line-animate-btn"
-             
             >
               <span>Подробнее</span>
-              <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+              <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
             </a>
           </div>
-          <img
+          <img loading="lazy"
+          
             class="subservice__item_img"
             src="assets/images/subservice-4.png"
             alt="subservice item"
@@ -751,31 +756,31 @@
           <h2 class="partners_title">Партнёры</h2>
           <div class="partners__slider owl-carousel">
             <a href="#" class="partners__slider_item">
-              <img loading="lazy" src="assets/images/partners/crowe.png" alt="partner" />
+              <img loading="lazy"  src="assets/images/partners/crowe.png" alt="partner" />
             </a>
             <a href="#" class="partners__slider_item">
-              <img loading="lazy" src="assets/images/partners/anor.png" alt="partner" />
+              <img loading="lazy"  src="assets/images/partners/anor.png" alt="partner" />
             </a>
             <a href="#" class="partners__slider_item">
-              <img loading="lazy" src="assets/images/partners/agro.png" alt="partner" />
+              <img loading="lazy"  src="assets/images/partners/agro.png" alt="partner" />
             </a>
             <a href="#" class="partners__slider_item">
-              <img loading="lazy" src="assets/images/partners/crowe.png" alt="partner" />
+              <img loading="lazy"  src="assets/images/partners/crowe.png" alt="partner" />
             </a>
             <a href="#" class="partners__slider_item">
-              <img loading="lazy" src="assets/images/partners/anor.png" alt="partner" />
+              <img loading="lazy"  src="assets/images/partners/anor.png" alt="partner" />
             </a>
             <a href="#" class="partners__slider_item">
-              <img loading="lazy" src="assets/images/partners/agro.png" alt="partner" />
+              <img loading="lazy"  src="assets/images/partners/agro.png" alt="partner" />
             </a>
             <a href="#" class="partners__slider_item">
-              <img loading="lazy" src="assets/images/partners/crowe.png" alt="partner" />
+              <img loading="lazy"  src="assets/images/partners/crowe.png" alt="partner" />
             </a>
             <a href="#" class="partners__slider_item">
-              <img loading="lazy" src="assets/images/partners/anor.png" alt="partner" />
+              <img loading="lazy"  src="assets/images/partners/anor.png" alt="partner" />
             </a>
             <a href="#" class="partners__slider_item">
-              <img loading="lazy" src="assets/images/partners/agro.png" alt="partner" />
+              <img loading="lazy"  src="assets/images/partners/agro.png" alt="partner" />
             </a>
           </div>
         </section>
@@ -786,7 +791,8 @@
           <h2 class="news__title">Новости</h2>
           <div class="news__list">
             <div class="news__list__item bg-1">
-              <img
+              <img loading="lazy"
+              
                 class="news__list__item_img"
                 src="assets/images/news-1.png"
                 alt="news item"
@@ -808,12 +814,12 @@
                  
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </div>
             </div>
             <div class="news__list__item bg-2">
-              <img
+              <img loading="lazy"
                 class="news__list__item_img"
                 src="assets/images/news-2.png"
                 alt="news item"
@@ -835,12 +841,12 @@
                  
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </div>
             </div>
             <div class="news__list__item bg-3">
-              <img
+              <img loading="lazy"
                 class="news__list__item_img"
                 src="assets/images/news-3.png"
                 alt="news item"
@@ -863,12 +869,12 @@
                  
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </div>
             </div>
             <div class="news__list__item bg-4">
-              <img
+              <img loading="lazy"
                 class="news__list__item_img"
                 src="assets/images/news-4.png"
                 alt="news item"
@@ -890,13 +896,13 @@
                  
                 >
                   <span>Подробнее</span>
-                  <img loading="lazy" src="assets/icons/arrow.svg" alt="arrow" />
+                  <img loading="lazy"  src="assets/icons/arrow.svg" alt="arrow" />
                 </a>
               </div>
             </div>
           </div>
           <a
-            href="#"
+            href="./news.html" target="_self"
             class="btn_primary circle-animation-btn"
             style="
               --circle-width: 133px;
@@ -913,7 +919,7 @@
       <div class="container">
         <section class="send-request">
           <div class="send-request__left">
-            <img
+            <img loading="lazy"
               class="send-request__left_img"
               src="assets/images/request.png"
               alt="call-center"
@@ -952,7 +958,7 @@
       <div class="container">
         <div class="footer__section">
           <a href="./index.html" target="_self" class="footer__logo">
-            <img loading="lazy" src="assets/images/logo-abv.svg" alt="ABV Logo" />
+            <img loading="lazy"  src="assets/images/logo-abv.svg" alt="ABV Logo" />
           </a>
           <div class="footer__wrapper">
             <div class="footer__section_content">
@@ -1064,14 +1070,6 @@
               class="footer__map"
               style="position: relative; overflow: hidden"
             >
-              <!-- <iframe
-                class="footer__iframe"
-                src="https://yandex.uz/map-widget/v1/-/CCU5aSReTC"
-                frameborder="1"
-                allowfullscreen="true"
-                title="yandex map"
-                style="position: relative"
-              ></iframe> -->
             </div>
           </div>
         </div>

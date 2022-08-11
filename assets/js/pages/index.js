@@ -5,6 +5,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplayHoverPause: true,
     dots: false,
+    lazyLoad: true,
   });
 
   $(".partners__slider").owlCarousel({
@@ -15,6 +16,7 @@ $(document).ready(function () {
     autoplayTimeout: 3000,
     margin: 16,
     dots: false,
+    lazyLoad: true,
     responsive: {
       1366: {
         items: 5,

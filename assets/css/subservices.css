@@ -8,6 +8,7 @@
   background: #f2f2f2;
   border-radius: 6px;
   margin-bottom: 60px;
+  scroll-margin-top: 110px;
 }
 .subservices__item-content {
   padding: 60px 64px 4px 64px;

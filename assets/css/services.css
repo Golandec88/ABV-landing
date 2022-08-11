@@ -14,6 +14,7 @@
   width: calc((100% - 60px) / 2);
   padding: 64px;
   padding-top: 60px;
+  scroll-margin-top: 110px;
 }
 .services__item-title {
   font-weight: 500;

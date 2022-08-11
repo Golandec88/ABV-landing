@@ -13,6 +13,14 @@
     />
     <link rel="stylesheet" href="./assets/css/min-css/main.min.css" />
     <link rel="stylesheet" href="./assets/css/min-css/working.min.css" />
+    <link
+      href="./assets/fonts/TTNormsPro-Regular.ttf"
+      as="font"
+      rel="preload"
+    />
+    <link href="./assets/fonts/TTNormsPro-Medium.ttf" as="font" rel="preload" />
+    <link href="./assets/fonts/TTNormsPro-Bold.ttf" as="font" rel="preload" />
+
     <title>ABV</title>
   </head>
   <body class="page">
@@ -21,6 +29,7 @@
         <div class="header__wrapper">
           <a href="./index.html" target="_self" class="header__logo white-logo">
             <img
+              loading="lazy"
               class="header__logo-image"
               src="assets/images/logo-abv.svg"
               alt="ABV Logo"
@@ -28,6 +37,7 @@
           </a>
           <a href="./index.html" target="_self" class="header__logo black-logo">
             <img
+              loading="lazy"
               class="header__logo-image"
               src="assets/images/logo-abv-black.svg"
               alt="ABV Logo"
@@ -300,6 +310,7 @@
         <section class="send-request">
           <div class="send-request__left">
             <img
+              loading="lazy"
               class="send-request__left_img"
               src="assets/images/request.png"
               alt="call-center"
@@ -453,16 +464,7 @@
               id="map"
               class="footer__map"
               style="position: relative; overflow: hidden"
-            >
-              <iframe
-                class="footer__iframe"
-                src="https://yandex.uz/map-widget/v1/-/CCU5aSReTC"
-                frameborder="1"
-                allowfullscreen="true"
-                title="yandex map"
-                style="position: relative"
-              ></iframe>
-            </div>
+            ></div>
           </div>
         </div>
         <p class="footer__author">
