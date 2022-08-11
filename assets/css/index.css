@@ -228,9 +228,10 @@
   width: 45%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  padding-right: 70px;
 }
 .main-page-slider_item .slide__content_title {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 72px;
   line-height: 120%;
   text-transform: uppercase;
