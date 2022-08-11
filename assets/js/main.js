@@ -55,15 +55,15 @@ $(document).ready(function () {
       $(this).scrollTop() > $(".main-page-slider").outerHeight()
         ? $(".header").addClass("white-theme")
         : $(".header").removeClass("white-theme");
-
-      const top_of_element = $(".footer").offset().top;
-      const bottom_of_screen = $(window).scrollTop() + $(this).innerHeight();
-      bottom_of_screen > top_of_element
-        ? $(".header").addClass("hide")
-        : $(".header").removeClass("hide");
     } else {
       $(".header").addClass("white-theme");
     }
+    
+    const top_of_element = $(".footer").offset().top;
+    const bottom_of_screen = $(window).scrollTop() + $(this).innerHeight();
+    bottom_of_screen > top_of_element
+      ? $(".header").addClass("hide")
+      : $(".header").removeClass("hide")
 
     if (!YaMapsShown) {
       if (
