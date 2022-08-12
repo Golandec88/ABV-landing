@@ -51,6 +51,105 @@
   }
 }
 
+.send-request__wrapper {
+  padding: 64px;
+  padding-top: 0;
+  background: $light-grey;
+  margin-bottom: 64px;
+  border-radius: 0 0 6px 6px;
+
+  .send-request {
+    background: $grey;
+    margin-bottom: 0;
+    &__left {
+      background: #71c7cc;
+      width: 50%;
+      height: auto;
+      padding: 0 30px;
+    }
+    &__right {
+      padding: 64px;
+      &_title {
+        margin-bottom: 16px;
+      }
+      &_subtitle {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 48px;
+      }
+      input,
+      &_select {
+        width: 80%;
+        margin-bottom: 32px;
+      }
+      &_select {
+        background: #fff;
+        position: relative;
+        padding: 0;
+        border-radius: 6px;
+        input {
+          margin-bottom: 0;
+          width: 100%;
+        }
+        button {
+          cursor: pointer;
+          position: absolute;
+          top: 6px;
+          right: 10px;
+          padding: 10px;
+          transition: all 0.3s ease-in-out;
+          &::after {
+            transition: all 0.3s ease-in-out;
+            border-style: solid;
+            border-width: 2px 2px 0 0;
+            border-color: $black;
+            content: "";
+            display: inline-block;
+            height: 14px;
+            width: 14px;
+            transform: rotate(135deg);
+            vertical-align: top;
+          }
+          &:hover::after {
+            border-color: rgba(#000, 0.6);
+          }
+          &.active {
+            transform: translateY(5px);
+            &::after {
+              transform: rotate(-45deg);
+            }
+          }
+        }
+        .options {
+          padding: 5px 0;
+          border-top: 1px solid $grey;
+          display: none;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          left: 0;
+          z-index: 1;
+          background: #fff;
+          box-shadow: 3px 9px 14px 4px rgba($black, 0.2);
+          max-height: 300px;
+          overflow-y: scroll;
+          &.active {
+            display: block;
+          }
+          p {
+            padding: 5px 10px;
+            cursor: pointer;
+            &:hover {
+              background: $light-grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1500px) {
   .send-request__right {
     padding: 48px;

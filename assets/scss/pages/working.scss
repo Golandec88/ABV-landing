@@ -1,10 +1,11 @@
 @import "../variables";
+@import "../mixins/border-animate";
 
 .working {
   background: $light-grey;
   margin-top: 34px;
   padding: 60px 95px 48px;
-  position: relative;
+
   .wrapper {
     position: relative;
     z-index: 5;
@@ -12,16 +13,16 @@
   }
   &__title {
     font-weight: 500;
-    font-size: 28px;
-    line-height: 34px;
-    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 40px;
     text-align: center;
   }
   &__btns {
     display: flex;
     justify-content: center;
     column-gap: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     &-item {
       padding: 12px 36px;
       border: 1px solid $primary;
@@ -29,53 +30,134 @@
       font-weight: 700;
       font-size: 20px;
       line-height: 140%;
+      cursor: pointer;
       &.active {
         background: $primary;
       }
     }
   }
-  &__bg-top {
-    background: red;
-    position: absolute;
-    inset: 0;
-    bottom: 50%;
+  &__items {
+    position: relative;
+    &.items-ip {
+      display: none;
+    }
+    .line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      background: $black;
+      width: 1px;
+      &-2 {
+        width: 100%;
+        position: relative;
+        height: 0;
+        z-index: 1;
+        background: $primary;
+      }
+    }
   }
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    &-num {
-      border: 1px solid $primary;
+    &-num,
+    &-num__wrapper {
       border-radius: 6px;
       font-weight: 500;
       font-size: 32px;
       color: $primary;
       line-height: 120%;
       display: inline-block;
+      background: $light-grey;
+      position: relative;
+    }
+    &-num {
+      z-index: 3;
+      border: 1px solid $black;
       padding: 7px 45px;
+      transition: border 0.3s ease-in-out 0.3s;
+      @include magic-border(1px, $primary, 0.3s, 1);
+      &.active {
+        border: 2px solid transparent;
+      }
+      &.go-top {
+        cursor: pointer;
+        &::after {
+          border-style: solid;
+          border-width: 3px 3px 0 0;
+          content: "";
+          display: inline-block;
+          height: 15px;
+          width: 15px;
+          position: relative;
+          top: 15px;
+          transform: rotate(-45deg);
+          vertical-align: top;
+        }
+      }
+    }
+    &-num__wrapper {
+      z-index: 2;
+      padding: 11px 45px;
     }
     &-content {
       display: flex;
       justify-content: center;
+      width: 100%;
       &__title {
         width: 45%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 24px;
+        line-height: 29px;
         margin-left: auto;
         text-align: right;
-        padding: 24px;
+        padding: 32px;
+        padding-left: 19%;
       }
       &__text {
         width: 45%;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 20px;
+        line-height: 24px;
         margin-right: auto;
         list-style: none;
-        padding: 24px;
+        padding: 32px;
+        &-link {
+          text-decoration-line: underline;
+          font-style: italic;
+          transition: color 0.3s ease-in-out;
+          display: inline-block;
+          margin-top: 16px;
+          &:hover {
+            color: rgba($black, 0.7);
+          }
+        }
         li {
           margin-bottom: 16px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        &-helper {
+          font-style: italic;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          &-big {
+            font-style: italic;
+            h4 {
+              font-style: normal;
+              margin-bottom: 16px;
+              margin-top: 32px;
+            }
+          }
         }
       }
       &__line {
@@ -86,3 +168,6 @@
     }
   }
 }
+
+// @media screen and (max-width: 1366px) {
+// }
