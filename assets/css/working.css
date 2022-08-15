@@ -2,6 +2,7 @@
   background: #f2f2f2;
   margin-top: 34px;
   padding: 60px 95px 48px;
+  border-radius: 6px;
 }
 .working .wrapper {
   position: relative;
@@ -180,6 +181,12 @@
   padding: 32px;
   padding-left: 19%;
 }
+.working__item-content__title-mobile {
+  display: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
 .working__item-content__text {
   width: 45%;
   font-weight: 400;
@@ -196,7 +203,6 @@
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
   display: inline-block;
-  margin-top: 16px;
 }
 .working__item-content__text-link:hover {
   color: rgba(43, 43, 43, 0.7);
@@ -225,4 +231,94 @@
   width: 1px;
   background: #f4a81d;
   margin: 5px 0;
+}
+
+@media screen and (max-width: 1366px) {
+  .working__item-content__title {
+    font-size: 20px;
+    line-height: 24px;
+    width: 50%;
+  }
+  .working__item-content__text {
+    width: 50%;
+    padding: 24px;
+    padding-right: 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .working {
+    padding: 48px;
+  }
+  .working__item-content__title {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .working {
+    padding: 16px;
+    padding-bottom: 32px;
+  }
+  .working__title {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .working__btns {
+    margin-bottom: 20px;
+    -webkit-column-gap: 16px;
+       -moz-column-gap: 16px;
+            column-gap: 16px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .working__btns-item {
+    font-size: 16px;
+    padding: 8px 24px;
+  }
+  .working__item-num {
+    font-size: 16px;
+    padding: 8px 0px;
+    width: 78px;
+    text-align: center;
+  }
+  .working__item-content__title {
+    display: none;
+  }
+  .working__item-content__text {
+    width: 100%;
+    font-size: 14px;
+    padding: 20px 0 20px 60px;
+  }
+  .working__item-content__text li {
+    margin-bottom: 12px;
+  }
+  .working__item-content__text-helper {
+    font-size: 12px;
+  }
+  .working__items .line {
+    right: unset;
+    left: 38px;
+  }
+  .working__item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .working__item-num__wrapper {
+    padding: 5px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .working__item-num.go-top::after {
+    top: 6px;
+    right: 1px;
+  }
+  .working__item-content__title-mobile {
+    display: block;
+  }
 }

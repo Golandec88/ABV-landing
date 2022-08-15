@@ -289,7 +289,7 @@ $(document).ready(function () {
     $(".working__btns-item").removeClass("active");
     $(this).addClass("active");
     if ($(this).hasClass("btn-ip")) {
-      $(".working__items.items-ooo").fadeOut(500);
+      $(".working__items.items-ooo").fadeOut(300);
       $(".working__items.items-ip").fadeIn(1000);
     } else {
       $(".working__items.items-ip").fadeOut(500);

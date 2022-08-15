@@ -778,6 +778,7 @@
     width: 100%;
     text-align: center;
     margin-bottom: 32px;
+    padding-right: 0;
   }
   .main-page-slider .slide__content_subtitle {
     display: none;

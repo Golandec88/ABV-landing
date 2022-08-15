@@ -5,6 +5,7 @@
   background: $light-grey;
   margin-top: 34px;
   padding: 60px 95px 48px;
+  border-radius: 6px;
 
   .wrapper {
     position: relative;
@@ -120,6 +121,12 @@
         text-align: right;
         padding: 32px;
         padding-left: 19%;
+        &-mobile {
+          display: none;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+        }
       }
       &__text {
         width: 45%;
@@ -134,7 +141,6 @@
           font-style: italic;
           transition: color 0.3s ease-in-out;
           display: inline-block;
-          margin-top: 16px;
           &:hover {
             color: rgba($black, 0.7);
           }
@@ -169,5 +175,86 @@
   }
 }
 
-// @media screen and (max-width: 1366px) {
-// }
+@media screen and (max-width: 1366px) {
+  .working__item-content__title {
+    font-size: 20px;
+    line-height: 24px;
+    width: 50%;
+  }
+  .working__item-content__text {
+    width: 50%;
+    padding: 24px;
+    padding-right: 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .working {
+    padding: 48px;
+  }
+  .working__item-content__title {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .working {
+    padding: 16px;
+    padding-bottom: 32px;
+    &__title {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    &__btns {
+      margin-bottom: 20px;
+      column-gap: 16px;
+      justify-content: start;
+      &-item {
+        font-size: 16px;
+        padding: 8px 24px;
+      }
+    }
+    &__item-num {
+      font-size: 16px;
+      padding: 8px 0px;
+      width: 78px;
+      text-align: center;
+    }
+    &__item-content__title {
+      display: none;
+    }
+    &__item-content__text {
+      width: 100%;
+      font-size: 14px;
+      padding: 20px 0 20px 60px;
+      li {
+        margin-bottom: 12px;
+      }
+      &-helper {
+        font-size: 12px;
+      }
+    }
+    &__items .line {
+      right: unset;
+      left: 38px;
+    }
+    &__item {
+      align-items: start;
+    }
+    &__item-num__wrapper {
+      padding: 5px 0;
+      display: flex;
+    }
+    &__item-num.go-top::after {
+      top: 6px;
+      right: 1px;
+    }
+    &__item-content__title-mobile {
+      display: block;
+    }
+  }
+}
