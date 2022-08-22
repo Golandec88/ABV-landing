@@ -30,7 +30,7 @@
 }
 .working__btns-item {
   padding: 12px 36px;
-  border: 1px solid #f4a81d;
+  border: 1px solid #75cea9;
   border-radius: 8px;
   font-weight: 700;
   font-size: 20px;
@@ -38,7 +38,7 @@
   cursor: pointer;
 }
 .working__btns-item.active {
-  background: #f4a81d;
+  background: #75cea9;
 }
 .working__items {
   position: relative;
@@ -69,7 +69,7 @@
   position: relative;
   height: 0;
   z-index: 1;
-  background: #f4a81d;
+  background: #75cea9;
 }
 .working__item {
   display: -webkit-box;
@@ -87,7 +87,7 @@
   border-radius: 6px;
   font-weight: 500;
   font-size: 32px;
-  color: #f4a81d;
+  color: #75cea9;
   line-height: 120%;
   display: inline-block;
   background: #f2f2f2;
@@ -108,8 +108,8 @@
   height: calc(100% + 2px);
   top: calc(1px/ -1);
   left: calc(1px/ -1);
-  background: -webkit-gradient(linear, left top, right top, from(#f4a81d), to(#f4a81d)), -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f4a81d), color-stop(50%, transparent)), -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f4a81d), color-stop(50%, transparent)), -webkit-gradient(linear, left top, right top, from(#f4a81d), to(#f4a81d)), -webkit-gradient(linear, right top, left top, from(#f4a81d), to(#f4a81d));
-  background: linear-gradient(to right, #f4a81d 0%, #f4a81d 100%), linear-gradient(to top, #f4a81d 50%, transparent 50%), linear-gradient(to top, #f4a81d 50%, transparent 50%), linear-gradient(to right, #f4a81d 0%, #f4a81d 100%), linear-gradient(to left, #f4a81d 0%, #f4a81d 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#75cea9), to(#75cea9)), -webkit-gradient(linear, left bottom, left top, color-stop(50%, #75cea9), color-stop(50%, transparent)), -webkit-gradient(linear, left bottom, left top, color-stop(50%, #75cea9), color-stop(50%, transparent)), -webkit-gradient(linear, left top, right top, from(#75cea9), to(#75cea9)), -webkit-gradient(linear, right top, left top, from(#75cea9), to(#75cea9));
+  background: linear-gradient(to right, #75cea9 0%, #75cea9 100%), linear-gradient(to top, #75cea9 50%, transparent 50%), linear-gradient(to top, #75cea9 50%, transparent 50%), linear-gradient(to right, #75cea9 0%, #75cea9 100%), linear-gradient(to left, #75cea9 0%, #75cea9 100%);
   background-size: 100% 1px, 1px 200%, 1px 200%, 0% 1px, 0% 1px;
   background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
   background-repeat: no-repeat, no-repeat;
@@ -229,7 +229,7 @@
 }
 .working__item-content__line {
   width: 1px;
-  background: #f4a81d;
+  background: #75cea9;
   margin: 5px 0;
 }
 

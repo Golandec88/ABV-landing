@@ -112,16 +112,16 @@
   padding-top: 36px;
 }
 .news__list__item.bg-1::before {
-  background: #e2acac;
+  background: #d2d2d2;
 }
 .news__list__item.bg-2::before {
-  background: #71c7cc;
+  background: #d2d2d2;
 }
 .news__list__item.bg-3::before {
-  background: #d6dd85;
+  background: #d2d2d2;
 }
 .news__list__item.bg-4::before {
-  background: #dcaac5;
+  background: #d2d2d2;
 }
 
 @media screen and (max-width: 1500px) {

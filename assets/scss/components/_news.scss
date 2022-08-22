@@ -92,16 +92,16 @@
         }
       }
       &.bg-1::before {
-        background: #e2acac;
+        background: $dark-grey;
       }
       &.bg-2::before {
-        background: #71c7cc;
+        background: $dark-grey;
       }
       &.bg-3::before {
-        background: #d6dd85;
+        background: $dark-grey;
       }
       &.bg-4::before {
-        background: #dcaac5;
+        background: $dark-grey;
       }
     }
   }

@@ -130,7 +130,7 @@
   }
 
   &__right {
-    background: $light-emerald;
+    background: $dark-grey;
     border-radius: 6px;
     padding: 31px 66px 0;
     width: 58%;
@@ -183,34 +183,34 @@
         border-radius: 6px;
       }
       &.bg-1::after {
-        background: #d185dd;
+        background: $dark-grey;
       }
       &.bg-2::after {
-        background: #85ddb3;
+        background: $dark-grey;
       }
       &.bg-3::after {
-        background: #d6dd85;
+        background: $dark-grey;
       }
       &.bg-4::after {
-        background: #85c3dd;
+        background: $dark-grey;
       }
       &.bg-5::after {
-        background: #dcaac5;
+        background: $dark-grey;
       }
       &.bg-6::after {
-        background: #aeeadf;
+        background: $dark-grey;
       }
       &.bg-7::after {
-        background: #e2acac;
+        background: $dark-grey;
       }
       &.bg-8::after {
-        background: #8dd18c;
+        background: $dark-grey;
       }
       &.bg-9::after {
-        background: #71c7cc;
+        background: $dark-grey;
       }
       &.bg-10::after {
-        background: #d8c8ba;
+        background: $dark-grey;
       }
       &_img {
         height: 161px;
@@ -348,16 +348,16 @@
       bottom: 0;
     }
     &.bg-1::before {
-      background: #aeeadf;
+      background: $dark-grey;
     }
     &.bg-2::before {
-      background: #d185dd;
+      background: $dark-grey;
     }
     &.bg-3::before {
-      background: #85c3dd;
+      background: $dark-grey;
     }
     &.bg-4::before {
-      background: #e2acac;
+      background: $dark-grey;
     }
   }
 }

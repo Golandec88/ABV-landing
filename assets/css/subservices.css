@@ -34,16 +34,16 @@
      object-fit: contain;
 }
 .subservices__item-img.bg-1 {
-  background: #aeeadf;
+  background: #d2d2d2;
 }
 .subservices__item-img.bg-2 {
-  background: #d185dd;
+  background: #d2d2d2;
 }
 .subservices__item-img.bg-3 {
-  background: #85c3dd;
+  background: #d2d2d2;
 }
 .subservices__item-img.bg-4 {
-  background: #e2acac;
+  background: #d2d2d2;
 }
 .subservices__item .item__title {
   font-weight: 500;

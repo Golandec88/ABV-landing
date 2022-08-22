@@ -52,7 +52,7 @@
   white-space: nowrap;
 }
 .about__right {
-  background: #85ddb3;
+  background: #d2d2d2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +131,7 @@
   width: 75%;
 }
 .sign__right {
-  background: #85c3dd;
+  background: #d2d2d2;
   border-radius: 6px;
   padding: 20px;
   padding-bottom: 0;
@@ -229,7 +229,6 @@
   }
   .about__left {
     padding: 16px;
-    padding-top: 0;
   }
   .about__left .about__title {
     font-size: 24px;

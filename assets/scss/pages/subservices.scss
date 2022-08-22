@@ -24,16 +24,16 @@
         object-fit: contain;
       }
       &.bg-1 {
-        background: #aeeadf;
+        background: $dark-grey;
       }
       &.bg-2 {
-        background: #d185dd;
+        background: $dark-grey;
       }
       &.bg-3 {
-        background: #85c3dd;
+        background: $dark-grey;
       }
       &.bg-4 {
-        background: #e2acac;
+        background: $dark-grey;
       }
     }
     .item {

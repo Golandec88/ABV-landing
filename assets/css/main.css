@@ -185,7 +185,7 @@
 .header__auth_sign {
   font-weight: 700;
   color: #2b2b2b;
-  background: #f4a81d;
+  background: #75cea9;
   padding: 8px 24px;
   border-radius: 6px;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -278,7 +278,7 @@
           transform: rotate(270deg);
 }
 .header__lang-mobile_btn.active {
-  background: #f4a81d;
+  background: #75cea9;
 }
 .header__burger {
   display: none;
@@ -696,7 +696,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 140%;
-  background: #f4a81d;
+  background: #75cea9;
   padding: 12px 36px;
   outline: none;
   border: none;
@@ -769,6 +769,11 @@
   width: 100%;
 }
 
+@media screen and (max-width: 480px) {
+  .btn_primary {
+    width: 100%;
+  }
+}
 .send-request {
   background: #f2f2f2;
   border-radius: 6px;
@@ -778,7 +783,7 @@
   margin-bottom: 60px;
 }
 .send-request__left {
-  background: #d185dd;
+  background: #d2d2d2;
   border-radius: 6px;
   height: 550px;
   width: 58%;
@@ -857,7 +862,7 @@
   margin-bottom: 0;
 }
 .send-request__wrapper .send-request__left {
-  background: #71c7cc;
+  background: #d2d2d2;
   width: 50%;
   height: auto;
   padding: 0 30px;

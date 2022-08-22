@@ -4,7 +4,7 @@
   display: flex;
   margin-bottom: 60px;
   &__left {
-    background: #d185dd;
+    background: $dark-grey;
     border-radius: 6px;
     height: 550px;
     width: 58%;
@@ -62,7 +62,7 @@
     background: $grey;
     margin-bottom: 0;
     &__left {
-      background: #71c7cc;
+      background: $dark-grey;
       width: 50%;
       height: auto;
       padding: 0 30px;
