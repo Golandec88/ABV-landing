@@ -249,6 +249,53 @@
 .bank-cources {
   background: #2b2b2b;
   height: 60px;
+  padding: 0 10px;
+  position: relative;
+}
+.bank-cources::after, .bank-cources::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 10px;
+}
+.bank-cources::after {
+  right: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(#2b2b2b));
+  background-image: linear-gradient(to right, transparent, #2b2b2b);
+}
+.bank-cources::before {
+  left: 10px;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), to(#2b2b2b));
+  background-image: linear-gradient(to left, transparent, #2b2b2b);
+}
+.bank-cources marquee {
+  height: 100%;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bank-cources__wrapper {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  min-width: 100%;
+}
+.bank-cources__wrapper p {
+  margin-right: 20px;
+}
+.bank-cources__wrapper p span.upper {
+  color: #0aba5d;
+}
+.bank-cources__wrapper p span.lower {
+  color: red;
 }
 
 .start-working {
