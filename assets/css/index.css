@@ -248,47 +248,62 @@
 
 .bank-cources {
   background: #2b2b2b;
+}
+.bank-cources .container {
   height: 60px;
-  padding: 0 10px;
-  position: relative;
 }
-.bank-cources::after, .bank-cources::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  width: 10px;
-}
-.bank-cources::after {
-  right: 10px;
-  background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(#2b2b2b));
-  background-image: linear-gradient(to right, transparent, #2b2b2b);
-}
-.bank-cources::before {
-  left: 10px;
-  background-image: -webkit-gradient(linear, right top, left top, from(transparent), to(#2b2b2b));
-  background-image: linear-gradient(to left, transparent, #2b2b2b);
-}
-.bank-cources marquee {
+.bank-cources .marquee {
   height: 100%;
   min-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.bank-cources .marquee::after, .bank-cources .marquee::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 30px;
+  z-index: 1;
+}
+.bank-cources .marquee::after {
+  right: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(#2b2b2b));
+  background-image: linear-gradient(to right, transparent, #2b2b2b);
+}
+.bank-cources .marquee::before {
+  left: 0;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), to(#2b2b2b));
+  background-image: linear-gradient(to left, transparent, #2b2b2b);
+}
+.bank-cources .marquee:hover .bank-cources__wrapper {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 .bank-cources__wrapper {
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
   min-width: 100%;
+  -webkit-animation: marquee-animation 30s linear infinite;
+          animation: marquee-animation 30s linear infinite;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .bank-cources__wrapper p {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin-right: 20px;
 }
 .bank-cources__wrapper p span.upper {
@@ -296,6 +311,26 @@
 }
 .bank-cources__wrapper p span.lower {
   color: red;
+}
+@-webkit-keyframes marquee-animation {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes marquee-animation {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 .start-working {

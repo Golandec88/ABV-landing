@@ -33,19 +33,35 @@ $(document).ready(function () {
     },
   });
 
+  const coursecNeeded = [
+    "USD",
+    "EUR",
+    "RUB",
+    "GBP",
+    "JPY",
+    "KZT",
+    "CAD",
+    "KRW",
+    "TJS",
+    "TRY",
+    "AED",
+    "CNY",
+  ];
   fetch("https://test.e365.uz/edo-service/api/Utils/CBRates")
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      const courseList = data.map(
-        (item) => `<p>
+      const courseList = data
+        .filter((item) => coursecNeeded.includes(item.Ccy))
+        .map(
+          (item) => `<p>
         <b>${item.Ccy}:</b> ${item.Rate}
         <span class="${item.Diff > 0 ? "upper" : "lower"}">${
-          item.Diff > 0 ? "&#8593" : "&#8595"
-        }  ${item.Diff}</span>
+            item.Diff > 0 ? "&#8593" : "&#8595"
+          }  ${item.Diff}</span>
       </p>`
-      );
+        );
       $(".bank-cources__wrapper").append(courseList);
     });
 });
