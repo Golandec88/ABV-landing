@@ -1,0 +1,231 @@
+@import "../variables";
+
+.about {
+  margin: 60px 0;
+  display: flex;
+  background: $light-grey;
+  border-radius: 6px;
+  &__left {
+    padding: 64px;
+    padding-top: 56px;
+    padding-bottom: 34px;
+    width: 65%;
+    flex-shrink: 0;
+    .about__title {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 120%;
+      margin-bottom: 64px;
+    }
+    .about__content {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      text-indent: 25px;
+      margin-bottom: 120px;
+      p:first-child {
+        margin-bottom: 32px;
+      }
+    }
+  }
+  &__nav {
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        margin-right: 60px;
+        margin-bottom: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 140%;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  &__right {
+    background: $dark-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 6px;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.sign {
+  margin-bottom: 60px;
+  display: flex;
+  background: $light-grey;
+  border-radius: 6px;
+  &__left {
+    padding: 64px;
+    padding-top: 56px;
+    width: 35%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    &-title {
+      margin-bottom: 16px;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 120%;
+    }
+    &-text {
+      margin-bottom: 64px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+    }
+    &-btn {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-top: auto;
+      span {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+      }
+      img {
+        width: 29px;
+        object-fit: contain;
+        margin-left: 13px;
+      }
+    }
+    & .line-animate-btn:hover::after {
+      width: 75%;
+    }
+  }
+  &__right {
+    background: $dark-grey;
+    border-radius: 6px;
+    padding: 20px;
+    padding-bottom: 0;
+    width: 65%;
+    img {
+      height: 100%;
+      max-width: 575px;
+      object-fit: contain;
+      object-position: bottom;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .about {
+    margin: 48px 0;
+    &__left {
+      padding: 48px;
+      padding-bottom: 18px;
+      .about__title {
+        font-size: 32px;
+        margin-bottom: 24px;
+      }
+      .about__content {
+        font-size: 16px;
+        margin-bottom: 105px;
+      }
+    }
+    &__nav ul li {
+      margin-right: 40px;
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+  .sign {
+    margin-bottom: 48px;
+    &__left {
+      width: 50%;
+      padding: 48px;
+      padding-top: 40px;
+      &-title {
+        font-size: 32px;
+      }
+      &-text {
+        font-size: 16px;
+      }
+    }
+    &__right {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    flex-direction: column-reverse;
+    &__left {
+      width: 100%;
+    }
+    &__right {
+      padding: 10px 35px 0 35px;
+      img {
+        max-height: 500px;
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+  .sign {
+    flex-direction: column-reverse;
+    &__left {
+      width: 100%;
+    }
+    &__right {
+      width: 100%;
+      padding: 10px 35px 0 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about {
+    margin: 32px 0;
+    &__left {
+      padding: 16px;
+      .about__title {
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+      .about__content {
+        font-size: 14px;
+        margin-bottom: 94px;
+      }
+    }
+    &__nav ul li {
+      margin-right: 32px;
+      margin-bottom: 16px;
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+  .sign {
+    margin-bottom: 32px;
+    &__left {
+      padding: 16px;
+      &-title {
+        font-size: 24px;
+      }
+      &-text {
+        font-size: 14px;
+      }
+    }
+  }
+}
