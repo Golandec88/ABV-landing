@@ -1,32 +1,32 @@
 @import "../variables";
 
 .services {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    margin: 60px 64px;
+  }
   &__item {
     border-radius: 6px;
     background: $light-grey;
     width: calc((100% - 60px) / 2);
-    padding: 64px;
-    padding-top: 60px;
-    scroll-margin-top: 110px;
-    &-title {
-      font-weight: 500;
-      font-size: 32px;
-      line-height: 140%;
-      margin-bottom: 16px;
-    }
+    display: flex;
+    flex-direction: column;
     &__content {
-      display: flex;
-      align-items: center;
-      column-gap: 16px;
-      &-icon {
-        width: 64px;
-        height: 64px;
-        object-fit: cover;
+      padding: 64px;
+      padding-top: 60px;
+      &_title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 140%;
+        margin-bottom: 16px;
       }
       &-text {
         font-weight: 400;
@@ -34,27 +34,44 @@
         line-height: 140%;
       }
     }
+    &__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: auto;
+      padding: 24px 24px 0;
+      background: $dark-grey;
+      img {
+        object-fit: contain;
+        object-position: bottom;
+        height: 100%;
+        width: 100%;
+        max-height: 350px;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 1366px) {
   .services {
-    gap: 48px;
-    margin-bottom: 48px;
+    &__wrapper {
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    &__title {
+      font-size: 32px;
+      margin-left: 0;
+    }
     &__item {
-      padding: 48px;
-      padding-top: 40px;
-      &-title {
-        font-size: 24px;
-      }
+      width: calc((100% - 48px) / 2);
       &__content {
-        column-gap: 12px;
+        padding: 48px;
+        padding-top: 40px;
+        &_title {
+          font-size: 24px;
+        }
         &-text {
           font-size: 14px;
-        }
-        &-icon {
-          width: 32px;
-          height: 32px;
         }
       }
     }
@@ -63,8 +80,10 @@
 
 @media screen and (max-width: 1000px) {
   .services {
-    gap: 0;
-    row-gap: 48px;
+    &__wrapper {
+      gap: 0;
+      row-gap: 48px;
+    }
     &__item {
       width: 100%;
     }
@@ -72,23 +91,27 @@
 }
 @media screen and (max-width: 650px) {
   .services {
-    row-gap: 32px;
-    margin-top: 40px;
     margin-bottom: 32px;
+    &__wrapper {
+      row-gap: 16px;
+      margin-top: 40px;
+    }
+    &__title {
+      margin: 32px 0;
+      font-size: 24px;
+    }
     &__item {
-      padding: 16px;
-      &-title {
-        font-size: 16px;
-      }
       &__content {
-        column-gap: 8px;
+        padding: 16px;
+        &_title {
+          font-size: 16px;
+        }
         &-text {
           font-size: 12px;
         }
-        &-icon {
-          width: 24px;
-          height: 24px;
-        }
+      }
+      &__img img {
+        max-height: 200px;
       }
     }
   }

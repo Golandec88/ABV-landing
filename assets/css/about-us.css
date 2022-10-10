@@ -24,11 +24,21 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  text-indent: 25px;
   margin-bottom: 120px;
 }
-.about__left .about__content p:first-child {
-  margin-bottom: 32px;
+.about__left .about__content_title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+}
+.about__left .about__content_top-text {
+  margin-bottom: 22px;
+  text-indent: 25px;
+}
+.about__left .about__content_bottom-text {
+  font-weight: bold;
+  font-weight: 500;
 }
 .about__nav ul {
   list-style: none;
@@ -234,6 +244,23 @@
   .about__nav ul li a {
     font-size: 16px;
   }
+  .about-platform {
+    margin-bottom: 48px;
+  }
+  .about-platform__left {
+    width: 50%;
+  }
+  .about-platform__left img {
+    width: 100%;
+  }
+  .about-platform__right {
+    width: 50%;
+    padding: 48px;
+    padding-top: 40px;
+  }
+  .about-platform__right-title {
+    font-size: 32px;
+  }
   .sign {
     margin-bottom: 48px;
   }
@@ -315,6 +342,9 @@
   .about__left .about__content {
     font-size: 14px;
     margin-bottom: 94px;
+  }
+  .about__left .about__content_title {
+    font-size: 18px;
   }
   .about__nav ul li {
     margin-right: 32px;
