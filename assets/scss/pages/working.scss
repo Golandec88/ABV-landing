@@ -2,15 +2,18 @@
 @import "../mixins/border-animate";
 
 .working {
-  background: $light-grey;
-  margin-top: 34px;
-  padding: 60px 95px 48px;
-  border-radius: 6px;
+  &__wrapper {
+    background: $light-grey;
+    margin-top: 34px;
+    padding: 60px 95px 48px;
+    border-radius: 6px;
+  }
 
-  .wrapper {
-    position: relative;
-    z-index: 5;
-    overflow: hidden;
+  &__title_main {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    margin: 60px;
   }
   &__title {
     font-weight: 500;
@@ -156,8 +159,14 @@
           font-weight: 400;
           font-size: 16px;
           line-height: 19px;
+          a {
+            text-decoration: underline;
+          }
           &-big {
             font-style: italic;
+            a {
+              text-decoration: underline;
+            }
             h4 {
               font-style: normal;
               margin-bottom: 16px;
@@ -172,6 +181,9 @@
         margin: 5px 0;
       }
     }
+  }
+  a {
+    text-decoration: underline;
   }
 }
 
@@ -190,6 +202,12 @@
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .working__title_main {
+    margin-left: 0;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .working {
     padding: 48px;
@@ -203,6 +221,10 @@
   .working {
     padding: 16px;
     padding-bottom: 32px;
+    &__title_main {
+      margin: 32px 0;
+      font-size: 24px;
+    }
     &__title {
       font-size: 16px;
       line-height: 19px;
