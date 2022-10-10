@@ -508,6 +508,9 @@
   font-weight: 400;
   margin-bottom: 16px;
 }
+.footer__info-address-2 {
+  font-weight: 400;
+}
 .footer__info a {
   color: #f2f2f2;
   display: inline-block;
