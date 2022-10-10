@@ -2,6 +2,12 @@
 
 .subservices {
   margin-top: 60px;
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    margin: 56px;
+  }
   &__item {
     display: flex;
     background: $light-grey;
@@ -9,7 +15,7 @@
     margin-bottom: 60px;
     scroll-margin-top: 110px;
     &-content {
-      padding: 60px 64px 4px 64px;
+      padding: 56px 64px 64px;
       width: 50%;
     }
     &-img {
@@ -43,12 +49,6 @@
         line-height: 120%;
         margin-bottom: 16px;
       }
-      &__subtitle {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 140%;
-        margin-bottom: 60px;
-      }
       &__paragraph-title {
         font-weight: 500;
         font-size: 24px;
@@ -59,13 +59,23 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 140%;
-        margin-bottom: 60px;
+        margin-bottom: 24px;
+        &.bold {
+          font-weight: 500;
+          line-height: 120%;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 1366px) {
+  .subservices__title {
+    margin-left: 0;
+  }
   .subservices__item-content {
     padding: 40px 48px 16px 48px;
   }
@@ -103,6 +113,10 @@
 @media screen and (max-width: 650px) {
   .subservices {
     margin-top: 40px;
+    &__title {
+      margin: 32px 0;
+      font-size: 24px;
+    }
   }
   .subservices__item-content {
     padding: 16px;
@@ -113,16 +127,13 @@
     .item__title {
       font-size: 24px;
     }
-    .item__subtitle {
-      font-size: 14px;
-    }
     .item__paragraph-title {
       font-size: 16px;
       margin-bottom: 12px;
     }
     .item__paragraph {
       font-size: 14px;
-      margin-bottom: 32px;
+      margin-bottom: 14px;
       &:last-child {
         margin-bottom: 16px;
       }
