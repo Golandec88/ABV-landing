@@ -723,6 +723,7 @@
   position: relative;
   z-index: 1;
   pointer-events: none;
+  font-weight: 700;
 }
 
 .circle-animation-btn::before {
