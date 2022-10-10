@@ -2,6 +2,12 @@
 
 .subservices {
   margin-top: 60px;
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    margin: 56px;
+  }
   &__item {
     display: flex;
     background: $light-grey;
@@ -67,6 +73,9 @@
 }
 
 @media screen and (max-width: 1366px) {
+  .subservices__title {
+    margin-left: 0;
+  }
   .subservices__item-content {
     padding: 40px 48px 16px 48px;
   }
@@ -104,6 +113,10 @@
 @media screen and (max-width: 650px) {
   .subservices {
     margin-top: 40px;
+    &__title {
+      margin: 32px 0;
+      font-size: 24px;
+    }
   }
   .subservices__item-content {
     padding: 16px;
