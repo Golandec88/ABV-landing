@@ -1,0 +1,103 @@
+@import "../variables";
+
+.coming_soon {
+    margin: 0 0 60px 0;
+    display: flex;
+    background: $light-grey;
+    border-radius: 6px;
+    &__content {
+        height: 100%;
+        position: relative;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 120%;
+        margin: 60px 0 60px 64px;
+        &-special {
+            font-weight: 700;
+            font-size: 110px;
+            text-transform: uppercase;
+            color: black;
+            padding: 100px 0;
+        }
+    }
+    &__tag {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-weight: 700;
+        font-size: 24px;
+        color: black;
+        text-transform: uppercase;
+    }
+    &__left {
+        padding: 64px;
+        padding-top: 56px;
+        padding-bottom: 34px;
+        width: 60%;
+        flex-shrink: 0;
+        .about__content {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            margin-bottom: 120px;
+            &_title {
+                margin-bottom: 16px;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 140%;
+            }
+            &_top-text {
+                margin-bottom: 22px;
+                text-indent: 25px;
+            }
+            &_bottom-text {
+                font-weight: bold;
+                font-weight: 500;
+            }
+        }
+    }
+    &__right {
+        background: $dark-grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 7px;
+        border-radius: 6px;
+        width: 40%;
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+    }
+}
+
+@media screen and(max-width: 1360px) {
+    .coming_soon {
+        flex-flow: column;
+        &__right {
+            width: 100%;
+        }
+        &__left {
+            width: 100%;   
+        }
+        &__title-special {
+            padding: 0 0 100px;
+        }
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .coming_soon {
+        &__left {
+            padding: 20px
+        }
+        &__title-special {
+            font-size: 50px;
+        }
+        &__tag {
+            font-size: 18px;
+        }
+    }
+}
