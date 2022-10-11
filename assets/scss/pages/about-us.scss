@@ -15,7 +15,7 @@
     padding: 64px;
     padding-top: 56px;
     padding-bottom: 34px;
-    width: 60%;
+    width: 62%;
     flex-shrink: 0;
     .about__content {
       font-weight: 400;
@@ -36,6 +36,19 @@
         font-weight: bold;
         font-weight: 500;
       }
+    }
+  }
+  &__right {
+    background: $dark-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 6px;
+    width: 38%;
+    img {
+      width: 100%;
+      object-fit: contain;
     }
   }
   &__nav {
@@ -61,19 +74,6 @@
       }
     }
   }
-  &__right {
-    background: $dark-grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 7px;
-    border-radius: 6px;
-    width: 40%;
-    img {
-      width: 100%;
-      object-fit: contain;
-    }
-  }
 }
 
 .about-platform {
@@ -84,7 +84,7 @@
   &__right {
     padding: 64px;
     padding-top: 56px;
-    width: 45%;
+    width: 50%;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -105,7 +105,7 @@
     background: $dark-grey;
     border-radius: 6px;
     padding: 50px 40px 0;
-    width: 55%;
+    width: 50%;
     flex-shrink: 0;
     flex-grow: 0;
     display: flex;
@@ -127,7 +127,7 @@
   &__left {
     padding: 64px;
     padding-top: 56px;
-    width: 45%;
+    width: 38%;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -168,7 +168,7 @@
     border-radius: 6px;
     padding: 20px;
     padding-bottom: 0;
-    width: 55%;
+    width: 62%;
     img {
       height: 100%;
       max-width: 575px;

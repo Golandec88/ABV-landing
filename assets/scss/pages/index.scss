@@ -12,7 +12,7 @@
     .slide {
       display: flex;
       padding: 77px 0;
-      overflow: hidden;
+      overflow: visible;
       &__img__wrapper {
         margin-left: auto;
         padding-left: 32px;
@@ -130,7 +130,7 @@
   &__left {
     display: flex;
     flex-direction: column;
-    padding: 56px 53px 66px 64px;
+    padding: 56px 64px 32px;
     width: 50%;
     flex-shrink: 0;
     &__title {
@@ -223,7 +223,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 16px;
+    row-gap: 20px;
     column-gap: 48px;
     justify-content: start;
     &__item {
@@ -238,42 +238,15 @@
         position: absolute;
         top: 31px;
         right: 0;
-        height: 130px;
+        height: 150px;
         width: 100%;
         border-radius: 6px;
       }
-      &.bg-1::after {
-        background: $dark-grey;
-      }
-      &.bg-2::after {
-        background: $dark-grey;
-      }
-      &.bg-3::after {
-        background: $dark-grey;
-      }
-      &.bg-4::after {
-        background: $dark-grey;
-      }
-      &.bg-5::after {
-        background: $dark-grey;
-      }
-      &.bg-6::after {
-        background: $dark-grey;
-      }
-      &.bg-7::after {
-        background: $dark-grey;
-      }
-      &.bg-8::after {
-        background: $dark-grey;
-      }
-      &.bg-9::after {
-        background: $dark-grey;
-      }
-      &.bg-10::after {
+      &::after {
         background: $dark-grey;
       }
       &_img {
-        height: 161px;
+        height: 180px;
         object-fit: contain;
         margin: 0 auto;
         display: block;
@@ -282,7 +255,7 @@
       }
       &__content {
         margin-top: -10px;
-        padding: 28px 16px 20px 16px;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         background: $grey;
@@ -291,15 +264,15 @@
       }
       &_title {
         font-weight: 500;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 140%;
         margin-bottom: 12px;
       }
       &_subtitle {
         font-weight: 400;
-        font-size: 14px;
-        line-height: 14px;
-        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 35px;
       }
       &_btn {
         display: flex;
@@ -358,14 +331,15 @@
         margin-bottom: 16px;
       }
       &_list {
-        padding-left: 20px;
-        margin-bottom: 16px;
+        margin: 0;
+        margin-bottom: 20px;
+        list-style-type: none;
         li {
           font-size: 16px;
           line-height: 120%;
-          &::marker {
-            color: $black;
-            font-size: 10px;
+          &::before {
+            content: "— ";
+            text-indent: -5px;
           }
         }
       }
@@ -479,7 +453,7 @@
         border-radius: 6px;
         background: $black;
         text-align: center;
-        padding-top: 2px;
+        padding-top: 4px;
         margin-bottom: 12px;
       }
       &_title {
@@ -568,7 +542,7 @@
   }
   .start-working {
     &__left {
-      padding: 40px 48px 40px;
+      padding: 40px 48px 32px;
       &__title {
         margin-bottom: 16px;
       }

@@ -6,16 +6,19 @@
   background: #f2f2f2;
   border-radius: 6px;
 }
+
 .coming_soon__content {
   height: 100%;
   position: relative;
 }
+
 .coming_soon__title {
   font-weight: 500;
   font-size: 40px;
   line-height: 120%;
   margin: 60px 0 60px 64px;
 }
+
 .coming_soon__title-special {
   font-weight: 700;
   font-size: 110px;
@@ -23,6 +26,7 @@
   color: black;
   padding: 100px 0;
 }
+
 .coming_soon__tag {
   position: absolute;
   right: 0;
@@ -32,34 +36,40 @@
   color: black;
   text-transform: uppercase;
 }
+
 .coming_soon__left {
   padding: 64px;
   padding-top: 56px;
   padding-bottom: 34px;
   width: 60%;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
+
 .coming_soon__left .about__content {
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
   margin-bottom: 120px;
 }
+
 .coming_soon__left .about__content_title {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 24px;
   line-height: 140%;
 }
+
 .coming_soon__left .about__content_top-text {
   margin-bottom: 22px;
   text-indent: 25px;
 }
+
 .coming_soon__left .about__content_bottom-text {
   font-weight: bold;
   font-weight: 500;
 }
+
 .coming_soon__right {
   background: #d2d2d2;
   display: -webkit-box;
@@ -67,17 +77,41 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 7px;
   border-radius: 6px;
   width: 40%;
 }
+
 .coming_soon__right img {
   width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .coming_soon__title-special {
+    font-size: 48px;
+  }
+  .coming_soon__tag {
+    font-size: 20px;
+  }
+  .coming_soon__title {
+    margin: 32px 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .coming_soon__title-special {
+    font-size: 32px;
+  }
+  .coming_soon__left {
+    padding: 24px;
+  }
+  .coming_soon__title {
+    font-size: 24px;
+  }
 }

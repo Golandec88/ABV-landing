@@ -26,10 +26,7 @@ $(document).ready(function () {
     $(".header__burger").toggleClass("active");
     $(".header__menu").toggleClass("active");
     $(".overlay").toggleClass("active");
-
-    $(".header__burger-cheeckbox").is(":checked")
-      ? $(".header__burger-cheeckbox").val()
-      : $(".header__burger-cheeckbox").val("on");
+    $("body").toggleClass("fixed");
   });
 
   $(".overlay").on("click", function () {
@@ -58,12 +55,12 @@ $(document).ready(function () {
     } else {
       $(".header").addClass("white-theme");
     }
-    
+
     const top_of_element = $(".footer").offset().top;
     const bottom_of_screen = $(window).scrollTop() + $(this).innerHeight();
     bottom_of_screen > top_of_element
       ? $(".header").addClass("hide")
-      : $(".header").removeClass("hide")
+      : $(".header").removeClass("hide");
 
     if (!YaMapsShown) {
       if (

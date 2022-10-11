@@ -14,32 +14,25 @@
     border-radius: 6px;
     margin-bottom: 60px;
     scroll-margin-top: 110px;
+
+    &:last-child .item__paragraph {
+      padding-right: 20px;
+    }
     &-content {
       padding: 56px 64px 64px;
-      width: 50%;
+      width: 51%;
     }
     &-img {
       padding: 30px;
       border-radius: 6px;
-      width: 50%;
+      width: 49%;
       display: flex;
       justify-content: center;
       align-items: center;
+      background: $dark-grey;
       img {
         width: 100%;
         object-fit: contain;
-      }
-      &.bg-1 {
-        background: $dark-grey;
-      }
-      &.bg-2 {
-        background: $dark-grey;
-      }
-      &.bg-3 {
-        background: $dark-grey;
-      }
-      &.bg-4 {
-        background: $dark-grey;
       }
     }
     .item {

@@ -359,6 +359,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .header__menu.active {
+    overflow-y: auto;
+  }
   .header__menu .header__nav {
     padding: 32px;
     padding-top: 100px;
@@ -1047,6 +1050,9 @@ body {
   font-family: "Norms Pro", sans-serif;
   font-weight: 400;
   color: #2b2b2b;
+}
+body.fixed {
+  overflow: hidden;
 }
 
 a {
