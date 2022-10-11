@@ -47,6 +47,7 @@ $(document).ready(function () {
     "AED",
     "CNY",
   ];
+
   fetch("https://test.e365.uz/edo-service/api/Utils/CBRates")
     .then((response) => {
       return response.json();

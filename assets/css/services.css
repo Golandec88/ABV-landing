@@ -26,8 +26,7 @@
           flex-direction: column;
 }
 .services__item__content {
-  padding: 64px;
-  padding-top: 60px;
+  padding: 60px 64px 90px;
 }
 .services__item__content_title {
   font-weight: 500;
@@ -52,6 +51,7 @@
           justify-content: center;
   margin-top: auto;
   padding: 24px 24px 0;
+  border-radius: 6px;
   background: #d2d2d2;
 }
 .services__item__img img {

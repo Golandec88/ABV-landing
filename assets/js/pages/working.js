@@ -1,9 +1,11 @@
 $(document).ready(function () {
+  let itemsClass = ".items-ooo";
+
   $(window).scroll(function () {
     const windowCenter =
       $(this).scrollTop() +
       $(this).height() / 2 -
-      $(".working__items").offset().top;
+      $(`.working__items${itemsClass}`).offset().top;
 
     $(".line-2").height(windowCenter);
 
@@ -291,9 +293,11 @@ $(document).ready(function () {
     if ($(this).hasClass("btn-ip")) {
       $(".working__items.items-ooo").fadeOut(300);
       $(".working__items.items-ip").fadeIn(1000);
+      itemsClass = ".items-ip";
     } else {
       $(".working__items.items-ip").fadeOut(500);
       $(".working__items.items-ooo").fadeIn(1000);
+      itemsClass = ".items-ooo";
     }
   });
 });
