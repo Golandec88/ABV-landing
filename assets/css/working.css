@@ -174,16 +174,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
   margin-left: auto;
   text-align: right;
-  padding: 21px 32px;
   padding-left: 19%;
+  position: relative;
 }
-.working__item-content__title span {
+.working__item-content__title h3 {
+  position: absolute;
+  right: 30px;
+  display: inline;
   text-align: left;
+  font-weight: 500;
+  font-size: 24px;
 }
 .working__item-content__title-mobile {
   display: none;
