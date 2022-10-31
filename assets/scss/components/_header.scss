@@ -1,0 +1,56 @@
+@import "../variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 36px 0;
+  &__logo {
+    width: 132px;
+    height: 43px;
+    margin-right: auto;
+    img {
+      width: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  &__lang {
+    display: flex;
+    margin-right: 40px;
+
+    &_btn {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      border: 1px solid $black;
+      padding: 7px 13px;
+      --bg-color: $black;
+
+      &:first-child {
+        border-radius: 6px 0 0 6px;
+      }
+      &:last-child {
+        border-radius: 0 6px 6px 0;
+      }
+      &:nth-child(2) {
+        border-right: 0;
+        border-left: 0;
+      }
+      &.active {
+        color: $light-grey;
+        background: $black;
+        --bg-color: #fff;
+      }
+    }
+  }
+
+  &__auth {
+    background: $primary;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    padding: 8px 24px;
+    border-radius: 6px;
+  }
+}

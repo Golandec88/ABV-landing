@@ -1,11 +1,8 @@
 @import "variables";
 @import "fonts";
-@import "./components/burger";
-@import "./components/header";
-@import "./components/footer";
-@import "./components/dropdown";
-@import "./components/buttons";
-@import "./components/send-request";
+@import "components/container";
+@import "components/title";
+@import "components/circle-animation-button";
 
 *,
 *::after,
@@ -19,6 +16,8 @@ body {
   font-family: "Norms Pro", sans-serif;
   font-weight: 400;
   color: $black;
+  font-size: 24px;
+  line-height: 29px;
   &.fixed {
     overflow: hidden;
   }
@@ -33,32 +32,5 @@ button {
   outline: none;
   background: transparent;
   border: 0;
-}
-
-.container {
-  max-width: 1700px;
-  padding: 0 50px;
-  margin: 0 auto;
-}
-
-main {
-  padding-top: 107px;
-}
-
-@media screen and (max-width: 1600px) {
-  main {
-    padding-top: 95px;
-  }
-}
-
-@media screen and (max-width: 1366px) {
-  main {
-    padding-top: 85px;
-  }
-}
-
-@media screen and (max-width: 765px) {
-  .container {
-    padding: 0 16px;
-  }
+  cursor: pointer;
 }
