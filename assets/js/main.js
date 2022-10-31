@@ -11,27 +11,27 @@ $(document).ready(function () {
     );
   });
 
-  $(".header__lang-mobile_selected").on("click", function () {
-    $(".lang-mobile__menu").toggleClass("active");
-  });
+  // $(".header__lang-mobile_selected").on("click", function () {
+  //   $(".lang-mobile__menu").toggleClass("active");
+  // });
 
-  $(".header__lang-mobile_btn").on("click", function () {
-    $(".header__lang-mobile_btn").removeClass("active");
-    $(this).addClass("active");
-    $(".lang-mobile__menu").toggleClass("active");
-    $(".header__lang-mobile_selected").html($(this).text());
-  });
+  // $(".header__lang-mobile_btn").on("click", function () {
+  //   $(".header__lang-mobile_btn").removeClass("active");
+  //   $(this).addClass("active");
+  //   $(".lang-mobile__menu").toggleClass("active");
+  //   $(".header__lang-mobile_selected").html($(this).text());
+  // });
 
-  $(".header__burger").on("click", function () {
-    $(".header__burger").toggleClass("active");
-    $(".header__menu").toggleClass("active");
-    $(".overlay").toggleClass("active");
-    $("body").toggleClass("fixed");
-  });
+  // $(".header__burger").on("click", function () {
+  //   $(".header__burger").toggleClass("active");
+  //   $(".header__menu").toggleClass("active");
+  //   $(".overlay").toggleClass("active");
+  //   $("body").toggleClass("fixed");
+  // });
 
-  $(".overlay").on("click", function () {
-    $(".header__burger")[0].click();
-  });
+  // $(".overlay").on("click", function () {
+  //   $(".header__burger")[0].click();
+  // });
 
   function showYaMaps() {
     var map = `<iframe
