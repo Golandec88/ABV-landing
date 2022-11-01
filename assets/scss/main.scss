@@ -1,8 +1,12 @@
 @import "variables";
 @import "fonts";
+@import "components/header";
+@import "components/footer";
 @import "components/container";
-@import "components/title";
-@import "components/circle-animation-button";
+@import "components/titles";
+@import "components/buttons/circle-animation";
+@import "components/buttons/primary";
+@import "components/buttons/detailed";
 
 *,
 *::after,
@@ -10,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Norms Pro", sans-serif;
 }
 
 body {
@@ -33,4 +38,13 @@ button {
   background: transparent;
   border: 0;
   cursor: pointer;
+}
+
+section,
+section.container {
+  margin-bottom: 160px;
+}
+
+img {
+  user-select: none;
 }

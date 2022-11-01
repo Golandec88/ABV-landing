@@ -1,0 +1,39 @@
+.how-begin {
+  &__title {
+    margin-bottom: 80px;
+  }
+  &__wrapper {
+    border-radius: 32px;
+    background: $secondary;
+    padding: 90px 60px;
+    display: flex;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    .left {
+      &__title {
+        margin-bottom: 60px;
+      }
+      &__subtitle {
+        font-size: 24px;
+        line-height: 29px;
+      }
+      &__details-btn {
+        margin-top: auto;
+        align-self: start;
+      }
+    }
+  }
+  &__right {
+    width: 54%;
+    flex-shrink: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}

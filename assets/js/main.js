@@ -45,31 +45,20 @@ $(document).ready(function () {
     $(".footer__map").append(map);
   }
 
+  showYaMaps();
+  // delete after complete
+
   let YaMapsShown = false;
 
-  $(window).scroll(function () {
-    if (!!$(".main-page-slider").length) {
-      $(this).scrollTop() > $(".main-page-slider").outerHeight()
-        ? $(".header").addClass("white-theme")
-        : $(".header").removeClass("white-theme");
-    } else {
-      $(".header").addClass("white-theme");
-    }
-
-    const top_of_element = $(".footer").offset().top;
-    const bottom_of_screen = $(window).scrollTop() + $(this).innerHeight();
-    bottom_of_screen > top_of_element
-      ? $(".header").addClass("hide")
-      : $(".header").removeClass("hide");
-
-    if (!YaMapsShown) {
-      if (
-        $(window).scrollTop() + $(window).height() >
-        $(document).height() - $(".footer").height() - 300
-      ) {
-        showYaMaps();
-        YaMapsShown = true;
-      }
-    }
-  });
+  // $(window).scroll(function () {
+  //   if (!YaMapsShown) {
+  //     if (
+  //       $(window).scrollTop() + $(window).height() >
+  //       $(document).height() - $(".footer").height() - 300
+  //     ) {
+  //       showYaMaps();
+  //       YaMapsShown = true;
+  //     }
+  //   }
+  // });
 });
