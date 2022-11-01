@@ -26,6 +26,9 @@
       border: 1px solid $black;
       padding: 7px 13px;
       --bg-color: $black;
+      &:hover {
+        color: #fff;
+      }
 
       &:first-child {
         border-radius: 6px 0 0 6px;
@@ -41,6 +44,9 @@
         color: $light-grey;
         background: $black;
         --bg-color: #fff;
+        &:hover {
+          color: $black;
+        }
       }
     }
   }
