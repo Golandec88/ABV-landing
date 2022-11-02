@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
   padding: 36px 0;
+  &-mobile {
+    display: none;
+  }
   &__logo {
     height: 43px;
     margin-right: auto;

@@ -35,6 +35,9 @@
           align-items: center;
   padding: 36px 0;
 }
+.header-mobile {
+  display: none;
+}
 .header__logo {
   height: 43px;
   margin-right: auto;
@@ -463,6 +466,12 @@
   background: #fff;
 }
 
+@media screen and (max-width: 650px) {
+  .btn-primary {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
 .deatailed-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,6 +540,12 @@ img {
           user-select: none;
 }
 
+@media screen and (max-width: 950px) {
+  section,
+section.container {
+    margin-bottom: 80px;
+  }
+}
 @media screen and (max-width: 650px) {
   body {
     font-size: 16px;
