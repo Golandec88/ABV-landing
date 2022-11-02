@@ -235,6 +235,13 @@
   margin: 0 auto;
 }
 .about-company__cards_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 33%;
   background: #e8fff5;
   border-radius: 32px;
@@ -251,6 +258,7 @@
   margin-bottom: 22px;
 }
 .about-company__cards_item .card__info {
+  margin-top: auto;
   padding: 20px 24px;
 }
 .about-company__cards_item .card__info_title {
@@ -264,6 +272,100 @@
   font-weight: 900;
   font-size: 30px;
   line-height: 36px;
-  letter-spacing: 0.81em;
   white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about-company.benefits .about-company__cards .about-company__cards_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about-company.benefits .about-company__cards .about-company__cards_item:last-child .card__img {
+  margin-top: -20px;
+}
+.about-company.benefits .about-company__cards .about-company__cards_item .card__img {
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+.about-company.benefits .about-company__cards .about-company__cards_item .card__info {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.8em;
+  margin-top: auto;
+}
+.about-company.benefits .about-company__cards .about-company__cards_item .card__info::before {
+  content: "#";
+  color: #75cea9;
+}
+
+@media screen and (max-width: 1650px) {
+  .about-company__cards {
+    -webkit-column-gap: 32px;
+       -moz-column-gap: 32px;
+            column-gap: 32px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .about-company__cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 32px;
+  }
+  .about-company__cards_item {
+    min-width: 410px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about-company__title {
+    margin-bottom: 16px;
+  }
+  .about-company__subtitle {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  .about-company.benefits .about-company__cards .about-company__cards_item .card__info {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.8em;
+    padding: 12px;
+  }
+  .about-company__cards {
+    width: 100%;
+    row-gap: 24px;
+  }
+  .about-company__cards_item {
+    min-width: unset;
+    width: 100%;
+    max-width: 380px;
+    -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  .about-company__cards_item .card__info {
+    padding: 12px;
+    text-align: justify;
+  }
+  .about-company__cards_item .card__info_title {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.35em;
+  }
+  .about-company__cards_item .card__info_subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: unset;
+  }
 }
