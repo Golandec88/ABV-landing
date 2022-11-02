@@ -211,6 +211,104 @@
   line-height: 120%;
 }
 
+@media screen and (max-width: 900px) {
+  .where-begin {
+    display: none;
+  }
+  .where-begin__title {
+    margin-bottom: 24px;
+  }
+  .where-begin-mobile {
+    display: block;
+    padding: 16px;
+    margin-bottom: 32px;
+    border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .where-begin-mobile__line {
+    width: 2px;
+    background: #2b2b2b;
+    position: relative;
+    left: 17px;
+  }
+  .where-begin-mobile__line::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #2b2b2b;
+  }
+  .where-begin-mobile__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #e8fff5;
+    padding: 32px 16px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 410px;
+  }
+  .where-begin-mobile__item {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 32px;
+  }
+  .where-begin-mobile__item .item-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .where-begin-mobile__item .item-top__num {
+    display: inline-block;
+    background: #2b2b2b;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #ffffff;
+    padding: 4px 12px;
+    margin-right: 16px;
+    border-radius: 6px;
+  }
+  .where-begin-mobile__item .item-top__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .where-begin-mobile__item .item__img {
+    max-width: 200px;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: bottom;
+       object-position: bottom;
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .where-begin-mobile__wrapper {
+    max-width: 380px;
+  }
+}
 .about-company__title {
   margin-bottom: 32px;
 }
@@ -353,6 +451,7 @@
     max-width: 380px;
     -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
   }
   .about-company__cards_item .card__info {
     padding: 12px;

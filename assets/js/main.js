@@ -22,16 +22,19 @@ $(document).ready(function () {
   //   $(".header__lang-mobile_selected").html($(this).text());
   // });
 
-  // $(".header__burger").on("click", function () {
-  //   $(".header__burger").toggleClass("active");
-  //   $(".header__menu").toggleClass("active");
-  //   $(".overlay").toggleClass("active");
-  //   $("body").toggleClass("fixed");
-  // });
+  $(".header__burger").on("click", function () {
+    $(".header__burger").toggleClass("active");
+    $(".header-mobile").toggleClass("active");
+    $(".overlay").toggleClass("active");
+    $("body").toggleClass("fixed");
+  });
 
-  // $(".overlay").on("click", function () {
-  //   $(".header__burger")[0].click();
-  // });
+  $(".overlay").on("click", function () {
+    $(".header__burger")[0].click();
+  });
+  $(".header-mobile__top_x-btn").on("click", function () {
+    $(".header__burger")[0].click();
+  });
 
   function showYaMaps() {
     var map = `<iframe
