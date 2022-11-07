@@ -573,6 +573,12 @@
     letter-spacing: unset;
   }
 }
+.subservices {
+  position: relative;
+}
+.subservices__mobile {
+  display: none;
+}
 .subservices__title {
   margin-bottom: 32px;
 }
@@ -715,10 +721,40 @@
 .subservices__slider_item .item__buttons .buttons__item.active {
   background: #2b2b2b;
 }
+.subservices .slider__nav_item {
+  position: absolute;
+  top: 60%;
+  height: 60px;
+  width: 60px;
+  background: #2b2b2b;
+  border-radius: 6px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.subservices .slider__nav_item img {
+  width: 32px;
+  height: 32px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.subservices .slider__nav_item.left {
+  left: 10%;
+}
+.subservices .slider__nav_item.right {
+  right: 10%;
+}
 
 @media screen and (max-width: 1500px) {
   .subservices__slider_item {
-    margin: 40px;
+    margin: 30px 0;
   }
   .subservices__slider_item .item__text {
     padding: 0 0 0 30px;
@@ -727,5 +763,131 @@
     font-size: 36px;
     line-height: 1.2;
     margin-bottom: 20px;
+  }
+  .subservices .slider__nav_item.left {
+    left: 5%;
+  }
+  .subservices .slider__nav_item.right {
+    right: 5%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .subservices__slider_item {
+    margin: 40px;
+  }
+  .slider__nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .subservices__slider {
+    display: none !important;
+  }
+  .subservices__title {
+    margin-bottom: 16px;
+  }
+  .subservices__subtitle {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .subservices__mobile {
+    display: block;
+    background: #e8fff5;
+    padding: 24px 16px;
+  }
+  .subservices__mobile_item {
+    max-width: 410px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    min-height: 630px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subservices__mobile_item:last-child {
+    margin-bottom: 0;
+  }
+  .subservices__mobile_item .item {
+    font-size: 16px;
+    line-height: 120%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subservices__mobile_item .item__img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: top center;
+       object-position: top center;
+    margin-bottom: 24px;
+  }
+  .subservices__mobile_item .item__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 12px;
+  }
+  .subservices__mobile_item .text__desc.active, .subservices__mobile_item .text__detailed.active {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    opacity: 1;
+    -webkit-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+    z-index: 1;
+  }
+  .subservices__mobile_item .text__desc.hide, .subservices__mobile_item .text__detailed.hide {
+    opacity: 0;
+    height: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .subservices__mobile_item .text__desc, .subservices__mobile_item .text__detailed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subservices__mobile_item .text__desc p, .subservices__mobile_item .text__detailed p {
+    margin-bottom: 20px;
+  }
+  .subservices__mobile_item .text__desc ul, .subservices__mobile_item .text__detailed ul {
+    margin-bottom: 20px;
+  }
+  .subservices__mobile_item .text__desc ul li, .subservices__mobile_item .text__detailed ul li {
+    list-style: none;
+  }
+  .subservices__mobile_item .deatailed-btn {
+    margin: auto 16px 0 auto;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+@media screen and (max-width: 650px) {
+  .subservices__mobile_item {
+    max-width: 380px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .subservices__subtitle {
+    font-size: 16px;
+    line-height: 19px;
   }
 }
