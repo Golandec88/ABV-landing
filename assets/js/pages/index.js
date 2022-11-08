@@ -1,68 +1,109 @@
 $(document).ready(function () {
-  $(".main-page-slider").owlCarousel({
+  const subservices__slider = $(".subservices__slider");
+  subservices__slider.owlCarousel({
+    center: true,
+    loop: true,
+    dots: false,
     items: 1,
-    loop: true,
-    autoplay: true,
-    autoplayHoverPause: true,
-    dots: false,
-    lazyLoad: true,
-  });
-
-  $(".partners__slider").owlCarousel({
-    items: 3,
-    loop: true,
-    autoplay: true,
-    autoplayHoverPause: true,
-    autoplayTimeout: 3000,
-    margin: 16,
-    dots: false,
-    lazyLoad: true,
+    autoHeight: true,
     responsive: {
-      1366: {
-        items: 5,
+      0: {
+        items: 1,
+        margin: 30,
+      },
+      1150: {
+        items: 1,
+        margin: 30,
+        stagePadding: 150,
+      },
+      1500: {
+        items: 2,
         margin: 60,
       },
-      900: {
-        items: 4,
-        margin: 48,
-      },
-      650: {
-        items: 3,
-        margin: 32,
-      },
+    },
+    onDragged(e) {
+      $(e.target).find(".deatailed-btn").off("click");
+      $(e.target).find(".buttons__item").off("click");
+      $(e.target)
+        .find(".deatailed-btn")
+        .on("click", function (e) {
+          e.stopPropagation();
+          const wrapper = this.closest(".subservices__slider_item");
+          $(this).hasClass("back") ? showDesc(wrapper) : showDetails(wrapper);
+        });
+      $(e.target)
+        .find(".buttons__item.detailed")
+        .on("click", function (e) {
+          e.stopPropagation();
+          const wrapper = this.closest(".subservices__slider_item");
+          $(this).hasClass("active") ? showDesc(wrapper) : showDetails(wrapper);
+        });
+      $(e.target)
+        .find(".buttons__item.desc")
+        .on("click", function (e) {
+          e.stopPropagation();
+          const wrapper = this.closest(".subservices__slider_item");
+          $(this).hasClass("active") ? showDetails(wrapper) : showDesc(wrapper);
+        });
     },
   });
 
-  const coursecNeeded = [
-    "USD",
-    "EUR",
-    "RUB",
-    "GBP",
-    "JPY",
-    "KZT",
-    "CAD",
-    "KRW",
-    "TJS",
-    "TRY",
-    "AED",
-    "CNY",
-  ];
+  $(".edo-benefits__left_nav_item").on("click", function () {
+    console.log(this.classList.find((item) => item.includes("item")));
+  });
+  const edoBenefits = $(".edo-benefits__right_slider");
+  edoBenefits.owlCarousel({
+    loop: true,
+    dots: false,
+    items: 1,
+    autoHeight: true,
+    margin: 50,
+  });
 
-  fetch("https://test.e365.uz/edo-service/api/Utils/CBRates")
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      const courseList = data
-        .filter((item) => coursecNeeded.includes(item.Ccy))
-        .map(
-          (item) => `<p>
-        <b>${item.Ccy}:</b> ${item.Rate}
-        <span class="${item.Diff > 0 ? "upper" : "lower"}">${
-            item.Diff > 0 ? "&#8593" : "&#8595"
-          }  ${item.Diff}</span>
-      </p>`
-        );
-      $(".bank-cources__wrapper").append(courseList);
-    });
+  $(".deatailed-btn").on("click", function (e) {
+    e.stopPropagation();
+    const wrapper =
+      this.closest(".subservices__slider_item") ||
+      this.closest(".subservices__mobile_item");
+    $(this).hasClass("back") ? showDesc(wrapper) : showDetails(wrapper);
+  });
+  $(".buttons__item.detailed").on("click", function (e) {
+    e.stopPropagation();
+    const wrapper =
+      this.closest(".subservices__slider_item") ||
+      this.closest(".subservices__mobile_item");
+    $(this).hasClass("active") ? showDesc(wrapper) : showDetails(wrapper);
+  });
+  $(".buttons__item.desc").on("click", function (e) {
+    e.stopPropagation();
+    const wrapper =
+      this.closest(".subservices__slider_item") ||
+      this.closest(".subservices__mobile_item");
+    $(this).hasClass("active") ? showDetails(wrapper) : showDesc(wrapper);
+  });
+
+  $(".slider__nav_item.left").on("click", function () {
+    subservices__slider.trigger("prev.owl.carousel", [300]);
+  });
+  $(".slider__nav_item.right").on("click", function () {
+    subservices__slider.trigger("next.owl.carousel", [300]);
+  });
 });
+
+function showDetails(wrapper) {
+  $(wrapper).find(".buttons__item.detailed").addClass("active");
+  $(wrapper).find(".buttons__item.desc").removeClass("active");
+  $(wrapper).find(".text__detailed").removeClass("hide");
+  $(wrapper).find(".text__detailed").addClass("active");
+  $(wrapper).find(".text__desc").removeClass("active");
+  $(wrapper).find(".text__desc").addClass("hide");
+}
+function showDesc(wrapper) {
+  $(wrapper).find(".buttons__item.detailed").removeClass("active");
+  $(wrapper).find(".buttons__item.desc").addClass("active");
+  $(wrapper).find(".text__detailed").addClass("hide");
+
+  $(wrapper).find(".text__detailed").removeClass("active");
+  $(wrapper).find(".text__desc").addClass("active");
+  $(wrapper).find(".text__desc").removeClass("hide");
+}

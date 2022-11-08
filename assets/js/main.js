@@ -11,25 +11,28 @@ $(document).ready(function () {
     );
   });
 
-  $(".header__lang-mobile_selected").on("click", function () {
-    $(".lang-mobile__menu").toggleClass("active");
-  });
+  // $(".header__lang-mobile_selected").on("click", function () {
+  //   $(".lang-mobile__menu").toggleClass("active");
+  // });
 
-  $(".header__lang-mobile_btn").on("click", function () {
-    $(".header__lang-mobile_btn").removeClass("active");
-    $(this).addClass("active");
-    $(".lang-mobile__menu").toggleClass("active");
-    $(".header__lang-mobile_selected").html($(this).text());
-  });
+  // $(".header__lang-mobile_btn").on("click", function () {
+  //   $(".header__lang-mobile_btn").removeClass("active");
+  //   $(this).addClass("active");
+  //   $(".lang-mobile__menu").toggleClass("active");
+  //   $(".header__lang-mobile_selected").html($(this).text());
+  // });
 
   $(".header__burger").on("click", function () {
     $(".header__burger").toggleClass("active");
-    $(".header__menu").toggleClass("active");
+    $(".header-mobile").toggleClass("active");
     $(".overlay").toggleClass("active");
     $("body").toggleClass("fixed");
   });
 
   $(".overlay").on("click", function () {
+    $(".header__burger")[0].click();
+  });
+  $(".header-mobile__top_x-btn").on("click", function () {
     $(".header__burger")[0].click();
   });
 
@@ -45,31 +48,20 @@ $(document).ready(function () {
     $(".footer__map").append(map);
   }
 
+  showYaMaps();
+  // delete after complete
+
   let YaMapsShown = false;
 
-  $(window).scroll(function () {
-    if (!!$(".main-page-slider").length) {
-      $(this).scrollTop() > $(".main-page-slider").outerHeight()
-        ? $(".header").addClass("white-theme")
-        : $(".header").removeClass("white-theme");
-    } else {
-      $(".header").addClass("white-theme");
-    }
-
-    const top_of_element = $(".footer").offset().top;
-    const bottom_of_screen = $(window).scrollTop() + $(this).innerHeight();
-    bottom_of_screen > top_of_element
-      ? $(".header").addClass("hide")
-      : $(".header").removeClass("hide");
-
-    if (!YaMapsShown) {
-      if (
-        $(window).scrollTop() + $(window).height() >
-        $(document).height() - $(".footer").height() - 300
-      ) {
-        showYaMaps();
-        YaMapsShown = true;
-      }
-    }
-  });
+  // $(window).scroll(function () {
+  //   if (!YaMapsShown) {
+  //     if (
+  //       $(window).scrollTop() + $(window).height() >
+  //       $(document).height() - $(".footer").height() - 300
+  //     ) {
+  //       showYaMaps();
+  //       YaMapsShown = true;
+  //     }
+  //   }
+  // });
 });

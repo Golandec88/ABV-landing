@@ -1,0 +1,18 @@
+.deatailed-btn {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url("../../icons/arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 13px;
+  }
+}
