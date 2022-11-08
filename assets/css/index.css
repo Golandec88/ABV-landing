@@ -1124,4 +1124,7 @@
     width: 80%;
     margin: 0 auto 24px;
   }
+  .edo-benefits__wrapper {
+    padding: 16px;
+  }
 }

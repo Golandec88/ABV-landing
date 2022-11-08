@@ -72,10 +72,10 @@ $(document).ready(function () {
   });
 
   $(".slider__nav_item.left").on("click", function () {
-    subservices__slider.trigger("prev.owl.carousel", [300]);
+    subservices__slider.trigger("prev.owl.carousel", [800]);
   });
   $(".slider__nav_item.right").on("click", function () {
-    subservices__slider.trigger("next.owl.carousel", [300]);
+    subservices__slider.trigger("next.owl.carousel", [800]);
   });
   // SUBSERVICES SLIDER END
 
@@ -104,7 +104,7 @@ $(document).ready(function () {
 
   $(".edo-benefits__left_nav_item").on("click", function () {
     const itemNumber = $(this).attr("data");
-    edoBenefits.trigger("to.owl.carousel", [itemNumber - 1 || 0, 300]);
+    edoBenefits.trigger("to.owl.carousel", [itemNumber - 1 || 0, 800]);
     $(".edo-benefits__left_nav_item").removeClass("active");
     $(this).addClass("active");
     $(".edo-benefits__left_item").removeClass("active");
@@ -112,8 +112,31 @@ $(document).ready(function () {
     $(".edo-benefits__mobile-text_item").removeClass("active");
     $(`.edo-benefits__mobile-text_item.item-${itemNumber}`).addClass("active");
   });
-
   // SUBSERVICES SLIDER END
+
+  // SOLUTIONS SLIDER
+  const solutionsSlider = $(".solutions__slider");
+  solutionsSlider.owlCarousel({
+    loop: true,
+    dots: false,
+    items: 1,
+    autoHeight: false,
+    margin: 50,
+    // onDragged(e) {
+    //   const itemNumber = $(e.target)
+    //     .find(".owl-item.active .edo-benefits__right_slider_item")
+    //     .attr("data");
+    //   $(".edo-benefits__left_nav_item").removeClass("active");
+    //   $(`.edo-benefits__left_nav_item.item-${itemNumber}`).addClass("active");
+    //   $(".edo-benefits__left_item").removeClass("active");
+    //   $(`.edo-benefits__left_item.item-${itemNumber}`).addClass("active");
+    //   $(".edo-benefits__mobile-text_item").removeClass("active");
+    //   $(`.edo-benefits__mobile-text_item.item-${itemNumber}`).addClass(
+    //     "active"
+    //   );
+    // },
+  });
+  // SOLUTIONS SLIDER END
 });
 
 function showDetails(wrapper) {
