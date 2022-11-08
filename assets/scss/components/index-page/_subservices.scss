@@ -149,7 +149,6 @@
 
 @media screen and (max-width: 1500px) {
   .subservices__slider_item {
-    margin: 30px 0;
     .item {
       &__text {
         padding: 0 0 0 30px;
@@ -171,12 +170,17 @@
   }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
   .subservices__slider_item {
-    margin: 40px;
+    margin: 50px;
   }
   .slider__nav {
     display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .subservices__slider_item {
+    margin: 32px;
   }
 }
 
