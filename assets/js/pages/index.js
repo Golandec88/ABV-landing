@@ -121,20 +121,20 @@ $(document).ready(function () {
     dots: false,
     items: 1,
     autoHeight: false,
-    margin: 50,
-    // onDragged(e) {
-    //   const itemNumber = $(e.target)
-    //     .find(".owl-item.active .edo-benefits__right_slider_item")
-    //     .attr("data");
-    //   $(".edo-benefits__left_nav_item").removeClass("active");
-    //   $(`.edo-benefits__left_nav_item.item-${itemNumber}`).addClass("active");
-    //   $(".edo-benefits__left_item").removeClass("active");
-    //   $(`.edo-benefits__left_item.item-${itemNumber}`).addClass("active");
-    //   $(".edo-benefits__mobile-text_item").removeClass("active");
-    //   $(`.edo-benefits__mobile-text_item.item-${itemNumber}`).addClass(
-    //     "active"
-    //   );
-    // },
+    onDragged(e) {
+      const itemNumber = $(e.target)
+        .find(".owl-item.active .solutions__slider_item")
+        .attr("data");
+      $(".solutions__nav_button").removeClass("active");
+      $(`.solutions__nav_button.item-${itemNumber}`).addClass("active");
+    },
+  });
+
+  $(".solutions__nav_button").on("click", function () {
+    const itemNumber = $(this).attr("data");
+    solutionsSlider.trigger("to.owl.carousel", [itemNumber - 1 || 0, 800]);
+    $(".solutions__nav_button").removeClass("active");
+    $(this).addClass("active");
   });
   // SOLUTIONS SLIDER END
 });
