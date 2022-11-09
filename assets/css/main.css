@@ -593,6 +593,10 @@ img {
           user-select: none;
 }
 
+h1 {
+  display: none;
+}
+
 @media screen and (max-width: 950px) {
   section,
 section.container {
