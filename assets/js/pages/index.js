@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // SUBSERVICES SLIDER
   const subservices__slider = $(".subservices__slider");
   subservices__slider.owlCarousel({
     center: true,
@@ -11,9 +12,9 @@ $(document).ready(function () {
         items: 1,
         margin: 30,
       },
-      1150: {
+      1200: {
         items: 1,
-        margin: 30,
+        margin: 60,
         stagePadding: 150,
       },
       1500: {
@@ -48,18 +49,6 @@ $(document).ready(function () {
     },
   });
 
-  $(".edo-benefits__left_nav_item").on("click", function () {
-    console.log(this.classList.find((item) => item.includes("item")));
-  });
-  const edoBenefits = $(".edo-benefits__right_slider");
-  edoBenefits.owlCarousel({
-    loop: true,
-    dots: false,
-    items: 1,
-    autoHeight: true,
-    margin: 50,
-  });
-
   $(".deatailed-btn").on("click", function (e) {
     e.stopPropagation();
     const wrapper =
@@ -83,11 +72,71 @@ $(document).ready(function () {
   });
 
   $(".slider__nav_item.left").on("click", function () {
-    subservices__slider.trigger("prev.owl.carousel", [300]);
+    subservices__slider.trigger("prev.owl.carousel", [800]);
   });
   $(".slider__nav_item.right").on("click", function () {
-    subservices__slider.trigger("next.owl.carousel", [300]);
+    subservices__slider.trigger("next.owl.carousel", [800]);
   });
+  // SUBSERVICES SLIDER END
+
+  // SUBSERVICES SLIDER
+  const edoBenefits = $(".edo-benefits__right_slider");
+  edoBenefits.owlCarousel({
+    loop: true,
+    dots: false,
+    items: 1,
+    autoHeight: false,
+    margin: 50,
+    onDragged(e) {
+      const itemNumber = $(e.target)
+        .find(".owl-item.active .edo-benefits__right_slider_item")
+        .attr("data");
+      $(".edo-benefits__left_nav_item").removeClass("active");
+      $(`.edo-benefits__left_nav_item.item-${itemNumber}`).addClass("active");
+      $(".edo-benefits__left_item").removeClass("active");
+      $(`.edo-benefits__left_item.item-${itemNumber}`).addClass("active");
+      $(".edo-benefits__mobile-text_item").removeClass("active");
+      $(`.edo-benefits__mobile-text_item.item-${itemNumber}`).addClass(
+        "active"
+      );
+    },
+  });
+
+  $(".edo-benefits__left_nav_item").on("click", function () {
+    const itemNumber = $(this).attr("data");
+    edoBenefits.trigger("to.owl.carousel", [itemNumber - 1 || 0, 800]);
+    $(".edo-benefits__left_nav_item").removeClass("active");
+    $(this).addClass("active");
+    $(".edo-benefits__left_item").removeClass("active");
+    $(`.edo-benefits__left_item.item-${itemNumber}`).addClass("active");
+    $(".edo-benefits__mobile-text_item").removeClass("active");
+    $(`.edo-benefits__mobile-text_item.item-${itemNumber}`).addClass("active");
+  });
+  // SUBSERVICES SLIDER END
+
+  // SOLUTIONS SLIDER
+  const solutionsSlider = $(".solutions__slider");
+  solutionsSlider.owlCarousel({
+    loop: true,
+    dots: false,
+    items: 1,
+    autoHeight: false,
+    onDragged(e) {
+      const itemNumber = $(e.target)
+        .find(".owl-item.active .solutions__slider_item")
+        .attr("data");
+      $(".solutions__nav_button").removeClass("active");
+      $(`.solutions__nav_button.item-${itemNumber}`).addClass("active");
+    },
+  });
+
+  $(".solutions__nav_button").on("click", function () {
+    const itemNumber = $(this).attr("data");
+    solutionsSlider.trigger("to.owl.carousel", [itemNumber - 1 || 0, 800]);
+    $(".solutions__nav_button").removeClass("active");
+    $(this).addClass("active");
+  });
+  // SOLUTIONS SLIDER END
 });
 
 function showDetails(wrapper) {
