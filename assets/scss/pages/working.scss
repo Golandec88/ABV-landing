@@ -1,19 +1,18 @@
 @import "../variables";
 @import "../mixins/border-animate";
+@import "../components/working-page/send-request";
 
 .working {
   &__wrapper {
-    background: $light-grey;
+    background: $secondary;
     margin-top: 34px;
     padding: 60px 95px 48px;
-    border-radius: 6px;
+    border-radius: 32px;
   }
 
   &__title_main {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 120%;
-    margin: 60px;
+    display: block;
+    margin-bottom: 80px;
   }
   &__title {
     font-weight: 500;
@@ -76,7 +75,7 @@
       color: $primary;
       line-height: 120%;
       display: inline-block;
-      background: $light-grey;
+      background: $secondary;
       position: relative;
     }
     &-num {
@@ -226,6 +225,12 @@
   }
 }
 
+@media screen and (max-width: 750px) {
+  .working__wrapper {
+    border-radius: 16px;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .working {
     &__wrapper {
@@ -245,7 +250,7 @@
     &__btns {
       margin-bottom: 20px;
       column-gap: 16px;
-      justify-content: start;
+      justify-content: flex-start;
       &-item {
         font-size: 16px;
         padding: 8px 24px;
