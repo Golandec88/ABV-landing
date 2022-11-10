@@ -15,7 +15,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-right: 64px;
+    padding-right: 20%;
     &_item {
       overflow: hidden;
       height: 0;
@@ -82,7 +82,7 @@
     }
   }
   &__right {
-    width: 57%;
+    width: 40%;
     flex-shrink: 0;
     border-radius: 6px;
     img {
@@ -154,7 +154,7 @@
       }
     }
     &__right {
-      width: 100%;
+      width: 60%;
     }
   }
 }
@@ -207,5 +207,8 @@
   }
   .edo-benefits__wrapper {
     padding: 16px;
+  }
+  .edo-benefits__right {
+    width: 70%;
   }
 }
