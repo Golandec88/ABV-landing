@@ -75,7 +75,7 @@
       }
       .services__text_btn {
         margin-top: auto;
-        align-self: start;
+        align-self: flex-start;
       }
     }
     &_item {
@@ -170,7 +170,7 @@
     }
     .services__text_desc .services__text_btn,
     .services__text_detailed {
-      align-self: end;
+      align-self: flex-end;
     }
     &__slider {
       margin-bottom: 60px;

@@ -11,28 +11,24 @@ $(document).ready(function () {
     );
   });
 
-  // $(".header__lang-mobile_selected").on("click", function () {
-  //   $(".lang-mobile__menu").toggleClass("active");
-  // });
+  $(".header-mobile__link, .header-mobile .header__logo").on(
+    "click",
+    function () {
+      $(".header__burger")[0].click();
+    }
+  );
 
-  // $(".header__lang-mobile_btn").on("click", function () {
-  //   $(".header__lang-mobile_btn").removeClass("active");
-  //   $(this).addClass("active");
-  //   $(".lang-mobile__menu").toggleClass("active");
-  //   $(".header__lang-mobile_selected").html($(this).text());
-  // });
+  $(".header-mobile__langs_item, .header__lang_btn").on("click", function () {
+    $(".header-mobile__langs_item, .header__lang_btn").removeClass("active");
+    $(this).addClass("active");
+  });
 
   $(".header__burger").on("click", function () {
-    $(".header__burger").toggleClass("active");
-    $(".header-mobile").toggleClass("active");
-    $(".overlay").toggleClass("active");
+    $(".header__burger, .header-mobile, .overlay").toggleClass("active");
     $("body").toggleClass("fixed");
   });
 
-  $(".overlay").on("click", function () {
-    $(".header__burger")[0].click();
-  });
-  $(".header-mobile__top_x-btn").on("click", function () {
+  $(".overlay, .header-mobile__top_x-btn").on("click", function () {
     $(".header__burger")[0].click();
   });
 
@@ -48,20 +44,19 @@ $(document).ready(function () {
     $(".footer__map").append(map);
   }
 
-  showYaMaps();
   // delete after complete
 
   let YaMapsShown = false;
 
-  // $(window).scroll(function () {
-  //   if (!YaMapsShown) {
-  //     if (
-  //       $(window).scrollTop() + $(window).height() >
-  //       $(document).height() - $(".footer").height() - 300
-  //     ) {
-  //       showYaMaps();
-  //       YaMapsShown = true;
-  //     }
-  //   }
-  // });
+  $(window).scroll(function () {
+    if (!YaMapsShown) {
+      if (
+        $(window).scrollTop() + $(window).height() >
+        $(document).height() - $(".footer").height() - 600
+      ) {
+        showYaMaps();
+        YaMapsShown = true;
+      }
+    }
+  });
 });

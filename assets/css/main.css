@@ -172,6 +172,8 @@
     text-transform: uppercase;
     color: #f2f2f2;
     margin-bottom: 24px;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .header-mobile__socials {
     display: -webkit-box;
@@ -292,9 +294,6 @@
 }
 .footer__top-links_item:first-child {
   margin-right: 40px;
-}
-.footer__middle-links {
-  margin-bottom: 60px;
 }
 .footer__middle-links .middle__title {
   font-weight: 500;
