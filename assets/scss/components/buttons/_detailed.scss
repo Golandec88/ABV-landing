@@ -15,6 +15,14 @@
     background-size: contain;
     margin-left: 13px;
   }
+  &.back {
+    flex-direction: row-reverse;
+    &::after {
+      margin-left: 0;
+      margin-right: 13px;
+      transform: rotate(180deg);
+    }
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -23,6 +31,11 @@
     line-height: 140%;
     &::after {
       margin-left: 8px;
+    }
+    &.back::after {
+      margin-left: 0;
+      margin-right: 8;
+      transform: rotate(180deg);
     }
   }
 }

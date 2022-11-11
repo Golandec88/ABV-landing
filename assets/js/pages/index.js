@@ -173,8 +173,8 @@ $(document).ready(function () {
 
   $(".services__text_btn").on("click", function () {
     const wrapper = $(this).closest(".services__text_item");
-    $(wrapper).find(".services__text_desc").removeClass("active");
-    $(wrapper).find(".services__text_detailed").addClass("active");
+    $(wrapper).find(".services__text_desc").toggleClass("active");
+    $(wrapper).find(".services__text_detailed").toggleClass("active");
     $(".services__dots-nav_item").toggleClass("active");
   });
   $(".services__dots-nav_item").on("click", function () {
