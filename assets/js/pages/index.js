@@ -156,6 +156,8 @@ $(document).ready(function () {
       ).addClass("active");
       $(".services__text_desc").addClass("active");
       $(".services__text_detailed").removeClass("active");
+      $(".services__dots-nav_item").removeClass("active");
+      $(".services__dots-nav_item.desc").addClass("active");
     },
   });
   $(".services__nav_item").on("click", function () {
@@ -170,6 +172,7 @@ $(document).ready(function () {
     const wrapper = $(this).closest(".services__text_item");
     $(wrapper).find(".services__text_desc").removeClass("active");
     $(wrapper).find(".services__text_detailed").addClass("active");
+    $(".services__dots-nav_item").toggleClass("active");
   });
   $(".services__dots-nav_item").on("click", function () {
     $(".services__dots-nav_item").toggleClass("active");
