@@ -7,6 +7,7 @@ $(document).ready(function () {
     dots: false,
     items: 1,
     autoHeight: true,
+    lazyLoad: true,
     responsive: {
       0: {
         items: 1,
@@ -87,6 +88,7 @@ $(document).ready(function () {
     items: 1,
     autoHeight: false,
     margin: 50,
+    lazyLoad: true,
     onDragged(e) {
       const itemNumber = $(e.target)
         .find(".owl-item.active .edo-benefits__right_slider_item")
@@ -118,16 +120,16 @@ $(document).ready(function () {
   const solutionsSlider = $(".solutions__slider");
   solutionsSlider.owlCarousel({
     loop: true,
-    dots: false,
+    dots: true,
+    lazyLoad: true,
     items: 1,
     autoHeight: false,
-    onDragged(e) {
-      const itemNumber = $(e.target)
-        .find(".owl-item.active .solutions__slider_item")
-        .attr("data");
-      $(".solutions__nav_button").removeClass("active");
-      $(`.solutions__nav_button.item-${itemNumber}`).addClass("active");
-    },
+    autoplay: true,
+    autoplayTimeout: 2500,
+    autoplayHoverPause: true,
+    autoplaySpeed: 800,
+    dotsContainer: "#solutions__nav",
+    dotsSpeed: 800,
   });
 
   $(".solutions__nav_button").on("click", function () {
@@ -145,6 +147,7 @@ $(document).ready(function () {
     dots: false,
     items: 1,
     autoHeight: false,
+    lazyLoad: true,
     margin: 50,
     onDragged(e) {
       const itemNumber = $(e.target)
