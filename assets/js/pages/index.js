@@ -7,6 +7,7 @@ $(document).ready(function () {
     dots: false,
     items: 1,
     autoHeight: true,
+    lazyLoad: true,
     responsive: {
       0: {
         items: 1,
@@ -87,6 +88,7 @@ $(document).ready(function () {
     items: 1,
     autoHeight: false,
     margin: 50,
+    lazyLoad: true,
     onDragged(e) {
       const itemNumber = $(e.target)
         .find(".owl-item.active .edo-benefits__right_slider_item")
@@ -118,16 +120,16 @@ $(document).ready(function () {
   const solutionsSlider = $(".solutions__slider");
   solutionsSlider.owlCarousel({
     loop: true,
-    dots: false,
+    dots: true,
+    lazyLoad: true,
     items: 1,
     autoHeight: false,
-    onDragged(e) {
-      const itemNumber = $(e.target)
-        .find(".owl-item.active .solutions__slider_item")
-        .attr("data");
-      $(".solutions__nav_button").removeClass("active");
-      $(`.solutions__nav_button.item-${itemNumber}`).addClass("active");
-    },
+    autoplay: true,
+    autoplayTimeout: 2500,
+    autoplayHoverPause: true,
+    autoplaySpeed: 800,
+    dotsContainer: "#solutions__nav",
+    dotsSpeed: 800,
   });
 
   $(".solutions__nav_button").on("click", function () {
@@ -145,6 +147,7 @@ $(document).ready(function () {
     dots: false,
     items: 1,
     autoHeight: false,
+    lazyLoad: true,
     margin: 50,
     onDragged(e) {
       const itemNumber = $(e.target)
@@ -156,6 +159,8 @@ $(document).ready(function () {
       ).addClass("active");
       $(".services__text_desc").addClass("active");
       $(".services__text_detailed").removeClass("active");
+      $(".services__dots-nav_item").removeClass("active");
+      $(".services__dots-nav_item.desc").addClass("active");
     },
   });
   $(".services__nav_item").on("click", function () {
@@ -168,8 +173,9 @@ $(document).ready(function () {
 
   $(".services__text_btn").on("click", function () {
     const wrapper = $(this).closest(".services__text_item");
-    $(wrapper).find(".services__text_desc").removeClass("active");
-    $(wrapper).find(".services__text_detailed").addClass("active");
+    $(wrapper).find(".services__text_desc").toggleClass("active");
+    $(wrapper).find(".services__text_detailed").toggleClass("active");
+    $(".services__dots-nav_item").toggleClass("active");
   });
   $(".services__dots-nav_item").on("click", function () {
     $(".services__dots-nav_item").toggleClass("active");

@@ -101,6 +101,8 @@
   &__slider {
     .owl-item {
       height: 620px;
+      display: flex;
+      justify-content: flex-end;
     }
     &_item,
     &_item img {
