@@ -623,6 +623,20 @@ h1 {
   display: none;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #e8fff5;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e8fff5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #75cea9;
+  border-radius: 6px;
+}
+
 @media screen and (max-width: 950px) {
   section,
 section.container {
