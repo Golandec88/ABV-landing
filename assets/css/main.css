@@ -146,7 +146,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
   }
   .header-mobile.active {
     -webkit-transform: translateX(-100%);
@@ -172,8 +171,6 @@
     text-transform: uppercase;
     color: #f2f2f2;
     margin-bottom: 24px;
-    -ms-flex-item-align: center;
-        align-self: center;
   }
   .header-mobile__socials {
     display: -webkit-box;
@@ -245,6 +242,7 @@
   .header-mobile__enter-btn {
     -ms-flex-item-align: center;
         align-self: center;
+    text-align: center;
     width: 100%;
     max-width: 255px;
   }
