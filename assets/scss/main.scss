@@ -8,6 +8,7 @@
 @import "components/buttons/primary";
 @import "components/buttons/detailed";
 @import "components/buttons/bottom-line";
+@import "components/scrollbar";
 
 *,
 *::after,
@@ -24,6 +25,7 @@ body {
   color: $black;
   font-size: 24px;
   line-height: 29px;
+  position: relative;
   &.fixed {
     overflow: hidden;
   }
@@ -56,17 +58,7 @@ h1 {
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
-  background: $secondary;
-}
-
-body::-webkit-scrollbar-track {
-  background: $secondary;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: $primary;
-  border-radius: 6px;
+  display: none;
 }
 
 input::-webkit-outer-spin-button,

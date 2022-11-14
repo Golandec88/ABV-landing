@@ -793,7 +793,7 @@
             </div>
           </div>
           <div class="services__right services__slider owl-carousel owl-theme">
-            <picture data="1" class="services__slider_item item-1">
+            <!-- <picture data="1" class="services__slider_item item-1">
               <source
                 media="(min-width: 1201px)"
                 srcset="assets/images/services/1.png"
@@ -803,14 +803,15 @@
                 srcset="assets/images/services/mobile/1.png"
               />
               <img src="assets/images/services/1.png" alt="fast" />
-            </picture>
-            <!-- <video
+            </picture> -->
+            <video
+              class="services__slider_item item-1"
               src="assets/images/services/1-anim.webm"
               autoplay
               muted
               loop
               preload="none"
-            ></video> -->
+            ></video>
             <picture data="2" class="services__slider_item item-2">
               <source
                 media="(min-width: 1201px)"
@@ -1644,11 +1645,20 @@
           </form>
         </div>
       </section>
+
+      <div class="scrollbar">
+        <button class="scrollbar__thumb"></button>
+      </div>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <img src="assets/images/logo-abv.svg" alt="logo" class="footer__logo" />
+        <a href="/index.html"
+          ><img
+            src="assets/images/logo-abv.svg"
+            alt="logo"
+            class="footer__logo"
+        /></a>
         <div class="footer__wrapper">
           <nav class="footer__nav">
             <div class="footer__top-links">
