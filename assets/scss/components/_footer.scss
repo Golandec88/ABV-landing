@@ -35,6 +35,8 @@
     }
   }
   &__middle-links {
+    display: flex;
+    flex-direction: column;
     .middle {
       &__title {
         font-weight: 500;
@@ -53,7 +55,7 @@
           margin-bottom: 40px;
         }
         &.link {
-          display: block;
+          align-self: flex-start;
         }
       }
     }
@@ -68,6 +70,9 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
+    a {
+      text-decoration: underline;
+    }
   }
 
   &__map {

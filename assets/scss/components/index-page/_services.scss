@@ -77,6 +77,9 @@
         margin-top: auto;
         align-self: flex-start;
       }
+      .services__text_subtitle {
+        margin-bottom: 32px;
+      }
     }
     &_item {
       height: 0;
@@ -90,9 +93,6 @@
         height: 100%;
         opacity: 1;
       }
-    }
-    &_desc .services__text_subtitle {
-      margin-bottom: 32px;
     }
   }
   &__right {
