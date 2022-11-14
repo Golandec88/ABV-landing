@@ -83,7 +83,7 @@ $(document).ready(function () {
       25;
     const thumbPos =
       $(".scrollbar").height() / ($("body").height() / window.pageYOffset);
-    console.log(max, thumbPos);
+
     $(".scrollbar__thumb").css({
       transform: `translateY(
         ${thumbPos > max ? max : thumbPos}px

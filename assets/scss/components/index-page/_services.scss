@@ -111,6 +111,12 @@
       object-fit: contain;
       object-position: top right;
     }
+    .owl-item video {
+      height: 100%;
+      width: 100% !important;
+      object-fit: cover;
+      object-position: center;
+    }
   }
   &__dots-nav {
     display: flex;

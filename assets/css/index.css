@@ -1743,6 +1743,14 @@
   -o-object-position: top right;
      object-position: top right;
 }
+.services__slider .owl-item video {
+  height: 100%;
+  width: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
 .services__dots-nav {
   display: -webkit-box;
   display: -ms-flexbox;
