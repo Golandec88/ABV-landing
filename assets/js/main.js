@@ -60,53 +60,33 @@ $(document).ready(function () {
     }
   });
 
-  // $(window).on("scroll", function () {
-  //   $(".scrollbar__thumb").css({
-  //     transform: `translateY(
-  //       ${
-  //         $(".scrollbar").height() / ($("html").height() / window.pageYOffset) +
-  //         ($(".scrollbar").height() /
-  //           ($("body").height() / $(".scrollbar").height()) -
-  //           60) /
-  //           ($("html").height() / window.pageYOffset)
-  //       }px
-  //     )`,
-  //   });
-  // });
-
-  // $(".scrollbar__thumb").mousedown(function (e) {
-  //   console.log(e);
-  //   $(".scrollbar__thumb").css({
-  //     transform: `translateY(
-  //       ${
-  //         $(".scrollbar").height() / ($("html").height() / e.clientY) +
-  //         ($(".scrollbar").height() /
-  //           ($("body").height() / $(".scrollbar").height()) -
-  //           60) /
-  //           ($("html").height() / e.clientY)
-  //       }px
-  //     )`,
-  //   });
-  // });
-
-  const track = this.getElementsByClassName("scrollbar")[0];
   const thumb = this.getElementsByClassName("scrollbar__thumb")[0];
-
+  $(".scrollbar__thumb").css({
+    transform: `translateY(
+        ${
+          $(".scrollbar").height() / ($("body").height() / window.pageYOffset)
+        }px
+      )`,
+    height: `${
+      $(".scrollbar").height() / ($("body").height() / $(".scrollbar").height())
+    }px`,
+  });
   this.addEventListener("scroll", documentScrollHandler);
   thumb.addEventListener("mousedown", mouseDownThumbHandler);
 
   function documentScrollHandler(e) {
     e.stopPropagation();
-
+    const max =
+      $(".scrollbar").height() -
+      $(".scrollbar").height() /
+        ($("body").height() / $(".scrollbar").height()) -
+      25;
+    const thumbPos =
+      $(".scrollbar").height() / ($("body").height() / window.pageYOffset);
+    console.log(max, thumbPos);
     $(".scrollbar__thumb").css({
       transform: `translateY(
-        ${
-          $(".scrollbar").height() / ($("html").height() / window.pageYOffset) +
-          ($(".scrollbar").height() /
-            ($("body").height() / $(".scrollbar").height()) -
-            60) /
-            ($("html").height() / window.pageYOffset)
-        }px
+        ${thumbPos > max ? max : thumbPos}px
       )`,
     });
   }
@@ -127,7 +107,10 @@ $(document).ready(function () {
   function mouseMoveHandler(e) {
     e.stopPropagation();
 
-    const max = $(".scrollbar").height() - 80;
+    const max =
+      $(".scrollbar").height() -
+      $(".scrollbar").height() /
+        ($("body").height() / $(".scrollbar").height());
     const thumbPos =
       e.clientY - clickedPos > max
         ? max
