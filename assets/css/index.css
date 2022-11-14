@@ -149,6 +149,7 @@
   margin-top: auto;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  text-align: center;
 }
 .how-begin__right {
   width: 54%;
@@ -814,7 +815,6 @@
     padding: 16px;
     border-radius: 16px;
     margin-bottom: 24px;
-    min-height: 630px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1702,6 +1702,9 @@
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
+.services__text_desc .services__text_subtitle, .services__text_detailed .services__text_subtitle {
+  margin-bottom: 32px;
+}
 .services__text_item {
   height: 0;
   opacity: 0;
@@ -1719,9 +1722,6 @@
 .services__text_item.active {
   height: 100%;
   opacity: 1;
-}
-.services__text_desc .services__text_subtitle {
-  margin-bottom: 32px;
 }
 .services__right {
   overflow: hidden;

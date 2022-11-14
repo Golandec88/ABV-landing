@@ -7,6 +7,7 @@
 @import "components/buttons/circle-animation";
 @import "components/buttons/primary";
 @import "components/buttons/detailed";
+@import "components/buttons/bottom-line";
 
 *,
 *::after,
@@ -37,6 +38,7 @@ button {
   outline: none;
   background: transparent;
   border: 0;
+  color: $black;
   cursor: pointer;
 }
 
@@ -65,6 +67,17 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: $primary;
   border-radius: 6px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
 }
 
 @media screen and (max-width: 950px) {

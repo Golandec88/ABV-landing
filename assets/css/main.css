@@ -295,6 +295,15 @@
 .footer__top-links_item:first-child {
   margin-right: 40px;
 }
+.footer__middle-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .footer__middle-links .middle__title {
   font-weight: 500;
   font-size: 40px;
@@ -313,7 +322,8 @@
   margin-bottom: 40px;
 }
 .footer__middle-links .middle__item.link {
-  display: block;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 .footer__bottom-links {
   display: -webkit-box;
@@ -326,10 +336,13 @@
      -moz-column-gap: 32px;
           column-gap: 32px;
 }
-.footer__copyright {
+.footer__copyright, .footer__copyright a {
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
+}
+.footer__copyright a, .footer__copyright a a {
+  text-decoration: underline;
 }
 .footer__map {
   max-width: 55%;
@@ -534,6 +547,24 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
+  text-align: center;
+  position: relative;
+  padding-bottom: 4px;
+}
+.deatailed-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 17px);
+  width: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: #75cea9;
+  height: 2px;
+}
+.deatailed-btn.active::before, .deatailed-btn:hover::before {
+  left: 0;
+  width: calc(100% - 35px);
 }
 .deatailed-btn::after {
   content: "";
@@ -558,22 +589,61 @@
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+.deatailed-btn.back::before {
+  left: calc(50% + 17px);
+}
+.deatailed-btn.back.active::before, .deatailed-btn.back:hover::before {
+  left: 35px;
+  width: calc(100% - 35px);
+}
 
 @media screen and (max-width: 750px) {
   .deatailed-btn {
     font-size: 16px;
     line-height: 140%;
+    text-align: center;
   }
   .deatailed-btn::after {
     margin-left: 8px;
   }
+  .deatailed-btn::before {
+    left: calc(50% - 15px);
+  }
+  .deatailed-btn.active::before, .deatailed-btn:hover::before {
+    left: 0;
+    width: calc(100% - 30px);
+  }
   .deatailed-btn.back::after {
     margin-left: 0;
-    margin-right: 8;
+    margin-right: 8px;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
+  .deatailed-btn.back.active::before, .deatailed-btn.back:hover::before {
+    left: 30px;
+    width: calc(100% - 30px);
+  }
 }
+.bottom-line {
+  position: relative;
+  padding-bottom: 4px;
+}
+.bottom-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: currentColor;
+  height: 3px;
+}
+.bottom-line.active::after, .bottom-line:hover::after {
+  left: 0;
+  width: 100%;
+}
+
 *,
 *::after,
 *::before {
@@ -604,6 +674,7 @@ button {
   outline: none;
   background: transparent;
   border: 0;
+  color: #2b2b2b;
   cursor: pointer;
 }
 
@@ -635,6 +706,17 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #75cea9;
   border-radius: 6px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
 }
 
 @media screen and (max-width: 950px) {
