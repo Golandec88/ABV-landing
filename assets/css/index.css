@@ -634,12 +634,15 @@
   display: flex;
   height: 100%;
 }
-.subservices__slider_item .item__img img {
-  height: 100%;
+.subservices__slider_item .item__video {
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+  width: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .subservices__slider_item .item__text {
   font-size: 20px;
@@ -837,7 +840,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .subservices__mobile_item .item__img {
+  .subservices__mobile_item .item__video {
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
@@ -1013,8 +1016,21 @@
   border-radius: 6px;
   max-width: 50%;
 }
-.edo-benefits__right img {
+.edo-benefits__right .owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   height: 531px;
+}
+.edo-benefits__right_slider_item {
+  height: 100%;
+  max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: bottom right;
@@ -1727,29 +1743,23 @@
   overflow: hidden;
 }
 .services__slider .owl-item {
-  height: 620px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.services__slider_item, .services__slider_item img {
-  height: 100%;
-  width: auto !important;
+.services__slider_item {
+  height: 620px;
+  width: 100% !important;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: top right;
-     object-position: top right;
-}
-.services__slider .owl-item video {
-  height: 100%;
-  width: 100% !important;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: bottom right;
+     object-position: bottom right;
 }
 .services__dots-nav {
   display: -webkit-box;
@@ -1830,7 +1840,7 @@
   .services__slider .owl-item {
     height: 400px;
   }
-  .services__slider_item, .services__slider_item img {
+  .services__slider_item {
     height: 100%;
     width: 100% !important;
     -o-object-fit: contain;

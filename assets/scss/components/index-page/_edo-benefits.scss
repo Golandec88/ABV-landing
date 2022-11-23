@@ -85,8 +85,15 @@
   &__right {
     border-radius: 6px;
     max-width: 50%;
-    img {
+    .owl-item {
+      display: flex;
+      align-items: end;
+      justify-content: end;
       height: 531px;
+    }
+    &_slider_item {
+      height: 100%;
+      max-width: 100%;
       object-fit: contain;
       object-position: bottom right;
     }
