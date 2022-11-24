@@ -100,22 +100,15 @@
   }
   &__slider {
     .owl-item {
-      height: 620px;
       display: flex;
+      align-items: flex-end;
       justify-content: flex-end;
     }
-    &_item,
-    &_item img {
-      height: 100%;
-      width: auto !important;
-      object-fit: contain;
-      object-position: top right;
-    }
-    .owl-item video {
-      height: 100%;
+    &_item {
+      height: 620px;
       width: 100% !important;
-      object-fit: cover;
-      object-position: center;
+      object-fit: contain;
+      object-position: bottom right;
     }
   }
   &__dots-nav {
@@ -185,8 +178,7 @@
       .owl-item {
         height: 400px;
       }
-      &_item,
-      &_item img {
+      &_item {
         height: 100%;
         width: 100% !important;
         object-fit: contain;
