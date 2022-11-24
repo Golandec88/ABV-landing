@@ -10,12 +10,8 @@
   &__left {
     width: 50%;
     margin-right: auto;
-    &_img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: center;
-    }
+    object-fit: contain;
+    object-position: center;
   }
   &__right {
     width: 40%;
@@ -145,7 +141,7 @@
   .send-request__right {
     margin-left: 0;
   }
-  .send-request__left_img {
+  .send-request__left {
     max-height: 400px;
   }
 }
