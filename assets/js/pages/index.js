@@ -156,12 +156,15 @@ $(document).ready(function () {
       $(".services__dots-nav_item.desc").addClass("active");
     },
   });
+
   $(".services__nav_item").on("click", function () {
     const itemNumber = $(this).attr("data");
     servicesSlider.trigger("to.owl.carousel", [itemNumber - 1 || 0, 800]);
     $(".services__nav_item, .services__text_item").removeClass("active");
     $(this).addClass("active");
     $(`.services__text_item.item-${itemNumber}`).addClass("active");
+    $(".services__dots-nav_item").removeClass("active");
+    $(".services__dots-nav_item.desc").addClass("active");
   });
 
   $(".services__text_btn").on("click", function () {
