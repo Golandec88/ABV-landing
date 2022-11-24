@@ -965,10 +965,6 @@
   row-gap: 24px;
   margin-top: auto;
 }
-.edo-benefits__left_nav .button-wrapper {
-  width: 30%;
-  padding-right: 10px;
-}
 .edo-benefits__left_nav_item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -976,6 +972,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 30%;
+  padding-right: 10px;
+  justify-self: start;
 }
 .edo-benefits__left_nav_item.active .num {
   background: #75cea9;
@@ -1034,7 +1033,7 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .edo-benefits__left_nav .button-wrapper {
+  .edo-benefits__left_nav_item {
     width: 50%;
   }
   .edo-benefits__left .item__subtitle {

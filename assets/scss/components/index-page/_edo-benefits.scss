@@ -48,13 +48,12 @@
       align-items: center;
       row-gap: 24px;
       margin-top: auto;
-      .button-wrapper {
-        width: 30%;
-        padding-right: 10px;
-      }
       &_item {
         display: inline-flex;
         align-items: center;
+        width: 30%;
+        padding-right: 10px;
+        justify-self: start;
         &.active .num {
           background: $primary;
         }
@@ -101,7 +100,7 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .edo-benefits__left_nav .button-wrapper {
+  .edo-benefits__left_nav_item {
     width: 50%;
   }
   .edo-benefits__left {

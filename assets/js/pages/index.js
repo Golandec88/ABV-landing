@@ -80,21 +80,24 @@ $(document).ready(function () {
   });
   // SUBSERVICES SLIDER END
 
-  // SUBSERVICES SLIDER
+  // edoBenefits SLIDER
   const edoBenefits = $(".edo-benefits__right_slider");
   edoBenefits.owlCarousel({
     loop: true,
-    dots: false,
     items: 1,
     autoHeight: false,
     margin: 50,
     lazyLoad: true,
-    onDragged(e) {
-      const itemNumber = $(e.target)
-        .find(".owl-item.active .edo-benefits__right_slider_item")
+    autoplay: true,
+    autoplayTimeout: 2500,
+    autoplayHoverPause: true,
+    autoplaySpeed: 800,
+    dotsContainer: "#edo-benefits__left_nav",
+    dotsSpeed: 800,
+    onChanged() {
+      const itemNumber = $(".edo-benefits__left_nav")
+        .find(".edo-benefits__left_nav_item.active")
         .attr("data");
-      $(".edo-benefits__left_nav_item").removeClass("active");
-      $(`.edo-benefits__left_nav_item.item-${itemNumber}`).addClass("active");
       $(".edo-benefits__left_item").removeClass("active");
       $(`.edo-benefits__left_item.item-${itemNumber}`).addClass("active");
       $(".edo-benefits__mobile-text_item").removeClass("active");
@@ -106,15 +109,12 @@ $(document).ready(function () {
 
   $(".edo-benefits__left_nav_item").on("click", function () {
     const itemNumber = $(this).attr("data");
-    edoBenefits.trigger("to.owl.carousel", [itemNumber - 1 || 0, 800]);
-    $(".edo-benefits__left_nav_item").removeClass("active");
-    $(this).addClass("active");
     $(".edo-benefits__left_item").removeClass("active");
     $(`.edo-benefits__left_item.item-${itemNumber}`).addClass("active");
     $(".edo-benefits__mobile-text_item").removeClass("active");
     $(`.edo-benefits__mobile-text_item.item-${itemNumber}`).addClass("active");
   });
-  // SUBSERVICES SLIDER END
+  // edoBenefits SLIDER END
 
   // SOLUTIONS SLIDER
   const solutionsSlider = $(".solutions__slider");
@@ -130,13 +130,6 @@ $(document).ready(function () {
     autoplaySpeed: 800,
     dotsContainer: "#solutions__nav",
     dotsSpeed: 800,
-  });
-
-  $(".solutions__nav_button").on("click", function () {
-    const itemNumber = $(this).attr("data");
-    solutionsSlider.trigger("to.owl.carousel", [itemNumber - 1 || 0, 800]);
-    $(".solutions__nav_button").removeClass("active");
-    $(this).addClass("active");
   });
   // SOLUTIONS SLIDER END
 
