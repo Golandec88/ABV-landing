@@ -2,8 +2,8 @@ FROM node:16.13.0-alpine as build-stage
 
 WORKDIR /app
 COPY package*.json ./
-CMD ["yarn"]
-CMD ["yarn", "locales:get"]
+CMD ["npm", "install"]
+CMD ["npm", "run", "locales:get"]
 
 COPY . .
 
@@ -26,7 +26,7 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
     LOGIN=$(cat /run/secrets/LOGIN) \
     PASSWORD=$(cat /run/secrets/PASSWORD)
 
-RUN ["yarn", "build:prod"]
+RUN yarn build:prod
 
 #FROM nginx:stable-alpine as run-stage
 #COPY --from=build-stage /app/dist /usr/share/nginx/html
