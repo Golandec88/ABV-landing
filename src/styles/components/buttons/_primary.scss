@@ -1,0 +1,19 @@
+.btn-primary {
+  background: $primary;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  padding: 12px 36px;
+  &.white {
+    border: 1px solid $primary;
+    background: #fff;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .btn-primary {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
