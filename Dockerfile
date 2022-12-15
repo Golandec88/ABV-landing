@@ -2,8 +2,8 @@ FROM node:16.13.0-alpine as build-stage
 
 WORKDIR /app
 COPY package*.json ./
-CMD ["npm", "install"]
-CMD ["npm", "run", "locales:get"]
+RUN npm install
+RUN npm run locales:get
 
 COPY . .
 
