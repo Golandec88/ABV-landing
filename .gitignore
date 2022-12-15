@@ -1,2 +1,6 @@
-главная.png
-.idea
+/dist/
+/node_modules/
+/.idea/
+/locales/
+/yarn-error.log
+/.env

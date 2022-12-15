@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="<%= language %>">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+    <title>ABV | How to start</title>
+  </head>
+  <body class="page">
+    <header class="header container">
+    <a href="./index.html" target="_self" class="header__logo">
+      <img
+              loading="lazy"
+              class="header__logo-image"
+              src="../assets/images/logo-abv-new-year.png"
+              alt="ABV Logo"
+      />
+    </a>
+    <div class="header__lang">
+      <a
+              class="header__lang_btn circle-animation-btn"
+              style="
+            --circle-width: 35px;
+            --circle-top-position: -38.5px;
+            --circle-left-position: -67.5px;
+            --bg-color: #2b2b2b;
+          "
+              data-lang="ru"
+              href="/"
+      >
+        <span>RU</span>
+      </a>
+      <a
+              class="header__lang_btn circle-animation-btn"
+              style="
+            --circle-width: 35px;
+            --circle-top-position: -38.5px;
+            --circle-left-position: -67.5px;
+            --bg-color: #2b2b2b;
+          "
+              data-lang="uz"
+              href="/uz"
+      >
+        <span>UZB</span>
+      </a>
+      <a
+              class="header__lang_btn circle-animation-btn"
+              style="
+            --circle-width: 35px;
+            --circle-top-position: -38.5px;
+            --circle-left-position: -67.5px;
+            --bg-color: #2b2b2b;
+          "
+              data-lang="en"
+              href="/en"
+      >
+        <span>ENG</span>
+      </a>
+    </div>
+    <a
+            class="header__auth circle-animation-btn"
+            style="
+          --circle-width: 40px;
+          --circle-top-position: -38.5px;
+          --circle-left-position: -67.5px;
+          --bg-color: #fff;
+        "
+            href="https://e365.uz/#/login"
+            target="_self"
+    >
+      <span data-t>header.signIn</span>
+    </a>
+    <button type="button" class="header__burger">
+      <img src="../assets/icons/menu.svg" alt="menu button" />
+    </button>
+    <div class="overlay"></div>
+
+    <div class="header-mobile">
+      <div class="header-mobile__top">
+        <a href="./index.html" target="_self" class="header__logo">
+          <img
+                  loading="lazy"
+                  class="header__logo-image"
+                  src="../assets/images/logo-abv.svg"
+                  alt="ABV Logo"
+          />
+        </a>
+        <button type="button" class="header-mobile__top_x-btn">
+          <img src="../assets/icons/x.svg" alt="close button" />
+        </button>
+      </div>
+      <a href="#send-request" class="header-mobile__link" data-t>header.submitYourApplication</a>
+      <a href="./about-us.html" class="header-mobile__link" data-t>header.aboutPlatform</a>
+      <a href="./working.html" class="header-mobile__link" data-t>header.howToStart</a>
+      <div class="header-mobile__socials"></div>
+      <div class="header-mobile__langs">
+        <a href="/" type="button" class="header-mobile__langs_item active">RU</a>
+        <a href="/uz" type="button" class="header-mobile__langs_item">UZB</a>
+        <a href="/en" type="button" class="header-mobile__langs_item">ENG</a>
+      </div>
+      <a
+              href="https://e365.uz/#/login"
+              class="header-mobile__enter-btn btn-primary"
+              data-t>header.signIn</a>
+    </div>
+  </header>
+
+    <main>
+      <div class="container">
+        <h1 class="working__title_main main-title" data-t>working.title</h1>
+        <section class="working">
+          <div class="working__wrapper">
+            <h2 class="working__title" data-t>working.howToStart.title</h2>
+            <div class="working__btns">
+              <button
+                class="working__btns-item btn-ooo active circle-animation-btn"
+                style="
+                  --circle-width: 40px;
+                  --circle-top-position: -38.5px;
+                  --circle-left-position: -67.5px;
+                  --bg-color: #fff;
+                "
+              >
+                <span data-t>working.howToStart.llc.title</span>
+              </button>
+              <button
+                class="working__btns-item btn-ip circle-animation-btn"
+                style="
+                  --circle-width: 40px;
+                  --circle-top-position: -38.5px;
+                  --circle-left-position: -67.5px;
+                  --bg-color: #fff;
+                "
+              >
+                <span data-t>working.howToStart.individual.title</span>
+              </button>
+            </div>
+            <div class="working__items items-ooo">
+              <div class="line"><div class="line-2"></div></div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">1</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.llc.items.1.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li><h3 class="working__item-content__title-mobile" data-t>working.howToStart.llc.items.1.title</h3></li>
+                    <li data-t>working.howToStart.llc.items.1.items.1</li>
+                    <li data-t>working.howToStart.llc.items.1.items.2</li>
+                    <li data-t>working.howToStart.llc.items.1.items.3</li>
+                    <li data-t>working.howToStart.llc.items.1.items.4</li>
+                    <li data-t>working.howToStart.llc.items.1.items.5</li>
+                    <li data-t>working.howToStart.llc.items.1.items.6</li>
+                    <li data-t>working.howToStart.llc.items.1.items.7</li>
+                    <li class="working__item-content__text-helper" data-t>working.howToStart.llc.items.1.subInfo</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">2</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.llc.items.2.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.llc.items.2.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.llc.items.2.items.1</li>
+                    <li data-t>working.howToStart.llc.items.2.items.2</li>
+                    <li data-t>working.howToStart.llc.items.2.items.3</li>
+                    <li data-t>working.howToStart.llc.items.2.items.4</li>
+                    <li data-t>working.howToStart.llc.items.2.items.5</li>
+                    <li data-t>working.howToStart.llc.items.2.items.6</li>
+                    <li data-t>working.howToStart.llc.items.2.items.7</li>
+                    <li data-t>working.howToStart.llc.items.2.items.8</li>
+                    <li data-t>working.howToStart.llc.items.2.items.9</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">3</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.llc.items.3.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.llc.items.3.title</h3>
+                    </li>
+                    <li class="working__item-content__text-helper-big" data-t>working.howToStart.llc.items.3.subTitle</li>
+                    <li data-t>working.howToStart.llc.items.3.items.1</li>
+                    <li data-t>working.howToStart.llc.items.3.items.2</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">4</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.llc.items.4.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.llc.items.4.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.llc.items.4.items.1</li>
+                    <li data-t>working.howToStart.llc.items.4.items.2</li>
+                    <li data-t>working.howToStart.llc.items.4.items.3</li>
+                    <li data-t>working.howToStart.llc.items.4.items.4</li>
+                    <li data-t>working.howToStart.llc.items.4.items.5</li>
+                    <li data-t>working.howToStart.llc.items.4.items.6</li>
+                    <li data-t>working.howToStart.llc.items.4.items.7</li>
+                    <li data-t>working.howToStart.llc.items.4.items.8</li>
+                    <li data-t>working.howToStart.llc.items.4.items.9</li>
+                    <li class="working__item-content__text-helper" data-t>working.howToStart.llc.items.4.subInfo</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">5</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.llc.items.5.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.llc.items.5.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.llc.items.5.items.1</li>
+                    <li data-t>working.howToStart.llc.items.5.items.2</li>
+                    <li data-t>working.howToStart.llc.items.5.items.3</li>
+                    <li data-t>working.howToStart.llc.items.5.items.4</li>
+                    <li data-t>working.howToStart.llc.items.5.items.5</li>
+                    <li data-t>working.howToStart.llc.items.5.items.6</li>
+                    <li data-t>working.howToStart.llc.items.5.items.7</li>
+
+                    <li class="working__item-content__text-helper-big" data-t>working.howToStart.llc.items.5.subInfo</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">6</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.llc.items.6.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.llc.items.6.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.llc.items.6.items.1</li>
+                    <li data-t>working.howToStart.llc.items.6.items.2</li>
+                    <li data-t>working.howToStart.llc.items.6.items.3</li>
+                    <li data-t>working.howToStart.llc.items.6.items.4</li>
+                    <li data-t>working.howToStart.llc.items.6.items.5</li>
+
+                    <li class="working__item-content__text-helper-big" data-t>working.howToStart.llc.items.6.subInfo.items.1</li>
+                    <li class="working__item-content__text-helper-big">
+                      <h4 data-t>working.howToStart.llc.items.6.subInfo.items.2.title</h4>
+                      <p data-t>working.howToStart.llc.items.6.subInfo.items.2.content</p>
+                    </li>
+                    <li class="working__item-content__text-helper-big">
+                      <h4 data-t>working.howToStart.llc.items.6.subInfo.items.3.title</h4>
+                      <p data-t>working.howToStart.llc.items.6.subInfo.items.3.content</p>
+                    </li>
+                    <li class="working__item-content__text-helper-big">
+                      <h4 data-t>working.howToStart.llc.items.6.subInfo.items.4.title</h4>
+                      <p data-t>working.howToStart.llc.items.6.subInfo.items.4.content</p>
+                    </li>
+                    <li class="working__item-content__text-helper-big">
+                      <h4 data-t>working.howToStart.llc.items.6.subInfo.items.5.title</h4>
+                      <p data-t>working.howToStart.llc.items.6.subInfo.items.5.content</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">7</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.llc.items.7.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.llc.items.7.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.llc.items.7.items.1</li>
+                    <li data-t>working.howToStart.llc.items.7.items.2</li>
+                  </ul>
+                </div>
+
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">8</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.llc.items.8.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.llc.items.8.title</h3>
+                    </li>
+                    <li class="working__item-content__text-helper-big" data-t>working.howToStart.llc.items.8.subTitle</li>
+
+                    <li data-t>working.howToStart.llc.items.8.items.1</li>
+                    <li data-t>working.howToStart.llc.items.8.items.2</li>
+                    <li data-t>working.howToStart.llc.items.8.items.3</li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">9</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.llc.items.9.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.llc.items.9.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.llc.items.9.items.1</li>
+                    <li data-t>working.howToStart.llc.items.9.items.2</li>
+                    <li data-t>working.howToStart.llc.items.9.items.3</li>
+                    <li data-t>working.howToStart.llc.items.9.items.4</li>
+                    <li data-t>working.howToStart.llc.items.9.items.5</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">10</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.llc.items.10.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.llc.items.10.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.llc.items.10.items.1</li>
+                    <li data-t>working.howToStart.llc.items.10.items.2</li>
+                    <li data-t>working.howToStart.llc.items.10.items.3</li>
+                    <li data-t>working.howToStart.llc.items.10.items.4</li>
+                    <li data-t>working.howToStart.llc.items.10.items.5</li>
+                    <li data-t>working.howToStart.llc.items.10.items.6</li>
+                    <li data-t>working.howToStart.llc.items.10.items.7</li>
+                    <li data-t>working.howToStart.llc.items.10.items.8</li>
+                    <li data-t>working.howToStart.llc.items.10.items.9</li>
+                    <li data-t>working.howToStart.llc.items.10.items.10</li>
+                    <li data-t>working.howToStart.llc.items.10.items.11</li>
+                    <li data-t>working.howToStart.llc.items.10.items.12</li>
+                    <li data-t>working.howToStart.llc.items.10.items.13</li>
+                    <li data-t>working.howToStart.llc.items.10.items.14</li>
+                    <li data-t>working.howToStart.llc.items.10.items.15</li>
+                    <li data-t>working.howToStart.llc.items.10.items.16</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">11</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.llc.items.11.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.llc.items.11.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.llc.items.11.items.1</li>
+                    <li data-t>working.howToStart.llc.items.11.items.2</li>
+                    <li data-t>working.howToStart.llc.items.11.items.3</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <button
+                    type="button"
+                    class="working__item-num go-top"
+                  ></button>
+                </div>
+              </div>
+            </div>
+            <div class="working__items items-ip">
+              <div class="line"><div class="line-2"></div></div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">1</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.individual.items.1.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li><h3 class="working__item-content__title-mobile" data-t>working.howToStart.individual.items.1.title</h3></li>
+                    <li data-t>working.howToStart.individual.items.1.items.1</li>
+                    <li data-t>working.howToStart.individual.items.1.items.2</li>
+                    <li data-t>working.howToStart.individual.items.1.items.3</li>
+                    <li data-t>working.howToStart.individual.items.1.items.4</li>
+                    <li data-t>working.howToStart.individual.items.1.items.5</li>
+                    <li data-t>working.howToStart.individual.items.1.items.6</li>
+                    <li data-t>working.howToStart.individual.items.1.items.7</li>
+                    <li class="working__item-content__text-helper" data-t>working.howToStart.individual.items.1.subInfo</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">2</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.individual.items.3.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.individual.items.2.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.individual.items.2.items.1</li>
+                    <li data-t>working.howToStart.individual.items.2.items.2</li>
+                    <li data-t>working.howToStart.individual.items.2.items.3</li>
+                    <li data-t>working.howToStart.individual.items.2.items.4</li>
+                    <li data-t>working.howToStart.individual.items.2.items.5</li>
+                    <li data-t>working.howToStart.individual.items.2.items.6</li>
+                    <li data-t>working.howToStart.individual.items.2.items.7</li>
+                    <li data-t>working.howToStart.individual.items.2.items.8</li>
+                    <li data-t>working.howToStart.individual.items.2.items.9</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">3</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.individual.items.3.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.individual.items.3.title</h3>
+                    </li>
+                    <li class="working__item-content__text-helper-big" data-t>working.howToStart.individual.items.3.subTitle</li>
+                    <li data-t>working.howToStart.individual.items.3.items.1</li>
+                    <li data-t>working.howToStart.individual.items.3.items.2</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">4</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.individual.items.4.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.individual.items.4.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.individual.items.4.items.1</li>
+                    <li data-t>working.howToStart.individual.items.4.items.2</li>
+                    <li data-t>working.howToStart.individual.items.4.items.3</li>
+                    <li data-t>working.howToStart.individual.items.4.items.4</li>
+                    <li data-t>working.howToStart.individual.items.4.items.5</li>
+                    <li data-t>working.howToStart.individual.items.4.items.6</li>
+                    <li data-t>working.howToStart.individual.items.4.items.7</li>
+                    <li data-t>working.howToStart.individual.items.4.items.8</li>
+                    <li data-t>working.howToStart.individual.items.4.items.9</li>
+                    <li class="working__item-content__text-helper" data-t>working.howToStart.individual.items.4.subInfo</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">5</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.individual.items.5.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.individual.items.5.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.individual.items.5.items.1</li>
+                    <li data-t>working.howToStart.individual.items.5.items.2</li>
+                    <li data-t>working.howToStart.individual.items.5.items.3</li>
+                    <li data-t>working.howToStart.individual.items.5.items.4</li>
+                    <li data-t>working.howToStart.individual.items.5.items.5</li>
+                    <li data-t>working.howToStart.individual.items.5.items.6</li>
+                    <li data-t>working.howToStart.individual.items.5.items.7</li>
+
+                    <li class="working__item-content__text-helper-big" data-t>working.howToStart.individual.items.5.subInfo</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">6</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.individual.items.6.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.llc.items.6.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.individual.items.6.items.1</li>
+                    <li data-t>working.howToStart.individual.items.6.items.2</li>
+                    <li data-t>working.howToStart.individual.items.6.items.3</li>
+                    <li data-t>working.howToStart.individual.items.6.items.4</li>
+                    <li data-t>working.howToStart.individual.items.6.items.5</li>
+
+                    <li class="working__item-content__text-helper-big" data-t>working.howToStart.individual.items.6.subInfo.items.1</li>
+                    <li class="working__item-content__text-helper-big">
+                      <h4 data-t>working.howToStart.individual.items.6.subInfo.items.2.title</h4>
+                      <p data-t>working.howToStart.individual.items.6.subInfo.items.2.content</p>
+                    </li>
+                    <li class="working__item-content__text-helper-big">
+                      <h4 data-t>working.howToStart.individual.items.6.subInfo.items.3.title</h4>
+                      <p data-t>working.howToStart.individual.items.6.subInfo.items.3.content</p>
+                    </li>
+                    <li class="working__item-content__text-helper-big">
+                      <h4 data-t>working.howToStart.individual.items.6.subInfo.items.4.title</h4>
+                      <p data-t>working.howToStart.individual.items.6.subInfo.items.4.content</p>
+                    </li>
+                    <li class="working__item-content__text-helper-big">
+                      <h4 data-t>working.howToStart.individual.items.6.subInfo.items.5.title</h4>
+                      <p data-t>working.howToStart.individual.items.6.subInfo.items.5.content</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">7</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.individual.items.7.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.individual.items.7.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.individual.items.7.items.1</li>
+                    <li data-t>working.howToStart.individual.items.7.items.2</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">8</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.individual.items.8.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.individual.items.8.title</h3>
+                    </li>
+                    <li class="working__item-content__text-helper-big" data-t>working.howToStart.individual.items.8.subTitle</li>
+
+                    <li data-t>working.howToStart.individual.items.8.items.1</li>
+                    <li data-t>working.howToStart.individual.items.8.items.2</li>
+                    <li data-t>working.howToStart.individual.items.8.items.3</li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">9</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.individual.items.9.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.individual.items.9.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.individual.items.9.items.1</li>
+                    <li data-t>working.howToStart.individual.items.9.items.2</li>
+                    <li data-t>working.howToStart.individual.items.9.items.3</li>
+                    <li data-t>working.howToStart.individual.items.9.items.4</li>
+                    <li data-t>working.howToStart.individual.items.9.items.5</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">10</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.individual.items.10.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.llc.items.10.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.individual.items.10.items.1</li>
+                    <li data-t>working.howToStart.individual.items.10.items.2</li>
+                    <li data-t>working.howToStart.individual.items.10.items.3</li>
+                    <li data-t>working.howToStart.individual.items.10.items.4</li>
+                    <li data-t>working.howToStart.individual.items.10.items.5</li>
+                    <li data-t>working.howToStart.individual.items.10.items.6</li>
+                    <li data-t>working.howToStart.individual.items.10.items.7</li>
+                    <li data-t>working.howToStart.individual.items.10.items.8</li>
+                    <li data-t>working.howToStart.individual.items.10.items.9</li>
+                    <li data-t>working.howToStart.individual.items.10.items.10</li>
+                    <li data-t>working.howToStart.individual.items.10.items.11</li>
+                    <li data-t>working.howToStart.individual.items.10.items.12</li>
+                    <li data-t>working.howToStart.individual.items.10.items.13</li>
+                    <li data-t>working.howToStart.individual.items.10.items.14</li>
+                    <li data-t>working.howToStart.individual.items.10.items.15</li>
+                    <li data-t>working.howToStart.individual.items.10.items.16</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <span class="working__item-num">11</span>
+                </div>
+                <div class="working__item-content">
+                  <div class="working__item-content__title">
+                    <h3 data-t>working.howToStart.individual.items.11.title</h3>
+                  </div>
+                  <ul class="working__item-content__text">
+                    <li>
+                      <h3 class="working__item-content__title-mobile" data-t>working.howToStart.individual.items.11.title</h3>
+                    </li>
+                    <li data-t>working.howToStart.individual.items.11.items.1</li>
+                    <li data-t>working.howToStart.individual.items.11.items.2</li>
+                    <li data-t>working.howToStart.individual.items.11.items.3</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="working__item">
+                <div class="working__item-num__wrapper">
+                  <button
+                    type="button"
+                    class="working__item-num go-top"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="send-request" id="send-request">
+          <div class="send-request__wrapper">
+            <video
+              src="../assets/videos/send-request.webm"
+              autoplay
+              muted
+              loop
+              preload="none"
+              class="send-request__left"
+            ></video>
+            <form class="send-request__right">
+              <h2 class="send-request__right_title" data-t>working.request.title</h2>
+              <p class="send-request__right_subtitle" data-t>working.request.subTitle</p>
+              <input
+                type="text"
+                class="send-request__right_name"
+                data-attr-t
+                placeholder-t="working.request.rightName"
+              />
+              <input
+                type="number"
+                class="send-request__right_tel"
+                placeholder="+998"
+                value="+998"
+              />
+              <div class="send-request__right_select">
+                <input
+                  data-attr-t
+                  placeholder-t="working.request.citizenship"
+                />
+                <button type="button"></button>
+                <div class="options"></div>
+              </div>
+              <button
+                type="submit"
+                class="btn-primary circle-animation-btn send-request__right_submit"
+                style="
+                  --circle-width: 133px;
+                  --circle-top-position: -38.5px;
+                  --circle-left-position: -67.5px;
+                  --bg-color: #fff;
+                "
+              >
+                <span data-t>working.request.send</span>
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div class="scrollbar">
+        <button class="scrollbar__thumb"></button>
+      </div>
+    </main>
+
+    <div class="snow-content">
+      <canvas class="snow" id="snow"></canvas>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="./index.html"
+        ><img
+                  src="../assets/images/logo-abv.svg"
+                  alt="logo"
+                  class="footer__logo"
+          /></a>
+        <div class="footer__wrapper">
+          <nav class="footer__nav">
+            <div class="footer__top-links">
+              <a
+                      href="./working.html"
+                      class="footer__top-links_item bottom-line"
+                      data-t>footer.howToStart</a>
+              <a
+                      href="./about-us.html"
+                      class="footer__top-links_item bottom-line"
+                      data-t>footer.aboutPlatform</a
+              >
+            </div>
+            <div class="footer__middle-links">
+              <h2 class="middle__title" data-t>footer.contacts</h2>
+              <p class="middle__subtitle" data-t>footer.subContacts</p>
+              <p class="middle__item" data-t>footer.address</p>
+              <p class="middle__item" data-t>footer.subAddress</p>
+              <a
+                      href="mailto:b2b-space@abv.uz"
+                      target="_blank"
+                      class="middle__item link bottom-line"
+              >b2b-space@abv.uz</a
+              >
+              <a
+                      href="mailto:b2b-support@abv.uz"
+                      target="_blank"
+                      class="middle__item link bottom-line"
+              >b2b-support@abv.uz</a
+              >
+              <a
+                      href="tel:+998712058171"
+                      target="_blank"
+                      class="middle__item link bottom-line"
+              >+998 (71) 205 81 71</a
+              >
+            </div>
+          </nav>
+          <div
+                  class="footer__map"
+                  id="map"
+                  style="position: relative; overflow: hidden"
+          >
+            <iframe
+                    class="footer__iframe"
+                    src="https://yandex.uz/map-widget/v1/-/CCU5aSReTC"
+                    frameborder="1"
+                    allowfullscreen="true"
+                    title="yandex map"
+                    style="position: relative"
+            ></iframe>
+          </div>
+        </div>
+        <span class="footer__copyright" data-t>footer.copyright</span>
+      </div>
+    </footer>
+
+    <script defer src="../scripts/vendors/jquery.min.js"></script>
+    <script defer src="../scripts/vendors/smooth.scroll.min.js"></script>
+    <script defer src="../scripts/vendors/snow.js"></script>
+    <script defer src="../scripts/main.js"></script>
+    <script defer src="../scripts/pages/working.js"></script>
+  </body>
+</html>

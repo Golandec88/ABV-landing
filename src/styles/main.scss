@@ -1,0 +1,93 @@
+@import "variables";
+@import "fonts";
+@import "components/header";
+@import "components/footer";
+@import "components/container";
+@import "components/titles";
+@import "components/buttons/circle-animation";
+@import "components/buttons/primary";
+@import "components/buttons/detailed";
+@import "components/buttons/bottom-line";
+@import "components/scrollbar";
+@import "vendors/snow.css";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Norms Pro", sans-serif;
+}
+
+body {
+  font-family: "Norms Pro", sans-serif;
+  font-weight: 400;
+  color: $black;
+  font-size: 24px;
+  line-height: 29px;
+  position: relative;
+  &.fixed {
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+button {
+  outline: none;
+  background: transparent;
+  border: 0;
+  color: $black;
+  cursor: pointer;
+}
+
+section,
+section.container {
+  margin-bottom: 160px;
+}
+
+img {
+  user-select: none;
+}
+
+h1 {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+@media screen and (max-width: 950px) {
+  section,
+  section.container {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  section,
+  section.container {
+    margin-bottom: 60px;
+  }
+}
