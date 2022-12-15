@@ -1,7 +1,7 @@
 FROM node:16.13.0-alpine as build-stage
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /usr/share/nginx/html
+WORKDIR /usr/share/nginx/html
 
 COPY package*.json ./
 RUN yarn
