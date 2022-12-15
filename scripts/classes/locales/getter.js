@@ -6,10 +6,11 @@ const utils = require("../../utils/localization");
 require("dotenv").config();
 
 class LocalesGetter {
-    folderIsEmpty = !(fs.readdirSync(utils.localizationFolder).length > 0)
+    folderIsEmpty = ""
 
     async init() {
-        new LocalesChecker(!this.folderIsEmpty)
+        new LocalesChecker(!this.folderIsEmpty).checkFolder()
+        this.folderIsEmpty = !(fs.readdirSync(utils.localizationFolder).length > 0)
         const filler = new LocalesFiller(true)
 
         await connect.authorization()

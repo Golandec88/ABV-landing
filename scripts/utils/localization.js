@@ -43,9 +43,13 @@ class LocalizationUtils {
         return (item && typeof item === "object" && !Array.isArray(item));
     }
     static clear() {
-        fs.rmdirSync(path.resolve(LocalizationUtils.localizationFolder, "_snapshot"), {recursive: true})
+        const snapshotFolder = path.resolve(LocalizationUtils.localizationFolder, "_snapshot")
 
-        console.log("\"_snapshot\" folder removed.")
+        if(fs.existsSync(snapshotFolder)) {
+            fs.rmdirSync(snapshotFolder, {recursive: true})
+
+            console.log("\"_snapshot\" folder removed.")
+        }
     }
     static toBase64(string) {
         const buffer = new Buffer(string)
