@@ -1,13 +1,11 @@
 FROM node:16.13.0-alpine as build-stage
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
-
-COPY package*.json /usr/src/app
+WORKDIR /app
+COPY package*.json ./
 RUN yarn
 RUN yarn locales:get
 
-COPY . /usr/src/app
+COPY . .
 
 RUN ["chmod", "+x", "env.sh"]
 RUN --mount=type=secret,id=LOCALIZATION_API \
@@ -30,5 +28,7 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
 
 RUN yarn build:prod
 
-FROM nginx as run-stage
-COPY /usr/src/app/dist /usr/share/nginx/html
+FROM nginx:stable-alpine as run-stage
+COPY --from=build-stage /app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
