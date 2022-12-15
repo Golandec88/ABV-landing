@@ -5,8 +5,6 @@ COPY package*.json ./
 RUN yarn
 CMD ["yarn", "locales:get"]
 
-COPY . .
-
 RUN ["chmod", "+x", "env.sh"]
 RUN --mount=type=secret,id=LOCALIZATION_API \
     --mount=type=secret,id=USERS_API \
@@ -27,6 +25,7 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
     PASSWORD=$(cat /run/secrets/PASSWORD)
 
 CMD ["yarn", "build:prod"]
+COPY . .
 
 FROM nginx:stable-alpine as run-stage
 COPY --from=build-stage /app/dist /usr/share/nginx/html
