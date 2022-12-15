@@ -31,4 +31,4 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
 RUN yarn build:prod
 
 FROM nginx as run-stage
-COPY dist /usr/share/nginx/html
+COPY /usr/src/app/dist /usr/share/nginx/html
