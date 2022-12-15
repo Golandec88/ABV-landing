@@ -2,8 +2,8 @@ FROM node:16.13.0-alpine as build-stage
 
 WORKDIR /app
 COPY package*.json ./
-RUN yarn
-RUN yarn locales:get
+CMD ["yarn"]
+CMD ["yarn", "locales:get"]
 
 COPY . .
 
