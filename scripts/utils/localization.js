@@ -15,7 +15,7 @@ class LocalizationUtils {
     supportedLocales = String(process.env.SUPPORTED_LOCALES).split(", ")
     projectPath = path.normalize(__dirname + "/../..")
     localizationFolderName = process.env.LOCALIZATION_FOLDER
-    localizationFolder = path.resolve(LocalizationUtils.projectPath, LocalizationUtils.localizationFolderName)
+    localizationFolder = path.resolve(this.projectPath, this.localizationFolderName)
     localizationId = process.env.APP_LOCALIZATION_ID
     defaultLocale = process.env.DEFAULT_LOCALE
     usersApi = process.env.USERS_API
@@ -26,9 +26,9 @@ class LocalizationUtils {
         if (!sources.length) return target;
         const source = sources.shift();
 
-        if (LocalizationUtils.isObject(target) && LocalizationUtils.isObject(source)) {
+        if (this.isObject(target) && this.isObject(source)) {
             for (const key in source) {
-                if (LocalizationUtils.isObject(source[key])) {
+                if (this.isObject(source[key])) {
                     if (!target[key]) Object.assign(target, { [key]: {} });
                     this.mergeDeep(target[key], source[key]);
                 } else {
@@ -37,13 +37,13 @@ class LocalizationUtils {
             }
         }
 
-        return LocalizationUtils.mergeDeep(target, ...sources);
+        return this.mergeDeep(target, ...sources);
     }
     isObject(item) {
         return (item && typeof item === "object" && !Array.isArray(item));
     }
     clear() {
-        const snapshotFolder = path.resolve(LocalizationUtils.localizationFolder, "_snapshot")
+        const snapshotFolder = path.resolve(this.localizationFolder, "_snapshot")
 
         if(fs.existsSync(snapshotFolder)) {
             fs.rmdirSync(snapshotFolder, {recursive: true})
