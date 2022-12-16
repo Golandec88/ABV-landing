@@ -3,12 +3,7 @@ const fs = require("fs");
 require("dotenv").config();
 
 class LocalizationUtils {
-    constructor() {
-        console.log(path.normalize(__dirname + "/../.."))
-        console.log(process.env.LOCALIZATION_FOLDER)
-        console.log(path.resolve(path.normalize(__dirname + "/../.."), process.env.LOCALIZATION_FOLDER))
-    }
-    requiredParams = [
+    static requiredParams = [
         "LOCALIZATION_API",
         "USERS_API",
         "LOGIN",
@@ -17,37 +12,37 @@ class LocalizationUtils {
         "SUPPORTED_LOCALES",
         "LOCALIZATION_FOLDER"
     ]
-    supportedLocales = String(process.env.SUPPORTED_LOCALES).split(", ")
-    projectPath = path.normalize(__dirname + "/../..")
-    localizationFolderName = process.env.LOCALIZATION_FOLDER
-    localizationFolder = path.resolve(this.projectPath, this.localizationFolderName)
-    localizationId = process.env.APP_LOCALIZATION_ID
-    defaultLocale = process.env.DEFAULT_LOCALE
-    usersApi = process.env.USERS_API
-    localizationApi = process.env.LOCALIZATION_API
-    spaceSize = 2
+    static supportedLocales = String(process.env.SUPPORTED_LOCALES).split(", ")
+    static projectPath = path.normalize(__dirname + "/../..")
+    static localizationFolderName = process.env.LOCALIZATION_FOLDER
+    static localizationFolder = path.resolve(LocalizationUtils.projectPath, LocalizationUtils.localizationFolderName)
+    static localizationId = process.env.APP_LOCALIZATION_ID
+    static defaultLocale = process.env.DEFAULT_LOCALE
+    static usersApi = process.env.USERS_API
+    static localizationApi = process.env.LOCALIZATION_API
+    static spaceSize = 2
 
-    mergeDeep(target, ...sources) {
+    static mergeDeep(target, ...sources) {
         if (!sources.length) return target;
         const source = sources.shift();
 
-        if (this.isObject(target) && this.isObject(source)) {
+        if (LocalizationUtils.isObject(target) && LocalizationUtils.isObject(source)) {
             for (const key in source) {
-                if (this.isObject(source[key])) {
+                if (LocalizationUtils.isObject(source[key])) {
                     if (!target[key]) Object.assign(target, { [key]: {} });
-                    this.mergeDeep(target[key], source[key]);
+                    LocalizationUtils.mergeDeep(target[key], source[key]);
                 } else {
                     Object.assign(target, { [key]: source[key] });
                 }
             }
         }
 
-        return this.mergeDeep(target, ...sources);
+        return LocalizationUtils.mergeDeep(target, ...sources);
     }
-    isObject(item) {
+    static isObject(item) {
         return (item && typeof item === "object" && !Array.isArray(item));
     }
-    clear() {
+    static clear() {
         const snapshotFolder = path.resolve(this.localizationFolder, "_snapshot")
 
         if(fs.existsSync(snapshotFolder)) {
@@ -56,10 +51,10 @@ class LocalizationUtils {
             console.log("\"_snapshot\" folder removed.")
         }
     }
-    toBase64(string) {
+    static toBase64(string) {
         const buffer = new Buffer(string)
         return buffer.toString("base64")
     }
 }
 
-module.exports = new LocalizationUtils()
+module.exports = LocalizationUtils
