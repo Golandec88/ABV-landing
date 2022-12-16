@@ -2,7 +2,7 @@ FROM node:16.17.1-alpine as build-stage
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-#ENV PATH /usr/src/app/node_modules/.bin:$PATH
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY . /usr/src/app
 RUN yarn install --silent
 RUN yarn locales:get
