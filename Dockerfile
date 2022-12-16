@@ -24,6 +24,7 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
     LOGIN=$(cat /run/secrets/LOGIN) \
     PASSWORD=$(cat /run/secrets/PASSWORD)
 
+RUN ["ls", "-a"]
 RUN yarn install --silent
 RUN yarn build:prod
 
