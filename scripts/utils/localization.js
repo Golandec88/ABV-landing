@@ -3,7 +3,7 @@ const fs = require("fs");
 require("dotenv").config();
 
 class LocalizationUtils {
-    static requiredParams = [
+    requiredParams = [
         "LOCALIZATION_API",
         "USERS_API",
         "LOGIN",
@@ -12,17 +12,17 @@ class LocalizationUtils {
         "SUPPORTED_LOCALES",
         "LOCALIZATION_FOLDER"
     ]
-    static supportedLocales = String(process.env.SUPPORTED_LOCALES).split(", ")
-    static projectPath = path.normalize(__dirname + "/../..")
-    static localizationFolderName = process.env.LOCALIZATION_FOLDER
-    static localizationFolder = path.resolve(LocalizationUtils.projectPath, LocalizationUtils.localizationFolderName)
-    static localizationId = process.env.APP_LOCALIZATION_ID
-    static defaultLocale = process.env.DEFAULT_LOCALE
-    static usersApi = process.env.USERS_API
-    static localizationApi = process.env.LOCALIZATION_API
-    static spaceSize = 2
+    supportedLocales = String(process.env.SUPPORTED_LOCALES).split(", ")
+    projectPath = path.normalize(__dirname + "/../..")
+    localizationFolderName = process.env.LOCALIZATION_FOLDER
+    localizationFolder = path.resolve(LocalizationUtils.projectPath, LocalizationUtils.localizationFolderName)
+    localizationId = process.env.APP_LOCALIZATION_ID
+    defaultLocale = process.env.DEFAULT_LOCALE
+    usersApi = process.env.USERS_API
+    localizationApi = process.env.LOCALIZATION_API
+    spaceSize = 2
 
-    static mergeDeep(target, ...sources) {
+    mergeDeep(target, ...sources) {
         if (!sources.length) return target;
         const source = sources.shift();
 
@@ -39,10 +39,10 @@ class LocalizationUtils {
 
         return LocalizationUtils.mergeDeep(target, ...sources);
     }
-    static isObject(item) {
+    isObject(item) {
         return (item && typeof item === "object" && !Array.isArray(item));
     }
-    static clear() {
+    clear() {
         const snapshotFolder = path.resolve(LocalizationUtils.localizationFolder, "_snapshot")
 
         if(fs.existsSync(snapshotFolder)) {
@@ -51,10 +51,10 @@ class LocalizationUtils {
             console.log("\"_snapshot\" folder removed.")
         }
     }
-    static toBase64(string) {
+    toBase64(string) {
         const buffer = new Buffer(string)
         return buffer.toString("base64")
     }
 }
 
-module.exports = LocalizationUtils
+module.exports = new LocalizationUtils()
