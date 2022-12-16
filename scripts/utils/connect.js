@@ -1,6 +1,6 @@
 const axios = require("axios");
 const utils = require("./localization");
-const path = require("node:path");
+const path = require("../../node_modules/path");
 const fs = require("fs");
 
 class LocalesConnect {
