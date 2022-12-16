@@ -24,7 +24,7 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
     APP_LOCALIZATION_ID=$(cat /run/secrets/APP_LOCALIZATION_ID) \
     LOGIN=$(cat /run/secrets/LOGIN) \
     PASSWORD=$(cat /run/secrets/PASSWORD)
-
+RUN ["ls"]
 RUN yarn build:prod
 
 FROM nginx:stable-alpine as run-stage
