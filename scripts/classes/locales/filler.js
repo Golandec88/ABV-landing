@@ -45,8 +45,9 @@ class LocalesFiller {
             if(!obj) continue;
 
             const result = JSON.stringify(obj, null, utils.spaceSize)
+            const folder = utils.localizationFolder ? String(utils.localizationFolder) : ""
 
-            fs.writeFileSync(path.resolve(utils.localizationFolder, lang + ".json"), result)
+            fs.writeFileSync(path.resolve(folder, lang + ".json"), result)
         }
     }
 }
