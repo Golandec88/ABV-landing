@@ -5,6 +5,8 @@ WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY . /usr/src/app
 RUN yarn install --silent
+RUN ["ls"]
+RUN ["ls", "./scripts"]
 RUN ["node", ".\scripts\locales.get.js"]
 
 RUN ["chmod", "+x", "env.sh"]
