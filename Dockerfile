@@ -7,7 +7,7 @@ COPY . /usr/src/app
 RUN yarn install --silent
 RUN ["ls"]
 RUN ["ls", "./scripts"]
-RUN ["node", ".\scripts\locales.get.js"]
+RUN ["node", "./scripts/locales.get.js"]
 
 RUN ["chmod", "+x", "env.sh"]
 RUN --mount=type=secret,id=LOCALIZATION_API \
