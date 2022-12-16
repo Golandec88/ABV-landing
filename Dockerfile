@@ -3,8 +3,6 @@ FROM node:16.13.0-alpine as build-stage
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
-COPY package.json /usr/src/app/package.json
-COPY webpack.config.js /usr/src/app/webpack.config.js
 RUN yarn install --silent
 COPY . /usr/src/app
 
