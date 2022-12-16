@@ -8,8 +8,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "webpack --mode=development",
-    "build:prod": "webpack --mode=production",
+    "build": "webpack --mode=development --config=./webpack.config.js",
+    "build:prod": "webpack --mode=production --config=./webpack.config.js",
     "locales:get": "node scripts/locales.get.js",
     "locales:upload": "node scripts/locales.filler.js && node scripts/locales.get.js && node scripts/locales.uploader.js",
     "locales:fill": "node scripts/locales.filler.js"
