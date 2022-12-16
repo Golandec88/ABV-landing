@@ -1,11 +1,11 @@
 FROM node:16.13.0-alpine as build-stage
 
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-RUN npm run locales:get
-
-COPY . .
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
+COPY package.json /usr/src/app/package.json
+RUN yarn install --silent
+COPY . /usr/src/app
 
 RUN ["chmod", "+x", "env.sh"]
 RUN --mount=type=secret,id=LOCALIZATION_API \
@@ -28,7 +28,7 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
 
 RUN yarn build:prod
 
-#FROM nginx:stable-alpine as run-stage
-#COPY --from=build-stage /app/dist /usr/share/nginx/html
-#EXPOSE 80
-#CMD ["nginx", "-g", "daemon off;"]
+FROM nginx:stable-alpine as run-stage
+COPY --from=build /usr/src/app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
