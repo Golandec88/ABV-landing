@@ -1,5 +1,5 @@
 const utils = require("../../utils/localization")
-const path = require("path");
+const path = require("node:path");
 const fs = require("fs");
 require("dotenv").config();
 

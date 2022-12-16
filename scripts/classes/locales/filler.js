@@ -1,7 +1,7 @@
 const fs = require("fs");
 const LocalesChecker = require("./checker")
 const utils = require("../../utils/localization");
-const path = require("path");
+const path = require("node:path");
 require("dotenv").config();
 
 class LocalesFiller {
