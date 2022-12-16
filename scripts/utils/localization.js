@@ -3,6 +3,11 @@ const fs = require("fs");
 require("dotenv").config();
 
 class LocalizationUtils {
+    constructor() {
+        console.log(path.normalize(__dirname + "/../.."))
+        console.log(process.env.LOCALIZATION_FOLDER)
+        console.log(path.resolve(path.normalize(__dirname + "/../.."), process.env.LOCALIZATION_FOLDER))
+    }
     requiredParams = [
         "LOCALIZATION_API",
         "USERS_API",
