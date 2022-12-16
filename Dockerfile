@@ -2,13 +2,11 @@ FROM node:16.17.1-alpine as build-stage
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-ENV PATH /usr/src/app/node_modules/.bin:$PATH
+#ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY . /usr/src/app
-RUN ["ls", "-a"]
 RUN yarn install --silent
 RUN yarn locales:get
 
-RUN ["ls", "-a"]
 RUN ["chmod", "+x", "env.sh"]
 RUN --mount=type=secret,id=LOCALIZATION_API \
     --mount=type=secret,id=USERS_API \
@@ -27,7 +25,6 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
     APP_LOCALIZATION_ID=$(cat /run/secrets/APP_LOCALIZATION_ID) \
     LOGIN=$(cat /run/secrets/LOGIN) \
     PASSWORD=$(cat /run/secrets/PASSWORD)
-
 
 RUN yarn build:prod
 
