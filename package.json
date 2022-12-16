@@ -47,7 +47,6 @@
     "webpack-nano": "^1.1.1",
     "webpack-static-i18n-plugin": "^1.0.1",
     "webpack-watch-files-plugin": "^1.2.1",
-    "webpackbar": "^5.0.2",
-    "path": "^0.12.7"
+    "webpackbar": "^5.0.2"
   }
 }
