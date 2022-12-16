@@ -29,6 +29,6 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
 RUN yarn build:prod
 
 FROM nginx:stable-alpine as run-stage
-COPY --from=build /usr/src/app/dist /usr/share/nginx/html
+COPY --from=build-stage /usr/src/app/dist /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
