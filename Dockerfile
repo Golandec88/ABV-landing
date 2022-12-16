@@ -8,6 +8,7 @@ RUN ["ls", "-a"]
 RUN yarn install --silent
 RUN yarn locales:get
 
+RUN ["ls", "-a"]
 RUN ["chmod", "+x", "env.sh"]
 RUN --mount=type=secret,id=LOCALIZATION_API \
     --mount=type=secret,id=USERS_API \
