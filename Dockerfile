@@ -4,6 +4,9 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY . /usr/src/app
+RUN ["ls", "-a"]
+RUN yarn install --silent
+RUN yarn locales:get
 
 RUN ["chmod", "+x", "env.sh"]
 RUN --mount=type=secret,id=LOCALIZATION_API \
@@ -24,8 +27,7 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
     LOGIN=$(cat /run/secrets/LOGIN) \
     PASSWORD=$(cat /run/secrets/PASSWORD)
 
-RUN ["ls", "-a"]
-RUN yarn install --silent
+
 RUN yarn build:prod
 
 FROM nginx:stable-alpine as run-stage
