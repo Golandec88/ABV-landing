@@ -25,6 +25,7 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
     LOGIN=$(cat /run/secrets/LOGIN) \
     PASSWORD=$(cat /run/secrets/PASSWORD)
 
+RUN ["node", "./scripts/locales.get.js"]
 RUN yarn build:prod
 
 FROM nginx:stable-alpine as run-stage
