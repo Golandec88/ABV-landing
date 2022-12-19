@@ -35,13 +35,13 @@ class LocalesConnect {
         }}
         const {data: languages} = await axios.get(utils.localizationApi + "/Language/All", config)
 
-        for (const {name, id} of languages) {
+        for (const {name, id, code} of languages) {
             console.log("Downloading " + name + " locale...");
 
             const url = `${utils.localizationApi}/LocalizationJson/${utils.localizationId}/${id}`;
             const {data: result} = await axios.get(url, config);
 
-            const localesPath = path.join(utils.localizationFolder, isSnapshot ? '/_snapshot' : '', name + ".json");
+            const localesPath = path.join(utils.localizationFolder, isSnapshot ? '/_snapshot' : '', code + ".json");
 
             fs.writeFileSync(localesPath, result[0].json);
 
