@@ -7,7 +7,6 @@ COPY . /usr/src/app
 RUN yarn install --silent
 RUN ["ls"]
 RUN ["ls", "./scripts"]
-RUN ["node", "./scripts/locales.get.js"]
 
 RUN ["chmod", "+x", "env.sh"]
 RUN --mount=type=secret,id=LOCALIZATION_API \
@@ -29,6 +28,7 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
     PASSWORD=$(cat /run/secrets/PASSWORD)
 
 RUN ["cat", ".env"]
+RUN ["node", "./scripts/locales.get.js"]
 RUN yarn build:prod
 
 FROM nginx:stable-alpine as run-stage
