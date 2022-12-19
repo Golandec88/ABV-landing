@@ -34,21 +34,23 @@ class LocalesConnect {
             "Authorization": "Bearer " + this.#token
         }}
         const {data: languages} = await axios.get(utils.localizationApi + "/Language/All", config)
-        console.log(utils.supportedLocales)
-        console.log(languages)
-        for (const langName of utils.supportedLocales) {
-            const lang = Array.from(languages).find(item => item.code === langName).id
 
-            console.log("Downloading " + langName + " locale...");
+        for (const {name} of languages) {
+            const lang = Array.from(languages).find(item => {
+                console.log(item)
+                return item.code === name
+            }).id
+
+            console.log("Downloading " + name + " locale...");
 
             const url = `${utils.localizationApi}/LocalizationJson/${utils.localizationId}/${lang}`;
             const {data: result} = await axios.get(url, config);
 
-            const localesPath = path.join(utils.localizationFolder, isSnapshot ? '/_snapshot' : '', langName + ".json");
+            const localesPath = path.join(utils.localizationFolder, isSnapshot ? '/_snapshot' : '', name + ".json");
 
             fs.writeFileSync(localesPath, result[0].json);
 
-            console.log(langName + " locale downloaded!");
+            console.log(name + " locale downloaded!");
         }
 
         console.log("All localization files downloaded from API.")
