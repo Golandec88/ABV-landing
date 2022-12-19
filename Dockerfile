@@ -5,8 +5,6 @@ WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY . /usr/src/app
 RUN yarn install --silent
-RUN ["ls"]
-RUN ["ls", "./scripts"]
 
 RUN ["chmod", "+x", "env.sh"]
 RUN --mount=type=secret,id=LOCALIZATION_API \
@@ -27,8 +25,6 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
     LOGIN=$(cat /run/secrets/LOGIN) \
     PASSWORD=$(cat /run/secrets/PASSWORD)
 
-RUN ["cat", ".env"]
-RUN ["node", "./scripts/locales.get.js"]
 RUN yarn build:prod
 
 FROM nginx:stable-alpine as run-stage
