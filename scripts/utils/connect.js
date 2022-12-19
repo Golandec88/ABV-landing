@@ -34,7 +34,8 @@ class LocalesConnect {
             "Authorization": "Bearer " + this.#token
         }}
         const {data: languages} = await axios.get(utils.localizationApi + "/Language/All", config)
-
+        console.log(utils.supportedLocales)
+        console.log(languages)
         for (const langName of utils.supportedLocales) {
             const lang = Array.from(languages).find(item => item.code === langName).id
 
