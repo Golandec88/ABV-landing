@@ -77,7 +77,13 @@
     }
   }
 }
-
+@media screen and (max-width: 1700px){
+  .header {
+    &__logo {
+      left: 50px;
+    }
+  }
+}
 @media screen and (max-width: 650px) {
   .header {
     padding: 20px 16px;
@@ -95,6 +101,10 @@
     }
     &__logo {
       height: 27px;
+      right: 45px;
+      left: auto;
+      bottom: auto;
+      top: 30px;
     }
     &-mobile {
       width: 80%;
@@ -107,7 +117,7 @@
       background: $black;
       color: $light-grey;
       transition: transform 0.8s ease;
-      padding: 60px 16px 80px;
+      padding: 60px 16px 30px;
       display: flex;
       flex-direction: column;
       &.active {

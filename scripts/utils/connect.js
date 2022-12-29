@@ -28,6 +28,7 @@ class LocalesConnect {
         console.log("Authorized!")
     }
     async getLocales(isSnapshot = false) {
+
         console.log("Downloading locales from API...")
 
         const config = {headers: {

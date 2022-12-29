@@ -108,6 +108,7 @@ $(document).ready(function () {
   });
 
   $(".edo-benefits__left_nav_item").on("click", function () {
+    edoBenefits.trigger("stop.owl.autoplay")
     const itemNumber = $(this).attr("data");
     $(".edo-benefits__left_item").removeClass("active");
     $(`.edo-benefits__left_item.item-${itemNumber}`).addClass("active");
