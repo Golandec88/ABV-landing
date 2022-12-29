@@ -7,18 +7,21 @@ require("dotenv").config();
 
 class LocalesGetter {
     folderIsEmpty = ""
+    folderExist = false
 
     async init() {
-        new LocalesChecker(!this.folderIsEmpty).checkFolder()
-        this.folderIsEmpty = !(fs.readdirSync(utils.localizationFolder).length > 0)
-        const filler = new LocalesFiller(true)
+      this.folderExist = fs.existsSync(utils.localizationFolder)
+      this.folderIsEmpty = this.folderExist && !(fs.readdirSync(utils.localizationFolder).length > 0)
 
-        await connect.authorization()
-        await connect.getLocales(!this.folderIsEmpty)
+      new LocalesChecker(!this.folderIsEmpty).checkFolder()
+      const filler = new LocalesFiller(this.folderExist)
 
-        if(!this.folderIsEmpty) filler.init()
+      await connect.authorization()
+      await connect.getLocales(this.folderIsEmpty)
 
-        utils.clear()
+      if(!this.folderIsEmpty) filler.init()
+
+      utils.clear()
     }
 }
 
