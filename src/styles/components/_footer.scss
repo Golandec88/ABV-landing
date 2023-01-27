@@ -1,0 +1,134 @@
+.footer {
+  background: $black;
+  padding: 64px 0 88px;
+  &,
+  & a {
+    color: $light-grey;
+    font-size: 24px;
+    line-height: 120%;
+  }
+  &__logo {
+    height: 43px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 60px;
+  }
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  &__nav {
+    width: max-content;
+    padding-right: 50px;
+  }
+  &__top-links {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    &_item {
+      font-weight: 500;
+      white-space: nowrap;
+      &:first-child {
+        margin-right: 40px;
+      }
+    }
+  }
+  &__middle-links {
+    display: flex;
+    flex-direction: column;
+    .middle {
+      &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 120%;
+      }
+      &__subtitle {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        margin: 32px 0;
+      }
+      &__item {
+        margin-bottom: 16px;
+        &:nth-child(even) {
+          margin-bottom: 40px;
+        }
+        &.link {
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+  &__bottom-links {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+  }
+  &__copyright,
+  &__copyright a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &__map {
+    max-width: 55%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: auto;
+    .footer__iframe {
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .footer__wrapper {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .footer__map {
+    max-width: unset;
+    width: 100%;
+    height: 50vw;
+  }
+  .footer__nav {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .footer__top-links {
+    flex-wrap: wrap;
+  }
+  .footer__top-links_item:first-child {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    padding: 40px 0;
+    &,
+    & a {
+      font-size: 18px;
+    }
+    &__logo {
+      height: 27px;
+      margin-bottom: 40px;
+    }
+    &__bottom-links {
+      flex-wrap: wrap;
+      .bottom_item {
+        margin-bottom: 16px;
+      }
+    }
+    &__middle-links .middle__subtitle {
+      margin: 16px 0;
+    }
+  }
+}

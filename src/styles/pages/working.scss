@@ -1,0 +1,301 @@
+@import "../variables";
+@import "../mixins/border-animate";
+@import "../components/working-page/send-request";
+
+.working {
+  &__wrapper {
+    background: $secondary;
+    margin-top: 34px;
+    padding: 60px 95px 48px;
+    border-radius: 32px;
+  }
+
+  &__title_main {
+    display: block;
+    margin-bottom: 80px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  &__btns {
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+    margin-bottom: 40px;
+    &-item {
+      padding: 12px 36px;
+      border: 1px solid $primary;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 140%;
+      cursor: pointer;
+      &.active {
+        background: $primary;
+      }
+    }
+  }
+  &__items {
+    position: relative;
+    &.items-ip {
+      display: none;
+    }
+    .line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background: $black;
+      width: 1px;
+      &-2 {
+        width: 100%;
+        position: relative;
+        height: 0;
+        z-index: 1;
+        background: $primary;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-num,
+    &-num__wrapper {
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 32px;
+      color: $primary;
+      line-height: 120%;
+      display: inline-block;
+      background: $secondary;
+      position: relative;
+    }
+    &-num {
+      z-index: 3;
+      border: 1px solid $black;
+      padding: 7px 45px;
+      transition: border 0.3s ease-in-out 0.3s;
+      @include magic-border(1px, $primary, 0.3s, 1);
+      &.active {
+        border: 2px solid transparent;
+      }
+      &.go-top {
+        cursor: pointer;
+        &::after {
+          border-style: solid;
+          border-width: 3px 3px 0 0;
+          content: "";
+          display: inline-block;
+          height: 15px;
+          width: 15px;
+          position: relative;
+          top: 15px;
+          transform: rotate(-45deg);
+          vertical-align: top;
+        }
+      }
+    }
+    &-num__wrapper {
+      z-index: 2;
+      padding: 11px 45px;
+    }
+    &-content {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      &__title {
+        width: 45%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        margin-left: auto;
+        text-align: right;
+        padding-left: 19%;
+        position: relative;
+        h3 {
+          position: absolute;
+          right: 30px;
+          display: inline;
+          text-align: left;
+          font-weight: 500;
+          font-size: 24px;
+        }
+        &-mobile {
+          display: none;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+      &__text {
+        width: 45%;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        margin-right: auto;
+        list-style: none;
+        padding: 21px 32px;
+        &-link {
+          text-decoration-line: underline;
+          font-style: italic;
+          transition: color 0.3s ease-in-out;
+          display: inline-block;
+          &:hover {
+            color: rgba($black, 0.7);
+          }
+        }
+        li {
+          margin-bottom: 16px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:first-child {
+            display: none;
+          }
+        }
+        &-helper {
+          font-style: italic;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          a {
+            text-decoration: underline;
+          }
+          &-big {
+            font-style: italic;
+            a {
+              text-decoration: underline;
+            }
+            h4 {
+              font-style: normal;
+              margin-bottom: 16px;
+              margin-top: 32px;
+            }
+          }
+        }
+      }
+      &__line {
+        width: 1px;
+        background: $primary;
+        margin: 5px 0;
+      }
+    }
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .working__item-content__title {
+    font-size: 20px;
+    line-height: 24px;
+    width: 50%;
+  }
+  .working__item-content__text {
+    width: 50%;
+    padding: 24px;
+    padding-right: 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .working__title_main {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .working__wrapper {
+    padding: 48px;
+  }
+  .working__item-content__title {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .working__wrapper {
+    border-radius: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .working {
+    &__wrapper {
+      padding: 16px;
+      padding-bottom: 32px;
+    }
+    &__title_main {
+      margin: 32px 0;
+      font-size: 24px;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    &__btns {
+      margin-bottom: 20px;
+      column-gap: 16px;
+      justify-content: flex-start;
+      &-item {
+        font-size: 16px;
+        padding: 8px 24px;
+      }
+    }
+    &__item-num {
+      font-size: 16px;
+      padding: 8px 0px;
+      width: 78px;
+      text-align: center;
+    }
+    &__item-content__title {
+      display: none;
+    }
+    &__item-content__text {
+      width: 100%;
+      font-size: 14px;
+      padding: 20px 0 20px 60px;
+      li {
+        margin-bottom: 12px;
+        &:first-child {
+          display: inline-block;
+        }
+      }
+      &-helper {
+        font-size: 12px;
+      }
+    }
+    &__items .line {
+      right: unset;
+      left: 38px;
+    }
+    &__item {
+      align-items: flex-start;
+    }
+    &__item-num__wrapper {
+      padding: 5px 0;
+      display: flex;
+    }
+    &__item-num.go-top::after {
+      top: 6px;
+      right: 1px;
+    }
+    &__item-content__title-mobile {
+      display: block;
+    }
+  }
+}

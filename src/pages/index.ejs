@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="<%= language %>">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+    <title>ABV</title>
+  </head>
+  <body>
+    <header class="header container">
+      <a href="./index.html" target="_self" class="header__logo">
+        <img
+          loading="lazy"
+          class="header__logo-image"
+          src="../assets/images/logo-abv-new-year.png"
+          alt="ABV Logo"
+        />
+      </a>
+      <div class="header__lang">
+        <a
+          class="header__lang_btn circle-animation-btn"
+          style="
+            --circle-width: 35px;
+            --circle-top-position: -38.5px;
+            --circle-left-position: -67.5px;
+            --bg-color: #2b2b2b;
+          "
+          data-lang="ru"
+          href="/"
+        >
+          <span>RU</span>
+        </a>
+        <a
+          class="header__lang_btn circle-animation-btn"
+          style="
+            --circle-width: 35px;
+            --circle-top-position: -38.5px;
+            --circle-left-position: -67.5px;
+            --bg-color: #2b2b2b;
+          "
+          data-lang="uz"
+          href="/uz"
+        >
+          <span>UZB</span>
+        </a>
+        <a
+          class="header__lang_btn circle-animation-btn"
+          style="
+            --circle-width: 35px;
+            --circle-top-position: -38.5px;
+            --circle-left-position: -67.5px;
+            --bg-color: #2b2b2b;
+          "
+          data-lang="en"
+          href="/en"
+        >
+          <span>ENG</span>
+        </a>
+      </div>
+      <a
+        class="header__auth circle-animation-btn"
+        style="
+          --circle-width: 40px;
+          --circle-top-position: -38.5px;
+          --circle-left-position: -67.5px;
+          --bg-color: #fff;
+        "
+        href="https://e365.uz/#/login"
+        target="_self"
+      >
+        <span data-t>header.signIn</span>
+      </a>
+      <button type="button" class="header__burger">
+        <img src="../assets/icons/menu.svg" alt="menu button" />
+      </button>
+      <div class="overlay"></div>
+
+      <div class="header-mobile">
+        <div class="header-mobile__top">
+          <a href="./index.html" target="_self" class="header__logo">
+            <img
+              loading="lazy"
+              class="header__logo-image"
+              src="../assets/images/logo-abv.svg"
+              alt="ABV Logo"
+            />
+          </a>
+          <button type="button" class="header-mobile__top_x-btn">
+            <img src="../assets/icons/x.svg" alt="close button" />
+          </button>
+        </div>
+        <a href="#send-request" class="header-mobile__link" data-t>header.submitYourApplication</a>
+        <a href="./about-us.html" class="header-mobile__link" data-t>header.aboutPlatform</a>
+        <a href="./working.html" class="header-mobile__link" data-t>header.howToStart</a>
+        <div class="header-mobile__socials"></div>
+        <div class="header-mobile__langs">
+          <a href="/" type="button" class="header-mobile__langs_item active">RU</a>
+          <a href="/uz" type="button" class="header-mobile__langs_item">UZB</a>
+          <a href="/en" type="button" class="header-mobile__langs_item">ENG</a>
+        </div>
+        <a
+          href="https://e365.uz/#/login"
+          class="header-mobile__enter-btn btn-primary"
+        data-t>header.signIn</a>
+      </div>
+    </header>
+
+    <main>
+      <h1 data-t>index.main.virtualPlatformForYourBusiness</h1>
+      <section class="hero">
+        <div class="hero__left">
+          <h2 class="hero__left_title" data-t>index.main.virtualPlatformForYourBusiness</h2>
+          <div class="hero__left_images">
+            <div class="hero__left_images_wrapper">
+              <img src="../assets/icons/1.png" alt="abv" />
+              <img src="../assets/icons/2.png" alt="abv" />
+              <img src="../assets/icons/3.png" alt="abv" />
+            </div>
+            <span>#doing business in uzbekistan</span>
+          </div>
+          <div class="hero__left_buttons">
+            <a
+              href="./about-us.html"
+              class="hero__left_buttons_item btn-primary circle-animation-btn white"
+              style="
+                --circle-width: 133px;
+                --circle-top-position: -38.5px;
+                --circle-left-position: -67.5px;
+                --bg-color: #75cea9;
+              "
+            >
+              <span data-t>index.main.more</span>
+            </a>
+            <a
+              href="https://e365.uz/#/login"
+              class="hero__left_buttons_item btn-primary circle-animation-btn"
+              style="
+                --circle-width: 133px;
+                --circle-top-position: -38.5px;
+                --circle-left-position: -67.5px;
+                --bg-color: #fff;
+              "
+            >
+              <span data-t>index.main.try</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero__right">
+          <video
+                  src="../assets/videos/index.webm"
+                  autoplay
+                  muted
+                  loop
+          ></video>
+        </div>
+
+        <h2 class="hero__title-mobile container" data-t>index.main.virtualPlatformForYourBusiness</h2>
+      </section>
+      <section class="solutions">
+        <h2 class="main-title solutions__title container" data-t>index.solutions.solutionsForYourBusiness</h2>
+        <div class="solutions__wrapper">
+          <div class="solutions__slider owl-carousel owl-theme">
+            <div data="1" class="solutions__slider_item item-1">
+              <h3 class="solutions__slider_item_title">
+                <p class="title-top-text" data-t>index.solutions.slider.1.content</p>
+                <p class="title-bottom-text" data-t>index.solutions.slider.1.subContent</p>
+              </h3>
+              <div class="solutions__slider_item_bottom-wrapper">
+                <img
+                  src="../assets/images/business-solutions/1.png"
+                  alt="ORGANIZATION BUSINESS"
+                />
+                <span>#Doing business in Uzbekistan</span>
+              </div>
+            </div>
+            <div data="2" class="solutions__slider_item item-2">
+              <h3 class="solutions__slider_item_title">
+                <p class="title-top-text" data-t>index.solutions.slider.2.content</p>
+                <span class="title-bottom-text" data-t>index.solutions.slider.2.subContent</span>
+              </h3>
+              <div class="solutions__slider_item_bottom-wrapper">
+                <img
+                  src="../assets/images/business-solutions/2.png"
+                  alt="ORGANIZATION BUSINESS"
+                />
+                <span>#Doing business in Uzbekistan</span>
+              </div>
+            </div>
+            <div data="3" class="solutions__slider_item item-3">
+              <h3 class="solutions__slider_item_title">
+                <p class="title-top-text" data-t>index.solutions.slider.3.content</p>
+                <p class="title-bottom-text" data-t>index.solutions.slider.3.subContent</p>
+              </h3>
+              <div class="solutions__slider_item_bottom-wrapper">
+                <img
+                  src="../assets/images/business-solutions/3.png"
+                  alt="ORGANIZATION BUSINESS"
+                />
+                <span>#Doing business in Uzbekistan</span>
+              </div>
+            </div>
+            <div data="4" class="solutions__slider_item item-4">
+              <h3 class="solutions__slider_item_title">
+                <p class="title-top-text" data-t>index.solutions.slider.4.content</p>
+                <p class="title-bottom-text" data-t>index.solutions.slider.4.subContent</p>
+              </h3>
+              <div class="solutions__slider_item_bottom-wrapper">
+                <img
+                  src="../assets/images/business-solutions/4.png"
+                  alt="ORGANIZATION BUSINESS"
+                />
+                <span>#Doing business in Uzbekistan</span>
+              </div>
+            </div>
+            <div data="5" class="solutions__slider_item item-5">
+              <h3 class="solutions__slider_item_title">
+                <p class="title-top-text" data-t>index.solutions.slider.5.content</p>
+                <p class="title-bottom-text" data-t>index.solutions.slider.5.subContent</p>
+              </h3>
+              <div class="solutions__slider_item_bottom-wrapper">
+                <img
+                  src="../assets/images/business-solutions/5.png"
+                  alt="ORGANIZATION BUSINESS"
+                />
+                <span>#Doing business in Uzbekistan</span>
+              </div>
+            </div>
+            <div data="6" class="solutions__slider_item item-6">
+              <h3 class="solutions__slider_item_title">
+                <p class="title-top-text" data-t>index.solutions.slider.6.content</p>
+                <p class="title-bottom-text" data-t>index.solutions.slider.6.subContent</p>
+              </h3>
+              <div class="solutions__slider_item_bottom-wrapper">
+                <img
+                  src="../assets/images/business-solutions/6.png"
+                  alt="ORGANIZATION BUSINESS"
+                />
+                <span>#Doing business in Uzbekistan</span>
+              </div>
+            </div>
+            <div data="7" class="solutions__slider_item item-6">
+              <h3 class="solutions__slider_item_title">
+                <p class="title-top-text" data-t>index.solutions.slider.7.content</p>
+                <p class="title-bottom-text" data-t>index.solutions.slider.7.subContent</p>
+              </h3>
+              <div class="solutions__slider_item_bottom-wrapper">
+                <img
+                  src="../assets/images/business-solutions/7.png"
+                  alt="ORGANIZATION BUSINESS"
+                />
+                <span>#Doing business in Uzbekistan</span>
+              </div>
+            </div>
+          </div>
+          <div class="solutions__nav" id="solutions__nav">
+            <button data="1" class="solutions__nav_button item-1 active">
+              <span class="num">1</span>
+              <span class="text" data-t>index.solutions.slider.1.title</span>
+            </button>
+            <button data="2" class="solutions__nav_button item-2">
+              <span class="num">2</span>
+              <span class="text" data-t>index.solutions.slider.2.title</span>
+            </button>
+            <button data="3" class="solutions__nav_button item-3">
+              <span class="num">3</span>
+              <span class="text" data-t>index.solutions.slider.3.title</span>
+            </button>
+            <button data="4" class="solutions__nav_button item-4">
+              <span class="num">4</span>
+              <span class="text" data-t>index.solutions.slider.4.title</span>
+            </button>
+            <button data="5" class="solutions__nav_button item-5">
+              <span class="num">5</span>
+              <span class="text" data-t>index.solutions.slider.5.title</span>
+            </button>
+            <button data="6" class="solutions__nav_button item-6">
+              <span class="num">6</span>
+              <span class="text" data-t>index.solutions.slider.6.title</span>
+            </button>
+            <button data="7" class="solutions__nav_button item-7">
+              <span class="num">7</span>
+              <span class="text" data-t>index.solutions.slider.7.title</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="solutions__mobile container">
+          <div class="solutions__mobile_item">
+            <h3 class="solutions__mobile_item_title" data-t>index.solutions.slider.1.mobileContent</h3>
+            <div class="solutions__mobile_item_wrapper">
+              <img src="../assets/images/business-solutions/1.png" alt="" />
+              <span>#Doing business in Uzbekistan</span>
+            </div>
+          </div>
+          <div class="solutions__mobile_item">
+            <h3 class="solutions__mobile_item_title" data-t>index.solutions.slider.2.mobileContent</h3>
+            <div class="solutions__mobile_item_wrapper">
+              <img src="../assets/images/business-solutions/2.png" alt="" />
+              <span>#Doing business in Uzbekistan</span>
+            </div>
+          </div>
+          <div class="solutions__mobile_item">
+            <h3 class="solutions__mobile_item_title" data-t>index.solutions.slider.3.mobileContent</h3>
+            <div class="solutions__mobile_item_wrapper">
+              <img src="../assets/images/business-solutions/3.png" alt="" />
+              <span>#Doing business in Uzbekistan</span>
+            </div>
+          </div>
+          <div class="solutions__mobile_item">
+            <h3 class="solutions__mobile_item_title" data-t>index.solutions.slider.4.mobileContent</h3>
+            <div class="solutions__mobile_item_wrapper">
+              <img src="../assets/images/business-solutions/4.png" alt="" />
+              <span>#Doing business in Uzbekistan</span>
+            </div>
+          </div>
+          <div class="solutions__mobile_item">
+            <h3 class="solutions__mobile_item_title" data-t>index.solutions.slider.5.mobileContent</h3>
+            <div class="solutions__mobile_item_wrapper">
+              <img src="../assets/images/business-solutions/5.png" alt="" />
+              <span>#Doing business in Uzbekistan</span>
+            </div>
+          </div>
+          <div class="solutions__mobile_item">
+            <h3 class="solutions__mobile_item_title" data-t>index.solutions.slider.6.mobileContent</h3>
+            <div class="solutions__mobile_item_wrapper">
+              <img src="../assets/images/business-solutions/6.png" alt="" />
+              <span>#Doing business in Uzbekistan</span>
+            </div>
+          </div>
+          <div class="solutions__mobile_item">
+            <h3 class="solutions__mobile_item_title" data-t>index.solutions.slider.7.mobileContent</h3>
+            <div class="solutions__mobile_item_wrapper">
+              <img src="../assets/images/business-solutions/7.png" alt="" />
+              <span>#Doing business in Uzbekistan</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-company benefits container">
+        <h2 class="main-title about-company__title" data-t>index.advantages.title</h2>
+        <h3 class="about-company__subtitle" data-t>index.advantages.description</h3>
+        <div class="about-company__cards">
+          <div class="about-company__cards_item">
+            <img
+              class="card__img"
+              src="../assets/images/about-company/abv-benefits-1.png"
+              alt="clients"
+            />
+            <h4 class="card__info" data-t>index.advantages.benefits.1</h4>
+          </div>
+          <div class="about-company__cards_item">
+            <img
+              class="card__img"
+              src="../assets/images/about-company/abv-benefits-2.png"
+              alt="3 years in platform"
+            />
+            <h4 class="card__info" data-t>index.advantages.benefits.2</h4>
+          </div>
+          <div class="about-company__cards_item">
+            <img
+              class="card__img"
+              src="../assets/images/about-company/abv-benefits-3.png"
+              alt="25 years"
+            />
+            <h4 class="card__info" data-t>index.advantages.benefits.3</h4>
+          </div>
+        </div>
+      </section>
+      <section class="services container">
+        <h2 class="services__title main-title" data-t>index.services.title</h2>
+        <div class="services__wrapper">
+          <div class="services__left">
+            <div class="services__nav">
+              <button data="1" class="services__nav_item item-1 active" data-t>index.services.items.1.link</button>
+              <button data="2" class="services__nav_item item-2" data-t>index.services.items.2.link</button>
+              <button data="3" class="services__nav_item item-3" data-t>index.services.items.3.link</button>
+              <button data="4" class="services__nav_item item-4" data-t>index.services.items.4.link</button>
+              <button data="5" class="services__nav_item item-5" data-t>index.services.items.5.link</button>
+              <button data="6" class="services__nav_item item-6" data-t>index.services.items.6.link</button>
+              <button data="7" class="services__nav_item item-7" data-t>index.services.items.7.link</button>
+            </div>
+            <div class="services__text">
+              <div class="services__text_item item-1 active">
+                <h3 class="services__text_title" data-t>index.services.items.1.title</h3>
+                <div class="services__text_desc active">
+                  <p class="services__text_subtitle" data-t>index.services.items.1.subtitle</p>
+                  <button class="services__text_btn deatailed-btn" data-t>index.services.more</button>
+                </div>
+                <div class="services__text_detailed">
+                  <p class="services__text_subtitle" data-t>index.services.items.1.description</p>
+                  <button class="services__text_btn deatailed-btn back" data-t>index.services.back</button>
+                </div>
+              </div>
+              <div class="services__text_item item-2">
+                <h3 class="services__text_title" data-t>index.services.items.2.title</h3>
+                <div class="services__text_desc active">
+                  <p class="services__text_subtitle" data-t>index.services.items.2.subtitle</p>
+                  <button class="services__text_btn deatailed-btn" data-t>index.services.more</button>
+                </div>
+                <div class="services__text_detailed">
+                  <p class="services__text_subtitle" data-t>index.services.items.2.description</p>
+                  <button class="services__text_btn deatailed-btn back" data-t>index.services.back</button>
+                </div>
+              </div>
+              <div class="services__text_item item-3">
+                <h3 class="services__text_title" data-t>index.services.items.3.title</h3>
+                <div class="services__text_desc active">
+                  <p class="services__text_subtitle" data-t>index.services.items.3.subtitle</p>
+                  <button class="services__text_btn deatailed-btn" data-t>index.services.more</button>
+                </div>
+                <div class="services__text_detailed">
+                  <p class="services__text_subtitle" data-t>index.services.items.3.description</p>
+                  <button class="services__text_btn deatailed-btn back" data-t>index.services.back</button>
+                </div>
+              </div>
+              <div class="services__text_item item-4">
+                <h3 class="services__text_title" data-t>index.services.items.4.title</h3>
+                <div class="services__text_desc active">
+                  <p class="services__text_subtitle" data-t>index.services.items.4.subtitle</p>
+                  <button class="services__text_btn deatailed-btn" data-t>index.services.more</button>
+                </div>
+                <div class="services__text_detailed">
+                  <p class="services__text_subtitle" data-t>index.services.items.4.description</p>
+                  <button class="services__text_btn deatailed-btn back" data-t>index.services.back</button>
+                </div>
+              </div>
+              <div class="services__text_item item-5">
+                <h3 class="services__text_title" data-t>index.services.items.5.title</h3>
+                <div class="services__text_desc active">
+                  <p class="services__text_subtitle" data-t>index.services.items.5.subtitle</p>
+                  <button class="services__text_btn deatailed-btn" data-t>index.services.more</button>
+                </div>
+                <div class="services__text_detailed">
+                  <p class="services__text_subtitle" data-t>index.services.items.5.description</p>
+                  <button class="services__text_btn deatailed-btn back" data-t>index.services.back</button>
+                </div>
+              </div>
+              <div class="services__text_item item-6">
+                <h3 class="services__text_title" data-t>index.services.items.6.title</h3>
+
+                <div class="services__text_desc active">
+                  <p class="services__text_subtitle" data-t>index.services.items.6.subtitle</p>
+                  <button class="services__text_btn deatailed-btn" data-t>index.services.more</button>
+                </div>
+                <div class="services__text_detailed">
+                  <p class="services__text_subtitle" data-t>index.services.items.6.description</p>
+                  <button class="services__text_btn deatailed-btn back" data-t>index.services.back</button>
+                </div>
+              </div>
+              <div class="services__text_item item-7">
+                <h3 class="services__text_title" data-t>index.services.items.7.title</h3>
+                <div class="services__text_desc active">
+                  <p class="services__text_subtitle" data-t>index.services.items.7.subtitle</p>
+                  <button class="services__text_btn deatailed-btn" data-t>index.services.more</button>
+                </div>
+                <div class="services__text_detailed">
+                  <p class="services__text_subtitle" data-t>index.services.items.7.description</p>
+                  <button class="services__text_btn deatailed-btn back" data-t>index.services.back</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="services__right services__slider owl-carousel owl-theme">
+            <video
+              class="services__slider_item item-1"
+              src="../assets/videos/services/1.webm"
+              autoplay
+              muted
+              loop
+              preload="none"
+              data="1"
+            ></video>
+            <video
+              class="services__slider_item item-2"
+              src="../assets/videos/services/2.webm"
+              autoplay
+              muted
+              loop
+              preload="none"
+              data="2"
+            ></video>
+            <video
+              class="services__slider_item item-3"
+              src="../assets/videos/services/3.webm"
+              autoplay
+              muted
+              loop
+              preload="none"
+              data="3"
+            ></video>
+            <video
+              class="services__slider_item item-4"
+              src="../assets/videos/services/4.webm"
+              autoplay
+              muted
+              loop
+              preload="none"
+              data="4"
+            ></video>
+            <video
+              class="services__slider_item item-5"
+              src="../assets/videos/services/5.webm"
+              autoplay
+              muted
+              loop
+              preload="none"
+              data="5"
+            ></video>
+            <video
+              class="services__slider_item item-6"
+              src="../assets/videos/services/6.webm"
+              autoplay
+              muted
+              loop
+              preload="none"
+              data="6"
+            ></video>
+            <video
+              class="services__slider_item item-7"
+              src="../assets/videos/services/7.webm"
+              autoplay
+              muted
+              loop
+              preload="none"
+              data="7"
+            ></video>
+          </div>
+          <div class="services__dots-nav">
+            <button class="services__dots-nav_item desc active"></button>
+            <button class="services__dots-nav_item detailed"></button>
+          </div>
+
+          <div class="services__nav mobile">
+            <button data="1" class="services__nav_item item-1 active" data-t>index.services.items.1.linkMobile</button>
+            <button data="2" class="services__nav_item item-2" data-t>index.services.items.2.linkMobile</button>
+            <button data="3" class="services__nav_item item-3" data-t>index.services.items.3.linkMobile</button>
+            <button data="4" class="services__nav_item item-4" data-t>index.services.items.4.linkMobile</button>
+            <button data="5" class="services__nav_item item-5" data-t>index.services.items.5.linkMobile</button>
+            <button data="6" class="services__nav_item item-6" data-t>index.services.items.6.linkMobile</button>
+            <button data="7" class="services__nav_item item-7" data-t>index.services.items.7.linkMobile</button>
+          </div>
+        </div>
+      </section>
+      <section class="edo-benefits container">
+        <h2 class="main-title edo-benefits__title" data-t>index.advantagesSlider.title</h2>
+        <div class="edo-benefits__wrapper">
+          <div class="edo-benefits__left">
+            <div class="edo-benefits__left_item item-1 active">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.1.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.1.description</p>
+            </div>
+            <div class="edo-benefits__left_item item-2">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.2.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.2.description</p>
+            </div>
+            <div class="edo-benefits__left_item item-3">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.3.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.3.description</p>
+            </div>
+            <div class="edo-benefits__left_item item-4">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.4.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.4.description</p>
+            </div>
+            <div class="edo-benefits__left_item item-5">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.5.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.5.description</p>
+            </div>
+            <div class="edo-benefits__left_item item-6">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.6.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.6.description</p>
+            </div>
+            <div class="edo-benefits__left_item item-7">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.7.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.7.description</p>
+            </div>
+
+            <div class="edo-benefits__left_nav" id="edo-benefits__left_nav">
+              <button data="1" class="edo-benefits__left_nav_item item-1 active">
+                <span class="num">1</span>
+                <span class="text" data-t>index.advantagesSlider.items.1.link</span>
+              </button>
+
+              <button data="2" class="edo-benefits__left_nav_item item-2">
+                <span class="num">2</span>
+                <span class="text" data-t>index.advantagesSlider.items.2.link</span>
+              </button>
+
+              <button data="3" class="edo-benefits__left_nav_item item-3">
+                <span class="num">3</span>
+                <span class="text" data-t>index.advantagesSlider.items.3.link</span>
+              </button>
+
+              <button data="4" class="edo-benefits__left_nav_item item-4">
+                <span class="num">4</span>
+                <span class="text" data-t>index.advantagesSlider.items.4.link</span>
+              </button>
+
+              <button data="5" class="edo-benefits__left_nav_item item-5">
+                <span class="num">5</span>
+                <span class="text" data-t>index.advantagesSlider.items.5.link</span>
+              </button>
+
+              <button data="6" class="edo-benefits__left_nav_item item-6">
+                <span class="num">6</span>
+                <span class="text" data-t>index.advantagesSlider.items.6.link</span>
+              </button>
+
+              <button data="7" class="edo-benefits__left_nav_item item-7">
+                <span class="num">7</span>
+                <span class="text" data-t>index.advantagesSlider.items.7.link</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="edo-benefits__right">
+            <div class="edo-benefits__right_slider owl-carousel owl-theme">
+              <video
+                data="1"
+                class="edo-benefits__right_slider_item item-1"
+                src="../assets/videos/edo-benefits/1.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+              ></video>
+              <video
+                data="2"
+                class="edo-benefits__right_slider_item item-2"
+                src="../assets/videos/edo-benefits/2.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+              ></video>
+              <video
+                data="3"
+                class="edo-benefits__right_slider_item item-3"
+                src="../assets/videos/edo-benefits/3.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+              ></video>
+              <video
+                data="4"
+                class="edo-benefits__right_slider_item item-4"
+                src="../assets/videos/edo-benefits/4.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+              ></video>
+              <video
+                data="5"
+                class="edo-benefits__right_slider_item item-5"
+                src="../assets/videos/edo-benefits/5.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+              ></video>
+              <video
+                data="6"
+                class="edo-benefits__right_slider_item item-6"
+                src="../assets/videos/edo-benefits/6.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+              ></video>
+              <video
+                data="7"
+                class="edo-benefits__right_slider_item item-7"
+                src="../assets/videos/edo-benefits/7.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+              ></video>
+            </div>
+          </div>
+
+          <div class="edo-benefits__mobile-text">
+            <div class="edo-benefits__mobile-text_item item-1 active">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.1.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.1.description</p>
+            </div>
+            <div class="edo-benefits__mobile-text_item item-2">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.2.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.2.description</p>
+            </div>
+            <div class="edo-benefits__mobile-text_item item-3">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.3.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.3.description</p>
+            </div>
+            <div class="edo-benefits__mobile-text_item item-4">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.4.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.4.description</p>
+            </div>
+            <div class="edo-benefits__mobile-text_item item-5">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.5.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.5.description</p>
+            </div>
+            <div class="edo-benefits__mobile-text_item item-6">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.6.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.6.description</p>
+            </div>
+            <div class="edo-benefits__mobile-text_item item-7">
+              <h2 class="item__title" data-t>index.advantagesSlider.items.7.title</h2>
+              <p class="item__subtitle" data-t>index.advantagesSlider.items.7.description</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subservices">
+        <h2 class="main-title subservices__title" data-t>index.subServices.title</h2>
+        <h3 class="subservices__subtitle" data-t>index.subServices.subTitle</h3>
+        <div class="subservices__slider owl-carousel owl-theme">
+          <div class="subservices__slider_item">
+            <div class="subservices__slider_item_wrapper">
+              <video
+                data="1"
+                src="../assets/videos/subservices/1.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+                class="item__video"
+              ></video>
+              <div class="item__text">
+                <h4 class="item__text_title" data-t>index.subServices.items.1.title</h4>
+                <div class="item__text_wrapper">
+                  <div class="text__desc active">
+                    <p data-t>index.subServices.items.1.description</p>
+                    <button type="button" class="deatailed-btn" data-t>index.subServices.more</button>
+                  </div>
+                  <div class="text__detailed hide">
+                    <ul>
+                      <li data-t>index.subServices.items.1.detailed.1</li>
+                      <li data-t>index.subServices.items.1.detailed.2</li>
+                      <li data-t>index.subServices.items.1.detailed.3</li>
+                      <li data-t>index.subServices.items.1.detailed.4</li>
+                      <li data-t>index.subServices.items.1.detailed.5</li>
+                      <li data-t>index.subServices.items.1.detailed.6</li>
+                      <li data-t>index.subServices.items.1.detailed.7</li>
+                      <li data-t>index.subServices.items.1.detailed.8</li>
+                      <li data-t>index.subServices.items.1.detailed.9</li>
+                    </ul>
+                    <button type="button" class="deatailed-btn back" data-t>index.subServices.back</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__buttons">
+              <button type="button" class="buttons__item desc active"></button>
+              <button type="button" class="buttons__item detailed"></button>
+            </div>
+          </div>
+          <div class="subservices__slider_item">
+            <div class="subservices__slider_item_wrapper">
+              <video
+                data="2"
+                src="../assets/videos/subservices/2.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+                class="item__video"
+              ></video>
+              <div class="item__text">
+                <h4 class="item__text_title" data-t>index.subServices.items.2.title</h4>
+                <div class="item__text_wrapper">
+                  <div class="text__desc active">
+                    <p data-t>index.subServices.items.2.description</p>
+                    <button type="button" class="deatailed-btn" data-t>index.subServices.more</button>
+                  </div>
+                  <div class="text__detailed hide">
+                    <ul>
+                      <li data-t>index.subServices.items.2.detailed.1</li>
+                      <li data-t>index.subServices.items.2.detailed.2</li>
+                      <li data-t>index.subServices.items.2.detailed.3</li>
+                      <li data-t>index.subServices.items.2.detailed.4</li>
+                      <li data-t>index.subServices.items.2.detailed.5</li>
+                    </ul>
+                    <button type="button" class="deatailed-btn back" data-t>index.subServices.back</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__buttons">
+              <button type="button" class="buttons__item desc active"></button>
+              <button type="button" class="buttons__item detailed"></button>
+            </div>
+          </div>
+          <div class="subservices__slider_item">
+            <div class="subservices__slider_item_wrapper">
+              <video
+                data="3"
+                src="../assets/videos/subservices/3.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+                class="item__video"
+              ></video>
+              <div class="item__text">
+                <h4 class="item__text_title" data-t>index.subServices.items.3.title</h4>
+                <div class="item__text_wrapper">
+                  <div class="text__desc active">
+                    <p data-t>index.subServices.items.3.description</p>
+                    <button type="button" class="deatailed-btn" data-t>index.subServices.more</button>
+                  </div>
+                  <div class="text__detailed hide">
+                    <ul>
+                      <li data-t>index.subServices.items.3.detailed.1</li>
+                      <li data-t>index.subServices.items.3.detailed.2</li>
+                      <li data-t>index.subServices.items.3.detailed.3</li>
+                      <li data-t>index.subServices.items.3.detailed.4</li>
+                      <li data-t>index.subServices.items.3.detailed.5</li>
+                      <li data-t>index.subServices.items.3.detailed.6</li>
+                    </ul>
+                    <button type="button" class="deatailed-btn back" data-t>index.subServices.back</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__buttons">
+              <button type="button" class="buttons__item desc active"></button>
+              <button type="button" class="buttons__item detailed"></button>
+            </div>
+          </div>
+          <div class="subservices__slider_item">
+            <div class="subservices__slider_item_wrapper">
+              <video
+                data="4"
+                src="../assets/videos/subservices/4.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+                class="item__video"
+              ></video>
+              <div class="item__text">
+                <h4 class="item__text_title" data-t>index.subServices.items.3.title</h4>
+                <div class="item__text_wrapper">
+                  <div class="text__desc active">
+                    <p data-t>index.subServices.items.4.description</p>
+                    <button type="button" class="deatailed-btn" data-t>index.subServices.more</button>
+                  </div>
+                  <div class="text__detailed hide">
+                    <ul>
+                      <li data-t>index.subServices.items.4.detailed.1</li>
+                      <li data-t>index.subServices.items.4.detailed.2</li>
+                      <li data-t>index.subServices.items.4.detailed.3</li>
+                      <li data-t>index.subServices.items.4.detailed.4</li>
+                      <li data-t>index.subServices.items.4.detailed.5</li>
+                      <li data-t>index.subServices.items.4.detailed.6</li>
+                    </ul>
+                    <button type="button" class="deatailed-btn back" data-t>index.subServices.back</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__buttons">
+              <button type="button" class="buttons__item desc active"></button>
+              <button type="button" class="buttons__item detailed"></button>
+            </div>
+          </div>
+        </div>
+        <div class="slider__nav">
+          <button class="slider__nav_item left">
+            <img src="../assets/icons/left-arrow.svg" alt="" />
+          </button>
+          <button class="slider__nav_item right">
+            <img src="../assets/icons/right-arrow.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="subservices__mobile">
+          <div class="subservices__mobile_wrapper">
+            <div class="subservices__mobile_item">
+              <video
+                data="1"
+                src="../assets/videos/subservices/1.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+                class="item__video"
+              ></video>
+              <h4 class="item__title" data-t>index.subServices.items.1.title</h4>
+              <div class="text__desc active">
+                <p data-t>index.subServices.items.1.description</p>
+                <button type="button" class="deatailed-btn" data-t>index.subServices.more</button>
+              </div>
+              <div class="text__detailed hide">
+                <ul>
+                  <li data-t>index.subServices.items.1.detailed.1</li>
+                  <li data-t>index.subServices.items.1.detailed.2</li>
+                  <li data-t>index.subServices.items.1.detailed.3</li>
+                  <li data-t>index.subServices.items.1.detailed.4</li>
+                  <li data-t>index.subServices.items.1.detailed.5</li>
+                  <li data-t>index.subServices.items.1.detailed.6</li>
+                  <li data-t>index.subServices.items.1.detailed.7</li>
+                  <li data-t>index.subServices.items.1.detailed.8</li>
+                  <li data-t>index.subServices.items.1.detailed.9</li>
+                </ul>
+                <button type="button" class="deatailed-btn back" data-t>index.subServices.back</button>
+              </div>
+            </div>
+            <div class="subservices__mobile_item">
+              <video
+                data="2"
+                src="../assets/videos/subservices/2.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+                class="item__video"
+              ></video>
+              <h4 class="item__title" data-t>index.subServices.items.2.title</h4>
+              <div class="text__desc active">
+                <p data-t>index.subServices.items.2.description</p>
+                <button type="button" class="deatailed-btn" data-t>index.subServices.more</button>
+              </div>
+              <div class="text__detailed hide">
+                <ul>
+                  <li data-t>index.subServices.items.2.detailed.1</li>
+                  <li data-t>index.subServices.items.2.detailed.2</li>
+                  <li data-t>index.subServices.items.2.detailed.3</li>
+                  <li data-t>index.subServices.items.2.detailed.4</li>
+                  <li data-t>index.subServices.items.2.detailed.5</li>
+                </ul>
+                <button type="button" class="deatailed-btn back" data-t>index.subServices.back</button>
+              </div>
+            </div>
+            <div class="subservices__mobile_item">
+              <video
+                data="3"
+                src="../assets/videos/subservices/3.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+                class="item__video"
+              ></video>
+              <h4 class="item__title" data-t>index.subServices.items.3.title</h4>
+              <div class="text__desc active">
+                <p data-t>index.subServices.items.3.description</p>
+                <button type="button" class="deatailed-btn" data-t>index.subServices.more</button>
+              </div>
+              <div class="text__detailed hide">
+                <ul>
+                  <li data-t>index.subServices.items.3.detailed.1</li>
+                  <li data-t>index.subServices.items.3.detailed.2</li>
+                  <li data-t>index.subServices.items.3.detailed.3</li>
+                  <li data-t>index.subServices.items.3.detailed.4</li>
+                  <li data-t>index.subServices.items.3.detailed.5</li>
+                  <li data-t>index.subServices.items.3.detailed.6</li>
+                </ul>
+                <button type="button" class="deatailed-btn back" data-t>index.subServices.back</button>
+              </div>
+            </div>
+            <div class="subservices__mobile_item">
+              <video
+                data="4"
+                src="../assets/videos/subservices/4.webm"
+                autoplay
+                muted
+                loop
+                preload="none"
+                class="item__video"
+              ></video>
+              <h4 class="item__title" data-t>index.subServices.items.4.title</h4>
+              <div class="text__desc active">
+                <p data-t>index.subServices.items.4.description</p>
+                <button type="button" class="deatailed-btn" data-t>index.subServices.more</button>
+              </div>
+              <div class="text__detailed hide">
+                <ul>
+                  <li data-t>index.subServices.items.4.detailed.1</li>
+                  <li data-t>index.subServices.items.4.detailed.2</li>
+                  <li data-t>index.subServices.items.4.detailed.3</li>
+                  <li data-t>index.subServices.items.4.detailed.4</li>
+                  <li data-t>index.subServices.items.4.detailed.5</li>
+                  <li data-t>index.subServices.items.4.detailed.6</li>
+                </ul>
+                <button type="button" class="deatailed-btn back" data-t>index.subServices.back</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-company statistics container">
+        <h2 class="main-title about-company__title" data-t>index.statistics.title</h2>
+        <h3 class="about-company__subtitle" data-t>index.statistics.subTitle</h3>
+        <div class="about-company__cards">
+          <div class="about-company__cards_item">
+            <img
+              class="card__img"
+              src="../assets/images/about-company/statistic-1.png"
+              alt="clients"
+            />
+            <h4 class="card__info">
+              <span class="card__info_title" data-t>index.statistics.items.1.count</span><br />
+              <p class="card__info_subtitle" data-t>index.statistics.items.1.title</p>
+            </h4>
+          </div>
+          <div class="about-company__cards_item">
+            <img
+              class="card__img"
+              src="../assets/images/about-company/statistic-2.png"
+              alt="3 years in platform"
+            />
+            <h4 class="card__info">
+              <span class="card__info_title" data-t>index.statistics.items.2.count</span><br />
+              <p class="card__info_subtitle" data-t>index.statistics.items.2.title</p>
+            </h4>
+          </div>
+          <div class="about-company__cards_item">
+            <img
+              class="card__img"
+              src="../assets/images/about-company/statistic-3.png"
+              alt="25 years"
+            />
+            <h4 class="card__info">
+              <span class="card__info_title" data-t>index.statistics.items.3.count</span><br />
+              <p class="card__info_subtitle" data-t>index.statistics.items.3.title</p>
+            </h4>
+          </div>
+        </div>
+      </section>
+      <section class="where-begin container">
+        <h2 class="where-begin__title main-title" data-t>index.whereBegin.title</h2>
+        <div class="where-begin__wrapper">
+          <div class="where-begin__images">
+            <img
+              loading="lazy"
+              src="../assets/images/where-begin/1.png"
+              alt="partner"
+            />
+            <img
+              loading="lazy"
+              src="../assets/images/where-begin/2.png"
+              alt="partner"
+            />
+            <img
+              loading="lazy"
+              src="../assets/images/where-begin/3.png"
+              alt="partner"
+            />
+            <img
+              loading="lazy"
+              src="../assets/images/where-begin/4.png"
+              alt="partner"
+            />
+          </div>
+          <div class="where-begin__steps">
+            <div class="where-begin__steps_line"></div>
+            <div class="where-begin__steps_item">
+              <span class="where-begin__steps_item_num">1</span>
+              <span class="where-begin__steps_item_title" data-t>index.whereBegin.registration</span>
+            </div>
+            <div class="where-begin__steps_item">
+              <span class="where-begin__steps_item_num">2</span>
+              <span class="where-begin__steps_item_title" data-t>index.whereBegin.authorization</span>
+            </div>
+            <div class="where-begin__steps_item">
+              <span class="where-begin__steps_item_num">3</span>
+              <span class="where-begin__steps_item_title" data-t>index.whereBegin.pay</span>
+            </div>
+            <div class="where-begin__steps_item">
+              <span class="where-begin__steps_item_num">4</span>
+              <span class="where-begin__steps_item_title" data-t>index.whereBegin.access</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="where-begin-mobile">
+        <h2 class="where-begin__title main-title" data-t>index.whereBegin.title</h2>
+        <div class="where-begin-mobile__wrapper">
+          <div class="where-begin-mobile__line"></div>
+          <div>
+            <div class="where-begin-mobile__item">
+              <div class="item-top">
+                <span class="item-top__num">1</span>
+                <span class="item-top__title" data-t>index.whereBegin.registration</span>
+              </div>
+              <img
+                class="item__img"
+                src="../assets/images/where-begin/1.png"
+                alt="begin img"
+              />
+            </div>
+            <div class="where-begin-mobile__item">
+              <div class="item-top">
+                <span class="item-top__num">2</span>
+                <span class="item-top__title" data-t>index.whereBegin.authorization</span>
+              </div>
+              <img
+                class="item__img"
+                src="../assets/images/where-begin/2.png"
+                alt="begin img"
+              />
+            </div>
+            <div class="where-begin-mobile__item">
+              <div class="item-top">
+                <span class="item-top__num">3</span>
+                <span class="item-top__title" data-t>index.whereBegin.pay</span>
+              </div>
+              <img
+                class="item__img"
+                src="../assets/images/where-begin/3.png"
+                alt="begin img"
+              />
+            </div>
+            <div class="where-begin-mobile__item">
+              <div class="item-top">
+                <span class="item-top__num">4</span>
+                <span class="item-top__title" data-t>index.whereBegin.access</span>
+              </div>
+              <img
+                class="item__img"
+                src="../assets/images/where-begin/4.png"
+                alt="begin img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="how-begin container">
+        <h2 class="main-title how-begin__title" data-t>index.howToStart.title</h2>
+        <div class="how-begin__wrapper">
+          <div class="how-begin__left">
+            <h3 class="card-title left__title" data-t>index.howToStart.subTitle</h3>
+            <p class="left__subtitle" data-t>index.howToStart.description</p>
+            <a
+              href="./working.html"
+              class="btn-primary circle-animation-btn left__details-btn"
+              style="
+                --circle-width: 133px;
+                --circle-top-position: -38.5px;
+                --circle-left-position: -67.5px;
+                --bg-color: #fff;
+              "
+            >
+              <span data-t>index.howToStart.more</span>
+            </a>
+          </div>
+          <video
+            src="../assets/videos/how-begin.webm"
+            autoplay
+            muted
+            loop
+            preload="none"
+            class="how-begin__right"
+          ></video>
+        </div>
+      </section>
+      <section class="send-request container" id="send-request">
+        <div class="send-request__wrapper">
+          <div class="send-request__left">
+            <video
+              src="../assets/videos/send-request.webm"
+              autoplay
+              muted
+              loop
+              preload="none"
+              class="send-request__left_video"
+            ></video>
+          </div>
+          <form class="send-request__right">
+            <h2 class="send-request__right_title card-title" data-t>index.request.title</h2>
+            <input
+              type="text"
+              class="send-request__right_name"
+              data-attr-t
+              placeholder-t="index.request.placeholder"
+            />
+            <input
+              type="number"
+              class="send-request__right_tel"
+              placeholder="+998"
+              value="+998"
+            />
+            <button
+              type="submit"
+              class="btn-primary circle-animation-btn send-request__right_submit"
+              style="
+                --circle-width: 133px;
+                --circle-top-position: -38.5px;
+                --circle-left-position: -67.5px;
+                --bg-color: #fff;
+              "
+            >
+              <span data-t>index.request.send</span>
+            </button>
+          </form>
+        </div>
+      </section>
+      <div class="scrollbar">
+        <button class="scrollbar__thumb"></button>
+      </div>
+    </main>
+
+    <div class="snow-content">
+      <canvas class="snow" id="snow"></canvas>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="./index.html"
+          ><img
+            src="../assets/images/logo-abv.svg"
+            alt="logo"
+            class="footer__logo"
+        /></a>
+        <div class="footer__wrapper">
+          <nav class="footer__nav">
+            <div class="footer__top-links">
+              <a
+                href="./working.html"
+                class="footer__top-links_item bottom-line"
+              data-t>footer.howToStart</a>
+              <a
+                href="./about-us.html"
+                class="footer__top-links_item bottom-line"
+                data-t>footer.aboutPlatform</a
+              >
+            </div>
+            <div class="footer__middle-links">
+              <h2 class="middle__title" data-t>footer.contacts</h2>
+              <p class="middle__subtitle" data-t>footer.subContacts</p>
+              <p class="middle__item" data-t>footer.address</p>
+              <p class="middle__item" data-t>footer.subAddress</p>
+              <a
+                href="mailto:b2b-space@abv.uz"
+                target="_blank"
+                class="middle__item link bottom-line"
+                >b2b-space@abv.uz</a
+              >
+              <a
+                href="mailto:b2b-support@abv.uz"
+                target="_blank"
+                class="middle__item link bottom-line"
+                >b2b-support@abv.uz</a
+              >
+              <a
+                href="tel:+998712058171"
+                target="_blank"
+                class="middle__item link bottom-line"
+                >+998 (71) 205 81 71</a
+              >
+            </div>
+          </nav>
+          <div
+            class="footer__map"
+            id="map"
+            style="position: relative; overflow: hidden"
+          >
+            <iframe
+              class="footer__iframe"
+              src="https://yandex.uz/map-widget/v1/-/CCU5aSReTC"
+              frameborder="1"
+              allowfullscreen="true"
+              title="yandex map"
+              style="position: relative"
+            ></iframe>
+          </div>
+        </div>
+        <span class="footer__copyright" data-t>footer.copyright</span>
+      </div>
+    </footer>
+
+
+    <script defer src="../scripts/vendors/jquery.min.js"></script>
+    <script defer src="../scripts/vendors/owl.carousel.min.js"></script>
+    <script defer src="../scripts/vendors/smooth.scroll.min.js"></script>
+    <script defer src="../scripts/vendors/snow.js"></script>
+    <script defer src="../scripts/main.js"></script>
+    <script defer src="../scripts/pages/index.js"></script>
+  </body>
+</html>
