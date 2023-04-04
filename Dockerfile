@@ -22,6 +22,7 @@ RUN --mount=type=secret,id=LOCALIZATION_API \
     SUPPORTED_LOCALES=$(cat /run/secrets/SUPPORTED_LOCALES) \
     DEFAULT_LOCALE=$(cat /run/secrets/DEFAULT_LOCALE) \
     APP_LOCALIZATION_ID=$(cat /run/secrets/APP_LOCALIZATION_ID) \
+    YANDEX_ID=$(cat /run/secrets/YANDEX_ID) \
     LOGIN=$(cat /run/secrets/LOGIN) \
     PASSWORD=$(cat /run/secrets/PASSWORD)
 

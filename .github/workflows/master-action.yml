@@ -37,6 +37,7 @@ jobs:
             "APP_LOCALIZATION_ID=${{ secrets.APP_LOCALIZATION_ID }}"
             "LOGIN=${{ secrets.LOGIN }}"
             "PASSWORD=${{ secrets.PASSWORD }}"
+            "YANDEX_ID=${{ secrets.YANDEX_ID }}"
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/abv-landing:v${{ steps.package-version.outputs.version }}
@@ -53,6 +54,7 @@ jobs:
             "APP_LOCALIZATION_ID=${{ secrets.APP_LOCALIZATION_ID }}"
             "LOGIN=${{ secrets.LOGIN }}"
             "PASSWORD=${{ secrets.PASSWORD }}"
+            "YANDEX_ID=${{ secrets.YANDEX_ID }}"
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/abv-landing:latest
