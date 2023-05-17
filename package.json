@@ -11,7 +11,7 @@
     "build": "webpack --mode=development --config=./webpack.config.js",
     "build:prod": "webpack --mode=production --config=./webpack.config.js",
     "locales:get": "node scripts/locales.get.js",
-    "locales:upload": "node scripts/locales.filler.js && node scripts/locales.get.js && node scripts/locales.uploader.js",
+    "locales:upload": "node scripts/locales.uploader.js",
     "locales:fill": "node scripts/locales.filler.js"
   },
   "devDependencies": {
@@ -20,7 +20,7 @@
     "@babel/preset-env": "^7.20.2",
     "@webpack-cli/generators": "^3.0.0",
     "autoprefixer": "^10.4.13",
-    "axios": "^1.2.0",
+    "axios": "0.21.4",
     "babel-loader": "^9.1.0",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.2",
